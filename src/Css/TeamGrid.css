@@ -1,0 +1,156 @@
+.team-bg {
+  background: #ededed;
+  min-height: 100vh;
+  padding: 28px 0 0 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.team-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: #2878fa;
+  font-size: 1.13rem;
+  /* margin-left: 22px; */
+  margin-bottom: 18px;
+}
+
+.team-nav-icon {
+  font-size: 1.14em;
+  padding-right: 1px;
+}
+
+.team-nav-title {
+  color: #222;
+  margin-left: 2px;
+}
+
+.team-heading {
+  text-align: center;
+  font-size: 2.15rem;
+  font-weight: 800;
+  color: #232323;
+  margin-bottom: 14px;
+  line-height: 1.22;
+  max-width: 830px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-italic {
+  font-style: italic;
+  color: #787878;
+  font-weight: 700;
+  margin-left: 3px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px 25px;
+  max-width: 1266px;
+  margin: 38px auto 0 auto;
+}
+
+.team-card {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 17px;
+  overflow: hidden;
+}
+
+.team-img-wrap {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: #dde3e9;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 11px;
+}
+
+.team-name {
+  font-weight: 700;
+  font-size: 1rem;
+  font-style: italic;
+  color: #19181a;
+  margin-bottom: 1px;
+}
+.team-title {
+  font-size: 0.90rem;
+  color: #6b6b6f;
+  font-weight: 500;
+}
+
+.team-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin: 44px auto 16px auto;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.team-footer-arrow {
+  background: #2878fa;
+  color: #fff;
+  font-size: 1.13em;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-left: 1px;
+}
+
+/* Tablet & mobile styles */
+@media (max-width: 900px) {
+  .team-heading {
+    font-size: 1.12rem;
+    margin-bottom: 10px;
+    max-width: 99vw;
+    padding: 0 6px;
+  }
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 14px;
+    max-width: 96vw;
+    margin-top: 18px;
+  }
+  .team-footer {
+    font-size: 0.98rem;
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-nav {
+    font-size: 1rem;
+    margin-bottom: 9px;
+    margin-left: 7px;
+  }
+  .team-heading {
+    font-size: 0.98rem;
+    margin-bottom: 6px;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 18px 0;
+    margin-top: 10px;
+  }
+  .team-footer {
+    font-size: 0.93rem;
+    margin-top: 18px;
+  }
+}

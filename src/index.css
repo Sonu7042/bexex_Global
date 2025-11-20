@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+
+
+
+@font-face {
+    font-family: heading;
+    src: url("../fonts/helveticanowtext-bold-demo.ttf");
+}
+
+
+h1, h2,h3 span p{
+    font-family: heading;
+}
+
+p{
+    font-family: heading;
+}
+
+.applyfont{
+    font-family: heading;
+}
+
+
+

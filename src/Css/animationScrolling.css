@@ -1,0 +1,221 @@
+.asc-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  /* background: #111; */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.asc-container {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 165px;
+}
+.asc-numbers {
+  position: relative;
+  width: 45%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.asc-num {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+  background-color: transparent;
+}
+.asc-numspan {  /* <-- Updated class name */
+  font-size: 93vh; /* fill the parent vertically (or use 60vw for wide screens) */
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+  color: #d2d2d2;
+  user-select: none;
+  overflow: hidden;
+}
+.asc-contents {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+}
+.asc-contentbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 36px 40px;
+  background: #fff;
+  color: #333;
+  border-radius: 7px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 700px;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.asc-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+.asc-desc {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.asc-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+.asc-listitem {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.asc-circle {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2.5px solid #0076ff;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.asc-action {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.asc-nextbtn {
+  background: #0076ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.3em;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.asc-discover {
+  font-weight: bold;
+}
+@media(max-width:768px) {
+  .asc-numspan { font-size: 35vh; }
+  .asc-contentbox{ font-size: 5vw; padding:20px; }
+}
+
+
+
+@media (max-width:768px){
+    .asc-numbers{
+        display: none;
+    }
+
+}
+
+
+/* ==========================
+   MOBILE (<768px) RESPONSIVE
+   ========================== */
+
+@media (max-width: 768px) {
+
+  .asc-section {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .asc-container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 0;
+  }
+
+  /* Hide numbers column */
+  .asc-numbers {
+    display: none;
+  }
+
+  /* Content container full width */
+  .asc-contents {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    position: relative;
+  }
+
+  /* Each content box becomes normal block */
+  .asc-contentbox {
+    position: relative;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    margin-bottom: 25px;
+    height: auto;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .asc-title {
+    font-size: 5vw;
+  }
+
+  .asc-desc {
+    font-size: 3.8vw;
+  }
+
+  .asc-listitem {
+    font-size: 3.8vw;
+  }
+
+  .asc-circle {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+  }
+
+  .asc-action {
+    margin-top: 12px;
+  }
+
+  .asc-discover {
+    font-size: 4vw;
+  }
+
+  .asc-nextbtn {
+    width: 28px;
+    height: 28px;
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,132 @@
+/* Ensure no horizontal overflow on entire page */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Section to exactly fit viewport width */
+.center-scroll-section {
+  height: 100vh;
+  width: 100vw;
+  /* background: #f0f0f0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: hidden; /* if vertical scroll also not needed outside */
+  box-sizing: border-box; /* Calculate paddings inside width */
+}
+
+/* For center content flexbox */
+.center-content {
+    /* background: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+    width: 100%;
+    max-width: 1317px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    height: 80%;
+}
+
+.number-big {
+  font-size: 20vw;
+  color: #ccc;
+  font-weight: bold;
+  user-select: none;
+  text-align: center;
+  flex-shrink: 0;
+  white-space: nowrap; /* Prevent number wrapping */
+}
+
+.card {
+  background: white;
+  padding: 32px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.07);
+  color: #000;
+  opacity: 1;
+  box-sizing: border-box;
+  overflow-wrap: break-word; /* Break long text */
+  height: 80%;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 20px;
+ 
+}
+
+
+.rowWise{
+  flex-direction: column;
+}
+
+/* Responsive adjustments */
+@media (max-width: 850px) {
+  .center-content {
+    flex-direction: column;
+    gap: 22px;
+    padding: 0 4vw;
+  }
+  .number-big {
+    font-size: 17vw;
+    margin-bottom: 12px;
+  }
+  .card {
+    padding: 18px;
+    max-width: 96vw;
+  }
+}
+
+
+
+.card-heading{
+  font-size: 34px;
+  font-weight: 700;
+  max-width: 850px;
+}
+
+
+
+
+/* FEATURES LIST */
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.card-list li {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* BLUE BULLET */
+.circle {
+  width: 14px;
+  height: 14px;
+  border: 3px solid #0070ff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 14px;
+}
+
+
+.discovery{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.arrow-btn{
+  color: white;
+  font-weight: bold;
+}

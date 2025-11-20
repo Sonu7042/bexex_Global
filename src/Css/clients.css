@@ -1,0 +1,133 @@
+.clients-section {
+  /* background: #e0e0e0; */
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding: 32px 0;
+}
+
+/* Decorative corner images */
+.bg-x {
+  position: absolute;
+  width: 120px;
+  height: auto;
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-x--top-right {
+     top: 129px;
+    right: 44px;
+    transform: translate(40%, -40%);
+    scale: 1.2;
+}
+
+.bg-x--bottom-left {
+     bottom: 90px;
+    left: 42px;
+    transform: translate(-40%, 40%) rotate(180deg);
+    scale: 1.2;
+}
+
+/* Header styles */
+.section-header {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin-left: 24px;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  /* margin-left: 8px; */
+  font-size: 1.15rem;
+}
+
+.logo {
+  color: #2fa3ff;
+  font-size: 1.3rem;
+}
+
+/* Main box */
+.clients-box {
+  background: #343434;
+  border-radius: 12px;
+  max-width: 80vw;
+  margin: 0 auto 30px auto;
+  padding: 40px 32px 60px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px 32px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+.client-item {
+  background: #d9d9d9;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  height: 100px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
+
+.client-item img {
+  max-height: 70px;
+  max-width: 80%;
+  object-fit: contain;
+}
+
+.clients-discover-btn {
+  margin: 32px auto 0 auto;
+  /* background: #222; */
+  color: #fff;
+  font-weight: bold;
+  padding: 9px 24px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  width: fit-content;
+}
+
+.arrow {
+  background: #2fa3ff;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0px 7px;
+  font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .clients-box {
+    padding: 20px 4px 40px 4px;
+  }
+  .clients-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 16px 0;
+  }
+}
