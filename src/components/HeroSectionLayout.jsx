@@ -7,8 +7,7 @@ import CompareConsulting from './CompareConsulting'
 import LetsConnect from './LetsConnect'
 import Services from './Services'
 import TeamList from './TeamList'
-import AnimatedScrollSection from '../animation/AnimationScrolling'
-import About from './About'
+import AnimationScrolling from '../animation/AnimationScrolling'
 
 
 
@@ -16,14 +15,15 @@ import About from './About'
 const HeroSectionLayout = () => {
   return (
     <>
-   <Home />
+    <main className='px-4 md:px-16 lg:px-12'>
+    <Home />
     <Services/>
-    <AnimatedScrollSection/>
+    <AnimationScrolling />
     <TeamList/>
     <Clients/>
     <CompareConsulting/> 
+    </main>
     <LetsConnect/>    
-    <About/>
     </>
   )
 }

@@ -72,6 +72,7 @@ const Header = () => {
     return () => document.removeEventListener("mousedown", handleClose);
   }, []);
 
+
   useEffect(() => {
     if (menuOpen) {
       setServiceOpen(false);
@@ -94,34 +95,35 @@ const Header = () => {
           <span />
           <span />
           <span />
-        </button>
+        </button>   
 
-        <nav className={`nav-menu ${menuOpen ? "mobile-open" : ""}`}>
-          {menuItems.map((item, idx) => {
-            if (item.dropdown) {
+          <nav className={`nav-menu ${menuOpen ? "mobile-open" : ""}`}>
+            {menuItems.map((item, idx) => {
+              if (item.dropdown) {
+                return (
+                  <a
+                    key={idx}
+                    href="#"
+                    className="nav-link applyfont"
+                    onClick={(e) => handleDropdownClick(e, item.key)} // prevent default here
+                  >
+                    {item.label}
+                    <span className="dropdown-icon">&#x25BC;</span>
+                  </a>
+                );
+              }
               return (
                 <Link
                   key={idx}
                   to={item.to}
                   className="nav-link applyfont"
-                  onClick={(e) => handleDropdownClick(e, item.key)}
                 >
                   {item.label}
-                  <span className="dropdown-icon">&#x25BC;</span>
                 </Link>
               );
-            }
-            return (
-              <Link
-                key={idx}
-                to={item.to}
-                className="nav-link applyfont"
-              >
-                {item.label}
-              </Link>
-            );
-          })}
-        </nav>
+            })}
+          </nav>
+
 
         <div className="search-area">
           <input

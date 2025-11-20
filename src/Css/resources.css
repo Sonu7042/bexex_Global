@@ -1,9 +1,5 @@
 /* Ensure no horizontal overflow on entire page */
-body, html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+
 
 /* Section to exactly fit viewport width */
 .center-scroll-section {
@@ -130,3 +126,4 @@ body, html {
   color: white;
   font-weight: bold;
 }
+

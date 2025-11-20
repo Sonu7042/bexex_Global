@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import  miniLogo from '../assets/images/miniLogo.png'
 import journeyImg from '../assets/images/journeyImg.png'
 import TeamGrid from "./TeamGrid";
+import nature from '../assets/images/nature.jpg'
 
 
 
@@ -52,13 +53,14 @@ const About = () => {
           </h1>
 
           <div className="hero-img-wrap">
-            <video
-              src={"video1"}
+            {/* <video
+              src={}
               autoPlay
               muted
               loop
               className="hero-video"
-            ></video>
+            ></video> */}
+            <img src={nature} alt="imge" />
           </div>
 
           <p className="hero-desc">

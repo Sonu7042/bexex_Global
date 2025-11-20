@@ -6,10 +6,12 @@ import { Provider } from "react-redux";
 // import Lenis from "@studio-freight/lenis";
 
 import HeroSectionLayout from "./components/HeroSectionLayout";
-import About from "./components/About";
+import AboutSectionLayout from "./components/AboutSectionLayout";
+
 import Services from "./components/Services";
 import AboutUs from "./components/AboutUs";
 import TeamList from "./components/TeamList";
+import BlogSectionLayout from "./components/blogSectionLayout";
 
 // dummy/detail components – create real ones as needed
 import {ServiceDetails, Blog, NewsLetters} from "./components/ServiceDetails";
@@ -20,25 +22,19 @@ const App = () => {
   return (
     <Provider store={store}>
       <Header />
-      <main className="px-4 md:px-16 lg:px-12">
-
       <Routes>
-        {/* main pages */}
         <Route path="/" element={<HeroSectionLayout />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<AboutSectionLayout />} />
         <Route path="/services" element={<Services />} />
         <Route path="/resources" element={<AboutUs />} />
         <Route path="/communities" element={<TeamList />} />
 
-        {/* services detail pages: /services/1, /services/2, ... */}
         <Route path="/services/:id" element={<ServiceDetails />} />
 
-        {/* resources sub pages */}
-        <Route path="/resources/blog" element={<Blog />} />
+        <Route path="/resources/blog" element={<BlogSectionLayout/>} />
         <Route path="/resources/newsletters" element={<NewsLetters />} />
          
       </Routes>
-      </main>
 
     </Provider>
   );
