@@ -7,8 +7,7 @@ const ServiceDetails = () => {
   return <div>Service detail page for service #{id}</div>;
 };
 
-const Blog = () => <div>Blogs page</div>;
 
 const NewsLetters = () => <div>Newsletters page</div>;
 
-export { ServiceDetails, Blog, NewsLetters };
+export { ServiceDetails, NewsLetters };

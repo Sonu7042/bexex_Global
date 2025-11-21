@@ -10,14 +10,15 @@ import AboutSectionLayout from "./components/AboutSectionLayout";
 
 import Services from "./components/Services";
 import AboutUs from "./components/AboutUs";
-import TeamList from "./components/TeamList";
 import BlogSectionLayout from "./components/blogSectionLayout";
 
 // dummy/detail components – create real ones as needed
-import {ServiceDetails, Blog, NewsLetters} from "./components/ServiceDetails";
+import {ServiceDetails, NewsLetters} from "./components/ServiceDetails";
 
 import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
+import CommunitiesSectionLayout from "./components/CommunitiesSectionLayout";
+import BlogInnerPage from "./components/BlogInnerPage";
 
 const App = () => {
   // optional Lenis smooth scroll if you want later
@@ -51,12 +52,13 @@ const App = () => {
         <Route path="/about" element={<AboutSectionLayout />} />
         <Route path="/services" element={<Services />} />
         <Route path="/resources" element={<AboutUs />} />
-        <Route path="/communities" element={<TeamList />} />
+        <Route path="/communities" element={<CommunitiesSectionLayout />} />
 
         <Route path="/services/:id" element={<ServiceDetails />} />
 
         <Route path="/resources/blog" element={<BlogSectionLayout/>} />
         <Route path="/resources/newsletters" element={<NewsLetters />} />
+        <Route path="/innerBlogPage" element={<BlogInnerPage />} />
          
       </Routes>
 

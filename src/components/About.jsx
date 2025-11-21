@@ -13,24 +13,39 @@ import nature from '../assets/images/nature.jpg'
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-  useEffect(() => {
-    gsap.to(".hero-img-wrap", {
-      scale: 2, // zoom effectgit 
-      y: 550, // was 1500 – too much, reduced so it stops earlier
-      ease: "none",
+   
+useEffect(() => {
+  ScrollTrigger.matchMedia({
 
-      scrollTrigger: {
-        trigger: ".hero-root",
-        start: "top top",
+    // ❌ Mobile (GSAP OFF)
+    "(max-width: 768px)": function() {
+      ScrollTrigger.getAll().forEach(t => t.kill());
+      gsap.killTweensOf(".hero-img-wrap");
+    },
 
-        // ⭐ NEW: stop animation much earlier
-        end: "40% top", // animation ends when 40% of section scrolls
+    // ✅ Desktop & Tablet (GSAP ON)
+    "(min-width: 770px)": function() {
+      gsap.to(".hero-img-wrap", { 
+        scale: 2,
+        y: 550,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".hero-root",
+          start: "top top",
+          end: "40% top",
+          scrub: true,
+          markers: false,
+        },
+      });
+    }
 
-        scrub: true,
-        markers: false,
-      },
-    });
-  }, []);
+  });
+
+  return () => {
+    ScrollTrigger.getAll().forEach(t => t.kill());
+  };
+}, []);
+
 
   return (
     <>

@@ -7,6 +7,7 @@ import img2 from "../assets/images/nature.jpg";
 import img3 from "../assets/images/nature.jpg";
 // import img3 from "./images/tablet.jpg";
 import miniLogo from '../assets/images/miniLogo.png'
+import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
@@ -108,7 +109,7 @@ export default function BlogsGrid() {
     <section className="blog-grid-section">
       <div className="blog-grid-container">
         {blogPosts.map((post, idx) => (
-          <article className="blog-grid-card" key={idx}>
+          <Link to={'/innerBlogPage'} className="blog-grid-card" key={idx}>
             <div className="blog-grid-img-wrap">
               <img src={post.img} alt={post.title} className="blog-grid-img" />
             </div>
@@ -124,7 +125,7 @@ export default function BlogsGrid() {
                 <span className="blog-grid-tag" key={i}>{tag}</span>
               ))}
             </div>
-          </article>
+          </Link>
         ))}
       </div>
     </section>

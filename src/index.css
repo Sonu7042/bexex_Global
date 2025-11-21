@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
 
-
-
 @font-face {
     font-family: heading;
     src: url("../fonts/helveticanowtext-bold-demo.ttf");
@@ -13,12 +11,37 @@ h1, h2,h3 span p{
     font-family: heading;
 }
 
+
 p{
     font-family: heading;
 }
 
+
 .applyfont{
     font-family: heading;
+}
+
+
+
+
+/* apply global space for website  */
+.page_indenation {
+  padding-left: 1rem;   /* px-4 */
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .page_indenation {
+    padding-left: 4rem;   /* md:px-16 */
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page_indenation {
+    padding-left: 3rem;   /* lg:px-12 */
+    padding-right: 3rem;
+  }
 }
 
 
