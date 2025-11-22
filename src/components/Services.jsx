@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../Css/services.css";
 import serviceImg from "../assets/images/serviceImg.png";
 import minilogo from "../assets/images/miniLogo.png";
+import Buttons from "./Buttons";
 
 export default function Services() {
   const cardData = [
@@ -30,7 +31,7 @@ export default function Services() {
       {/* Hero section */}
        <div className="services-header">
             <img src={minilogo} alt="logo" className="brand-logo" />
-            <span className="services-title applyfont">Our services</span>
+            <span className="services-title brand-name-update applyfont">Our services</span>
           </div>
       <div className="services-hero">
         
@@ -41,14 +42,21 @@ export default function Services() {
             performance through expert consulting, management, audits, and
             training.
           </p>
-          <button className="learn-btn applyfont">
+          {/* <button className="learn-btn applyfont">
             Learn more
             <span className="learn-icon">
               <svg width="17" height="17" fill="none" stroke="#fff" strokeWidth="3">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 4l6 4.5-6 4.5" />
               </svg>
             </span>
-          </button>
+          </button> */}
+
+          <div className="learn-btn">
+            <span>Learn more</span>
+            <Buttons />
+
+
+          </div>
         </div>
 
         <div className="services-right applyfont">

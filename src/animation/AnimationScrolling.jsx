@@ -3,6 +3,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
 import "../Css/animationScrolling.css";
+import Buttons from "../components/Buttons";
 
 const contents = [
   {
@@ -188,7 +189,8 @@ const AnimatedScrollSection = () => {
               </ul>
               <div className="asc-action">
                 <span className="asc-discover">Discovery more</span>
-                <button className="asc-nextbtn">&#8594;</button>
+                {/* <button className="asc-nextbtn">&#8594;</button> */}
+                <Buttons />
               </div>
             </div>
           ))}

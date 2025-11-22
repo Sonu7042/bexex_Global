@@ -7,7 +7,7 @@
 .home-main {
   display: flex;
   align-items: flex-start;
-  padding-top: 9rem;
+  padding-top: 7rem;
   position: relative;
   padding-inline: 1rem;
 }
@@ -24,12 +24,15 @@
   align-items: center;
   /* gap: 0.75rem; */
   margin-bottom: 1.5rem;
+  margin-left: -1rem;
 }
 
 .brand-name {
-  font-weight: 600;
-  font-size: 1.25rem;
+  font-weight: 700;
+  font-size: 1.5rem;
   color: #111;
+  margin-left: -1rem;
+  line-height: 140%;
 }
 
 /* Headline */
@@ -37,7 +40,7 @@
   font-weight: 900;
   color: #000;
   line-height: 110%;
-  font-size: 4vw;
+  font-size: 3.77rem;
   max-width: 900px;
 }
 
@@ -62,21 +65,21 @@
   margin-top: 2rem;
   display: flex;
   align-items: center;
-  padding: 0.5rem 1.25rem;
-  background: white;
-  border: 1px solid #299fff;
+  /* padding: 0.5rem 1.25rem; */
+  /* background: white; */
+  /* border: 1px solid #299fff; */
   color: #000;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 6px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  /* border-radius: 6px; */
+  /* box-shadow: 0 1px 4px rgba(0,0,0,0.1); */
   cursor: pointer;
   transition: background 0.2s;
 }
 
-.discover-btn:hover {
+/* .discover-btn:hover {
   background: #e6f2ff;
-}
+} */
 
 .discover-icon {
   margin-left: 0.75rem;
@@ -225,8 +228,8 @@
 
 
 .brand-logo{
-    width: 40px;
-    height: 40px;
+    width: 62px;
+    height: 62px;
 }
 
 
@@ -240,6 +243,12 @@
   }
   .card-image{
     width: 100%;
+  }
+  .hero-title{
+    font-size: 7vw;
+  }
+  .hero-subtext{
+    font-size: .9rem;
   }
 }
 

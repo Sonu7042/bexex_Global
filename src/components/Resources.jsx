@@ -3,6 +3,7 @@ import React, { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../Css/resources.css";
+import Buttons from "./Buttons";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -112,7 +113,8 @@ export default function CardScrollCenter() {
           </ul>
           <div className="discovery">
             <span>Discovery more</span>
-            <button className="arrow-btn  card-icon">→</button>
+            {/* <button className="arrow-btn  card-icon">→</button> */}
+            <Buttons />
           </div>
         </div>
       </div>

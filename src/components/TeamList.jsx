@@ -58,8 +58,8 @@ export default function TeamList() {
     <div className="teams-root ">
       <header>
         <div className="teams-brand">
-          <img src={minilogo} className=" brand-logo"></img>
-          <span className="teams-label">Our Teams</span>
+          <img src={minilogo} className="brand-logo"></img>
+          <span className="brand-name-update">Our Teams</span>
         </div>
         <div className="teams-heading">
           <div className="teams-heading-inner">

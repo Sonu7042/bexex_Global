@@ -22,6 +22,7 @@ import logo18 from '../assets/Links/pngimg.com - samsung_logo_PNG9.png'
 import logo19 from '../assets/Links/tata-consumer-products-logo-freelogovectors.net_.png'
 import logo20 from '../assets/Links/Tata_logo.svg.png'
 import logo21 from '../assets/Links/ultratech-cement-logo.png'
+import Buttons from "./Buttons";
 
 const clientImgs = [
  logo1,
@@ -56,7 +57,7 @@ const Clients = () => (
 
     <div className="section-header">
      <img className=" brand-logo" src={BgX} alt="" />
-      <span className="title .applyfont">Our Clients</span>
+      <span className=" brand-name-update applyfont">Our Clients</span>
     </div>
     <div className="clients-box">
       <div className="clients-grid">
@@ -67,7 +68,9 @@ const Clients = () => (
         ))}
       </div>
       <div className="clients-discover-btn applyfont">
-        Discovery more <span className="arrow">→</span>
+        Discovery more 
+        {/* <span className="arrow">→</span> */}
+        <Buttons />
       </div>
     </div>
   </div>

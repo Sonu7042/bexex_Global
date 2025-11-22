@@ -32,11 +32,12 @@ export default function CompareConsulting() {
     <div className="compare-root">
       <header className="compare-header">
         <img src={logo} alt="Compare Logo" className="compare-logo" />
-        <span className="compare-title applyfont">Compare</span>
+        <span className=" applyfont brand-name-update">Compare</span>
       </header>
       <h2 className="compare-headline applyfont">
         Evolving from reports to results — 
-        <span className="italic applyfont">how modern consulting delivers real, measurable impact.</span>
+        <span className="italic applyfont">how modern consulting delivers real,</span>
+         measurable impact.
       </h2>
       <div className="compare-subtext applyfont">
         Today's consulting is more than advice — it's collaboration, innovation, and execution.<br />

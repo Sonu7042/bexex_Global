@@ -2,6 +2,8 @@ import React from 'react'
 import Blogs from './Blogs'
 import BlogsGrid from './BlogsGrid'
 import LetsConnect from './LetsConnect'
+import  Footer from './Footer'
+ 
 
 const blogSectionLayout = () => {
   return (
@@ -11,6 +13,8 @@ const blogSectionLayout = () => {
       <BlogsGrid />
     </main>
      <LetsConnect />
+     <Footer />
+
     </>
   )
 }

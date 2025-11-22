@@ -40,14 +40,19 @@ header {
 }
 
 .teams-heading-inner {
-  max-width: 720px;
+  max-width: 70%;
   width: 100%;
+  font-size: 3rem;
+    font-weight: 700;
+    line-height: 108%;
+    padding: 4vh 0 12vh 0;
+
 }
 
-.teams-heading i {
-  font-style: italic;
-  color: #303436;
+.teams-heading i{
+  font-family: Highs;
   padding-right: 5px;
+  margin-right: 6px;
 }
 
 .teams-list {

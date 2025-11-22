@@ -29,28 +29,24 @@ export default function LetsConnect() {
           <span className="connect-dot"></span> Book a meeting
         </button>
       </div>
-      <div className="connect-bottom">
+      {/* <div className="connect-bottom">
         <img src={bexexDesign} className="connect-logo" alt="Brand logo" />
         <div className="connect-socials">
           <a href="#" aria-label="Instagram">
-            {/* <img src={"instagramIcon"} alt="Instagram" /> */}
            <BsFacebook color="white" size={30} />
 
           </a>
           <a href="#" aria-label="Twitter">
-            {/* <img src={"twitterIcon"} alt="Twitter" /> */}
             <FaSquareInstagram  color="white" size={30}/>
           </a>
           <a href="#" aria-label="YouTube">
-            {/* <img src={"youtubeIcon"} alt="YouTube" /> */}
             <IoLogoYoutube   color="white" size={30}/>
           </a>
           <a href="#" aria-label="Twitter">
-            {/* <img src={"youtubeIcon"} alt="YouTube" /> */}
             <FaTwitter   color="white" size={30}/>
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

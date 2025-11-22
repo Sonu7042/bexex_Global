@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "../Css/home.css";
 import cardImg from "../assets/images/homeImg.png";
 import miniLogo from '../assets/images/miniLogo.png';
+import Buttons from "./Buttons";
 
 export default function Home() {
   const gridRef = useRef(null);
@@ -119,7 +120,7 @@ export default function Home() {
             <h1 className="hero-title" style={{ position: "relative", zIndex: 1 }}>
               Your Partner in Building Safer,
               Compliant, and{" "}
-              <span className="highlight">High-Performing</span>
+              <span className="itly">High-Performing</span>
               <br />
               Operations
             </h1>
@@ -131,11 +132,13 @@ export default function Home() {
 
             <button className="discover-btn applyFont" style={{ position: "relative", zIndex: 1 }}>
               Discover more
-              <span className="discover-icon">
+              {/* <span className="discover-icon">
                 <svg width="17" height="17" fill="none" stroke="#fff" strokeWidth="3">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 4l6 4.5-6 4.5" />
                 </svg>
-              </span>
+              </span> */}
+              <Buttons />
+
             </button>
           </section>
 
@@ -151,14 +154,21 @@ export default function Home() {
                 <div className="card-subtext applyFont">
                   Integrated EHS, Quality, and Sustainability solutions designed for lasting business excellence.
                 </div>
-                <button className="card-btn">
+
+                {/* <button className="card-btn">
                   <span>Discover more</span>
                   <span className="card-icon">
                     <svg width="12" height="12" fill="none" stroke="#fff" strokeWidth="2">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4 3l4 3-4 3" />
                     </svg>
                   </span>
-                </button>
+                </button> */}
+
+                <div className="card-btn">
+                  <span>Discover more</span>
+                  <Buttons/>
+                </div>
+
               </div>
               <div className="card-image">
                 <img src={cardImg} alt="Card artwork" />
@@ -187,9 +197,11 @@ export default function Home() {
               <button className="card-btn">
                 <span>Discover more</span>
                 <span className="card-icon">
-                  <svg width="12" height="12" fill="none" stroke="#fff" strokeWidth="2">
+              <Buttons />
+                  
+                  {/* <svg width="12" height="12" fill="none" stroke="#fff" strokeWidth="2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4 3l4 3-4 3" />
-                  </svg>
+                  </svg> */}
                 </span>
               </button>
             </div>

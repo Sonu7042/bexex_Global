@@ -8,6 +8,8 @@ import LetsConnect from './LetsConnect'
 import Services from './Services'
 import TeamList from './TeamList'
 import AnimationScrolling from '../animation/AnimationScrolling'
+import Footer from './Footer'
+
 
 
 
@@ -23,7 +25,8 @@ const HeroSectionLayout = () => {
     <Clients/>
     <CompareConsulting/> 
     </main>
-    <LetsConnect/>    
+    <LetsConnect/>   
+     <Footer />
     </>
   )
 }

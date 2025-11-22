@@ -7,7 +7,24 @@
 }
 
 
-h1, h2,h3 span p{
+@font-face {
+    font-family: Highs;
+    src: url("../public/fonts/fonnts.com-Ivy-Presto-Display-.otf");
+}
+
+
+.itly{
+    font-family: Highs;
+    color: #363636;
+
+}
+
+
+
+
+
+
+h1, h2,h3 span p li{
     font-family: heading;
 }
 
@@ -37,6 +54,7 @@ p{
   }
 }
 
+    
 @media (min-width: 1024px) {
   .page_indenation {
     padding-left: 3rem;   /* lg:px-12 */
@@ -44,5 +62,31 @@ p{
   }
 }
 
+
+
+
+
+
+@media (max-width:426px){
+  .brand-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.brand-name{
+  font-size: 1.0rem;
+  line-height: 150%;
+
+}
+}
+
+
+.brand-name-update{
+  font-weight: 700;
+    font-size: 1.5rem;
+    color: #111;
+    margin-left: -1rem;
+    line-height: 150%;
+}
 
 

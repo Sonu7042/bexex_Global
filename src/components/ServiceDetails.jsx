@@ -8,6 +8,6 @@ const ServiceDetails = () => {
 };
 
 
-const NewsLetters = () => <div>Newsletters page</div>;
 
-export { ServiceDetails, NewsLetters };
+
+export default ServiceDetails
