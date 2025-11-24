@@ -76,7 +76,7 @@ const contents = [
       "We believe a knowledgeable and skilled workforce is the key to sustained excellence. Our training programs, offered  through the Chola MS Safety Academy and eGrowth India, are designed to build critical competencies across all levels of  your organization. From foundational safety awareness to advanced leadership skills, we empower your team to own and  drive your EHSQ culture.",
     items: [
       " MANAGEMENT  SYSTEMS TRAINING",
-      " LeADeRshIP & sOFT SKILL",
+      " LEADERSHIP & SOFT SKILL",
       "TECHNICAL  TRAINING",
       "QUALITY TOOLS TRAINING",
       "COMPETENCY  MANAGEMENT",
