@@ -5,7 +5,8 @@ import { BsFacebook } from "react-icons/bs";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
 import { FaTwitter } from "react-icons/fa";
-import bexexDesign from '../assets/images/bexexDesign.png'
+import { Link } from "react-router-dom";
+// import bexexDesign from '../assets/images/bexexDesign.png'
 
 export default function LetsConnect() {
   return (
@@ -25,9 +26,9 @@ export default function LetsConnect() {
         <div className="connect-desc">
           Feel free to contact me if having any questions. I'm available for new projects or just for chatting.
         </div>
-        <button className="connect-btn">
-          <span className="connect-dot"></span> Book a meeting
-        </button>
+        <Link to={"/contact"} className="connect-btn">
+          <span className="connect-dot"></span> Contact Us
+        </Link>
       </div>
       {/* <div className="connect-bottom">
         <img src={bexexDesign} className="connect-logo" alt="Brand logo" />

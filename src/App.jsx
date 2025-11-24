@@ -20,6 +20,7 @@ import { useEffect } from "react";
 import CommunitiesSectionLayout from "./components/CommunitiesSectionLayout";
 import BlogInnerPage from "./components/BlogInnerPage";
 import ResourcesNewsLetter from "./components/ResourcesNewsLetter";
+import Contact from "./components/Contact";
 
 const App = () => {
   // optional Lenis smooth scroll if you want later
@@ -60,6 +61,7 @@ const App = () => {
         <Route path="/resources/blog" element={<BlogSectionLayout/>} />
         <Route path="/resources/newsletters" element={<ResourcesNewsLetter />} />
         <Route path="/innerBlogPage" element={<BlogInnerPage />} />
+        <Route path="/contact" element={<Contact/>}/>
          
       </Routes>
 

@@ -1,0 +1,309 @@
+.enquiry-bg {
+  margin-top: 40px;
+  min-height: 100vh;
+  width: 100%;
+  /* background: #e5e5e5; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.enquiry-container {
+  display: flex;
+  /* background: white; */
+  box-shadow: 5px 5px 0 #000;
+  min-height: 80vh;
+  width: 96vw;
+  max-width: 1400px;
+  margin: 10vw auto;
+}
+
+.enquiry-left, .enquiry-right {
+  flex: 1;
+  padding: 3.5rem 2.3rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.enquiry-left{
+  position: relative;
+}
+
+.enquiry-nav-row {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+.enquiry-nav {
+  font-size: 2.0rem;
+  color: #747474;
+  /* font-family: 'Montserrat', Arial, sans-serif; */
+}
+/* .enquiry-nav-hr {
+  flex: 1;
+  border-top: 1.6px solid #757575;
+  height: 1px;
+} */
+
+.enquiry-title {
+  font-size: 4.1rem;
+  font-weight: 900;
+  font-family: 'Montserrat', Arial, sans-serif;
+  line-height: 1.08;
+  margin-bottom: 0.4rem;
+}
+.enquiry-title-italic {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.enquiry-desc {
+  font-size: 1.15rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #535353;
+  font-weight: 500;
+  margin: 2.2rem 0 2.6rem;
+}
+
+.enquiry-left-email {
+  font-size: 1.3rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #595959;
+}
+.enquiry-email-hr {
+  width: 56%;
+  border-top: 2px solid #999;
+  margin: 0.45rem 0 0.2rem 0;
+}
+
+.enquiry-right {
+  border-left: 1.7px solid #ededed;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.enquiry-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.enquiry-form label {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 500;
+  font-family: 'Montserrat', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.enquiry-form input,
+.enquiry-form textarea {
+  border: none;
+  border-bottom: 1.4px solid #888;
+  background: transparent;
+  font-size: 1.07rem;
+  color: #222;
+  padding: 0.8rem 0 0.2rem 0;
+  outline: none;
+  font-family: 'Montserrat', Arial, sans-serif;
+  transition: border-color 0.2s;
+  resize: none;
+}
+.enquiry-form input:focus,
+.enquiry-form textarea:focus {
+  border-bottom: 1.5px solid #1341be;
+}
+.enquiry-form textarea {
+  min-height: 38px;
+  max-height: 90px;
+}
+
+.enquiry-form-note {
+  font-size: 0.89rem;
+  color: #888;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin-top: 0.2rem;
+  margin-bottom: 0.55rem;
+}
+
+.enquiry-send-btn {
+  /* background: #2186F3; */
+  border: none;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 0.84rem;
+}
+.enquiry-send-arrow {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .enquiry-container {
+    flex-direction: column;
+    min-height: unset;
+    box-shadow: 0 4px 10px #1111;
+  }
+  .enquiry-right {
+    border-left: none;
+    border-top: 1.6px solid #ececec;
+  }
+  .enquiry-left, .enquiry-right {
+    padding: 2.2rem 1rem 1rem 1.2rem;
+  }
+  .enquiry-title {
+    font-size: 2.35rem;
+  }
+  .enquiry-nav-row { gap: 0.7rem; }
+}
+
+@media only screen and (max-width: 600px) {
+  .enquiry-container {
+    width: 100%;
+    margin: 4vw 0; 
+    min-height: unset;
+  }
+  .enquiry-left, .enquiry-right {
+    padding: 1.03rem 0.5rem 0.6rem 0.7rem;
+  }
+  .enquiry-title {
+    font-size: 1.24rem;
+  }
+  .enquiry-desc {
+    font-size: 0.99rem;
+  }
+  .enquiry-left-email { font-size: 1.09rem;}
+  .enquiry-form label { font-size: 0.96rem;}
+}
+
+
+
+@media(min-width:1024px){
+  .enquiry-title{
+    position: absolute;
+    top: -45px;
+  
+  }
+}
+
+
+
+
+/* ----------------------address with map  ---------------------------*/
+.contactmap-bg {
+  /* background: #e5e5e5; */
+  width: 100%;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactmap-container {
+  display: flex;
+  width: 96vw;
+  max-width: 1400px;
+  min-height: 60vh;
+  background: none;
+}
+.contactmap-left {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  background: none;
+  overflow: hidden;
+}
+.contactmap-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+.contactmap-right {
+  flex: 1;
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 400px;
+}
+.contactmap-center {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.contactmap-pin {
+  font-size: 2.8rem;
+  margin-bottom: 1.1rem;
+  display: block;
+}
+.contactmap-title {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+.contactmap-link {
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.09rem;
+  text-decoration: none;
+  margin-bottom: 0.6rem;
+  position: relative;
+  z-index: 1;
+}
+.contactmap-hr {
+  width: 72px;
+  border-top: 2px solid #f2f2c2;
+  margin: 0.7rem auto 0 auto;
+}
+
+@media (max-width: 900px) {
+  .contactmap-container {
+    flex-direction: column;
+    min-height: unset;
+    box-shadow: 0 4px 10px #1111;
+  }
+  .contactmap-left, .contactmap-right {
+    min-height: 220px;
+  }
+  .contactmap-right {
+    border-left: none;
+    border-top: 1.8px solid #ececec;
+  }
+}
+
+@media (max-width: 600px) {
+  .contactmap-bg, .contactmap-container {
+    width: 100vw;
+    min-height: unset;
+    margin: 20px 0px;
+  }
+  .contactmap-left, .contactmap-right {
+    min-height: 158px;
+    padding: 0.1rem 0.004rem;
+  }
+  .contactmap-title { font-size: 1.12rem; }
+  .contactmap-pin { font-size: 2rem; }
+}
+
