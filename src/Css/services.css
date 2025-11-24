@@ -207,3 +207,21 @@
 
 
 
+@media(max-width:426px){
+
+  .services-left{
+    width: 100%;
+  
+  }
+
+
+  .services-right{
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  
+.services-hero{
+  margin-bottom: 0px;
+}
+}
