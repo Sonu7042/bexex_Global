@@ -25,7 +25,7 @@
 }
 
 .footer-col {
-  flex: 1 1 0;
+  /* flex: 1 1 0; */
   min-width: 160px;
   display: flex;
   flex-direction: column;
@@ -44,12 +44,26 @@
 }
 
 .footer-link {
-  color: #fff;
+  color: #e8e8e8;
   text-decoration: none;
-  font-size: 1.09em;
+  font-size: 0.98em;
   margin-bottom: 13px;
   cursor: pointer;
+  /* letter-spacing: 0.5px; */
+}
+
+.number-link{
+  font-size: 0.98em;
+  color: #e8e8e8;
+  cursor: pointer;
   letter-spacing: 0.5px;
+
+  
+}
+
+  
+.service_links{
+  margin-bottom: 7px;
 }
 
 .footer-side {

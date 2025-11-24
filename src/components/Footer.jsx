@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="footer-col">
             <div className="footer-title applyfont">Contact</div>
             <a href="mailto:bexex@official.com" className="footer-link applyfont">bexex@official.com</a>
-            <div className='applyfont'>9/+ 95823 90987</div>
+            <div className='applyfont number-link'>9/+ 95823 90987</div>
             <div className="footer-title margin-top applyfont">bexex address</div>
             <div className='applyfont'>o-100 ranbom place</div>
             <div className='applyfont'>New Delhi - 110084</div>
@@ -29,12 +29,12 @@ export default function Footer() {
           </div>
           <div className="footer-col">
             <div className="footer-title applyfont">Services</div>
-            <div className='applyfont'>Environment, health & safety (ehs) solution</div>
-            <div className='applyfont'>Managements systems & compliance</div>
-            <div className='applyfont'>Training & competency development</div>
-            <div className='applyfont'>Software & digital solution</div>
-            <div className='applyfont'>Sustainability & ESG services</div>
-            <div className='applyfont'>Quality & business excellence</div>
+            <div className='applyfont service_links'>Environment, health & safety (ehs) solution</div>
+            <div className='applyfont service_links'>Managements systems & compliance</div>
+            <div className='applyfont service_links'>Training & competency development</div>
+            <div className='applyfont service_links'>Software & digital solution</div>
+            <div className='applyfont service_links'>Sustainability & ESG services</div>
+            <div className='applyfont service_links'>Quality & business excellence</div>
           </div>
           <div className="footer-col">
             <div className="footer-title applyfont">Resources</div>
