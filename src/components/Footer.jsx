@@ -16,25 +16,25 @@ export default function Footer() {
           {/* Left columns */}
           <div className="footer-col">
             <div className="footer-title applyfont">Contact</div>
-            <a href="mailto:bexex@official.com" className="footer-link applyfont">bexex@official.com</a>
-            <div className='applyfont number-link'>9/+ 95823 90987</div>
-            <div className="footer-title margin-top applyfont">bexex address</div>
-            <div className='applyfont'>o-100 ranbom place</div>
+            <a href="mailto:bexex@official.com" className="footer-link applyfont">Bexex@official.com</a>
+            <div className='applyfont number-link'>91/+ 95823 90987</div>
+            <div className="footer-title margin-top applyfont">Bexex Address</div>
+            <div className='applyfont'>O-100 ranbom place</div>
             <div className='applyfont'>New Delhi - 110084</div>
           </div>
           <div className="footer-col">
             <div className="footer-link applyfont">Home</div>
-            <div className="footer-link applyfont">About us</div>
-            <div className="footer-link applyfont">communities</div>
+            <div className="footer-link applyfont">About Us</div>
+            <div className="footer-link applyfont">Communities</div>
           </div>
           <div className="footer-col">
             <div className="footer-title applyfont">Services</div>
-            <div className='applyfont service_links'>Environment, health & safety (ehs) solution</div>
-            <div className='applyfont service_links'>Managements systems & compliance</div>
-            <div className='applyfont service_links'>Training & competency development</div>
-            <div className='applyfont service_links'>Software & digital solution</div>
-            <div className='applyfont service_links'>Sustainability & ESG services</div>
-            <div className='applyfont service_links'>Quality & business excellence</div>
+            <div className='applyfont service_links'>Environment, Health & Safety (EHS) Solution</div>
+            <div className='applyfont service_links'>Managements Systems & Compliance</div>
+            <div className='applyfont service_links'>Training & Competency Development</div>
+            <div className='applyfont service_links'>Software & Digital Solution</div>
+            <div className='applyfont service_links'>Sustainability & ESG Services</div>
+            <div className='applyfont service_links'>Quality & Business Excellence</div>
           </div>
           <div className="footer-col">
             <div className="footer-title applyfont">Resources</div>

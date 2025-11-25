@@ -90,3 +90,11 @@ p{
 }
 
 
+
+
+/* use for reponsive for comming soon page  */
+@media(max-width:375px){
+  .commingText{
+    font-size: 20px;
+  }
+}

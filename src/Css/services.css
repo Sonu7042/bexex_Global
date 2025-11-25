@@ -12,7 +12,7 @@
   flex-direction: column;
   gap: 2.5rem;
   width: 100%;
-  margin-bottom: 12vh;
+  margin-bottom: 6vh;
 }
 
 @media (min-width: 1024px) {
@@ -50,6 +50,13 @@
   }
 }
 
+
+
+
+
+
+
+
 /* ====== IMAGE & CARDS ====== */
 .services-grid {
   display: flex;
@@ -57,6 +64,7 @@
   align-items: center;
   gap: 2rem;
   margin-top: 4rem;
+  height: 54vh;
 }
 
 @media (min-width: 900px) {
@@ -89,12 +97,14 @@
   flex-direction: column;
   gap: 20px;
   flex: 1;
+  height: 100%;
 }
 
 .service-row {
   display: flex;
   gap: 20px;
   transition: all 0.3s ease;
+  height: 50%;
 }
 
 
@@ -122,16 +132,19 @@
 }
 
 .service-card-title {
-  font-size: 1.3em;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .service-card-plus {
-  background: #3578f6;
-  color: #fff;
-  border-radius: 8px;
-  padding: 4px 12px;
-  font-size: 1.3em;
+ background: #3578f6;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 8px;
+    font-size: 1.3em;
+}
+.service-card:hover .service-card-plus{
+  background-color:black;
 }
 
 .service-card-desc {
@@ -144,7 +157,7 @@
 /* ====== Hover animation ====== */
 .service-card.expanded {
   flex: 1.6;
-  transform: scale(1.03);
+  /* transform: scale(1.03); */
   z-index: 2;
 }
 .service-card.shrunk {
@@ -224,4 +237,47 @@
 .services-hero{
   margin-bottom: 0px;
 }
+}
+
+
+
+/* Hide descriptions by default on desktop and laptop (min-width: 769px) */
+@media (min-width: 769px) {
+  .service-card-desc {
+    display: none;
+  }
+
+  /* Show description when the card is hovered */
+  .service-card:hover .service-card-desc {
+    display: block;
+  }
+}
+
+/* On smaller screens (mobile/tablet), keep descriptions visible */
+@media (max-width: 768px) {
+  .service-card-desc {
+    display: block;
+  }
+}
+
+
+@media(max-width:768px){
+  .services-grid{
+    height: auto;
+  }
+}
+
+
+
+@media (max-width:375px){
+  .service-card-plus{
+    padding: 5px 5px;
+  }
+  .service-card-title {
+    font-size: 1.7rem;
+
+  }
+  .service-card-desc {
+    font-size: 1.0rem;
+  }
 }

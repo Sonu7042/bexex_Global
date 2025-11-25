@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
 
 const Communities = () => {
   return (
-    <div>
-      Communities
-    </div>
-  )
-}
+    <div className="flex justify-center items-center h-[80vh] flex-col gap-3 sm:gap-4">
 
-export default Communities
+  <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold animate-fade-up text-center">
+    Coming Soon
+  </h1>
+
+  <p className="text-base sm:text-lg md:text-xl animate-fade text-center">
+    Under Construction...
+  </p>
+
+</div>
+  );
+};
+
+export default Communities;

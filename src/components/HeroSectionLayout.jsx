@@ -9,6 +9,7 @@ import Services from './Services'
 import TeamList from './TeamList'
 import AnimationScrolling from '../animation/AnimationScrolling'
 import Footer from './Footer'
+import CardScrollCenter from './Resources'
 
 
 
@@ -21,6 +22,7 @@ const HeroSectionLayout = () => {
     <Home />
     <Services/>
     <AnimationScrolling />
+    {/* <CardScrollCenter /> */}
     <TeamList/>
     <Clients/>
     <CompareConsulting/> 

@@ -1,11 +1,11 @@
 import React from 'react'
+import Communities from './Communities'
 
 const CommunitiesSectionLayout = () => {
   return (
     <>
     <main className='px-4 md:px-16 lg:px-12'>
-    <h2>Comming Soon Communities Section</h2>
-
+     <Communities />
     </main>
       
     </>

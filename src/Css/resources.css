@@ -4,13 +4,13 @@
 /* Section to exactly fit viewport width */
 .center-scroll-section {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   /* background: #f0f0f0; */
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  overflow-y: hidden; /* if vertical scroll also not needed outside */
+  /* overflow-x: hidden;  */
+  /* overflow-y: hidden;  */
   box-sizing: border-box; /* Calculate paddings inside width */
 }
 
@@ -56,11 +56,11 @@
   gap: 20px;
  
 }
-
-
 .rowWise{
   flex-direction: column;
 }
+
+
 
 /* Responsive adjustments */
 @media (max-width: 850px) {
