@@ -2,6 +2,7 @@ import React from 'react'
 import "../Css/resourceNewsLetter.css"
 import LetsConnect from './LetsConnect'
 import Footer from './Footer'
+import {LearnMoreButton} from './Buttons'
 
 const ResourcesNewsLetter = () => {
   return (
@@ -9,7 +10,7 @@ const ResourcesNewsLetter = () => {
     <section className="page_indenation">
         <div className="newsletter-label applyfont">
           {/* <span className="newsletter-icon">✉️</span> */}
-          <div class="brand-logo">
+          <div className="brand-logo">
             <img alt="miniLogo" src="/src/assets/images/miniLogo.png"/>
           </div>
            Newsletter
@@ -51,9 +52,14 @@ const ResourcesNewsLetter = () => {
             <small className='applyfont'>
               By clicking 'Subscribe' you're confirming that you agree with our Terms and Conditions.
             </small>
-            <button type="submit" className="newsletter-submit">
+            {/* <button type="submit" className="newsletter-submit">
               <span>&rarr;</span>
-            </button>
+            </button> */}
+
+          <div className='newsletter-submit' >
+
+          <LearnMoreButton text="Submit" color="white" />
+          </div>
           </form>
         </div>
       </div>

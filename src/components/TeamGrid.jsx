@@ -59,10 +59,10 @@ const TeamGrid = () => (
         </div>
       ))}
     </div>
-    <div className="team-footer">
+    {/* <div className="team-footer">
       <span>Explore Careers</span>
       <span className="team-footer-arrow">→</span>
-    </div>
+    </div> */}
   </div>
 );
 

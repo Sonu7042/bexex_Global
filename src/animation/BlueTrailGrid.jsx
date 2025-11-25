@@ -17,7 +17,7 @@ const BlueTrailGrid = () => {
 
       for (let i = 0; i < cols * rows; i++) {
         const cell = document.createElement("div");
-        cell.classList.add("cell");
+        cell.classNameList.add("cell");
         grid.appendChild(cell);
       }
 
@@ -37,11 +37,11 @@ const BlueTrailGrid = () => {
           const randomFlash = Math.random() < 0.3;
 
           if (randomFlash) {
-            cell.classList.add("flash");
-            setTimeout(() => cell.classList.remove("flash"), 200);
-          } else if (!cell.classList.contains("active")) {
-            cell.classList.add("active");
-            setTimeout(() => cell.classList.remove("active"), 350);
+            cell.classNameList.add("flash");
+            setTimeout(() => cell.classNameList.remove("flash"), 200);
+          } else if (!cell.classNameList.contains("active")) {
+            cell.classNameList.add("active");
+            setTimeout(() => cell.classNameList.remove("active"), 350);
           }
         }
 
@@ -56,10 +56,10 @@ const BlueTrailGrid = () => {
             const midIndex = midY * cols + midX;
             if (midIndex >= 0 && midIndex < cells.length) {
               const cell = cells[midIndex];
-              if (!cell.classList.contains("active")) {
-                cell.classList.add("active");
+              if (!cell.classNameList.contains("active")) {
+                cell.classNameList.add("active");
                 cell.style.opacity = 0.9 - i * 0.1;
-                setTimeout(() => cell.classList.remove("active"), 250);
+                setTimeout(() => cell.classNameList.remove("active"), 250);
               }
             }
           }
@@ -74,9 +74,9 @@ const BlueTrailGrid = () => {
       const flickerInterval = setInterval(() => {
         const randomIndex = Math.floor(Math.random() * cells.length);
         const cell = cells[randomIndex];
-        if (!cell.classList.contains("active")) {
-          cell.classList.add("flicker");
-          setTimeout(() => cell.classList.remove("flicker"), 900);
+        if (!cell.classNameList.contains("active")) {
+          cell.classNameList.add("flicker");
+          setTimeout(() => cell.classNameList.remove("flicker"), 900);
         }
       }, 200);
 

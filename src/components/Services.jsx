@@ -2,7 +2,7 @@
   import "../Css/services.css";
   import serviceImg from "../assets/images/serviceImg.png";
   import minilogo from "../assets/images/miniLogo.png";
-  import Buttons from "./Buttons";
+  // import {LearnMoreButton} from "./Buttons";
 
   export default function Services() {
     const cardData = [
@@ -51,12 +51,12 @@
               </span>
             </button> */}
 
-            <div className="learn-btn">
+            {/* <div className="learn-btn">
               <span>Learn more</span>
-              <Buttons />
+              <LearnMoreButton />
 
 
-            </div>
+            </div> */}
           </div>
 
           <div className="services-right applyfont">
@@ -93,7 +93,7 @@
                         <span className="service-card-title">{card.title}</span>
                         <span className="service-card-plus">
                           
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg>
+                            <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg>
                           
                         </span>
                       </div>

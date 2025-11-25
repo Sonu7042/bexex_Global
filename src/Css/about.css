@@ -305,7 +305,10 @@
   max-width: 900px;
 
 }
-
+.glance-headline::selection{
+  background-color: #828282;
+  color: white;
+}
 .discover-row {
   display: flex;
   align-items: center;

@@ -3,7 +3,8 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
 import "../Css/animationScrolling.css";
-import Buttons from "../components/Buttons";
+import {LearnMoreButton} from "../components/Buttons";
+
 
 const contents = [
   {
@@ -23,7 +24,7 @@ const contents = [
     number: "2",
     title: "QUALITY & BUSINESS  EXCELLENCE",
     description:
-      "Powered by our eGrowth India brand, our Quality & Business Excellence services are designed to transform your operations  into engines of efficiency and value. We implement world-class methodologies that streamline processes, eliminate waste,  and build a culture of high performance. We partner with you to not only meet quality standards but to set new benchmarks  for excellence in your industry.",
+      "Powered by our eGrowth India brand, our Quality & Business Excellence services are designed to transform your operations  into engines of efficiency and value. We implement world-className methodologies that streamline processes, eliminate waste,  and build a culture of high performance. We partner with you to not only meet quality standards but to set new benchmarks  for excellence in your industry.",
     items: [
       "SIX  SIGMA",
       "5-S WORKPLACE  ORGANIZATION",
@@ -100,59 +101,66 @@ const AnimatedScrollSection = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  useEffect(() => {
-    if (isMobile) {
-      // Do not initialize GSAP and ScrollTrigger on mobile
-      return;
+ useEffect(() => {
+  if (isMobile) {
+    // Show first card content and number on mobile - no animation
+    if (numbersRef.current[0]) {
+      gsap.set(numbersRef.current[0], { y: "0%" });
     }
-
-    gsap.registerPlugin(ScrollTrigger);
-
-    const lenis = new Lenis({ smooth: true, lerp: 0.08 });
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
+    if (contentsRef.current[0]) {
+      gsap.set(contentsRef.current[0], { x: "0%", opacity: 1, pointerEvents: "auto" });
     }
+    return;
+  }
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const lenis = new Lenis({ smooth: true, lerp: 0.08 });
+
+  function raf(time) {
+    lenis.raf(time);
     requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
 
-    lenis.on("scroll", ScrollTrigger.update);
+  lenis.on("scroll", ScrollTrigger.update);
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".asc-section",
-        start: "top top",
-        end: "+=5000",
-        scrub: true,
-        pin: true,
-      },
-    });
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".asc-section",
+      start: "top top",
+      end: "+=5000",
+      scrub: true,
+      pin: true,
+    },
+  });
 
-    contents.forEach((_, i) => {
-      const num = numbersRef.current[i];
-      const content = contentsRef.current[i];
+  contents.forEach((_, i) => {
+    const num = numbersRef.current[i];
+    const content = contentsRef.current[i];
 
-      if (i === 0) {
-        tl.to(num, { y: "0%", duration: 1 }, i);
-        tl.to(content, { x: "0%", opacity: 1, pointerEvents: "auto", duration: 1 }, i);
-      } else {
-        tl.to(numbersRef.current[i - 1], { y: "-100%", duration: 1 }, i);
-        tl.fromTo(num, { y: "100%" }, { y: "0%", duration: 1 }, i);
-        tl.to(contentsRef.current[i - 1], { x: "-100%", opacity: 0, pointerEvents: "none", duration: 1 }, i);
-        tl.fromTo(
-          content,
-          { x: "100%", opacity: 0, pointerEvents: "none" },
-          { x: "0%", opacity: 1, pointerEvents: "auto", duration: 1 },
-          i
-        );
-      }
-    });
+    if (i === 0) {
+      // Initially visible first number and content
+      tl.set(num, { y: "0%" }, 0);
+      tl.set(content, { x: "0%", opacity: 1, pointerEvents: "auto" }, 0);
+    } else {
+      tl.to(numbersRef.current[i - 1], { y: "-100%", duration: 1 }, i);
+      tl.fromTo(num, { y: "100%" }, { y: "0%", duration: 1 }, i);
+      tl.to(contentsRef.current[i - 1], { x: "-100%", opacity: 0, pointerEvents: "none", duration: 1 }, i);
+      tl.fromTo(
+        content,
+        { x: "100%", opacity: 0, pointerEvents: "none" },
+        { x: "0%", opacity: 1, pointerEvents: "auto", duration: 1 },
+        i
+      );
+    }
+  });
 
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-      tl.kill();
-    };
-  }, [isMobile]);
+  return () => {
+    ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    tl.kill();
+  };
+}, [isMobile]);
 
   return (
     <section className="asc-section">
@@ -187,11 +195,12 @@ const AnimatedScrollSection = () => {
                   </li>
                 ))}
               </ul>
-              <div className="asc-action">
+              {/* <div className="asc-action">
                 <span className="asc-discover">Discovery more</span>
-                {/* <button className="asc-nextbtn">&#8594;</button> */}
-                <Buttons />
-              </div>
+                <button className="asc-nextbtn">&#8594;</button>
+              </div> */}
+              <LearnMoreButton  text="Discover more" link="/" marginTop="7"  />
+              
             </div>
           ))}
         </div>

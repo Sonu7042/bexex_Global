@@ -1,6 +1,6 @@
 import React from "react";
 import "../Css/contact.css";
-import Buttons from "./Buttons";
+import {LearnMoreButton} from "./Buttons";
 import Footer from "./Footer";
 
 
@@ -52,7 +52,8 @@ export default function EnquiryForm() {
             </button> */}
             <div className="enquiry-send-btn">
 
-            <Buttons />
+             <LearnMoreButton />
+
             </div>
           </form>
         </div>

@@ -6,6 +6,7 @@ import miniLogo from '../assets/images/miniLogo.png'
 import NewsLetter from "./NewsLetter";
 import LetsConnect from "./LetsConnect";
 import Footer from "./Footer";
+import {LearnMoreButton} from './Buttons'
 
 
 const navItems = [
@@ -20,11 +21,14 @@ const BlogInnerPage = () => (
     <>
   <section className="blog-inner page_indenation">
     <div className="blog-inner-header">
-      <a href="/blogs" className="blog-back-link">
+      {/* <a href="/blogs" className="blog-back-link">
         All blogs 
-        {/* <span className="blog-arrow">&#8594;</span> */}
-        <Link to={"/resources/blog"} class="blogInnerBtn">→</Link>
-      </a>
+        <span className="blog-arrow">&#8594;</span>
+        <Link to={"/resources/blog"} className="blogInnerBtn">→</Link>
+      </a> */}
+
+      {/* Learn */}
+      <LearnMoreButton  text="All blogs" link="/"  marginTop="10"/>
     </div>
     <div className="blog-inner-content">
       <div className="blog-image-wrapper">
@@ -39,12 +43,20 @@ const BlogInnerPage = () => (
         <p className="blog-description">
           Empowering organizations to build cleaner, greener, and future-ready operations through responsible environmental practices and sustainable strategies.
         </p>
-        <a href="#" className="blog-discover-link">
-          Discover more 
-          {/* <span className="blog-arrow">&#8594;</span> */}
-        <span  class="blogInnerBtn">→</span>
 
-        </a>
+
+
+        {/* <a href="#" className="blog-discover-link">
+          Discover more 
+          <span className="blog-arrow">&#8594;</span>
+        <span  className="blogInnerBtn">→</span>
+        </a> */}
+
+      <LearnMoreButton  text="Discover more " link="/"  marginTop="0"/>
+
+
+
+
       </div>
     <div className="blog-brand-bg">
         <img src={miniLogo} alt="miniLogo" />

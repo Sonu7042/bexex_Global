@@ -3,7 +3,7 @@ import React, { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../Css/resources.css";
-import Buttons from "./Buttons";
+import {LearnMoreButton} from "./Buttons";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,7 +22,7 @@ const contents = [
   },
   { number: "2",
      title: "QUALITY & BUSINESS  EXCELLENCE",
-      description: " Powered by our eGrowth India brand, our Quality & Business Excellence services are designed to transform your operations  into engines of efficiency and value. We implement world-class methodologies that streamline processes, eliminate waste,  and build a culture of high performance. We partner with you to not only meet quality standards but to set new benchmarks  for excellence in your industry.", 
+      description: " Powered by our eGrowth India brand, our Quality & Business Excellence services are designed to transform your operations  into engines of efficiency and value. We implement world-className methodologies that streamline processes, eliminate waste,  and build a culture of high performance. We partner with you to not only meet quality standards but to set new benchmarks  for excellence in your industry.", 
       items: ["SIX  SIGMA", "5-S WORKPLACE  ORGANIZATION", "SUPPLIER QUALITY  MANAGEMENT", "LEAN MANAGEMENT", "TOTAL PRODUCTIVE  MAINTENANCE (TPM)"] },
 
   { number: "3",
@@ -114,7 +114,8 @@ export default function CardScrollCenter() {
           <div className="discovery">
             <span>Discovery more</span>
             {/* <button className="arrow-btn  card-icon">→</button> */}
-            <Buttons />
+             <LearnMoreButton />
+
           </div>
         </div>
       </div>

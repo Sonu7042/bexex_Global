@@ -7,6 +7,7 @@ import  miniLogo from '../assets/images/miniLogo.png'
 import journeyImg from '../assets/images/journeyImg.png'
 import TeamGrid from "./TeamGrid";
 import nature from '../assets/images/nature.jpg'
+import { LearnMoreButton } from "./Buttons";
 
 
 
@@ -83,22 +84,17 @@ useEffect(() => {
             that strengthen safety, quality, and sustainability.
           </p>
 
-          <a href="#" className="hero-btn">
+          {/* <a href="#" className="hero-btn">
             Discover more
-            {/* <span className="hero-btn-icon"> */}
-              {/* <svg width="24" height="24" viewBox="0 0 20 20">
-                <rect width="20" height="20" rx="5" fill="#007bff" />
-                <path
-                  d="M6 10.1L10.1 14L14 6"
-                  stroke="#fff"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg> */}
-            {/* </span> */}
-            <span class="arrow">→</span>
-          </a>
+           
+            <span className="arrow">→</span>
+          </a> */}
+
+
+          <LearnMoreButton text="Discover more" link="/" marginTop="20"  />
+
+
+
         </div>
       </section>
 
@@ -152,10 +148,14 @@ useEffect(() => {
           Founded through strategic collaborations with experienced industry professionals, Bexex Global offers tailored solutions for risk management, regulatory compliance, and operational excellence. Our approach is designed to simplify complex systems while ensuring measurable impact and sustainable growth for our clients.
         </p>
       </div>
-        <div className="discover-row">
+
+        {/* <div className="discover-row">
           <span className="discover-text">Discover more</span>
           <span className="discover-arrow">→</span>
-        </div>
+        </div> */}
+
+        <LearnMoreButton text="Discover more" link="/" marginTop="0" />
+
     </div>
 
 

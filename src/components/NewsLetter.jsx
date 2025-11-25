@@ -18,7 +18,7 @@ const NewsLetter = () => {
             {/* Left Side Title */}
             <div className="newsletter-left">
               <div className="newsletter-bar">
-                <div class="brand-logo">
+                <div className="brand-logo">
                     <img alt="miniLogo" src={miniLogo}/>
                 </div>
                 {/* <span className="newsletter-icon">✕</span> */}

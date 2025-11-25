@@ -7,6 +7,7 @@ import { IoLogoYoutube } from "react-icons/io5";
 import { FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 // import bexexDesign from '../assets/images/bexexDesign.png'
+import {MagicButton} from './Buttons'
 
 export default function LetsConnect() {
   return (
@@ -26,8 +27,8 @@ export default function LetsConnect() {
         <div className="connect-desc">
           Feel free to contact me if having any questions. I'm available for new projects or just for chatting.
         </div>
-        <Link to={"/contact"} className="connect-btn">
-          <span className="connect-dot"></span> Contact Us
+        <Link to={"/contact"} className="connect-bt">
+        <MagicButton />
         </Link>
       </div>
       {/* <div className="connect-bottom">

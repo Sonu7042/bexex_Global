@@ -37,7 +37,7 @@
   transform: translateY(100%);
   background-color: transparent;
 }
-.asc-numspan {  /* <-- Updated class name */
+.asc-numspan {  /* <-- Updated className name */
   font-size: 93vh; /* fill the parent vertically (or use 60vw for wide screens) */
   font-weight: bold;
   width: 100%;
