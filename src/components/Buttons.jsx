@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import miniLogo from "../assets/images/miniLogo.png";
 
-// learn btn with hover 
-const LearnMoreButton = ({text, link, marginTop, color}) => {
+// learn btn with hover
+const LearnMoreButton = ({ text, link, marginTop, color }) => {
   return (
     <>
       <style>{`
@@ -56,9 +57,14 @@ const LearnMoreButton = ({text, link, marginTop, color}) => {
     }
       `}</style>
 
-      <Link className="learn-btn"
-      style={{ marginTop: marginTop ? `${marginTop}px` : "0px", color:color }}
-       to={link}>
+      <Link
+        className="learn-btn"
+        style={{
+          marginTop: marginTop ? `${marginTop}px` : "0px",
+          color: color,
+        }}
+        to={link}
+      >
         <span>{text}</span>
 
         <div className="icon-box">
@@ -84,7 +90,7 @@ const LearnMoreButton = ({text, link, marginTop, color}) => {
   );
 };
 
-// btn 2 with hover 
+// btn 2 with hover
 const MagicButton = () => {
   return (
     <>
@@ -146,5 +152,46 @@ const MagicButton = () => {
 };
 
 
+const HeadingComponent = ({text, marginTop}) => {
+  return (
+    <>
+      <style>
+        {`
+      .brand {
+        display: flex;
+        align-items: center;
+        /* gap: 0.75rem; */
+        // margin-bottom: 1.5rem;
+        margin-left: -1rem;
+      }
 
-export {LearnMoreButton, MagicButton};
+      .brand-logo{
+          width: 62px;
+          height: 62px;
+        }
+
+        .brand-name {
+          font-weight: 700;
+          font-size: 1.5rem;
+          color: #111;
+          margin-left: -1rem;
+          line-height: 140%;
+        }
+    `}
+      </style>
+      <div className="brand"
+       style={{
+        position: "relative", 
+        zIndex: 1,
+         marginTop: marginTop ? `${marginTop}px` : "0px",
+          }}>
+        <div className="brand-logo">
+          <img src={miniLogo} alt="miniLogo" />
+        </div>
+        <span className="brand-name">{text}</span>
+      </div>
+    </>
+  );
+};
+
+export { LearnMoreButton, MagicButton, HeadingComponent };

@@ -2,7 +2,7 @@ import React  from "react";
 import "../Css/home.css";
 import cardImg from "../assets/images/homeImg.png";
 import miniLogo from '../assets/images/miniLogo.png';
-import {LearnMoreButton} from "./Buttons"
+import {HeadingComponent, LearnMoreButton} from "./Buttons"
 
 export default function Home() {
   // const gridRef = useRef(null);
@@ -110,12 +110,14 @@ export default function Home() {
           <section className="hero-section" style={{ position: "relative" }}>
             <div className="grid" ></div>
 
-            <div className="brand" style={{ position: "relative", zIndex: 1 }}>
-              <div className="brand-logo">
+            {/* <div className="brand" style={{ position: "relative", zIndex: 1 }}>
+              <div className="brand-logo">  
                 <img src={miniLogo} alt="miniLogo" />
               </div>
               <span className="brand-name">Consulting firm</span>
-            </div>
+            </div> */}
+           <HeadingComponent text="Consulting firm"  marginTop="0"/>
+
 
             <h1 className="hero-title" style={{ position: "relative", zIndex: 1 }}>
               Your Partner in Building Safer,

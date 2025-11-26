@@ -7,7 +7,7 @@ import  miniLogo from '../assets/images/miniLogo.png'
 import journeyImg from '../assets/images/journeyImg.png'
 import TeamGrid from "./TeamGrid";
 import nature from '../assets/images/nature.jpg'
-import { LearnMoreButton } from "./Buttons";
+import { LearnMoreButton, HeadingComponent } from "./Buttons";
 
 
 
@@ -52,13 +52,15 @@ useEffect(() => {
     <>
       <section className="hero-root">
         <nav className="hero-nav">
-          <div className="hero-nav-logo">
+          {/* <div className="hero-nav-logo">
             <svg height="20" width="20" viewBox="0 0 20 20">
               <circle cx="10" cy="10" r="9" fill="#1e90ff" />
             </svg>
             <span>About us</span>
-          </div>
-        </nav>
+          </div> */}
+          
+        </nav> 
+           <HeadingComponent text="About Us"  marginTop="20"/>
 
         <div className="hero-content">
           <h1>
