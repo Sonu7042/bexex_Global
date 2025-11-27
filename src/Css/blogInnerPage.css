@@ -219,7 +219,7 @@
   max-width: 700px;
   font-size: 1.15rem;
   color: #333;
-  margin: 0 0 66px auto;
+  margin: 0 0 0px auto;
   font-weight: 600;
 }
 
@@ -450,15 +450,17 @@
 
 
 @media(max-width:768px){
-  .blogContainerOfIso{
-
-  }
-
   .blogTextOfIso{
     width: 80%;
-  font-size: 1.2rem;
+    font-size: 1.2rem;
+  }
+  
+  .blog-intro {
+    margin-top: 30px;
 
   }
+
+
 
 
 
