@@ -10,16 +10,16 @@
 }
 
 /* NAVBAR */
-.hero-nav {
+/* .hero-nav {
   position: absolute;
   top: 28px;
   left: 34px;
   display: flex;
   align-items: center;
   z-index: 10;
-}
+} */
 
-.hero-nav-logo {
+/* .hero-nav-logo {
   display: flex;
   align-items: center;
   gap: 7px;
@@ -27,7 +27,7 @@
   font-weight: 600;
   font-size: 1.07rem;
   color: #222;
-}
+} */
 
 /* CONTENT */
 .hero-content {
@@ -265,25 +265,25 @@
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
-.glance-nav {
+/* .glance-nav {
   display: flex;
   align-items: center;
-  /* gap: 10px; */
+  
   font-weight: 700;
   color: #222;
   font-size: 1.1rem;
-  /* margin-left: 20px; */
+  
   margin-bottom: 30px;
-}
+} */
 
 .nav-icon {
   color: #2878fa;
   font-size: 1.2em;
 }
 
-.nav-text {
+/* .nav-text {
   margin-left: 4px;
-}
+} */
 
 .glance-center {
   padding: 0 20px;

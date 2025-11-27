@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "../Css/teamlist.css"
-import minilogo from '../assets/images/miniLogo.png'
+// import minilogo from '../assets/images/miniLogo.png'
 import Lenis from 'lenis'
+import { HeadingComponent } from "./Buttons";
 
 const teamData = [
   {
@@ -57,10 +58,14 @@ export default function TeamList() {
   return (
     <div className="teams-root ">
       <header>
-        <div className="teams-brand">
+        {/* <div className="teams-brand">
           <img src={minilogo} className="brand-logo"></img>
           <span className="brand-name-update">Our Teams</span>
-        </div>
+        </div> */}
+
+        <HeadingComponent text="Our Teams"  paddingBottom="3" />
+
+
         <div className="teams-heading">
           <div className="teams-heading-inner">
             A group of dedicated <i>experts committed</i> 

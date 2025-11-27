@@ -3,12 +3,12 @@
   padding: 0 0 2rem 0;
 }
 
-.blog-logo-row {
+/* .blog-logo-row {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-top: 2rem;
-}
+} */
 
 .blog-logo {
   color: #3366cc;
@@ -17,10 +17,10 @@
   letter-spacing: 1px;
 }
 
-.blog-brand {
+/* .blog-brand {
   font-weight: 700;
   font-size: 1.2rem;
-}
+} */
 
 .blog-title {
   text-align: center;

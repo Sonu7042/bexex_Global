@@ -1,8 +1,9 @@
 import React from "react";
 import "../Css/compareConsulting.css";
-import logo from "../assets/images/miniLogo.png"; // Replace with your logo path
+import logo from "../assets/images/miniLogo.png"; 
 import checkIcon from "../assets/images/Vector.png"; // Replace with your icon path
 import singleIcon from "../assets/images/singalVector.png"
+import { HeadingComponent } from "./Buttons";
 
 const data = [
   {
@@ -30,10 +31,15 @@ const data = [
 export default function CompareConsulting() {
   return (
     <div className="compare-root">
-      <header className="compare-header">
+      {/* <header className="compare-header">
         <img src={logo} alt="Compare Logo" className="compare-logo" />
         <span className=" applyfont brand-name-update">Compare</span>
-      </header>
+      </header> */}
+
+      <HeadingComponent text="Compare" paddingBottom="3"  justifyContent="center" />
+
+
+
       <h2 className="compare-headline applyfont">
         Evolving from reports to results — 
         <span className="italic applyfont">how modern consulting delivers real,</span>

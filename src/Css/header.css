@@ -219,6 +219,10 @@ body {
 }
 
 
+.header-service-card:hover .service-icon{
+  background-color: black;
+  color: white;
+}
 
 
 
@@ -248,9 +252,7 @@ body {
 
 }
 
-.service-icon{
-  
-}
+
 
 /* tablet adjustments (<= 950px) */
 
@@ -435,11 +437,11 @@ body {
   scale: 1.02;
 }
 
-.service-icon:hover{
+/* .service-icon:hover{
   background-color: black;
   color: white;
    
-}
+} */
 
 
 @media (max-width:768px){

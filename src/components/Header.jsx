@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../Css/header.css";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
+import header_logo from '../assets/images/header_logo.png'
 
 const menuItems = [
   { label: "HOME", to: "/" },
@@ -37,6 +38,7 @@ const Header = () => {
     setServiceOpen(false);
     setResourceOpen(false);
   };
+
 
   const handleDropdownClick = (e, key) => {
     e.preventDefault();
@@ -80,11 +82,27 @@ const Header = () => {
     }
   }, [menuOpen]);
 
+
+
+
+  const hideMenuList =(menuName)=>{
+    if(menuName=="service"){
+      setServiceOpen(false);
+    }else if (menuName=="resource"){
+      setResourceOpen(false);
+    }
+    
+  }
+  
+
+
+
   return (
     <header className={`header ${searchActive ? "search-open" : ""}`}>
       <div className="header-inner">
         <div className="logo-area">
-          <span className="logo">b e x e x</span>
+          {/* <span className="logo">b e x e x</span> */}
+          <img src={header_logo} alt="header Logo" />
         </div>
 
         <button
@@ -159,7 +177,7 @@ const Header = () => {
       <div className={`service-menu-dropdown services-dropdown ${serviceOpen ? "open" : ""}`}>
         <div className="services-grid_Head">
           {services.map((service, idx) => (
-            <Link className="header-service-card" to={service.link} key={idx}>
+            <Link className="header-service-card" onClick={()=> hideMenuList("service")} to={service.link} key={idx}>
               <div className="service-title">{service.title}</div>
               <span className="service-icon">
                 <MdArrowOutward />
@@ -173,7 +191,7 @@ const Header = () => {
       <div className={`service-menu-dropdown resources-dropdown ${resourceOpen ? "open" : ""}`}>
         <div className="services-grid_Head-resources">
           {resources.map((item, idx) => (
-            <Link className="header-service-card" to={item.link} key={idx}>
+            <Link className="header-service-card" onClick={()=> hideMenuList("resource")}  to={item.link} key={idx}>
               <div className="service-title">{item.title}</div>
               <span className="service-icon">
                 <MdArrowOutward />

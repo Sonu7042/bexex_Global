@@ -1,5 +1,5 @@
 import '../Css/footer.css';
-import footer_img from '../assets/images/footer_logo.png';
+import footer_logo from '../assets/images/footer_logo.png';
 // import qr1 from '../assets/images/qr1.png';
 // import qr2 from '../assets/images/qr2.png';
 import { BsFacebook } from "react-icons/bs";
@@ -61,7 +61,7 @@ export default function Footer() {
           <a href="#" className="footer-bottom-link applyfont">Terms and Conditions</a>
         </div>
       </div>
-      <img src={footer_img} className="footer-bg-logo" alt="footer logo bg" />
+      <img src={footer_logo} className="footer-bg-logo" alt="footer logo bg" />
     </footer>
   );
 }

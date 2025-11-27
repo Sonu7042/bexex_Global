@@ -152,7 +152,7 @@ const MagicButton = () => {
 };
 
 
-const HeadingComponent = ({text, marginTop}) => {
+const HeadingComponent = ({text, marginTop, paddingBottom, justifyContent}) => {
   return (
     <>
       <style>
@@ -175,7 +175,8 @@ const HeadingComponent = ({text, marginTop}) => {
           font-size: 1.5rem;
           color: #111;
           margin-left: -1rem;
-          line-height: 140%;
+          // line-height: 140%;
+        
         }
     `}
       </style>
@@ -184,11 +185,12 @@ const HeadingComponent = ({text, marginTop}) => {
         position: "relative", 
         zIndex: 1,
          marginTop: marginTop ? `${marginTop}px` : "0px",
+         justifyContent:justifyContent? `${justifyContent}` : "left",
           }}>
         <div className="brand-logo">
           <img src={miniLogo} alt="miniLogo" />
         </div>
-        <span className="brand-name">{text}</span>
+        <span className="brand-name applyfont" style={{paddingBottom: paddingBottom? `${paddingBottom}px` : "0px"}}>{text}</span>
       </div>
     </>
   );

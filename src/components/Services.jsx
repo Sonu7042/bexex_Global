@@ -1,8 +1,8 @@
   import React, { useState } from "react";
   import "../Css/services.css";
   import serviceImg from "../assets/images/serviceImg.png";
-  import minilogo from "../assets/images/miniLogo.png";
-  // import {LearnMoreButton} from "./Buttons";
+  // import minilogo from "../assets/images/miniLogo.png";
+  import {HeadingComponent} from "./Buttons";
 
   export default function Services() {
     const cardData = [
@@ -29,10 +29,15 @@
     return (
       <section className="services-section">
         {/* Hero section */}
-        <div className="services-header">
+        {/* <div className="services-header">
               <img src={minilogo} alt="logo" className="brand-logo" />
               <span className="services-title brand-name-update applyfont">Our services</span>
-            </div>
+        </div> */}
+
+        <HeadingComponent text="Our services"  paddingBottom="5" />
+
+
+
         <div className="services-hero">
           
           <div className="services-left">

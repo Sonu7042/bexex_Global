@@ -31,16 +31,15 @@
 }
 
 /* Header styles */
-.section-header {
+/* .section-header {
   display: flex;
   align-items: center;
   font-family: Arial, sans-serif;
   font-weight: bold;
-  /* margin-left: 24px; */
   margin-bottom: 24px;
   position: relative;
   z-index: 2;
-}
+} */
 
 .title {
   /* margin-left: 8px; */

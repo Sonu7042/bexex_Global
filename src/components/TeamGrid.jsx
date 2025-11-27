@@ -1,8 +1,14 @@
 import React from "react";
 import "../Css/TeamGrid.css";
+import { HeadingComponent } from "./Buttons";
 
-import miniLogo from '../assets/images/miniLogo.png'
+// import miniLogo from '../assets/images/miniLogo.png'
 // Replace these with actual image paths or require(...) for assets
+
+
+
+
+
 const teamMembers = [
   {
     name: "Tom Hardy",
@@ -38,10 +44,16 @@ const teamMembers = [
 
 const TeamGrid = () => (
   <div className="team-bg">
-    <nav className="team-nav">
+    {/* <nav className="team-nav">
     <img className="brand-logo" src={miniLogo} alt="miniLogo" />
       <span className="team-nav-title">Teams</span>
-    </nav>
+    </nav> */}
+
+      <HeadingComponent  text="Teams" paddingBottom="0"   justifyContent="center"  />
+
+
+    
+
     <div className="team-heading">
       Leaders in Consulting,<span className="team-italic"> Auditing &amp; Training</span>
       <br />

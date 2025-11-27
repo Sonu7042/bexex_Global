@@ -1,18 +1,24 @@
 import React from "react";
 import "../Css/blog.css";
 import blogImg from "../assets/images/nature.jpg"; 
-import miniLogo from "../assets/images/miniLogo.png"
+// import miniLogo from "../assets/images/miniLogo.png"
+import {HeadingComponent} from './Buttons'
 
 export default function Blogs() {
   return (
     <section className="blog-section  " >
       <header className="blog-header">
-        <div className="blog-logo-row">
+        {/* <div className="blog-logo-row">
           <div className="brand-logo">
           <img alt="miniLogo" src={miniLogo}></img>
           </div>
           <span className="blog-brand">Blog</span>
-        </div>
+        </div> */}
+
+        <HeadingComponent  text="Blog" paddingBottom="4"  />
+        
+
+      
         <h1 className="blog-title">
           Insights That <span className="blog-title-em">Drive Safety</span>,<br />
           Quality & Excellence  

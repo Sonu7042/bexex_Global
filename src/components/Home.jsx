@@ -1,7 +1,6 @@
 import React  from "react";
 import "../Css/home.css";
 import cardImg from "../assets/images/homeImg.png";
-import miniLogo from '../assets/images/miniLogo.png';
 import {HeadingComponent, LearnMoreButton} from "./Buttons"
 
 export default function Home() {
@@ -116,7 +115,7 @@ export default function Home() {
               </div>
               <span className="brand-name">Consulting firm</span>
             </div> */}
-           <HeadingComponent text="Consulting firm"  marginTop="0"/>
+           <HeadingComponent text="Consulting firm"  marginTop="0" paddingBottom="1"/>
 
 
             <h1 className="hero-title" style={{ position: "relative", zIndex: 1 }}>

@@ -30,17 +30,17 @@
   position: relative;
 }
 
-.enquiry-nav-row {
+/* .enquiry-nav-row {
   display: flex;
   align-items: center;
   gap: 1.2rem;
   margin-bottom: 1rem;
-}
-.enquiry-nav {
+} */
+/* .enquiry-nav {
   font-size: 2.0rem;
   color: #747474;
-  /* font-family: 'Montserrat', Arial, sans-serif; */
-}
+  
+} */
 /* .enquiry-nav-hr {
   flex: 1;
   border-top: 1.6px solid #757575;

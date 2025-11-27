@@ -5,26 +5,26 @@
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
-.team-nav {
+/* .team-nav {
   display: flex;
   align-items: center;
   gap: 8px;
   font-weight: 700;
   color: #2878fa;
   font-size: 1.13rem;
-  /* margin-left: 22px; */
+  
   margin-bottom: 18px;
-}
+} */
 
 .team-nav-icon {
   font-size: 1.14em;
   padding-right: 1px;
 }
 
-.team-nav-title {
+/* .team-nav-title {
   color: #222;
   margin-left: 2px;
-}
+} */
 
 .team-heading {
   text-align: center;

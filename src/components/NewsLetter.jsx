@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import miniLogo from '../assets/images/miniLogo.png'
+// import miniLogo from '../assets/images/miniLogo.png'
 import '../Css/newsLetter.css'
+import { HeadingComponent } from './Buttons';
+
 
 
 const NewsLetter = () => {
@@ -14,19 +16,20 @@ const NewsLetter = () => {
   return (
     <>
      <section className="newsletter-bg">
+              <HeadingComponent text="Subscribe"  paddingBottom="5" />
           <div className="newsletter-flex">
             {/* Left Side Title */}
             <div className="newsletter-left">
-              <div className="newsletter-bar">
+              {/* <div className="newsletter-bar">
                 <div className="brand-logo">
                     <img alt="miniLogo" src={miniLogo}/>
                 </div>
-                {/* <span className="newsletter-icon">✕</span> */}
                 <span>
                   <strong>Subscribe</strong> to our{" "}
                   <span className="newsletter-italic">newsletter</span>
                 </span>
-              </div>
+              </div> */}
+
               <h1 className="newsletter-title">
                 Get Expert Tips Straight to <br />
                 <span className="newsletter-title-em">Your Inbox</span>

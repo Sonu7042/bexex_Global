@@ -2,19 +2,22 @@ import React from 'react'
 import "../Css/resourceNewsLetter.css"
 import LetsConnect from './LetsConnect'
 import Footer from './Footer'
-import {LearnMoreButton} from './Buttons'
+import {LearnMoreButton, HeadingComponent} from './Buttons'
 
 const ResourcesNewsLetter = () => {
   return (
     <>
     <section className="page_indenation">
-        <div className="newsletter-label applyfont">
-          {/* <span className="newsletter-icon">✉️</span> */}
+        {/* <div className="newsletter-label applyfont">
           <div className="brand-logo">
             <img alt="miniLogo" src="/src/assets/images/miniLogo.png"/>
           </div>
            Newsletter
-        </div>
+        </div> */}
+
+        <HeadingComponent text="Newsletter" paddingBottom="4" marginTop="20" />
+
+        
 
 
       <div className='newsletter-wrapper'>

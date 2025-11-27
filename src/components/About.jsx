@@ -51,7 +51,7 @@ useEffect(() => {
   return (
     <>
       <section className="hero-root">
-        <nav className="hero-nav">
+        {/* <nav className="hero-nav"> */}
           {/* <div className="hero-nav-logo">
             <svg height="20" width="20" viewBox="0 0 20 20">
               <circle cx="10" cy="10" r="9" fill="#1e90ff" />
@@ -59,8 +59,8 @@ useEffect(() => {
             <span>About us</span>
           </div> */}
           
-        </nav> 
-           <HeadingComponent text="About Us"  marginTop="20"/>
+        {/* </nav>  */}
+           <HeadingComponent text="About Us"  marginTop="20" paddingBottom="5"/>
 
         <div className="hero-content">
           <h1>
@@ -141,10 +141,14 @@ useEffect(() => {
 
 {/* ---------------------------------------------- */}
        <div className="glance-bg">
-      <nav className="glance-nav">
+
+      {/* <nav className="glance-nav">
        <img className="brand-logo" src={miniLogo} alt="miniLogo" />
         <span className="nav-text">About Us – At a Glance</span>
-      </nav>
+      </nav> */}
+
+      <HeadingComponent text="About Us – At a Glance"  paddingBottom="5" />
+
       <div className="glance-center">
         <p className="glance-headline">
           Founded through strategic collaborations with experienced industry professionals, Bexex Global offers tailored solutions for risk management, regulatory compliance, and operational excellence. Our approach is designed to simplify complex systems while ensuring measurable impact and sustainable growth for our clients.

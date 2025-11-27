@@ -1,6 +1,6 @@
 import React from "react";
 import "../Css/contact.css";
-import {LearnMoreButton} from "./Buttons";
+import {LearnMoreButton, HeadingComponent} from "./Buttons";
 import Footer from "./Footer";
 
 
@@ -8,12 +8,15 @@ export default function EnquiryForm() {
   return (
     <>
     <div className="enquiry-bg px-4 md:px-16 lg:px-12">
-          <div className="enquiry-nav-row">
+          {/* <div className="enquiry-nav-row">
             <span className="enquiry-nav">Contact</span>
-            {/* <span className="enquiry-nav-hr"></span> */}
-          </div>
-      <div className="enquiry-container">
-        
+          </div> */}
+
+
+        <HeadingComponent  text="Contact" paddingBottom="4"/>
+
+
+         <div className="enquiry-container">
         {/* Left */}
         <div className="enquiry-left">
           <h1 className="enquiry-title">

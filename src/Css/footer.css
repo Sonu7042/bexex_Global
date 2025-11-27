@@ -5,7 +5,7 @@
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   overflow: hidden;
   z-index: 1;
-  min-height: 95vh;
+  min-height: 98vh;
 }
 
 .footer-content {
@@ -133,18 +133,19 @@
   color: #ababab;
 }
 
+
 .footer-bottom-link {
   color: #ababab;
   text-decoration: none;
 }
 
 .footer-bg-logo {
- position: absolute;
-    left: 60px;
-    bottom: -64px;
-    width: 90vw;
+     position: absolute;
+    left: 100px;
+    bottom: -7px;
+    width: 85vw;
     height: auto;
-    opacity: 0.3;
+    opacity: 0.9;
     pointer-events: none;
     z-index: 1;
 }
