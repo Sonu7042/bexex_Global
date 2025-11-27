@@ -73,6 +73,11 @@ header {
   border-radius: 8px;
 }
 
+.teams-item:hover .teams-tag{
+  background-color: #2c82e0;
+
+}
+
 .teams-info {
   display: flex;
   justify-content: space-between;

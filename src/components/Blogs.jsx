@@ -1,6 +1,6 @@
 import React from "react";
 import "../Css/blog.css";
-import blogImg from "../assets/images/nature.jpg"; 
+import isoImg from "../assets/images/blog_imgs/iso.png"; 
 // import miniLogo from "../assets/images/miniLogo.png"
 import {HeadingComponent} from './Buttons'
 
@@ -37,20 +37,17 @@ export default function Blogs() {
         <h2 className="recent-post-text">Recent Post (08)</h2>
         <div className="blog-card-row">
           <div className="blog-image-wrap">
-            <img src={blogImg} alt="Post" className="blog-image" />
+            <img src={isoImg} alt="Post" className="blog-image" />
           </div>
           <article className="blog-card">
-            <div className="blog-card-header">
+            {/* <div className="blog-card-header">
               <span>20 October 2025</span>
               <span>•</span>
               <span>4 min</span>
-            </div>
-            <h3 className="blog-card-title">Environment & Sustainability</h3>
+            </div> */}
+            <h3 className="blog-card-title">What is ISO: A Comprehensive Overview</h3>
             <p className="blog-card-summary">
-              Climate action begins with responsible choices that reduce emissions and protect natural resources.
-              Effective waste management helps organizations minimize landfill impact and adopt more sustainable routines.
-              Pollution control measures ensure cleaner air, water, and soil for healthier communities.
-              By improving resource efficiency, businesses can lower costs while maximizing performance.
+             ISO is derived from the Greek word "isos," which means "EQUAL''. The word ISO is often used as a prefix in scientific terminology to create new words. Such as: isosceles, isotope. The word ISO is used as an acronym by the International Organization for Standardization which is an independent, non-governmental international organization that develops and publishes standards for a wide range of industries and sectors. It was founded in 1947 and is headquartered in Geneva, Switzerland.
             </p>
             {/* <div className="blog-card-tags">
               <span className="tag">Design</span>
