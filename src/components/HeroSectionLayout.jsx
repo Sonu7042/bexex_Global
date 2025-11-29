@@ -10,6 +10,8 @@ import TeamList from './TeamList'
 import AnimationScrolling from '../animation/AnimationScrolling'
 import Footer from './Footer'
 import CardScrollCenter from './Resources'
+import TeamApartCarousel from './TeamApartCarousel'
+import StatsMarquee from './StatsMarquee'
 
 
 
@@ -20,10 +22,16 @@ const HeroSectionLayout = () => {
     <>
     <main className='px-4 md:px-16 lg:px-12'>
     <Home />
+    </main>
+
+    <StatsMarquee />
+
+    <main className='px-4 md:px-16 lg:px-12'>
     <Services/>
     <AnimationScrolling />
     {/* <CardScrollCenter /> */}
     <TeamList/>
+    {/* <TeamApartCarousel /> */}
     <Clients/>
     <CompareConsulting/> 
     </main>

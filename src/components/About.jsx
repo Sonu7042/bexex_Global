@@ -3,11 +3,12 @@ import "../Css/about.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import video1 from '../assets/video1.mp4'
-import  miniLogo from '../assets/images/miniLogo.png'
+// import  miniLogo from '../assets/images/miniLogo.png'
 import journeyImg from '../assets/images/journeyImg.png'
 import TeamGrid from "./TeamGrid";
 import nature from '../assets/images/nature.jpg'
 import { LearnMoreButton, HeadingComponent } from "./Buttons";
+import Journey from "./Journey";
 
 
 
@@ -84,7 +85,7 @@ useEffect(() => {
           <p className="hero-desc">
             Bexex Global Pvt. Ltd. delivers practical, cost-effective solutions
             that strengthen safety, quality, and sustainability.
-          </p>
+          </p>  
 
           {/* <a href="#" className="hero-btn">
             Discover more
@@ -180,6 +181,8 @@ useEffect(() => {
       <img src={journeyImg} className="journeyImg" alt="journey" />
       </div>
     </div>
+
+    {/* <Journey /> */}
 
     <TeamGrid />
     </>

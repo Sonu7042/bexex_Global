@@ -1,0 +1,155 @@
+
+
+/* section */
+.apart-section {
+    /* padding: 40px 6vw 60px; */
+ height: 80vh;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-content: center;
+}
+
+/* top heading + buttons */
+.apart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.apart-title {
+  margin: 0;
+  font-size: clamp(22px, 3vw, 30px);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.apart-title span {
+  color: #2f6efb;
+}
+
+/* desktop arrow buttons */
+.apart-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.nav-btn-next {
+  background-color: #2f6efb;
+}
+
+/* horizontal cards */
+.apart-row-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.apart-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.apart-row::-webkit-scrollbar {
+  height: 6px;
+}
+.apart-row::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 999px;
+}
+
+/* card style like image */
+.apart-card {
+  position: relative;
+  flex: 0 0 320px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 28px 40px;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03);
+}
+
+.apart-card-line {
+  position: absolute;
+  left: 22px;
+  top: 22px;
+  bottom: 22px;
+  width: 2px;
+  background-color: #111111;
+}
+
+.apart-card-title {
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 40px;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 700;
+  color:#111111;
+}
+
+/* small blue arrow in card */
+.apart-card-arrow {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2f6efb;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* ------- RESPONSIVE ------- */
+
+/* hide nav buttons on small screens, keep swipe scroll */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .apart-section {
+    padding: 28px 16px 40px;
+  }
+
+  .apart-row {
+    gap: 14px;
+  }
+
+  .apart-card {
+    flex: 0 0 260px;
+    padding: 24px 22px 34px;
+  }
+
+  .apart-card-title {
+    font-size: 18px;
+  }
+}
+
+/* larger desktops: slightly wider cards */
+@media (min-width: 1200px) {
+  .apart-card {
+    flex-basis: 360px;
+  }
+}

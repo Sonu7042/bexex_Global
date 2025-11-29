@@ -115,20 +115,17 @@ export default function Home() {
               </div>
               <span className="brand-name">Consulting firm</span>
             </div> */}
-           <HeadingComponent text="Consulting firm"  marginTop="0" paddingBottom="1"/>
+           <HeadingComponent text="Strategic Partner"  marginTop="0" paddingBottom="1"/>
+
 
 
             <h1 className="hero-title" style={{ position: "relative", zIndex: 1 }}>
-              Your Partner in Building Safer,
-              Compliant, and{" "}
-              <span className="itly">High-Performing</span>
-              <br />
-              Operations
+              From Compliance Chaos to Operational{" "}
+              <span className="itly"> Excellence</span>    
             </h1>
 
             <p className="hero-subtext" style={{ position: "relative", zIndex: 1 }}>
-              Integrated EHS, Quality, and Sustainability solutions designed for
-              lasting business excellence.
+             Integrated EHS, Quality, and Sustainability solutions that simplify complexity and deliver measurable results.
             </p>
 
             {/* <button className="discover-btn applyFont" style={{ position: "relative", zIndex: 1 }}>

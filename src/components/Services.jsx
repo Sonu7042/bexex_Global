@@ -8,19 +8,19 @@
     const cardData = [
       {
         title: "Auditing",
-        desc: "Comprehensive auditing solutions to verify compliance and drive continual improvement.",
+        desc: "Independent verification that identifies gaps, ensures compliance, and drives measurable improvement.",
       },
       {
         title: "Consulting",
-        desc: "Guiding organizations with expert consulting to achieve compliance, efficiency, and sustainable growth.",
+        desc: "Strategic guidance that transforms compliance requirements into competitive advantages and growth catalysts.",
       },
       {
         title: "Training",
-        desc: "Building competence and confidence through practical, industry-focused training programs.",
+        desc: "Industry-focused programs that build competence, drive behavior change, and strengthen safety culture.",
       },
       {
         title: "Software Solutions",
-        desc: "Delivering smart, customized software that streamlines operations and enhances performance.",
+        desc: "Custom digital platforms that automate workflows, provide real-time insights, and enable data-driven decisions.",
       },
     ];
 
@@ -38,37 +38,6 @@
 
 
 
-        <div className="services-hero">
-          
-          <div className="services-left">
-          
-            <p className="services-description">
-              We help businesses strengthen systems, ensure compliance, and boost
-              performance through expert consulting, management, audits, and
-              training.
-            </p>
-            {/* <button className="learn-btn applyfont">
-              Learn more
-              <span className="learn-icon">
-                <svg width="17" height="17" fill="none" stroke="#fff" strokeWidth="3">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 4l6 4.5-6 4.5" />
-                </svg>
-              </span>
-            </button> */}
-
-            {/* <div className="learn-btn">
-              <span>Learn more</span>
-              <LearnMoreButton />
-
-
-            </div> */}
-          </div>
-
-          <div className="services-right applyfont">
-            Empowering organizations through expert consulting, management
-            support, audits, and training that drive compliance and performance.
-          </div>
-        </div>
 
         {/* Image and Cards Section */}
         <div className="services-grid">
@@ -110,6 +79,38 @@
             ))}
           </div>
         </div>
+
+
+        
+        <div className="services-hero">
+          
+          
+          <div className="service-inner-hero">
+
+            <div className="services-right applyfont">
+              Comprehensive Solutions Across Six Integrated Domains
+            </div>
+            <p className="services-description">
+              From environment and health safety to digital transformation—we deliver end-to-end expertise that drives compliance and sustainable excellence.
+            </p>
+
+          </div>
+         
+            
+       
+            
+        </div>
+
+
+
+
+      
+
+
+
+
+
+
       </section>
     );
   }

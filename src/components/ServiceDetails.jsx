@@ -31,6 +31,15 @@ const ServiceDetails = () => {
 
   return(
   <>
+  {/* {
+    value.map((item)=>
+      <div key={item.id}>
+        <img src={item.img} alt="" />
+        <p>{item.des}</p>
+      </div>
+
+    )
+  } */}
    
   <div className="flex justify-center items-center h-[80vh] flex-col gap-3 sm:gap-4">
 

@@ -1,6 +1,9 @@
 .blog-grid-section {
   /* background: #f4f4f4; */
   padding: 4.5rem 0;
+  display: flex;
+  justify-content: center;
+
 }
 
 .blog-grid-container {

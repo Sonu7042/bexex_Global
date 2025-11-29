@@ -1,7 +1,7 @@
 /* General layout */
 .home-container {
   min-height: 85vh;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
 }
 
 .home-main {

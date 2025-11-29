@@ -1,0 +1,238 @@
+.journey {
+  background: #e7e7e7;
+  padding: 60px 16px 40px;
+  font-family: "Raleway", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+.journey-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.journey-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.journey-title h2 {
+  font-size: 40px;
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.journey-title .italic {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.journey-arrows {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  border: none;
+  background: #1e90ff;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Timeline marquee (infinite) */
+
+.timeline-marquee {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.timeline-strip {
+  display: flex;
+  gap: 48px;
+  min-width: 100%;
+  position: relative;
+  animation: marquee 25s linear infinite;
+}
+
+.timeline-strip--clone {
+  animation: marquee-clone 25s linear infinite;
+}
+
+/* Timeline items */
+
+.timeline-item {
+  flex: 1;
+  position: relative;
+  padding-top: 40px;
+}
+
+.lamp-post {
+  position: absolute;
+  left: 0;
+  bottom: -80px;
+  width: 8px;
+  height: 220px;
+  background: #222;
+  border-radius: 4px;
+}
+
+.lamp-post::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -6px;
+  width: 40px;
+  height: 8px;
+  border-radius: 4px;
+  background: #333;
+}
+
+.year {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 54px;
+  margin-bottom: 16px;
+}
+
+.desc {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 320px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.image-box img {
+  width: 260px;
+  max-width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Road + car (only lane lines move) */
+
+.road-wrapper {
+  position: relative;
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.road {
+  background: #222;
+  height: 70px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* moving container for dashed line */
+.lane-track {
+  display: flex;
+  gap: 80px;                 /* distance between stripes */
+  animation: lane-move 1.5s linear infinite;
+}
+
+/* individual white dashes */
+.lane-stripe {
+  width: 120px;
+  height: 6px;
+  background: #f5f5f5;
+  border-radius: 3px;
+}
+
+/* car fixed on road */
+.car-img {
+  position: absolute;
+  bottom: 12px;   /* adjust so wheels touch road */
+  left: 8%;
+  width: 230px;
+}
+
+/* Infinite loop keyframes */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-clone {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* only stripes move, road stays fixed */
+@keyframes lane-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-160px); /* stripe width + gap */
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .journey-title h2 {
+    font-size: 32px;
+  }
+
+  .timeline-strip {
+    gap: 32px;
+  }
+
+  .lamp-post {
+    bottom: -60px;
+  }
+
+  .road-wrapper {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .journey-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .journey-title h2 {
+    font-size: 26px;
+  }
+
+  .nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .year {
+    font-size: 40px;
+  }
+
+  .car-img {
+    width: 170px;
+  }
+}

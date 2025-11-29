@@ -23,9 +23,9 @@ export default function LetsConnect() {
           <span className="connect-title">Our Services</span>
           <div className="connect-divider"></div>
         </div>
-        <h1 className="connect-header">Let’s Connect</h1>
+        <h1 className="connect-header">Let's Build Excellence Together</h1>
         <div className="connect-desc">
-          Feel free to contact me if having any questions. I'm available for new projects or just for chatting.
+          Ready to transform compliance into competitive advantage? Contact us for new projects, consultations, or to discuss your specific challenges.
         </div>
         <Link to={"/contact"} className="connect-bt">
         <MagicButton />
