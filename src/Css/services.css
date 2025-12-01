@@ -14,7 +14,7 @@
   width: 100%;
   /* margin-bottom: 6vh; */
   margin-top: 4.5rem;
-  justify-content: right;
+  justify-content: center;
   
 }
 
@@ -218,11 +218,14 @@
   padding-top: 20px;
   font-weight: 600;
   line-height: 114%;
+  text-align: center;
 
 }
 
 .services-right{
-  width: 70%;
+  width: 100%;
+  text-align: center;
+
 }
 
 
@@ -234,10 +237,16 @@
   
   }
 
+  .services-description{
+    text-align: left;
+  }
+
 
   .services-right{
     width: 100%;
     font-size: 1.5rem;
+  text-align: left;
+
   }
 
   

@@ -44,9 +44,9 @@ const Card = ({ title }) => (
   <div className="tmulti-card">
     <span className="tmulti-card-line" />
     <p className="tmulti-card-title">{title}</p>
-    <button className="tmulti-card-arrow" aria-label="Open">
+    {/* <button className="tmulti-card-arrow" aria-label="Open">
       <span className="tmulti-card-arrow-icon">➜</span>
-    </button>
+    </button> */}
   </div>
 );
 

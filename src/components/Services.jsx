@@ -34,7 +34,7 @@
               <span className="services-title brand-name-update applyfont">Our services</span>
         </div> */}
 
-        <HeadingComponent text="Our services"  paddingBottom="5" />
+        <HeadingComponent text="Our Expertise"  paddingBottom="5" />
 
 
 
@@ -79,6 +79,8 @@
             ))}
           </div>
         </div>
+
+        <HeadingComponent text="Our Services"  marginTop="30" paddingBottom="5" />
 
 
         

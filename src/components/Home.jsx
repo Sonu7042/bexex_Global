@@ -177,34 +177,31 @@ export default function Home() {
           </aside>
         </main>
 
+
+
         <div className="mobile-card">
           <div className="card">
             <div className="card-content">
               <div>
                 <div className="card-label applyFont">Consulting firm</div>
                 <div className="card-title_home applyFont">
-                  Your Partner in Building
-                  <b>
-                    Safer, Compliant, and
-                    <i className="highlight applyFont">High-Performing</i>
-                  </b>
-                  Operations
+                  Your Partner in Building Safer, Compliant, and High-Performing Operations
                 </div>
               </div>
               <div className="card-subtext applyFont">
                 Integrated EHS, Quality, and Sustainability solutions designed for lasting business excellence.
               </div>
-              <button className="card-btn">
+               <LearnMoreButton text="Discover more" />
+              {/* <button className="card-btn">
                 <span>Discover more</span>
                 <span className="card-icon">
-               <LearnMoreButton />
 
                   
-                  {/* <svg width="12" height="12" fill="none" stroke="#fff" strokeWidth="2">
+                  <svg width="12" height="12" fill="none" stroke="#fff" strokeWidth="2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4 3l4 3-4 3" />
-                  </svg> */}
+                  </svg>
                 </span>
-              </button>
+              </button> */}
             </div>
             <div className="card-image">
               <img src={cardImg} alt="Card artwork" />
