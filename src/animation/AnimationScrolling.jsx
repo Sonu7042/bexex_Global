@@ -4,6 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
 import "../Css/animationScrolling.css";
 import {LearnMoreButton} from "../components/Buttons";
+import bulet from '../assets/images/bulet.png'
 
 
 const contents = [
@@ -190,7 +191,9 @@ const AnimatedScrollSection = () => {
               <ul className="asc-list">
                 {content.items.map((item, idx) => (
                   <li className="asc-listitem" key={idx}>
-                    <span className="asc-circle"></span>
+                    <span className="asc-circle">
+                      <img src={bulet} alt="icons" />
+                    </span>
                     {item}
                   </li>
                 ))}

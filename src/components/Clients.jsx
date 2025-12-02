@@ -52,8 +52,8 @@ const clientImgs = [
 const Clients = () => (
   <div className="clients-section">
     {/* Decorative Images */}
-    <img src={BgX} alt="" className="bg-x bg-x--top-right" aria-hidden="true" />
-    <img src={BgX} alt="" className="bg-x bg-x--bottom-left" aria-hidden="true" />
+    {/* <img src={BgX} alt="" className="bg-x bg-x--top-right" aria-hidden="true" />
+    <img src={BgX} alt="" className="bg-x bg-x--bottom-left" aria-hidden="true" /> */}
 
     {/* <div className="section-header">
      <img className=" brand-logo" src={BgX} alt="" />
@@ -61,7 +61,7 @@ const Clients = () => (
     </div> */}
 
 
-   <HeadingComponent text="Our Clients"  paddingBottom="3" />
+   <HeadingComponent text="Our Clients"  paddingBottom="0" marginTop="80" />
 
 
     <div className="clients-box">

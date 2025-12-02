@@ -101,9 +101,10 @@
 }
 .asc-circle {
   display: inline-block;
-  width: 18px;
-  height: 18px;
-  border: 2.5px solid #0076ff;
+  width: 15px;
+  height: 15px;
+  /* border: 2.5px solid black; */
+  /* background-color: black; */
   border-radius: 50%;
   margin-right: 12px;
 }
@@ -200,8 +201,8 @@
   }
 
   .asc-circle {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     margin-right: 8px;
   }
 

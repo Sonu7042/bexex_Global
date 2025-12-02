@@ -68,10 +68,8 @@ const TeamList = () => {
 
     <>
      <section className="ht-section">
-       <HeadingComponent text="Our Teams" paddingBottom="1" />
+       <HeadingComponent text="Our Teams" paddingBottom="0" />
       <div className="ht-inner">
-        
-
         {/* main heading + subtext */}
         <div className="ht-content">
           <h1 className="ht-title">
@@ -91,9 +89,9 @@ const TeamList = () => {
 
     <section className="tmulti-section">
       <div className="tmulti-inner">
-        <h2 className="tmulti-heading">
+        {/* <h2 className="tmulti-heading">
           Our multidisciplinary team brings together:
-        </h2>
+        </h2> */}
 
         <div className="tmulti-grid">
           {TOP_CARDS.map((t) => (
@@ -108,7 +106,7 @@ const TeamList = () => {
           <div className="tmulti-bottom-left">
             <p className="tmulti-bottom-label">What Sets</p>
             <p className="tmulti-bottom-label">
-              Our <span className="tmulti-accent">Team</span>
+              Our <span className="tmulti-accent itly">Team</span>
             </p>
             <p className="tmulti-bottom-label">Apart:</p>
           </div>
@@ -132,9 +130,9 @@ const TeamList = () => {
               </div>
 
               <div className="tmulti-bottom-card-pill">
-                <div className="tmulti-bottom-card-circle">
+                {/* <div className="tmulti-bottom-card-circle">
                   <img src={miniLogo} alt="Logo" />
-                </div>
+                </div> */}
               </div>
             </div>
 

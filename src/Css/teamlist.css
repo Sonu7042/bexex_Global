@@ -1,8 +1,4 @@
-/* TeamMultidisciplinary.css */
 
-
-
-/* HeroTeamsTop.css */
 
 :root {
   /* --bg: #f2f2f4; */
@@ -14,38 +10,30 @@
 .ht-section {
   width: 100%;
   min-height: 30vh;
-  background-color: var(--bg);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+  padding-top: 5rem;
 }
 
 /* layout: label left, content right */
 .ht-inner {
-  /* max-width: 1200px;
-  margin: 0 auto;
-  padding: 32px 6vw 60px;
-  box-sizing: border-box; */
-
   display: flex;
   justify-content: center;
+  padding-top: 2rem;
 }
 
-/* HeadingComponent is on the left automatically */
 
-/* main copy block on the right */
-/* .ht-content {
-  max-width: 760px;
-  margin-left: auto;   
-  text-align: left;
-} */
+.ht-content {
+display: flex;
+flex-direction:column ;
+gap:1.4rem;
+
+}
 
 /* main heading */
 .ht-title {
-  margin: 0 0 20px;
-  font-size: clamp(28px, 5vw, 48px);
   line-height: 1.2;
   font-weight: 800;
   text-align: center;
+  font-size: 2.875rem;
 }
 
 .ht-title span {
@@ -54,17 +42,16 @@
 
 /* sub text */
 .ht-sub {
-  margin: 0;
-  font-size: 16px;
+  font-size: 1.3rem;
+  font-weight: 500;
   line-height: 1.5;
-  color: #444444;
-  text-align: left;
+  color: #434343;
 }
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
   .ht-inner {
-    padding: 24px 16px 40px;
+    /* padding: 24px 16px 40px; */
     flex-direction: column;      /* stack on mobile */
     gap: 16px;
   }
@@ -93,16 +80,13 @@
 
 /* Section wrapper */
 .tmulti-section {
-  padding: 64px 15px 80px;
-  /* background: #f1f1f4; */
   display: flex;
-  justify-content: center;
-  box-sizing: border-box;
+  padding-top: 4rem;
 }
 
 .tmulti-inner {
   width: 100%;
-  max-width: 1400px;
+  /* max-width: 1400px; */
 }
 
 /* Heading */
@@ -120,7 +104,7 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 28px 32px;
-  margin-bottom: 48px;
+  margin-bottom: 28px;
 }
 
 .tmulti-card {
@@ -171,15 +155,15 @@
 /* Bottom section */
 .tmulti-bottom {
   display: grid;
-  grid-template-columns: 0.9fr 2.6fr;
-  gap: 28px;
+  grid-template-columns: 0.8fr 2.6fr;
+  gap: 32px;
   align-items: stretch;
 }
 
 .tmulti-bottom-left {
   background: #ffffff;
   border-radius: 14px;
-  padding: 32px 32px 30px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -200,6 +184,7 @@
 
 .tmulti-accent {
   color: #2563eb;
+  
 }
 
 /* .tmulti-bottom-right {
@@ -212,12 +197,10 @@
   background: #ffffff;
   border-radius: 18px;
   display: flex;
-  align-items: stretch;
   justify-content: space-between;
   width: 100%;
-  overflow: hidden;
-  position: relative;
   box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+  height: 100%;
 }
 
 /* Slider area inside big card */
@@ -269,6 +252,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+
   opacity: 0.4;
 }
 
@@ -350,7 +335,7 @@
 /* Small tablets / large phones */
 @media (max-width: 768px) {
   .tmulti-section {
-    padding: 48px 16px 64px;
+    /* padding: 48px 16px 64px; */
   }
 
   .tmulti-grid {

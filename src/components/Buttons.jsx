@@ -160,35 +160,37 @@ const HeadingComponent = ({text, marginTop, paddingBottom, justifyContent}) => {
       .brand {
         display: flex;
         align-items: center;
-        /* gap: 0.75rem; */
-        // margin-bottom: 1.5rem;
-        margin-left: -1rem;
+        gap:8px;
+       
       }
 
       .brand-logo{
-          width: 62px;
-          height: 62px;
+          width: 25px;
+          height: 30px;
         }
 
         .brand-name {
           font-weight: 700;
-          font-size: 1.5rem;
+          font-size: 1.125rem;
           color: #111;
-          margin-left: -1rem;
+          // margin-left: -1rem;
           // line-height: 140%;
         
+        }
+        
+        .miniLogo{
+          width:100%;
+          height: 100%;
         }
     `}
       </style>
       <div className="brand"
        style={{
-        position: "relative", 
-        zIndex: 1,
          marginTop: marginTop ? `${marginTop}px` : "0px",
          justifyContent:justifyContent? `${justifyContent}` : "left",
           }}>
         <div className="brand-logo">
-          <img src={miniLogo} alt="miniLogo" />
+          <img src={miniLogo} alt="miniLogo"  className="miniLogo"/>
         </div>
         <span className="brand-name applyfont" style={{paddingBottom: paddingBottom? `${paddingBottom}px` : "0px"}}>{text}</span>
       </div>

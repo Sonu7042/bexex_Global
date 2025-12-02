@@ -38,15 +38,13 @@ export default function CompareConsulting() {
 
       <HeadingComponent text="Compare" paddingBottom="3"  justifyContent="center" />
 
-
-
       <h2 className="compare-headline applyfont">
-        Evolving from reports to results — 
-        <span className="italic applyfont">how modern consulting delivers real,</span>
+        Evolving from reports to results&nbsp;
+        <span className="itly">how modern consulting delivers real&nbsp;</span>
          measurable impact.
       </h2>
       <div className="compare-subtext applyfont">
-        Today's consulting is more than advice — it's collaboration, innovation, and execution.<br />
+        Today's consulting is more than advice it's collaboration, innovation, and execution.<br />
         We combine data, agility, and practical insights to create lasting business transformation.
       </div>
       <div className="compare-table">

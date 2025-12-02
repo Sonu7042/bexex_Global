@@ -46,7 +46,7 @@
 .footer-link {
   color: #e8e8e8;
   text-decoration: none;
-  font-size: 0.98em;
+  /* font-size: 0.98em; */
   margin-bottom: 13px;
   cursor: pointer;
   /* letter-spacing: 0.5px; */
@@ -141,10 +141,12 @@
 
 .footer-bg-logo {
      position: absolute;
-    left: 100px;
+    /* left: 100px; */
     bottom: -7px;
     width: 85vw;
     height: auto;
+    display: flex;
+    justify-self: center;
     opacity: 0.9;
     pointer-events: none;
     z-index: 1;
