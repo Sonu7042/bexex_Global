@@ -19,8 +19,8 @@ export default function LetsConnect() {
     >
       <div className="connect-content">
         <div className="connect-top">
-          <div className="connect-divider"></div>
-          <span className="connect-title">Our Services</span>
+          <div className="connect-rotate"></div>
+          <span className="connect-title">Contact</span>
           <div className="connect-divider"></div>
         </div>
         <h1 className="connect-header">Let's Build Excellence Together</h1>

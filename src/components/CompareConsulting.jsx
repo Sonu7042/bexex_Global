@@ -36,7 +36,7 @@ export default function CompareConsulting() {
         <span className=" applyfont brand-name-update">Compare</span>
       </header> */}
 
-      <HeadingComponent text="Compare" paddingBottom="3"  justifyContent="center" />
+      <HeadingComponent text="Compare" paddingBottom="0"  justifyContent="center" />
 
       <h2 className="compare-headline applyfont">
         Evolving from reports to results&nbsp;

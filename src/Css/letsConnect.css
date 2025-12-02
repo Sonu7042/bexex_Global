@@ -2,54 +2,67 @@
   min-height: 100vh;
   width: 100%;
   box-sizing: border-box;
-  position: relative;
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   /* border: 2px solid #2fa3ff; */
   /* border-radius: 8px; */
   /* overflow: hidden; */
+  padding-top: 5rem;
 }
 
 .connect-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10vh;
+  /* padding-top: 5rem; */
 }
 
 .connect-top {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 36px;
+  margin-bottom: 6rem;
   color: #fff;
+  width: 100%;
+
 }
 .connect-divider {
-  height: 2px;
-  width: 74px;
-  background: #fff;
-  opacity: 0.3;
-  margin: 0 12px;
-  border-radius: 2px;
+  height: 3px;
+  width: 80px;
+  background: linear-gradient(90deg , #E1E1E2 , #ffffff00);
+  /* opacity: 0.3; */
+  margin: 0 0 0 24px;
+  /* border-radius: 2px; */
+}
+.connect-rotate{
+ background: linear-gradient(90deg , #ffffff00 ,#E1E1E2 ); 
+ margin: 0 24px 0 0;
+ height: 3px;
+  width: 80px;
 }
 .connect-title {
-  font-size: 1.21rem;
+  font-size: 1.5rem;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.02em;
   color: #fff;
 }
 
 .connect-header {
-  font-family: "Poppins", "Inter", Arial, sans-serif;
-  font-size: 3.1rem;
+  font-family: heading;
+  font-size: 4rem;
+  /* max-width: 50vw; */
   font-weight: 600;
-  color: #e2e2e2;
-  margin-bottom: 17px;
+  background: linear-gradient(90deg, #999999 , #fff);
+  /* color: #e2e2e2; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
   text-align: center;
+  /* line-height: 100%; */
 }
 
 .connect-desc {
@@ -173,5 +186,20 @@
   .connect-socials img {
     width: 21px;
     height: 21px;
+  }
+}
+
+
+@media (max-width:426px){
+  .connect-header{
+    font-size: 1.9rem;
+    
+  }
+  .connect-top{
+    width: 100%;
+  }
+
+  .connect-header{
+    width: 100%;
   }
 }

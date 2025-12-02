@@ -182,6 +182,24 @@ const HeadingComponent = ({text, marginTop, paddingBottom, justifyContent}) => {
           width:100%;
           height: 100%;
         }
+
+
+        
+        @media(max-width:426px){
+        .brand-logo{
+          width:15px;
+          height:20px;
+        }
+
+        .brand-name{
+          font-size: 1rem;
+
+        }
+
+       
+             
+        }
+
     `}
       </style>
       <div className="brand"

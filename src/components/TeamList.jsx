@@ -73,7 +73,7 @@ const TeamList = () => {
         {/* main heading + subtext */}
         <div className="ht-content">
           <h1 className="ht-title">
-            Certified Professionals <span>Delivering</span>
+            Certified Professionals <span className="itly">Delivering</span>
             <br />
             Measurable Excellence
           </h1>
