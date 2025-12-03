@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Css/services.css";
-import serviceImg from "../assets/images/serviceImg.png";
+import pushpender from "../assets/images/pushpender.jpg";
 // import minilogo from "../assets/images/miniLogo.png";
 import { HeadingComponent } from "./Buttons";
 
@@ -35,7 +35,7 @@ export default function Services() {
           Comprehensive Solutions Across Six{" "}
           <span className="itly">Integrated</span> Domains
         </div>
-        <p className="services-description">
+        <p className="services-description" data-aos="fade-up">
           From environment and health safety to digital transformation—we
           deliver end-to-end expertise that drives compliance and sustainable
           excellence.
@@ -45,7 +45,7 @@ export default function Services() {
       {/* Image and Cards Section */}
       <div className="services-grid">
         <div className="services-image">
-          <img src={serviceImg} alt="Service" />
+          <img src={pushpender} alt="pushpender" />
         </div>
 
         <div className="service-cards-grid">

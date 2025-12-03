@@ -21,8 +21,25 @@ import CommunitiesSectionLayout from "./components/CommunitiesSectionLayout";
 import BlogInnerPage from "./components/BlogInnerPage";
 import ResourcesNewsLetter from "./components/ResourcesNewsLetter";
 import Contact from "./components/Contact";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const App = () => {
+
+
+
+    useEffect(() => {
+    AOS.init({
+      duration: 800,      // animation duration in ms
+      once: true,         // animate only once
+      easing: "ease-out", // default easing
+    });
+  }, []);
+
+
+
+
   // optional Lenis smooth scroll if you want later
     useEffect(() => {
     // Initialize Lenis
@@ -44,6 +61,10 @@ const App = () => {
     return () => lenis.destroy();
   }, []);
 
+
+
+
+ 
 
 
   return (

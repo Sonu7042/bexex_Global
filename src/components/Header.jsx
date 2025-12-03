@@ -2,7 +2,10 @@ import React, { useState, useEffect } from "react";
 import "../Css/header.css";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
-import header_logo from '../assets/images/header_logo.png'
+import header_logo from '../assets/images/Bexexlogo.png'
+import { LearnMoreButton } from "./Buttons";
+import { FaArrowRight } from "react-icons/fa";
+import { IoIosArrowDown } from "react-icons/io";
 
 const menuItems = [
   { label: "HOME", to: "/" },
@@ -126,7 +129,7 @@ const Header = () => {
                     onClick={(e) => handleDropdownClick(e, item.key)} // prevent default here
                   >
                     {item.label}
-                    <span className="dropdown-icon">&#x25BC;</span>
+                    <span className="dropdown-icon"><IoIosArrowDown /></span>
                   </a>
                 );
               }
@@ -144,7 +147,7 @@ const Header = () => {
 
 
         <div className="search-area">
-          <input
+          {/* <input
             type="text"
             className={`search-input ${searchActive ? "visible" : ""}`}
             placeholder="Search..."
@@ -169,8 +172,30 @@ const Header = () => {
               <circle cx="11" cy="11" r="8" />
               <line x1="21" y1="21" x2="16.6" y2="16.6" />
             </svg>
-          </button>
+          </button> */}
+
+
+      <Link to="/contact">
+        <button className="talk-us">
+      Talk to us
+      <div className="arrow-ho">
+        <svg className="arrow-need" width="20" height="20" viewBox="0 0 24 24">
+          <path
+            d="M5 12h14M13 6l6 6-6 6"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
+        </svg>
+        <span className="fill-bg"></span>
+      </div>
+    </button>
+      </Link>
         </div>
+
+
+
       </div>
 
       {/* SERVICES dropdown */}

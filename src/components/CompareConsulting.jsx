@@ -1,8 +1,8 @@
 import React from "react";
 import "../Css/compareConsulting.css";
 import logo from "../assets/images/miniLogo.png"; 
-import checkIcon from "../assets/images/Vector.png"; // Replace with your icon path
-import singleIcon from "../assets/images/singalVector.png"
+import checkIcon from "../assets/images/thumbUp.png"; // Replace with your icon path
+import singleIcon from "../assets/images/thumbDown.png"
 import { HeadingComponent } from "./Buttons";
 
 const data = [
@@ -53,7 +53,9 @@ export default function CompareConsulting() {
           {data.map((row, i) => (
             <div className="compare-row darker" key={i}>
               <span>{row.traditional}</span>
+              <div className="campareImgwrapper">
               <img src={singleIcon} alt="Check Mark" className="compare-check" />
+              </div>
             </div>
           ))}
         </div>
@@ -62,7 +64,9 @@ export default function CompareConsulting() {
           {data.map((row, i) => (
             <div className="compare-row lighter" key={i}>
               <span>{row.modern}</span>
+              <div className="dardImgWraper">
               <img src={checkIcon} alt="Check Mark" className="compare-check" />
+              </div>
             </div>
           ))}
         </div>

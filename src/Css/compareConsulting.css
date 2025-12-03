@@ -76,8 +76,8 @@
   justify-content: space-between;
   border-radius: 8px;
   font-size: 1.09rem;
+  height: 67px;
   font-weight: 500;
-  padding: 20px 24px;
   box-shadow: 0 2px 5px rgba(0,0,0,.02);
 }
 
@@ -100,11 +100,7 @@
   /* border: 1px solid #f3f3f3; */
 }
 
-.compare-check {
-      width: 30px;
-    height: 20px;
-    margin-left: 14px;
-}
+
 
 /* Responsive Styles */
 @media (max-width: 900px) {
@@ -129,7 +125,6 @@
   }
   .compare-row {
     font-size: 0.97rem;
-    padding: 14px 9px;
   }
   .compare-subtext{
     font-size: 0.875rem;
@@ -143,3 +138,34 @@
     font-size: 0.875rem;
   }
 }
+
+
+
+
+
+.campareImgwrapper{
+  height: 100%;
+  width: 70px;
+  background-color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.dardImgWraper{
+  height: 100%;
+  width: 70px;
+  background-color:#444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.compare-row span{
+  padding-left: 20px;
+
+}
+

@@ -20,7 +20,7 @@ export default function Home() {
             </div>
 
             <div className="heroContainer">
-              <h1
+              <h1 
                 className="hero-title"
               >
                 From Compliance Chaos to Operational{" "}
@@ -30,7 +30,7 @@ export default function Home() {
               <div className="headingWithBox">
                 <div className="gap-between">
                   <p
-                    className="hero-subtext"
+                    className="hero-subtext  "
                   >
                     Integrated EHS, Quality, and Sustainability solutions that
                     simplify complexity and deliver measurable results.
@@ -86,7 +86,7 @@ export default function Home() {
                   Operations
                 </div>
               </div>
-              <div className="card-subtext applyFont">
+              <div className="card-subtext applyFont"  data-aos="fade-up"  data-aos-offset="7000" >
                 Integrated EHS, Quality, and Sustainability solutions designed
                 for lasting business excellence.
               </div>

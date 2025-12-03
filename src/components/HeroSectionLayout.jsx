@@ -22,9 +22,9 @@ const HeroSectionLayout = () => {
     <>
     <main className='px-4 md:px-16 lg:px-12'>
     <Home />
+    <StatsMarquee />
     </main>
 
-    <StatsMarquee />
 
     <main className='px-4 md:px-16 lg:px-12'>
     <Services/>
