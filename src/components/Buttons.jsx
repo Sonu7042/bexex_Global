@@ -17,7 +17,6 @@ const LearnMoreButton = ({ text, link, marginTop, color }) => {
       text-decoration: none;
       color: #000;
       font-weight: 600;
-      // margin-top:10px
     }
 
     .icon-box {

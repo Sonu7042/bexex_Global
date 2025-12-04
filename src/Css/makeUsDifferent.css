@@ -1,0 +1,185 @@
+:root {
+  --wm-blue: #1f6fff;
+  --wm-text: #111;
+}
+
+/* ===================== SECTION ===================== */
+
+.wm-section {
+  padding-top: 5rem;
+  height: auto; 
+}
+
+.wm-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.wm-heading-main {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 110%;
+  font-weight: 600;
+}
+
+.wm-heading-main .itly {
+  color: var(--wm-blue);
+}
+
+/* ===================== ARROWS ===================== */
+
+.wm-arrows {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.wm-arrows button {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  border: none;
+  background: var(--wm-blue);
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.wm-arrows button:hover {
+  background: #1450b3;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ===================== CAROUSEL ===================== */
+
+.wm-carousel-wrapper {
+  height: auto;
+  margin-top: 2rem;
+}
+
+.wm-carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem 0 2rem;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 20%;
+  -webkit-overflow-scrolling: touch;
+
+}
+
+.wm-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.wm-card {
+  scroll-snap-align: center;
+  flex: 0 0 min(65%, 520px);
+  background: #fff;
+  border-radius: 18px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: 0.35s ease;
+  justify-content: space-between;
+}
+
+.wm-card-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.wm-card-text {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+}
+
+/* Active animation */
+.wm-card--active {
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+}
+
+.wm-card--faded {
+  opacity: 0.45;
+  transform: scale(0.94);
+  filter: blur(1px);
+}
+
+/* ===================== TABLET ===================== */
+@media (max-width: 1024px) {
+ 
+  .wm-card {
+    flex-basis: 70%;
+  }
+
+  .wm-carousel {
+    scroll-padding-inline: 15%;
+  }
+}
+
+/* ===================== MEDIUM MOBILE (≤ 768px) ===================== */
+@media (max-width: 768px) {
+  .wm-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wm-arrows {
+    display: none; /* hide desktop arrows */
+  }
+
+  .wm-card {
+    flex-basis: 78%;
+  }
+}
+
+/* ===================== SMALL MOBILE (≤ 600px) ===================== */
+@media (max-width: 600px) {
+  .wm-card {
+    flex-basis: 88%;
+    padding: 1.5rem;
+  }
+
+  .wm-heading-main {
+    font-size: 1.9rem;
+  }
+
+  .wm-carousel {
+    scroll-padding-inline: 12%;
+  }
+}
+
+/* ===================== EXTRA SMALL (≤ 400px) ===================== */
+@media (max-width: 400px) {
+  .wm-card-title {
+    font-size: 1.4rem;
+  }
+
+  .wm-card-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===================== VERY SMALL DEVICES (≤ 360px) ===================== */
+@media (max-width: 360px) {
+  .wm-heading-main {
+    font-size: 1.7rem;
+  }
+
+  .wm-card {
+    flex-basis: 92%;
+    padding: 1.2rem;
+  }
+
+  .wm-card-title {
+    font-size: 1.25rem;
+  }
+}

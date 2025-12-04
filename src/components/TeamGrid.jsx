@@ -1,6 +1,7 @@
 import React from "react";
 import "../Css/TeamGrid.css";
 import { HeadingComponent } from "./Buttons";
+import pushpender from '../assets/images/pushpender.jpg'
 
 // import miniLogo from '../assets/images/miniLogo.png'
 // Replace these with actual image paths or require(...) for assets
@@ -11,33 +12,18 @@ import { HeadingComponent } from "./Buttons";
 
 const teamMembers = [
   {
-    name: "Tom Hardy",
-    title: "SEO & Director",
-    img: "./team1.jpg",
+    name: "Pushpender Sharma",
+    title: "Director",
+    img: pushpender,
   },
   {
-    name: "Abhi kumar",
-    title: "Director",
+    name: "Praveen Sharma",
+    title: "VP Sales & Marketing",
     img: "./team2.jpg",
   },
   {
-    name: "Tom Hardy",
-    title: "SEO & Director",
-    img: "./team1.jpg",
-  },
-  {
-    name: "Tom Hardy",
-    title: "SEO & Director",
-    img: "./team1.jpg",
-  },
-  {
-    name: "Tom Hardy",
-    title: "SEO & Director",
-    img: "./team1.jpg",
-  },
-  {
-    name: "Tom Hardy",
-    title: "SEO & Director",
+    name: "Sanjay Gupta",
+    title: "Taining Director",
     img: "./team1.jpg",
   },
 ];
@@ -54,10 +40,8 @@ const TeamGrid = () => (
 
     
 
-    <div className="team-heading">
-      Leaders in Consulting,<span className="team-italic"> Auditing &amp; Training</span>
-      <br />
-      Working Together to Build Better Organizations
+    <div className="team-heading applyfont">
+      Leaders in Consulting, <span className="itly"> Auditing & Training </span> Working Together to Build Better Organizations
     </div>
 
     <div className="team-grid">

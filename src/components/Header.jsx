@@ -86,15 +86,12 @@ const Header = () => {
   }, [menuOpen]);
 
 
-
-
   const hideMenuList =(menuName)=>{
     if(menuName=="service"){
       setServiceOpen(false);
     }else if (menuName=="resource"){
       setResourceOpen(false);
     }
-    
   }
   
 

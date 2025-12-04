@@ -1,0 +1,221 @@
+:root {
+  --bg: #3b3d41;
+  --card-dark: #6e7075;
+  --card-light: #f0f0f0;
+  --year-muted: #8f9196;
+  --white: #ffffff;
+  --accent: #2f63d9;
+}
+
+/* tall parent so there is scroll area */
+.journey-outer {
+  background: var(--bg);
+  min-height: 200vh; /* enough height for scrolling */
+  margin: 0;
+}
+
+/* sticky full-screen panel */
+.journey-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* two-column layout inside sticky panel */
+.journey-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 3rem 5vw;
+  box-sizing: border-box;
+  display: flex;
+  gap: 4rem;
+  color: var(--white);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* LEFT SIDE */
+.journey-left {
+  flex: 0 0 32%;
+}
+
+.journey-heading {
+  margin: 0 0 3rem;
+  font-size: 2.4rem;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.journey-heading span {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.journey-years {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin-top: 1rem;
+}
+
+.journey-year {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--year-muted);
+  transition: color 0.25s, transform 0.25s;
+}
+
+.journey-year--active {
+  color: var(--white);
+  transform: translateX(6px);
+}
+
+/* RIGHT SIDE (scrolling content inside) */
+.journey-right {
+  flex: 1;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+/* list of cards */
+.journey-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 4rem 0; /* to allow center alignment effect */
+}
+
+/* CARD STYLE */
+.journey-card {
+  display: flex;
+  align-items: stretch;
+  background: rgba(180, 181, 185, 0.35);
+  border-radius: 8px;
+  min-height: 120px;
+  overflow: hidden;
+  opacity: 0.3;
+  transform: scale(0.97);
+  transition: all 0.3s ease;
+}
+
+.journey-card--active {
+  background: var(--card-light);
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.45);
+}
+
+/* left grey year block inside card */
+.journey-card-year {
+  flex: 0 0 140px;
+  background: #b8bbc0;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.journey-card--active .journey-card-year {
+  background: #a0a3a8;
+}
+
+/* right text block */
+.journey-card-text {
+  flex: 1;
+  padding: 1.4rem 1.6rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #111318;
+}
+
+.journey-card:not(.journey-card--active) .journey-card-text {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* SCROLLBAR (optional, can remove) */
+.journey-right::-webkit-scrollbar {
+  width: 6px;
+}
+.journey-right::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .journey-sticky {
+    align-items: flex-start;
+  }
+
+  .journey-inner {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-top: 2rem;
+  }
+
+  .journey-right {
+    max-height: 60vh;
+  }
+
+  .journey-card {
+    flex-direction: column;
+  }
+
+  .journey-card-year {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .journey-heading {
+    font-size: 1.8rem;
+  }
+
+  .journey-year {
+    font-size: 1.8rem;
+  }
+
+  .journey-inner {
+    padding: 2rem 1.5rem;
+  }
+}
+
+
+/* outer still tall so there is page scroll after inner list is done */
+.journey-outer {
+  background: #3b3d41;
+  min-height: 200vh;
+}
+
+/* sticky section fixed on viewport */
+.journey-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* right side scroll area */
+.journey-right {
+  flex: 1;
+  max-height: 70vh;            /* visible window for cards */
+  overflow-y: auto;            /* inner list scrolls */
+  padding-right: 0.5rem;
+  overscroll-behavior-y: contain; /* stop scroll chaining until list ends */
+}
+
+/* cards container with padding so one card sits near center */
+.journey-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 4rem 0;
+}

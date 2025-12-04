@@ -9,6 +9,11 @@ import TeamGrid from "./TeamGrid";
 import nature from '../assets/images/nature.jpg'
 import { LearnMoreButton, HeadingComponent } from "./Buttons";
 import Journey from "./Journey";
+import MakeUsDifferent from './MakeUsDifferent.jsx'
+import pushpender from '../assets/images/pushpender.jpg'
+import WhoWeWorkWith from "./WhoWeWorkWith.jsx";
+import JourneyTimeline from "./JourneyTimeline.jsx";
+
 
 
 
@@ -29,7 +34,7 @@ useEffect(() => {
     "(min-width: 770px)": function() {
       gsap.to(".hero-img-wrap", { 
         scale: 2,
-        y: 550,
+        y: 600,
         ease: "none",
         scrollTrigger: {
           trigger: ".hero-root",
@@ -61,17 +66,18 @@ useEffect(() => {
           </div> */}
           
         {/* </nav>  */}
-           <HeadingComponent text="About Us"  marginTop="20" paddingBottom="5"/>
+           <HeadingComponent text="About Us"  paddingBottom="0"/>
 
         <div className="hero-content">
           <h1>
-            A Trusted Partner in Compliance & Excellence
-            <span className="hero-since">
-              <i className="applyfont">Since 2017</i>
+            A Trusted Partner in Compliance & Excellence&nbsp;
+            <span className="hero-since itly">
+              Since 2017
+              {/* <i className=""></i> */}
             </span>
           </h1>
 
-          <div className="hero-img-wrap">
+          <div className="hero-img-wrap"> 
             {/* <video
               src={}
               autoPlay
@@ -94,13 +100,19 @@ useEffect(() => {
           </a> */}
 
 
-          <LearnMoreButton text="Discover more" link="/" marginTop="20"  />
+          <LearnMoreButton text="Discover more" link="/" marginTop="20"/>
 
 
 
         </div>
       </section>
 
+
+
+      {/* --------------------- */}
+
+      <MakeUsDifferent />
+      {/* ----------------------- */}
 
 {/* --------------------------------------------------------------------- */}
       <div className="about-bg">
@@ -113,26 +125,27 @@ useEffect(() => {
         </div>
         <div className="about-section-card">
           <div className="about-left">
+            <div>
             <h2>Pushpender Sharma</h2>
             <div className="about-title applyfont ">
               Founder &amp; Director, Bexex Global Pvt. Ltd.
             </div>
+            </div>
+
             <p>
-              <strong className="applyfont">
-                At Bexex Global, we believe every organization deserves
-                practical, affordable solutions that simplify compliance and
-                promote excellence.
-              </strong>
-              <br />
+              At Bexex Global, we believe every organization deserves
+              practical, affordable solutions that simplify compliance and
+              promote excellence.
               By turning complexity into clarity, we help build safer
               workplaces, improve quality, and foster sustainable
               growth—empowering businesses to navigate challenges confidently
               and create lasting value.
             </p>
+
           </div>
           <div className="about-right">
             {/* Update the src path as needed */}
-            <img src="./image.jpg" alt="Director" className="about-img" />
+            <img src={pushpender} alt="Director" className="about-img" />
           </div>
         </div>
       </div>
@@ -140,30 +153,11 @@ useEffect(() => {
 
 
 
-{/* ---------------------------------------------- */}
-       <div className="glance-bg">
 
-      {/* <nav className="glance-nav">
-       <img className="brand-logo" src={miniLogo} alt="miniLogo" />
-        <span className="nav-text">About Us – At a Glance</span>
-      </nav> */}
+     {/* ------------------ */}
+     <WhoWeWorkWith />
+        {/* ----------------------- */}
 
-      <HeadingComponent text="About Us – At a Glance"  paddingBottom="5" />
-
-      <div className="glance-center">
-        <p className="glance-headline">
-          Founded through strategic collaborations with experienced industry professionals, Bexex Global offers tailored solutions for risk management, regulatory compliance, and operational excellence. Our approach is designed to simplify complex systems while ensuring measurable impact and sustainable growth for our clients.
-        </p>
-      </div>
-
-        {/* <div className="discover-row">
-          <span className="discover-text">Discover more</span>
-          <span className="discover-arrow">→</span>
-        </div> */}
-
-        <LearnMoreButton text="Discover more" link="/" marginTop="0" />
-
-    </div>
 
 
     {/* <--------------------------------img-section-----------------------> */}
@@ -183,6 +177,9 @@ useEffect(() => {
     </div>
 
     {/* <Journey /> */}
+
+
+    {/* <JourneyTimeline /> */}
 
     <TeamGrid />
     </>
