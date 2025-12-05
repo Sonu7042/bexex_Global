@@ -98,7 +98,7 @@ const Header = () => {
 
 
   return (
-    <header className={`header ${searchActive ? "search-open" : ""}`}>
+    <header className={`header ${searchActive ? "search-open" : ""}`} data-aos="fade-down">
       <div className="header-inner">
         <div className="logo-area">
           {/* <span className="logo">b e x e x</span> */}

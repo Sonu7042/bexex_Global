@@ -61,7 +61,7 @@ export default function Footer() {
           <a href="#" className="footer-bottom-link applyfont">Terms and Conditions</a>
         </div>
       </div>
-      <img src={footer_logo} className="footer-bg-logo" alt="footer logo bg" />
+      <img src={footer_logo} className="footer-bg-logo" alt="footer logo bg"   data-aos="fade-up" />
     </footer>
   );
 }

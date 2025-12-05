@@ -21,6 +21,8 @@ export default function Home() {
 
             <div className="heroContainer">
               <h1 
+                // data-aos="fade-right"
+
                 className="hero-title"
               >
                 From Compliance Chaos to Operational{" "}
@@ -30,6 +32,7 @@ export default function Home() {
               <div className="headingWithBox">
                 <div className="gap-between">
                   <p
+                     data-aos="fade-up"
                     className="hero-subtext  "
                   >
                     Integrated EHS, Quality, and Sustainability solutions that
@@ -42,7 +45,7 @@ export default function Home() {
                   />
                 </div>
 
-                <aside className="hero-card">
+                <aside className="hero-card"  data-aos="fade-up">
                   <div className="heroCard">
                     <div className="card-content">
                       <div>

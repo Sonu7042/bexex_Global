@@ -35,7 +35,7 @@ const BOTTOM_SLIDES = [
 ];
 
 const Card = ({ title }) => (
-  <div className="tmulti-card">
+  <div className="tmulti-card" data-aos="fade-up-left" data-aos-duration="1000" >
     <span className="tmulti-card-line" />
     <p className="tmulti-card-title">{title}</p>
     {/* <button className="tmulti-card-arrow" aria-label="Open">
@@ -79,13 +79,13 @@ const TeamList = () => {
         <div className="ht-inner">
           {/* main heading + subtext */}
           <div className="ht-content">
-            <h1 className="ht-title">
+            <h1 className="ht-title" data-aos="fade-up" data-aos-duration="1000">
               Certified Professionals <span className="itly">Delivering</span>
               <br />
               Measurable Excellence
             </h1>
 
-            <p className="ht-sub">
+            <p className="ht-sub" data-aos="fade-up" data-aos-duration="2000" >
               15+ specialists with 25 years of combined experience in EHS,
               Quality, Risk Management, and Business Strategy.
             </p>
@@ -108,7 +108,7 @@ const TeamList = () => {
             ))}
           </div>
 
-          <div className="tmulti-bottom">
+          <div className="tmulti-bottom"   data-aos="fade-up">
             <div className="tmulti-bottom-left">
               <p className="tmulti-bottom-label">What Sets</p>
               <p className="tmulti-bottom-label">

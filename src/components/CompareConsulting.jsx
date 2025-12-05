@@ -38,17 +38,17 @@ export default function CompareConsulting() {
 
       <HeadingComponent text="Compare" paddingBottom="0"  justifyContent="center" />
 
-      <h2 className="compare-headline applyfont">
+      <h2 className="compare-headline applyfont"   data-aos="fade-up" data-aos-duration="700">
         Evolving from reports to results&nbsp;
         <span className="itly">how modern consulting delivers real&nbsp;</span>
          measurable impact.
       </h2>
-      <div className="compare-subtext applyfont">
+      <div className="compare-subtext applyfont"   data-aos="fade-up" data-aos-duration="900">
         Today's consulting is more than advice it's collaboration, innovation, and execution.<br />
         We combine data, agility, and practical insights to create lasting business transformation.
       </div>
       <div className="compare-table">
-        <div className="compare-column">
+        <div className="compare-column" data-aos="zoom-in-up" data-aos-duration="1000">
           <div className="compare-col-title applyfont">Traditional Consulting Firm</div>
           {data.map((row, i) => (
             <div className="compare-row darker" key={i}>
@@ -59,7 +59,7 @@ export default function CompareConsulting() {
             </div>
           ))}
         </div>
-        <div className="compare-column">
+        <div className="compare-column" data-aos="zoom-in-up" data-aos-duration="1200" >
           <div className="compare-col-title applyfont">Modern Consulting Firm</div>
           {data.map((row, i) => (
             <div className="compare-row lighter" key={i}>

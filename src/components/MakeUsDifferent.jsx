@@ -73,7 +73,7 @@ export default function MakeUsDifferent() {
 
     return () => clearInterval(autoTimerRef.current);
   }, []);
-
+  
   // detect centered card when user scrolls manually
   useEffect(() => {
     const list = listRef.current;
