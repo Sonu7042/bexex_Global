@@ -1,185 +1,209 @@
-:root {
-  --wm-blue: #1f6fff;
-  --wm-text: #111;
+/* SECTION WRAPPER */
+.whyus-wrapper {
+  margin-top: 5rem;
+  height: 100vh;
 }
 
-/* ===================== SECTION ===================== */
-
-.wm-section {
-  padding-top: 5rem;
-  height: auto; 
-}
-
-.wm-header {
-  display: flex;
+/* TOP ROW */
+.whyus-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: flex-start;
-  justify-content: space-between;
-  margin-top: 2rem;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  column-gap: 24px;
+  margin-top: 2.875rem;
 }
 
-.wm-heading-main {
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 110%;
-  font-weight: 600;
-}
-
-.wm-heading-main .itly {
-  color: var(--wm-blue);
-}
-
-/* ===================== ARROWS ===================== */
-
-.wm-arrows {
+/* LOGO AREA */
+.whyus-logo-row {
   display: flex;
-  gap: 0.75rem;
+  align-items: center;
+  gap: 10px;
 }
 
-.wm-arrows button {
+.whyus-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: #2679ff;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.whyus-logo-text {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* HEADING */
+.whyus-heading-box {
+  align-self: center;
+}
+
+.whyus-heading {
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.whyus-heading-accent {
+  font-style: italic;
+  color: var(--accent);
+}
+
+/* ARROW BUTTONS (desktop only) */
+.whyus-arrow-group {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.whyus-arrow-btn {
   width: 44px;
   height: 44px;
   border-radius: 8px;
   border: none;
-  background: var(--wm-blue);
-  color: #fff;
-  font-size: 1.4rem;
+  background: #2a6fdf;
+  color: #ffffff;
   cursor: pointer;
-  transition: 0.2s ease;
+  font-size: 24px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, background 0.15s ease;
 }
 
-.wm-arrows button:hover {
-  background: #1450b3;
+.whyus-arrow-btn:hover {
+  background: #1b62cc;
   transform: translateY(-1px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* ===================== CAROUSEL ===================== */
-
-.wm-carousel-wrapper {
-  height: auto;
-  margin-top: 2rem;
+.whyus-arrow-btn:active {
+  transform: translateY(0);
 }
 
-.wm-carousel {
+/* CAROUSEL STRIP */
+.whyus-carousel {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: nowrap;
+  gap: 32px;
   overflow-x: auto;
-  padding: 1rem 0 2rem;
-  scroll-snap-type: x mandatory;
-  scroll-padding-inline: 20%;
+  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-
 }
 
-.wm-carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.wm-card {
-  scroll-snap-align: center;
-  flex: 0 0 min(65%, 520px);
-  background: #fff;
+/* CARD */
+.whyus-card {
+  flex: 0 0 70%;
+  min-width: 260px;
+  background: var(--card-bg);
   border-radius: 18px;
-  padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  transition: 0.35s ease;
-  justify-content: space-between;
+  padding: 28px 32px 32px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
-.wm-card-title {
-  margin: 0 0 0.75rem;
-  font-size: 1.6rem;
+.whyus-card-title {
+  margin: 0 0 18px;
+  font-size: 26px;
   font-weight: 700;
 }
 
-.wm-card-text {
-  font-size: 1rem;
-  line-height: 1.4rem;
-  font-weight: 500;
+.whyus-card-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-/* Active animation */
-.wm-card--active {
-  opacity: 1;
-  transform: scale(1);
-  filter: blur(0);
-}
+/* ===== RESPONSIVE STYLES ===== */
 
-.wm-card--faded {
-  opacity: 0.45;
-  transform: scale(0.94);
-  filter: blur(1px);
-}
-
-/* ===================== TABLET ===================== */
+/* below 1025px (tablet + mobile) */
 @media (max-width: 1024px) {
- 
-  .wm-card {
-    flex-basis: 70%;
+  .whyus-wrapper {
+    padding: 32px 16px 48px;
   }
 
-  .wm-carousel {
-    scroll-padding-inline: 15%;
+  .whyus-header {
+    grid-template-columns: 1fr;
+    row-gap: 18px;
+  }
+
+  .whyus-logo-row {
+    order: 1;
+  }
+
+  .whyus-heading-box {
+    order: 2;
+  }
+
+  .whyus-arrow-group {
+    display: none; /* no buttons on mobile/tablet */
+  }
+
+  .whyus-heading {
+    font-size: 32px;
+  }
+
+  .whyus-card {
+    padding: 24px 20px 26px;
+  }
+
+  .whyus-card-title {
+    font-size: 22px;
+  }
+
+  .whyus-card-text {
+    font-size: 15px;
   }
 }
 
-/* ===================== MEDIUM MOBILE (≤ 768px) ===================== */
+/* MOBILE ONLY: one card per screen */
 @media (max-width: 768px) {
-  .wm-header {
-    flex-direction: column;
-    align-items: flex-start;
+  .whyus-wrapper {
+    padding-inline: 0;
   }
 
-  .wm-arrows {
-    display: none; /* hide desktop arrows */
+  .whyus-carousel {
+    gap: 0;                               /* no visible second card */
+    scroll-snap-type: x mandatory;        /* snap per card */
   }
 
-  .wm-card {
-    flex-basis: 78%;
-  }
-}
-
-/* ===================== SMALL MOBILE (≤ 600px) ===================== */
-@media (max-width: 600px) {
-  .wm-card {
-    flex-basis: 88%;
-    padding: 1.5rem;
+  .whyus-card {
+    flex: 0 0 100%;                       /* full width card */
+    max-width: 100%;
+    scroll-snap-align: start;
+    border-radius: 18px;
   }
 
-  .wm-heading-main {
-    font-size: 1.9rem;
-  }
-
-  .wm-carousel {
-    scroll-padding-inline: 12%;
+  .whyus-card + .whyus-card {
+    margin-left: 16px;                    /* spacing between slides */
   }
 }
 
-/* ===================== EXTRA SMALL (≤ 400px) ===================== */
-@media (max-width: 400px) {
-  .wm-card-title {
-    font-size: 1.4rem;
+/* large screens (>=1025px) */
+@media (min-width: 1025px) {
+  .whyus-heading {
+    font-size: 60px;
   }
 
-  .wm-card-text {
-    font-size: 0.9rem;
-  }
-}
-
-/* ===================== VERY SMALL DEVICES (≤ 360px) ===================== */
-@media (max-width: 360px) {
-  .wm-heading-main {
-    font-size: 1.7rem;
+  .whyus-carousel {
+    margin-top: 4rem;
   }
 
-  .wm-card {
-    flex-basis: 92%;
-    padding: 1.2rem;
+  .whyus-card {
+    flex: 0 0 40%;
+    max-width: 540px;
+    padding: 36px 40px 40px;
   }
 
-  .wm-card-title {
-    font-size: 1.25rem;
+  .whyus-card-title {
+    font-size: 30px;
+  }
+
+  .whyus-card-text {
+    font-size: 17px;
   }
 }
