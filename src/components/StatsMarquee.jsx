@@ -32,7 +32,7 @@ const StatsSection = () => {
     <section className="stats-section">
       <div className="stats-container">
         {statsData.map((block) => (
-          <div className="stats-card" key={block.title}>
+          <div data-aos="zoom-in-left" className="stats-card" key={block.title}>
             <h3 className="stats-card-title itly">{block.title}</h3>
 
             <div className="stats-card-grid">

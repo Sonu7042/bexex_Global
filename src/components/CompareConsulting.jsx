@@ -48,10 +48,10 @@ export default function CompareConsulting() {
         We combine data, agility, and practical insights to create lasting business transformation.
       </div>
       <div className="compare-table">
-        <div className="compare-column" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div className="compare-column" >
           <div className="compare-col-title applyfont">Traditional Consulting Firm</div>
           {data.map((row, i) => (
-            <div className="compare-row darker" key={i}>
+            <div data-aos="zoom-in-up" data-aos-duration="500" className="compare-row darker" key={i}>
               <span>{row.traditional}</span>
               <div className="campareImgwrapper">
               <img src={singleIcon} alt="Check Mark" className="compare-check" />
@@ -59,10 +59,10 @@ export default function CompareConsulting() {
             </div>
           ))}
         </div>
-        <div className="compare-column" data-aos="zoom-in-up" data-aos-duration="1200" >
-          <div className="compare-col-title applyfont">Modern Consulting Firm</div>
+        <div className="compare-column" >
+          <div  className="compare-col-title applyfont">Modern Consulting Firm</div>
           {data.map((row, i) => (
-            <div className="compare-row lighter" key={i}>
+            <div data-aos="zoom-in-up" data-aos-duration="800" className="compare-row lighter" key={i}>
               <span>{row.modern}</span>
               <div className="dardImgWraper">
               <img src={checkIcon} alt="Check Mark" className="compare-check" />

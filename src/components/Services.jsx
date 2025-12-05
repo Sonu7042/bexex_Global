@@ -35,7 +35,7 @@ export default function Services() {
           Comprehensive Solutions Across Six{" "}
           <span className="itly">Integrated</span> Domains
         </div>
-        <p className="services-description" data-aos="fade-up" data-aos-duration="2000">
+        <p className="services-description" data-aos="fade-up" data-aos-duration="1500">
           From environment and health safety to digital transformation—we
           deliver end-to-end expertise that drives compliance and sustainable
           excellence.
