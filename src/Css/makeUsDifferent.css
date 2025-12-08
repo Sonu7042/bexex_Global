@@ -1,7 +1,7 @@
 /* SECTION WRAPPER */
 .whyus-wrapper {
   margin-top: 5rem;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 /* TOP ROW */
@@ -51,7 +51,7 @@
 
 .whyus-heading-accent {
   font-style: italic;
-  color: var(--accent);
+  /* color: var(--accent); */
 }
 
 /* ARROW BUTTONS (desktop only) */
@@ -94,6 +94,7 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
 }
 
 /* CARD */
@@ -169,6 +170,7 @@
   .whyus-carousel {
     gap: 0;                               /* no visible second card */
     scroll-snap-type: x mandatory;        /* snap per card */
+    margin-top: 3rem;
   }
 
   .whyus-card {

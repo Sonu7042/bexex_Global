@@ -78,7 +78,7 @@ const MakeUsDifferent = () => {
         <div className="whyus-heading-box">
           <h2 className="whyus-heading">
             What Makes Us <br />
-            <span className="whyus-heading-accent">Different</span>
+            <span className="whyus-heading-accent itly">Different</span>
           </h2>
         </div>
 

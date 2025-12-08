@@ -30,11 +30,13 @@
 }
 
 .newsletter-left h1 {
-  font-size: 4.6em;
-  font-weight: 700;
+  font-size: 5rem;
+  font-weight: 900;
   margin-bottom: 16px;
   line-height: 1.13;
   color: #111;
+  line-height: 110%;
+  margin-top: 1.875rem;
 }
 
 .italics {
@@ -165,6 +167,8 @@
 /* .newsletter-submit:hover {
   background: #085dd1;
 } */
+
+
 
 /* Responsive styles */
 @media (max-width: 950px) {
