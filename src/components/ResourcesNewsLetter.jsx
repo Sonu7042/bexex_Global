@@ -24,7 +24,7 @@ const ResourcesNewsLetter = () => {
       <div className="newsletter-left">
         <h1>
           <span>Subscribe for weekly</span><br />
-          <span className="italics">EHS and Quality</span><br />
+          <span className="itly">EHS and Quality</span><br />
           <span>updates.</span>
         </h1>
         <h2 className="newsletter-value">Explain the value in short, attractive lines:</h2>

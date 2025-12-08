@@ -17,12 +17,12 @@ export default function WhoWeWorkWith() {
     <section className="www-section">
       <div className="www-inner">
         <h2 className="www-title applyFont">
-          Who We <span>Work </span> With
+          Who We <span className="itly">Work </span> With
         </h2>
 
         <div className="www-list">
           {items.map((text) => (
-            <div className="www-card" key={text}>
+            <div data-aos="zoom-in-up"  className="www-card" key={text}>
               <div className="www-icon">
                 <span className="www-thumb"><img src={thumbUp} alt="thumb Up" /></span>
               </div>
