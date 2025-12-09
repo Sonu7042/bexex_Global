@@ -1,214 +1,178 @@
-import { useRef, useState, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
 import "../Css/journeyTimeline.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
-
 const timelineData = [
+  // { year: "2025", content: "" },
   {
     year: "2025",
     content:
-      "Recognized as eGrowth Global, upscaling & leading our evolution into a multi-domain firm focusing on business excellence, sustainability, and growth.",
+      "Rebranded as BEXEX  Global Pvt. Ltd., reflecting  our evolution into a  multi-domain firm focusing  on business excellence,  sustainability, and growth.",
   },
   {
-    year: "2017",
+    year: "2024",
     content:
-      "Established as eGrowth India, delivering early consulting assignments and 200+ training hours—laying the foundation for client trust and expertise.",
-  },
-  {
-    year: "2019",
-    content:
-      "Set up a dedicated office and expanded the consulting and training team to serve more sectors with structured project management",
-  },
-  {
-    year: "2021",
-    content:
-      "Achieved 5,000+ training hours and completed 200+ consulting projects, strengthening our footprint across industries.",
+      "Launched our online  training platform and  digital tools to support  remote learning  and enhance client experience.",
   },
   {
     year: "2023",
     content:
-      "Registered as eGrowth Training & Consultancy Services under GST, reaching 300+ projects and 100+ clients, building a legacy of excellence.",
+      "Registered as eGrowth  Training & Consultancy  Services under GST,  reaching 300+ projects and  100+ clients, and building a",
   },
+  {
+    year: "2021",
+    content:
+      "Achieved 5,000+ training hours  and completed 200+ consulting  projects, strengthening our footprint across industries.",
+  },
+  {
+    year: "2019",
+    content:
+      " Set up a dedicated office and  expanded the consulting and  training team to serve more sectors with structured project management",
+  },
+  {
+    year: "2017",
+    content:
+      "Established as eGrowth India, delivering  early consulting assignments and 200+  training hours—laying the foundation for  client trust and expertise.",
+  }
+  // { year: "2010", content: "" },
 ];
 
-function TimelineSection() {
-  const yearsRef = useRef(null);
-  const contentRef = useRef(null);
-  const containerRef = useRef(null);
-  const sectionRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [isDesktop, setIsDesktop] = useState(
-    typeof window !== "undefined" ? window.innerWidth >= 1024 : true
-  );
+const JourneyTimeline = () => {
+  const wrapperRef = useRef(null);
+  const rightPanelRef = useRef(null);
+  const blockRefs = useRef([]);
+  const [activeYear, setActiveYear] = useState(timelineData[0].year);
+  const [isMobile, setIsMobile] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Detect screen size once + on resize
+  // Check screen size
   useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024);
-    };
+    const handleResize = () => setIsMobile(window.innerWidth < 900);
     handleResize();
-    window.addEventListener("resize",  handleResize);
+    window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Auto carousel for mobile/tablet only (no GSAP)
+  // Auto-slide for mobile
   useEffect(() => {
-    if (isDesktop) return;
-
-    const contentEl = contentRef.current;
-    if (!contentEl) return;
-
-    const cardWidth = contentEl.clientWidth;
-    let index = 0;
-
+    if (!isMobile) return;
     const interval = setInterval(() => {
-      index = (index + 1) % timelineData.length;
-      setActiveIndex(index);
-      contentEl.scrollTo({
-        left: cardWidth * index,
-        behavior: "smooth",
-      });
-    }, 3500);
-
+      setCurrentIndex((prev) => (prev + 1) % timelineData.length);
+    }, 3000);
     return () => clearInterval(interval);
-  }, [isDesktop]);
+  }, [isMobile]);
 
+  // Desktop GSAP animation
+  useEffect(() => {
+    if (isMobile) return; // skip GSAP on mobile
 
+    blockRefs.current = blockRefs.current.slice(0, timelineData.length);
+    const innerHeight = rightPanelRef.current.scrollHeight;
+    const viewport = window.innerHeight;
+    const scrollLength = innerHeight - viewport;
 
-
-  // Desktop: original wheel sync logic
-  useGSAP(() => {
-  if (!isDesktop) return;
-
-  const yearsEl = yearsRef.current;
-  const contentEl = contentRef.current;
-  const section = sectionRef.current;
-
-  if (!yearsEl || !contentEl || !section) return;
-
-  // 1️⃣ Create scroll container (years + content move together)
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: section,
-      start: "top top",
-      end: () =>
-        "+=" + (contentEl.scrollHeight - contentEl.clientHeight + 200),
-      pin: true,
-      scrub: 1,
-    },
-  });
-
-  // 2️⃣ Sync scroll progress to both columns
-  tl.to(yearsEl, {
-    scrollTop: yearsEl.scrollHeight - yearsEl.clientHeight,
-    ease: "none",
-  });
-
-  tl.to(
-    contentEl,
-    {
-      scrollTop: contentEl.scrollHeight - contentEl.clientHeight,
-      ease: "none",
-    },
-    "<" // both move together
-  );
-
-  // 3️⃣ Fade & scale when item hits vertical center
-  gsap.utils.toArray(".content-item").forEach((item, index) => {
     ScrollTrigger.create({
-      trigger: item,
-      start: "center center",
-      end: "center+=1 center",
+      trigger: wrapperRef.current,
+      start: "top top",
+      end: `+=${scrollLength}`,
+      pin: true,
       scrub: true,
-
-      onEnter: () => setActiveIndex(index),
-      onEnterBack: () => setActiveIndex(index),
-
-      animation: gsap.fromTo(
-        item,
-        { opacity: 0.3, scale: 0.9 },
-        { opacity: 1, scale: 1.05, duration: 0.3 }
-      ),
     });
-  });
-});
 
+    gsap.to(rightPanelRef.current, {
+      y: -scrollLength,
+      ease: "none",
+      scrollTrigger: {
+        trigger: wrapperRef.current,
+        start: "top top",
+        end: `+=${scrollLength}`,
+        scrub: true,
+      },
+    });
 
-  // GSAP pinning only on desktop
-  useGSAP(
-    () => {
-      if (!isDesktop || !sectionRef.current) return;
+    blockRefs.current.forEach((block, i) => {
+      let start = "top center";
+      let end = "bottom center";
+      if (i === 0) start = "top 60%";
+      if (i === blockRefs.current.length - 1) end = "bottom 40%";
+
+      gsap.fromTo(
+        block.querySelector("p"),
+        { opacity: 0.1, y: 20, scale: 0.95 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          scrollTrigger: {
+            trigger: block,
+            start,
+            end,
+            scrub: true,
+          },
+        }
+      );
 
       ScrollTrigger.create({
-        trigger: sectionRef.current,
-        start: "top top",
-        end: `+=${window.innerHeight * 1.2}px`,
-        pin: true,
-        pinSpacing: true,
-        anticipatePin: 1,
+        trigger: block,
+        start,
+        end,
+        scrub: true,
+        onEnter: () => setActiveYear(timelineData[i].year),
+        onEnterBack: () => setActiveYear(timelineData[i].year),
       });
-    },
-    { scope: sectionRef, dependencies: [isDesktop] }
-  );
+    });
 
-  return (
-    <section ref={sectionRef} className="timeline-section">
-      <div className="timeline-container">
-        <h1 className="timeline-title">
-          OUR JOURNEY OF{" "}
-          <span className="timeline-title-highlight">GROWTH</span>
-          <br />
-          AND EXCELLENCE
-        </h1>
+    return () => ScrollTrigger.getAll().forEach((st) => st.kill());
+  }, [isMobile]);
 
-        <div ref={containerRef} className="timeline-content-wrapper">
-          {/* YEARS - desktop only */}
-          <div
-            ref={yearsRef}
-            className="timeline-years"
-          >
-            <div className="years-inner">
-              {timelineData.map((item, index) => (
-                <div
-                  key={item.year}
-                  className={`year-item ${activeIndex === index ? 'active' : ''}`}
-                >
-                  {item.year}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* CONTENT */}
-          <div
-            ref={contentRef}
-            className="timeline-content"
-          >
-            <div className="content-inner">
-              {timelineData.map((item, index) => (
-                <div
-                  key={item.year}
-                  className={`content-item ${activeIndex === index ? 'active' : ''}`}
-                >
-                  {!isDesktop && (
-                    <div className="year-badge">
-                      {item.year}
-                    </div>
-                  )}
-                  <p>{item.content}</p>
-                </div>
-              ))}
-            </div>
+  // Mobile carousel render
+  if (isMobile) {
+    return (
+      <div className="mobileTimelineWrapper">
+        <div className="mobileTimelineBlock">
+          <div className="mobileYear">{timelineData[currentIndex].year}</div>
+          <div className="mobileContent">
+            {timelineData[currentIndex].content}
           </div>
         </div>
+        {/* <div className="mobileDots">
+          {timelineDataMobile.map((_, i) => (
+            <span
+              key={i}
+              className={`dot ${i === currentIndex ? "active" : ""}`}
+              onClick={() => setCurrentIndex(i)}
+            />
+          ))}
+        </div> */}
+      </div>
+    );
+  }
+
+  // Desktop render
+  return (
+    <section className="timelineWrapper" ref={wrapperRef}>
+      <div></div>
+      <div className="leftPanel">
+        <div className="fadedYear">{activeYear}</div>
+        <div className="currentYear">{activeYear}</div>
+        <div className="fadedYear">{activeYear}</div>
+      </div>
+      <div className="rightContent" ref={rightPanelRef}>
+        {timelineData.map((item, i) => (
+          <div
+            key={i}
+            className="contentBlock"
+            ref={(el) => (blockRefs.current[i] = el)}
+          >
+            <p>{item.content}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
-}
+};
 
-export default TimelineSection;
+export default JourneyTimeline;
