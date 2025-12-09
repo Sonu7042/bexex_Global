@@ -3,12 +3,12 @@ import "../Css/header.css";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 import header_logo from '../assets/images/Bexexlogo.png'
-import { LearnMoreButton } from "./Buttons";
-import { FaArrowRight } from "react-icons/fa";
+// import { LearnMoreButton } from "./Buttons";
+// import { FaArrowRight } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 
 const menuItems = [
-  { label: "HOME", to: "/" },
+  // { label: "HOME", to: "/" },
   { label: "SERVICES", to: "/services", dropdown: true, key: "services" },
   { label: "ABOUT US", to: "/about" },
   { label: "RESOURCES", to: "/resources", dropdown: true, key: "resources" },
@@ -87,13 +87,23 @@ const Header = () => {
   }, [menuOpen]);
 
 
-  const hideMenuList =(menuName)=>{
-    if(menuName=="service"){
-      setServiceOpen(false);
-    }else if (menuName=="resource"){
-      setResourceOpen(false);
-    }
-  }
+  // const hideMenuList =(menuName)=>{
+  //   console.log(menuItems, "sonu")
+  //   if(menuName=="service"){
+  //     setServiceOpen(false);
+  //   }else if (menuName=="resource"){
+  //     setResourceOpen(false);
+  //   }
+  // }
+
+
+  const closeAllMenus = () => {
+  setMenuOpen(false);
+  setServiceOpen(false);
+  setResourceOpen(false);
+  setSearchActive(false);
+};
+
   
 
 
@@ -101,10 +111,10 @@ const Header = () => {
   return (
     <header className={`header ${searchActive ? "search-open" : ""}`} data-aos="fade-down">
       <div className="header-inner">
-        <div className="logo-area">
+        <Link to="/" className="logo-area">
           {/* <span className="logo">b e x e x</span> */}
           <img src={header_logo} alt="header Logo" />
-        </div>
+        </Link>
 
         <button
           className={`hamburger ${menuOpen ? "open" : ""}`}
@@ -124,7 +134,7 @@ const Header = () => {
                     key={idx}
                     href="#"
                     className="nav-link applyfont"
-                    onClick={(e) => handleDropdownClick(e, item.key)} // prevent default here
+                    onClick={(e) =>  handleDropdownClick(e, item.key)  } // prevent default here
                   >
                     {item.label}
                     <span className="dropdown-icon"><IoIosArrowDown /></span>
@@ -136,6 +146,7 @@ const Header = () => {
                   key={idx}
                   to={item.to}
                   className="nav-link applyfont"
+                  onClick={closeAllMenus}
                 >
                   {item.label}
                 </Link>
@@ -200,7 +211,7 @@ const Header = () => {
       <div className={`service-menu-dropdown services-dropdown ${serviceOpen ? "open" : ""}`}>
         <div className="services-grid_Head">
           {services.map((service, idx) => (
-            <Link className="header-service-card" onClick={()=> hideMenuList("service")} to={service.link} key={idx}>
+            <Link className="header-service-card" onClick={closeAllMenus} to={service.link} key={idx}>
               <div className="service-title">{service.title}</div>
               <span className="service-icon">
                 <MdArrowOutward />
@@ -214,7 +225,7 @@ const Header = () => {
       <div className={`service-menu-dropdown resources-dropdown ${resourceOpen ? "open" : ""}`}>
         <div className="services-grid_Head-resources">
           {resources.map((item, idx) => (
-            <Link className="header-service-card" onClick={()=> hideMenuList("resource")}  to={item.link} key={idx}>
+            <Link className="header-service-card" onClick={closeAllMenus}  to={item.link} key={idx}>
               <div className="service-title">{item.title}</div>
               <span className="service-icon">
                 <MdArrowOutward />

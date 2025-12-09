@@ -101,8 +101,8 @@ const MakeUsDifferent = () => {
       </div>
 
       <div className="whyus-carousel" ref={listRef}>
-        {cards.map((card) => (
-          <article className="whyus-card" key={card.title}>
+        {cards.map((card, index) => (
+          <article className="whyus-card" key={index}>
             <h3 className="whyus-card-title">{card.title}</h3>
             <p className="whyus-card-text">{card.text}</p>
           </article>
