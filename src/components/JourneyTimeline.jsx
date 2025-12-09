@@ -6,6 +6,8 @@ import "../Css/journeyTimeline.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+
 const timelineData = [
   {
     year: "2025",
@@ -50,7 +52,7 @@ function TimelineSection() {
       setIsDesktop(window.innerWidth >= 1024);
     };
     handleResize();
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize",  handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -76,62 +78,66 @@ function TimelineSection() {
     return () => clearInterval(interval);
   }, [isDesktop]);
 
+
+
+
   // Desktop: original wheel sync logic
-  useEffect(() => {
-    if (!isDesktop) return;
+  useGSAP(() => {
+  if (!isDesktop) return;
 
-    const yearsEl = yearsRef.current;
-    const contentEl = contentRef.current;
-    const containerEl = containerRef.current;
+  const yearsEl = yearsRef.current;
+  const contentEl = contentRef.current;
+  const section = sectionRef.current;
 
-    if (!yearsEl || !contentEl || !containerEl) return;
+  if (!yearsEl || !contentEl || !section) return;
 
-    const handleWheel = (e) => {
-      e.preventDefault();
+  // 1️⃣ Create scroll container (years + content move together)
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: section,
+      start: "top top",
+      end: () =>
+        "+=" + (contentEl.scrollHeight - contentEl.clientHeight + 200),
+      pin: true,
+      scrub: 1,
+    },
+  });
 
-      const delta = e.deltaY;
+  // 2️⃣ Sync scroll progress to both columns
+  tl.to(yearsEl, {
+    scrollTop: yearsEl.scrollHeight - yearsEl.clientHeight,
+    ease: "none",
+  });
 
-      const yTop = yearsEl.scrollTop === 0;
-      const yBottom =
-        yearsEl.scrollTop + yearsEl.clientHeight >= yearsEl.scrollHeight;
+  tl.to(
+    contentEl,
+    {
+      scrollTop: contentEl.scrollHeight - contentEl.clientHeight,
+      ease: "none",
+    },
+    "<" // both move together
+  );
 
-      if (!(yTop && delta < 0) && !(yBottom && delta > 0)) {
-        yearsEl.scrollTop += delta;
-      }
+  // 3️⃣ Fade & scale when item hits vertical center
+  gsap.utils.toArray(".content-item").forEach((item, index) => {
+    ScrollTrigger.create({
+      trigger: item,
+      start: "center center",
+      end: "center+=1 center",
+      scrub: true,
 
-      const cTop = contentEl.scrollTop === 0;
-      const cBottom =
-        contentEl.scrollTop + contentEl.clientHeight >= contentEl.scrollHeight;
+      onEnter: () => setActiveIndex(index),
+      onEnterBack: () => setActiveIndex(index),
 
-      if (!(cTop && delta < 0) && !(cBottom && delta > 0)) {
-        contentEl.scrollTop += delta;
-      }
+      animation: gsap.fromTo(
+        item,
+        { opacity: 0.3, scale: 0.9 },
+        { opacity: 1, scale: 1.05, duration: 0.3 }
+      ),
+    });
+  });
+});
 
-      const allowUp = yTop && cTop && delta < 0;
-      const allowDown = yBottom && cBottom && delta > 0;
-
-      if (allowUp || allowDown) {
-        containerEl.style.pointerEvents = "none";
-        setTimeout(() => {
-          containerEl.style.pointerEvents = "auto";
-        }, 180);
-      }
-    };
-
-    const syncActive = () => {
-      const itemHeight = contentEl.scrollHeight / timelineData.length;
-      const index = Math.round(contentEl.scrollTop / itemHeight);
-      setActiveIndex(Math.max(0, Math.min(index, timelineData.length - 1)));
-    };
-
-    containerEl.addEventListener("wheel", handleWheel, { passive: false });
-    contentEl.addEventListener("scroll", syncActive);
-
-    return () => {
-      containerEl.removeEventListener("wheel", handleWheel);
-      contentEl.removeEventListener("scroll", syncActive);
-    };
-  }, [isDesktop]);
 
   // GSAP pinning only on desktop
   useGSAP(

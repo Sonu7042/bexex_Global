@@ -142,7 +142,7 @@ const About = () => {
 
 
     {/* <--------------------------------img-section-----------------------> */}
-    {/* <div className="journeySection">
+    <div className="journeySection">
       <div className="glance-footer">
         <span>
           <span className="journey-bold">OUR JOURNEY OF </span>
@@ -155,12 +155,12 @@ const About = () => {
 
       <img src={journeyImg} className="journeyImg" alt="journey" />
       </div>
-    </div> */}
+    </div>
 
       {/* <Journey /> */}
 
 
-    <JourneyTimeline />
+    {/* <JourneyTimeline /> */}
       {/* <JourneyTimeline /> */}
 
       <TeamGrid />
