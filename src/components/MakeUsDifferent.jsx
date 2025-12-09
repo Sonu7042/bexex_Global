@@ -1,9 +1,10 @@
-// WhyUsSection.jsx
 import React, { useEffect, useRef, useState } from "react";
 import "../Css/makeUsDifferent.css";
-import {HeadingComponent} from "./Buttons"
+import { HeadingComponent } from "./Buttons";
 
-const cards = [
+
+
+const originalCards = [
   {
     title: "We’ve Been There",
     text: "Our team brings 100,000+ man-hours of real-world experience from shop floors, construction sites, and factories across India. We’ve dealt with the same headaches you’re facing. We know what works—and what’s just consultant theatre.",
@@ -28,53 +29,65 @@ const cards = [
     title: "One Team, One Plan",
     text: "Most firms specialize in fragments. We work end‑to‑end so your professionals cover strategy, operations, compliance, business excellence, and vendor coordination without silos.",
   },
-  // add more cards if needed
 ];
+
+// Duplicate cards to make infinite loop
+const cards = [...originalCards, ...originalCards, ...originalCards];
 
 const MakeUsDifferent = () => {
   const listRef = useRef(null);
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(originalCards.length); // Start centered in middle copy
 
   const isDesktop = () => window.innerWidth >= 1025;
 
-  // auto scrolling
+  // AUTO SCROLL (infinite → only forward)
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % cards.length);
-    }, 4000); // 4s
+      setIndex((prev) => prev + 1);
+    }, 3500);
+
     return () => clearInterval(interval);
   }, []);
 
-  // scroll when index changes
+  // Infinite LOOP LOGIC – reset silently
+  useEffect(() => {
+    if (index >= cards.length - originalCards.length) {
+      setIndex(originalCards.length); // jump back to middle copy
+    }
+  }, [index]);
+
+  // CENTER active card
   useEffect(() => {
     const el = listRef.current;
     if (!el) return;
-    const card = el.querySelector(".whyus-card");
-    if (!card) return;
-    const cardWidth = card.getBoundingClientRect().width + 32; // 32px gap
-    el.scrollTo({
-      left: index * cardWidth,
-      behavior: "smooth",
-    });
+
+    const cardsEl = el.querySelectorAll(".whyus-card");
+    const activeCard = cardsEl[index];
+    if (!activeCard) return;
+
+    const containerWidth = el.offsetWidth;
+    const cardWidth = activeCard.offsetWidth;
+
+    const scrollLeft = activeCard.offsetLeft - (containerWidth - cardWidth) / 2;
+
+    el.scrollTo({ left: scrollLeft, behavior: "smooth" });
   }, [index]);
 
   const handlePrev = () => {
     if (!isDesktop()) return;
-    setIndex((prev) => (prev - 1 + cards.length) % cards.length);
+    setIndex((prev) => prev - 1);
   };
 
   const handleNext = () => {
     if (!isDesktop()) return;
-    setIndex((prev) => (prev + 1) % cards.length);
+    setIndex((prev) => prev + 1);
   };
 
   return (
     <section className="whyus-wrapper">
-      
       <HeadingComponent text="Why Us" />
 
       <div className="whyus-header">
-       
         <div className="whyus-heading-box">
           <h2 className="whyus-heading">
             What Makes Us <br />
@@ -83,26 +96,21 @@ const MakeUsDifferent = () => {
         </div>
 
         <div className="whyus-arrow-group">
-          <button
-            className="whyus-arrow-btn"
-            onClick={handlePrev}
-            aria-label="Previous"
-          >
+          <button className="whyus-arrow-btn" onClick={handlePrev}>
             ←
           </button>
-          <button
-            className="whyus-arrow-btn"
-            onClick={handleNext}
-            aria-label="Next"
-          >
+          <button className="whyus-arrow-btn" onClick={handleNext}>
             →
           </button>
         </div>
       </div>
 
       <div className="whyus-carousel" ref={listRef}>
-        {cards.map((card, index) => (
-          <article className="whyus-card" key={index}>
+        {cards.map((card, i) => (
+          <article
+            key={i}
+            className={`whyus-card ${i === index ? "active" : ""}`}
+          >
             <h3 className="whyus-card-title">{card.title}</h3>
             <p className="whyus-card-text">{card.text}</p>
           </article>

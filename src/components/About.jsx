@@ -13,6 +13,7 @@ import MakeUsDifferent from "./MakeUsDifferent.jsx";
 import pushpender from "../assets/images/pushpender.jpg";
 import WhoWeWorkWith from "./WhoWeWorkWith.jsx";
 import JourneyTimeline from "./JourneyTimeline.jsx";
+import aboutVideo from '../assets/video/aboutVideo.mp4'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -71,14 +72,14 @@ const About = () => {
           </h1>
 
           <div className="hero-img-wrap">
-            {/* <video
-              src={}
+            <video
+              src={aboutVideo}
               autoPlay
               muted
               loop
               className="hero-video"
-            ></video> */}
-            <img src={nature} alt="img" />
+            ></video>
+            {/* <img src={nature} alt="img" /> */}
           </div>
 
           <p className="hero-desc">

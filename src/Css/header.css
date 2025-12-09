@@ -464,7 +464,7 @@ body {
         display: flex;
         align-items: center;
         gap: 12px;
-        padding: 14px 28px;
+        /* padding: 14px 28px; */
         font-size: 18px;
         /* background: transparent; */
         border: none;
