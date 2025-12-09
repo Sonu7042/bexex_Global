@@ -1,208 +1,232 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    sans-serif;
-}
-
-.journey-page {
+/* TimelineSection.css */
+.timeline-section {
+  background: #2a2a2a;
+  color: white;
+  padding: 4rem 1rem 4rem;
   min-height: 100vh;
-  background: #3b3b3b;
-  color: #ffffff;
-  padding: 40px 60px;
 }
 
-/* Heading */
-.journey-header {
-  margin-bottom: 60px;
+.timeline-container {
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
-.journey-heading-top {
-  font-size: 2.8rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+.timeline-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
-.journey-heading-bottom {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  font-size: 2.8rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  margin-top: 6px;
+@media (min-width: 1024px) {
+  .timeline-title {
+    text-align: left;
+    margin-bottom: 5rem;
+  }
 }
 
-.word-growth {
-  color: #2f7df4;
+.timeline-title-highlight {
+  color: #3b82f6;
   font-style: italic;
+  display: block;
 }
 
-.word-normal {
-  color: #ffffff;
+@media (min-width: 1024px) {
+  .timeline-title-highlight {
+    display: inline;
+  }
 }
 
-/* MAIN: only two columns now */
-.journey-main {
-  display: grid;
-  grid-template-columns: 200px minmax(0, 1fr);
-  column-gap: 40px;
-  align-items: stretch;
-}
-
-/* scroll containers must have fixed height to scroll full content */
-.years-column,
-.cards-column {
-  max-height: 360px; /* adjust as you like */
-}
-
-.scrollable {
-  overflow-y: auto;
-  padding-right: 4px;
-}
-
-/* Years column */
-.years-column {
+.timeline-content-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  font-family: 'Playfair Display', 'Times New Roman', serif;
-  font-style: italic;
+  gap: 1.5rem;
+  height: 70vh;
 }
 
-.year {
-  font-size: 3.2rem;
-}
-
-.year-faded {
-  color: rgba(255, 255, 255, 0.35);
-}
-
-.year-active {
-  color: #ffffff;
-}
-
-/* Cards column */
-.cards-column {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.card {
-  border-radius: 12px;
-  padding: 18px 22px;
-  background: #c4c4c4;
-  color: #333333;
-  font-size: 0.96rem;
-  line-height: 1.5;
-}
-
-.card-active {
-  background: #f0f0f0;
-  color: #000000;
-}
-
-.card-faded {
-  opacity: 0.35;
-}
-
-.top-card {
-  border-radius: 14px 14px 0 0;
-}
-
-/* ====== RESPONSIVE BELOW 1024PX ====== */
-@media (max-width: 1024px) {
-  .journey-page {
-    padding: 32px 24px;
-  }
-
-  .journey-main {
-    grid-template-columns: 1fr;
-    row-gap: 16px;
-  }
-
-  .years-column,
-  .cards-column {
-    max-height: 260px;
-  }
-
-  .years-column {
+@media (min-width: 1024px) {
+  .timeline-content-wrapper {
     flex-direction: row;
-    justify-content: space-between;
-    gap: 12px;
-  }
-
-  .year {
-    font-size: 2rem;
+    gap: 2rem;
+    height: 600px;
+    max-height: 800px;
   }
 }
 
-/* ====== MOBILE BELOW 640PX ====== */
-@media (max-width: 640px) {
-  .journey-page {
-    padding: 24px 16px;
-  }
+/* YEARS COLUMN - Desktop only */
+.timeline-years {
+  display: none;
+  width: 33%;
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 
-  .journey-heading-top,
-  .journey-heading-bottom {
-    font-size: 1.8rem;
-  }
-
-  .years-column {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .year {
-    font-size: 1.6rem;
-  }
-
-  .cards-column {
-    max-height: 220px;
-  }
-
-  .card {
-    font-size: 0.9rem;
+@media (min-width: 1024px) {
+  .timeline-years {
+    display: block;
   }
 }
 
+.timeline-years::-webkit-scrollbar {
+  display: none;
+}
 
+.years-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  height: 100%;
+}
 
-.year-active {
-  color: #ffffff;
+.year-item {
+  padding: 1.5rem 2rem;
+  font-size: clamp(2rem, 4vw, 4.5rem);
+  font-weight: bold;
+  font-style: italic;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  min-height: 200px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.year-item:hover {
+  background: #374151;
   transform: scale(1.05);
 }
 
-.card-active {
-  background: #f0f0f0;
-  color: #000000;
-  opacity: 1;
+.year-item.active {
+  color: white;
+  background: #4b5563;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
 }
 
-.card-faded {
-  opacity: 0.35;
-  transition: opacity 0.2s ease;
+/* CONTENT */
+.timeline-content {
+  flex: 1;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-
-
-/* scroll containers must have fixed height to scroll full content */
-.years-column {
-  max-height: 360px;   /* or any height you want */
-  overflow-y: auto;    /* enables mouse / touchpad vertical scroll */
-  padding-right: 4px;
+.timeline-content::-webkit-scrollbar {
+  display: none;
 }
 
-/* keep other styles */
-.years-column {
+@media (max-width: 1023px) {
+  .timeline-content {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+}
+
+@media (min-width: 1024px) {
+  .timeline-content {
+    overflow-y: auto;
+  }
+}
+
+.content-inner {
+  padding: 1rem 0;
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .content-inner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.content-item {
+  position: relative;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  font-family: 'Playfair Display', 'Times New Roman', serif;
+  min-height: 200px;
+  cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+  .content-item {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 22rem;
+    margin: 0 0.25rem;
+    padding: 1.5rem;
+    scroll-snap-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-item {
+    width: auto;
+    margin: 0;
+    padding: 2rem;
+  }
+}
+
+.content-item:hover {
+  transform: scale(1.02);
+}
+
+.content-item.active {
+  background: #9ca3af;
+  color: black;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
+}
+
+@media (max-width: 1023px) {
+  .content-item:not(.active) {
+    background: #4b5563;
+    color: #d1d5db;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-item:not(.active) {
+    background: #4b5563;
+    color: #d1d5db;
+  }
+}
+
+/* Year badge - mobile only */
+.year-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   font-style: italic;
+}
+
+.content-item.active .year-badge {
+  color: white;
+}
+
+.content-item:not(.active) .year-badge {
+  color: #9ca3af;
+}
+
+.content-item p {
+  font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+  line-height: 1.6;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .content-item p {
+    margin-top: 0;
+  }
 }

@@ -1,4 +1,10 @@
 import { useRef, useState, useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import "../Css/journeyTimeline.css";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const timelineData = [
   {
@@ -32,10 +38,48 @@ function TimelineSection() {
   const yearsRef = useRef(null);
   const contentRef = useRef(null);
   const containerRef = useRef(null);
-
+  const sectionRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isDesktop, setIsDesktop] = useState(
+    typeof window !== "undefined" ? window.innerWidth >= 1024 : true
+  );
 
+  // Detect screen size once + on resize
   useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Auto carousel for mobile/tablet only (no GSAP)
+  useEffect(() => {
+    if (isDesktop) return;
+
+    const contentEl = contentRef.current;
+    if (!contentEl) return;
+
+    const cardWidth = contentEl.clientWidth;
+    let index = 0;
+
+    const interval = setInterval(() => {
+      index = (index + 1) % timelineData.length;
+      setActiveIndex(index);
+      contentEl.scrollTo({
+        left: cardWidth * index,
+        behavior: "smooth",
+      });
+    }, 3500);
+
+    return () => clearInterval(interval);
+  }, [isDesktop]);
+
+  // Desktop: original wheel sync logic
+  useEffect(() => {
+    if (!isDesktop) return;
+
     const yearsEl = yearsRef.current;
     const contentEl = contentRef.current;
     const containerEl = containerRef.current;
@@ -43,11 +87,10 @@ function TimelineSection() {
     if (!yearsEl || !contentEl || !containerEl) return;
 
     const handleWheel = (e) => {
-      e.preventDefault(); // lock page scroll completely
+      e.preventDefault();
 
       const delta = e.deltaY;
 
-      // YEAR LIST
       const yTop = yearsEl.scrollTop === 0;
       const yBottom =
         yearsEl.scrollTop + yearsEl.clientHeight >= yearsEl.scrollHeight;
@@ -56,7 +99,6 @@ function TimelineSection() {
         yearsEl.scrollTop += delta;
       }
 
-      // CONTENT LIST
       const cTop = contentEl.scrollTop === 0;
       const cBottom =
         contentEl.scrollTop + contentEl.clientHeight >= contentEl.scrollHeight;
@@ -65,13 +107,11 @@ function TimelineSection() {
         contentEl.scrollTop += delta;
       }
 
-      // RELEASE PAGE SCROLL ONLY WHEN BOTH inner scrolls reach top or bottom
       const allowUp = yTop && cTop && delta < 0;
       const allowDown = yBottom && cBottom && delta > 0;
 
       if (allowUp || allowDown) {
         containerEl.style.pointerEvents = "none";
-
         setTimeout(() => {
           containerEl.style.pointerEvents = "auto";
         }, 180);
@@ -91,90 +131,77 @@ function TimelineSection() {
       containerEl.removeEventListener("wheel", handleWheel);
       contentEl.removeEventListener("scroll", syncActive);
     };
-  }, []);
+  }, [isDesktop]);
+
+  // GSAP pinning only on desktop
+  useGSAP(
+    () => {
+      if (!isDesktop || !sectionRef.current) return;
+
+      ScrollTrigger.create({
+        trigger: sectionRef.current,
+        start: "top top",
+        end: `+=${window.innerHeight * 1.2}px`,
+        pin: true,
+        pinSpacing: true,
+        anticipatePin: 1,
+      });
+    },
+    { scope: sectionRef, dependencies: [isDesktop] }
+  );
 
   return (
-    <div className="bg-[#2a2a2a] text-white py-16 px-8">
+    <section ref={sectionRef} className="timeline-section">
+      <div className="timeline-container">
+        <h1 className="timeline-title">
+          OUR JOURNEY OF{" "}
+          <span className="timeline-title-highlight">GROWTH</span>
+          <br />
+          AND EXCELLENCE
+        </h1>
 
-      {/* STICKY WRAPPER — keeps section fixed until inner scroll is done */}
-      <div className="sticky top-0">
-
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold mb-20 leading-tight">
-            OUR JOURNEY OF <span className="text-blue-500 italic">GROWTH</span>
-            <br />
-            AND EXCELLENCE
-          </h1>
-
+        <div ref={containerRef} className="timeline-content-wrapper">
+          {/* YEARS - desktop only */}
           <div
-            ref={containerRef}
-            className="relative flex gap-8 h-[600px]"
+            ref={yearsRef}
+            className="timeline-years"
           >
-            {/* YEARS */}
-            <div
-              ref={yearsRef}
-              className="w-1/3 overflow-y-auto scrollbar-hide"
-              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-            >
-              <div className="space-y-8 pr-8">
-                {timelineData.map((item, index) => (
-                  <div
-                    key={item.year}
-                    className={`text-7xl font-bold italic transition-all duration-300 ${
-                      activeIndex === index
-                        ? "text-white bg-gray-600 px-8 py-6"
-                        : "text-gray-500 px-8 py-6"
-                    }`}
-                    style={{
-                      minHeight: "200px",
-                      display: "flex",
-                      alignItems: "center",
-                    }}
-                  >
-                    {item.year}
-                  </div>
-                ))}
-              </div>
+            <div className="years-inner">
+              {timelineData.map((item, index) => (
+                <div
+                  key={item.year}
+                  className={`year-item ${activeIndex === index ? 'active' : ''}`}
+                >
+                  {item.year}
+                </div>
+              ))}
             </div>
+          </div>
 
-            {/* CONTENT */}
-            <div
-              ref={contentRef}
-              className="flex-1 overflow-y-auto scrollbar-hide"
-              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-            >
-              <div className="space-y-8">
-                {timelineData.map((item, index) => (
-                  <div
-                    key={item.year}
-                    className={`p-8 rounded-lg transition-all duration-300 ${
-                      activeIndex === index
-                        ? "bg-gray-400 text-black"
-                        : "bg-gray-600 text-gray-300"
-                    }`}
-                    style={{
-                      minHeight: "200px",
-                      display: "flex",
-                      alignItems: "center",
-                    }}
-                  >
-                    <p className="text-lg leading-relaxed font-medium">
-                      {item.content}
-                    </p>
-                  </div>
-                ))}
-              </div>
+          {/* CONTENT */}
+          <div
+            ref={contentRef}
+            className="timeline-content"
+          >
+            <div className="content-inner">
+              {timelineData.map((item, index) => (
+                <div
+                  key={item.year}
+                  className={`content-item ${activeIndex === index ? 'active' : ''}`}
+                >
+                  {!isDesktop && (
+                    <div className="year-badge">
+                      {item.year}
+                    </div>
+                  )}
+                  <p>{item.content}</p>
+                </div>
+              ))}
             </div>
-
           </div>
         </div>
       </div>
-
-      <style>{`
-        .scrollbar-hide::-webkit-scrollbar { display: none; }
-      `}</style>
-
-    </div>
+    </section>
   );
 }
 

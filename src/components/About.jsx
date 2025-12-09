@@ -78,7 +78,7 @@ const About = () => {
               loop
               className="hero-video"
             ></video> */}
-            <img src={nature} alt="imge" />
+            <img src={nature} alt="img" />
           </div>
 
           <p className="hero-desc">
