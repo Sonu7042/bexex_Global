@@ -180,6 +180,7 @@
 }
 
 .about-left {
+  width: 50%;
   flex: 1.2 1 350px;
   padding: 40px 32px;
   display: flex;
@@ -217,11 +218,14 @@
   justify-content: center;
   background: #ecf0f2;
 }
-
+.C{
+  width: 50%;
+}
 .about-img {
      width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 0rem 1.1rem 1.1rem 0rem;
 }
 
 /* Responsive Styles */
@@ -263,6 +267,12 @@
 @media (max-width:768px){
   .about-intro{
     text-align: center;
+  }
+  .about-img{
+    border-radius: 0rem 0rem 1.1rem 1.1rem;
+  }
+  .C{
+    width: 100%;
   }
 }
 /* section 3 */

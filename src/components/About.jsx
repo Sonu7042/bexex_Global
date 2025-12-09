@@ -128,7 +128,7 @@ const About = () => {
               and create lasting value.
             </p>
           </div>
-          <div className="about-right">
+          <div className="C">
             {/* Update the src path as needed */}
             <img src={pushpender} alt="Director" className="about-img" />
           </div>

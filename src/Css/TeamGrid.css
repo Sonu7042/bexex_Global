@@ -123,7 +123,7 @@
     font-size: 1.12rem;
     margin-bottom: 10px;
     max-width: 99vw;
-    padding: 0 6px;
+    padding: 1rem 4rem;
   }
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -144,8 +144,9 @@
     margin-left: 7px;
   }
   .team-heading {
-    font-size: 0.98rem;
+    font-size: 1.2rem;
     margin-bottom: 6px;
+    padding: 1.2rem;
   }
   .team-grid {
     grid-template-columns: 1fr;

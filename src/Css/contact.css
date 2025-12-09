@@ -48,20 +48,15 @@
 } */
 
 .enquiry-title {
-  font-size: 4.1rem;
+  font-size: 4.5rem;
   font-weight: 900;
-  font-family: 'Montserrat', Arial, sans-serif;
-  line-height: 1.08;
-  margin-bottom: 0.4rem;
-}
-.enquiry-title-italic {
-  font-style: italic;
-  font-weight: 600;
+  line-height: 1.01;
+  /* margin-bottom: 0.4rem; */
 }
 
 .enquiry-desc {
   font-size: 1.15rem;
-  font-family: 'Montserrat', Arial, sans-serif;
+  /* font-family: 'Montserrat', Arial, sans-serif; */
   color: #535353;
   font-weight: 500;
   margin: 2.2rem 0 2.6rem;
@@ -69,7 +64,7 @@
 
 .enquiry-left-email {
   font-size: 1.3rem;
-  font-family: 'Montserrat', Arial, sans-serif;
+  /* font-family: 'Montserrat', Arial, sans-serif; */
   font-weight: 600;
   margin-bottom: 0.4rem;
   color: #595959;
@@ -97,7 +92,7 @@
   font-size: 1rem;
   color: #444;
   font-weight: 500;
-  font-family: 'Montserrat', Arial, sans-serif;
+  /* font-family: 'Montserrat', Arial, sans-serif; */
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
@@ -111,7 +106,7 @@
   color: #222;
   padding: 0.8rem 0 0.2rem 0;
   outline: none;
-  font-family: 'Montserrat', Arial, sans-serif;
+  /* font-family: 'Montserrat', Arial, sans-serif; */
   transition: border-color 0.2s;
   resize: none;
 }
@@ -127,7 +122,7 @@
 .enquiry-form-note {
   font-size: 0.89rem;
   color: #888;
-  font-family: 'Montserrat', Arial, sans-serif;
+  /* font-family: 'Montserrat', Arial, sans-serif; */
   margin-top: 0.2rem;
   margin-bottom: 0.55rem;
 }
@@ -135,7 +130,7 @@
 .enquiry-send-btn {
   /* background: #2186F3; */
   border: none;
-  width: 32px;
+  width: fit-content;
   height: 32px;
   display: flex;
   align-items: center;
@@ -193,7 +188,7 @@
 @media(min-width:1024px){
   .enquiry-title{
     position: absolute;
-    top: -45px;
+    top: -47px;
   
   }
 }
@@ -256,7 +251,7 @@
   display: block;
 }
 .contactmap-title {
-  font-family: 'Montserrat', Arial, sans-serif;
+  /* font-family: 'Montserrat', Arial, sans-serif; */
   font-size: 1.45rem;
   font-weight: 500;
   margin-bottom: 1.6rem;
@@ -265,7 +260,7 @@
 }
 .contactmap-link {
   color: #fff;
-  font-family: 'Montserrat', Arial, sans-serif;
+  /* font-family: 'Montserrat', Arial, sans-serif; */
   font-size: 1.09rem;
   text-decoration: none;
   margin-bottom: 0.6rem;
@@ -307,3 +302,6 @@
   .contactmap-pin { font-size: 2rem; }
 }
 
+.itly-color{
+  color: #434343;
+}

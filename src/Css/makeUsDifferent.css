@@ -44,7 +44,7 @@
 
 .whyus-heading {
   margin: 0;
-  font-size: 40px;
+  font-size: 2.875rem;
   line-height: 1.1;
   font-weight: 700;
 }
@@ -144,10 +144,6 @@
     display: none; /* no buttons on mobile/tablet */
   }
 
-  .whyus-heading {
-    font-size: 32px;
-  }
-
   .whyus-card {
     padding: 24px 20px 26px;
   }
@@ -166,7 +162,6 @@
   .whyus-wrapper {
     padding-inline: 0;
   }
-
   .whyus-carousel {
     gap: 0;                               /* no visible second card */
     scroll-snap-type: x mandatory;        /* snap per card */
@@ -186,9 +181,9 @@
 }
 
 /* large screens (>=1025px) */
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .whyus-heading {
-    font-size: 60px;
+    margin-bottom: 2rem;
   }
 
   .whyus-carousel {
@@ -207,5 +202,10 @@
 
   .whyus-card-text {
     font-size: 17px;
+  }
+}
+@media (max-width: 425px){
+  .whyus-heading{
+    font-size: 1.875rem;
   }
 }
