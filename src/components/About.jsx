@@ -8,7 +8,8 @@ import MakeUsDifferent from "./MakeUsDifferent.jsx";
 import pushpender from "../assets/images/pushpender.jpg";
 import WhoWeWorkWith from "./WhoWeWorkWith.jsx";
 import JourneyTimeline from "./JourneyTimeline.jsx";
-import aboutVideo from '../assets/video/aboutVideo.mp4'
+import aboutVideo from "../assets/video/aboutVideo.mp4";
+import AboutScrollReveal from "./AboutScrollReveal.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,14 +47,6 @@ const About = () => {
   return (
     <>
       <section className="hero-root">
-        {/* <nav className="hero-nav"> */}
-        {/* <div className="hero-nav-logo">
-            <svg height="20" width="20" viewBox="0 0 20 20">
-              <circle cx="10" cy="10" r="9" fill="#1e90ff" />
-            </svg>
-            <span>About us</span>
-          </div> */}
-
         {/* </nav>  */}
         <HeadingComponent text="About Us" paddingBottom="0" />
 
@@ -82,8 +75,6 @@ const About = () => {
             that strengthen safety, quality, and sustainability.
           </p>
 
-         
-
           <LearnMoreButton text="Discover more" link="/" marginTop="20" />
         </div>
       </section>
@@ -95,13 +86,23 @@ const About = () => {
 
       {/* --------------------------------------------------------------------- */}
       <div className="about-bg">
-        <div className="about-intro applyfont">
+      
+        <AboutScrollReveal
+          baseOpacity={0}
+          enableBlur={true}
+          baseRotation={5}
+          blurStrength={10}
+         
+        >
           Bexex Global Pvt. Ltd. is a premier consulting firm delivering
           affordable and integrated solutions in Environment, Health & Safety
-          (EHS), Quality, Sustainability, and Business Excellence. <br />
-          We support organizations in building safer, compliant, and
-          high-performing operations through practical and scalable services.
-        </div>
+          (EHS), Quality, Sustainability, and Business Excellence. We support
+          organizations in building safer, compliant, and high-performing
+          operations through practical and scalable services.
+        </AboutScrollReveal>
+
+
+
         <div className="about-section-card">
           <div className="about-left">
             <div>
@@ -131,11 +132,9 @@ const About = () => {
       <WhoWeWorkWith />
       {/* ----------------------- */}
 
-    <JourneyTimeline />
+      <JourneyTimeline />
 
-
-
-    <TeamGrid />
+      <TeamGrid />
     </>
   );
 };
