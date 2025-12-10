@@ -23,7 +23,7 @@ const AboutScrollReveal = ({
   const splitText = useMemo(() => {
     const text = typeof children === 'string' ? children : '';
     return text.split(/(\s+)/).map((word, index) => {
-      if (word.match(/^\s+$/)) return word;
+      if (/^\s+$/.test(word)) return word;
       return (
         <span className="word" key={index}>
           {word}
@@ -36,23 +36,27 @@ const AboutScrollReveal = ({
     const el = containerRef.current;
     if (!el) return;
 
+    // 👉 STOP animation on mobile
+    if (isMobile) {
+      gsap.set(el.querySelectorAll(".word"), { opacity: 1, filter: "none" });
+      return;
+    }
+
+    // 👉 Desktop / Laptop animations
     const scroller =
       scrollContainerRef?.current ? scrollContainerRef.current : window;
 
-    const mobStart = "top 95%";         // 👈 fires earlier on mobile
-    const mobEnd   = "bottom 65%";
-
     gsap.fromTo(
       el,
-      { transformOrigin: '0% 50%', rotate: isMobile ? 1 : baseRotation },
+      { transformOrigin: '0% 50%', rotate: baseRotation },
       {
         ease: 'none',
         rotate: 0,
         scrollTrigger: {
           trigger: el,
           scroller,
-          start: isMobile ? mobStart : "top bottom",
-          end: isMobile ? mobEnd : rotationEnd,
+          start: 'top bottom',
+          end: rotationEnd,
           scrub: true
         }
       }
@@ -62,37 +66,33 @@ const AboutScrollReveal = ({
 
     gsap.fromTo(
       wordElements,
-      {
-        opacity: isMobile ? 0.4 : baseOpacity,     // 👈 prevent disappearing
-        willChange: 'opacity'
-      },
+      { opacity: baseOpacity },
       {
         ease: 'none',
         opacity: 1,
-        stagger: 0.03,
+        stagger: 0.05,
         scrollTrigger: {
           trigger: el,
           scroller,
-          start: isMobile ? mobStart : "top bottom-=20%",
-          end: isMobile ? mobEnd : wordAnimationEnd,
+          start: 'top bottom-=20%',
+          end: wordAnimationEnd,
           scrub: true
         }
       }
     );
 
-    // Disable blur on mobile (important)
-    if (enableBlur && !isMobile) {
+    if (enableBlur) {
       gsap.fromTo(
         wordElements,
         { filter: `blur(${blurStrength}px)` },
         {
           ease: 'none',
           filter: 'blur(0px)',
-          stagger: 0.03,
+          stagger: 0.05,
           scrollTrigger: {
             trigger: el,
             scroller,
-            start: "top bottom-=20%",
+            start: 'top bottom-=20%',
             end: wordAnimationEnd,
             scrub: true
           }
@@ -101,7 +101,7 @@ const AboutScrollReveal = ({
     }
 
     return () => {
-      ScrollTrigger.getAll().forEach((t) => t.kill());
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
   }, [
     scrollContainerRef,
