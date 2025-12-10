@@ -86,7 +86,14 @@ const About = () => {
 
       {/* --------------------------------------------------------------------- */}
       <div className="about-bg">
-      
+        {/* <div className="about-intro applyfont">
+          Bexex Global Pvt. Ltd. is a premier consulting firm delivering
+          affordable and integrated solutions in Environment, Health & Safety
+          (EHS), Quality, Sustainability, and Business Excellence. <br />
+          We support organizations in building safer, compliant, and
+          high-performing operations through practical and scalable services.
+        </div> */}
+
         <AboutScrollReveal
           baseOpacity={0}
           enableBlur={true}
@@ -100,8 +107,6 @@ const About = () => {
           organizations in building safer, compliant, and high-performing
           operations through practical and scalable services.
         </AboutScrollReveal>
-
-
 
         <div className="about-section-card">
           <div className="about-left">

@@ -2,7 +2,6 @@ import { useEffect, useRef, useMemo } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutScrollReveal = ({
@@ -18,6 +17,8 @@ const AboutScrollReveal = ({
   wordAnimationEnd = 'bottom bottom'
 }) => {
   const containerRef = useRef(null);
+
+  const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
 
   const splitText = useMemo(() => {
     const text = typeof children === 'string' ? children : '';
@@ -35,19 +36,23 @@ const AboutScrollReveal = ({
     const el = containerRef.current;
     if (!el) return;
 
-    const scroller = scrollContainerRef && scrollContainerRef.current ? scrollContainerRef.current : window;
+    const scroller =
+      scrollContainerRef?.current ? scrollContainerRef.current : window;
+
+    const mobStart = "top 95%";         // 👈 fires earlier on mobile
+    const mobEnd   = "bottom 65%";
 
     gsap.fromTo(
       el,
-      { transformOrigin: '0% 50%', rotate: baseRotation },
+      { transformOrigin: '0% 50%', rotate: isMobile ? 1 : baseRotation },
       {
         ease: 'none',
         rotate: 0,
         scrollTrigger: {
           trigger: el,
           scroller,
-          start: 'top bottom',
-          end: rotationEnd,
+          start: isMobile ? mobStart : "top bottom",
+          end: isMobile ? mobEnd : rotationEnd,
           scrub: true
         }
       }
@@ -57,33 +62,37 @@ const AboutScrollReveal = ({
 
     gsap.fromTo(
       wordElements,
-      { opacity: baseOpacity, willChange: 'opacity' },
+      {
+        opacity: isMobile ? 0.4 : baseOpacity,     // 👈 prevent disappearing
+        willChange: 'opacity'
+      },
       {
         ease: 'none',
         opacity: 1,
-        stagger: 0.05,
+        stagger: 0.03,
         scrollTrigger: {
           trigger: el,
           scroller,
-          start: 'top bottom-=20%',
-          end: wordAnimationEnd,
+          start: isMobile ? mobStart : "top bottom-=20%",
+          end: isMobile ? mobEnd : wordAnimationEnd,
           scrub: true
         }
       }
     );
 
-    if (enableBlur) {
+    // Disable blur on mobile (important)
+    if (enableBlur && !isMobile) {
       gsap.fromTo(
         wordElements,
         { filter: `blur(${blurStrength}px)` },
         {
           ease: 'none',
           filter: 'blur(0px)',
-          stagger: 0.05,
+          stagger: 0.03,
           scrollTrigger: {
             trigger: el,
             scroller,
-            start: 'top bottom-=20%',
+            start: "top bottom-=20%",
             end: wordAnimationEnd,
             scrub: true
           }
@@ -92,13 +101,24 @@ const AboutScrollReveal = ({
     }
 
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      ScrollTrigger.getAll().forEach((t) => t.kill());
     };
-  }, [scrollContainerRef, enableBlur, baseRotation, baseOpacity, rotationEnd, wordAnimationEnd, blurStrength]);
+  }, [
+    scrollContainerRef,
+    enableBlur,
+    baseRotation,
+    baseOpacity,
+    rotationEnd,
+    wordAnimationEnd,
+    blurStrength,
+    isMobile
+  ]);
 
   return (
     <h2 ref={containerRef} className={`scroll-reveal ${containerClassName}`}>
-      <p className={` about-intro applyfont scroll-reveal-text ${textClassName}`}>{splitText}</p>
+      <p className={`about-intro applyfont scroll-reveal-text ${textClassName}`}>
+        {splitText}
+      </p>
     </h2>
   );
 };
