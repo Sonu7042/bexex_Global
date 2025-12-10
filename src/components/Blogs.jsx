@@ -20,8 +20,7 @@ export default function Blogs() {
 
       
         <h1 className="blog-title">
-          Insights That <span className="blog-title-em">Drive Safety</span>,<br />
-          Quality & Excellence  
+          Insights That <span className="itly">Drive Safety ,</span> <br/> Quality & Excellence  
         </h1>
         <p className="blog-desc-link">
           Discover expert articles, guides, and industry updates on EHS, Sustainability, Quality Management,
