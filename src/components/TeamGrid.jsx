@@ -4,6 +4,7 @@ import { HeadingComponent } from "./Buttons";
 
 import pushpender from '../assets/images/pushpender.jpg';
 import SanjayGupta from '../assets/images/sanjay_gupta.png';
+import Praveen_Sharma from '../assets/images/Praveen_Sharma.jpg';
 
 const teamMembers = [
   {
@@ -14,7 +15,7 @@ const teamMembers = [
   {
     name: "Praveen Sharma",
     title: "VP Sales & Marketing",
-    img: "./team2.jpg",
+    img: Praveen_Sharma,
   },
   {
     name: "Sanjay Gupta",

@@ -6,7 +6,6 @@ import "../Css/journeyTimeline.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const timelineData = [
-  // { year: "2025", content: "" },
   {
     year: "2025",
     content:
@@ -20,33 +19,39 @@ const timelineData = [
   {
     year: "2023",
     content:
-      "Registered as eGrowth  Training & Consultancy  Services under GST,  reaching 300+ projects and  100+ clients, and building a",
+      "Registered as eGrowth  Training & Consultancy  Services under GST,  reaching 300+ projects and 100+ clients.",
   },
   {
     year: "2021",
     content:
-      "Achieved 5,000+ training hours  and completed 200+ consulting  projects, strengthening our footprint across industries.",
+      "Achieved 5,000+ training hours and completed 200+ consulting projects.",
   },
   {
     year: "2019",
     content:
-      " Set up a dedicated office and  expanded the consulting and  training team to serve more sectors with structured project management",
+      "Set up a dedicated office and expanded the consulting and training team.",
   },
   {
     year: "2017",
     content:
-      "Established as eGrowth India, delivering  early consulting assignments and 200+  training hours—laying the foundation for  client trust and expertise.",
+      "Established as eGrowth India, delivering early consulting assignments.",
   }
-  // { year: "2010", content: "" },
 ];
 
 const JourneyTimeline = () => {
   const wrapperRef = useRef(null);
   const rightPanelRef = useRef(null);
   const blockRefs = useRef([]);
-  const [activeYear, setActiveYear] = useState(timelineData[0].year);
-  const [isMobile, setIsMobile] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // RETURN faded top and bottom years
+  const getYears = (i) => {
+    return {
+      prev: i - 1 >= 0 ? timelineData[i - 1].year : "",
+      next: i + 1 < timelineData.length ? timelineData[i + 1].year : "",
+    };
+  };
 
   // Check screen size
   useEffect(() => {
@@ -67,7 +72,7 @@ const JourneyTimeline = () => {
 
   // Desktop GSAP animation
   useEffect(() => {
-    if (isMobile) return; // skip GSAP on mobile
+    if (isMobile) return;
 
     blockRefs.current = blockRefs.current.slice(0, timelineData.length);
     const innerHeight = rightPanelRef.current.scrollHeight;
@@ -120,17 +125,27 @@ const JourneyTimeline = () => {
         start,
         end,
         scrub: true,
-        onEnter: () => setActiveYear(timelineData[i].year),
-        onEnterBack: () => setActiveYear(timelineData[i].year),
+        onEnter: () => setCurrentIndex(i),
+        onEnterBack: () => setCurrentIndex(i),
       });
     });
 
     return () => ScrollTrigger.getAll().forEach((st) => st.kill());
   }, [isMobile]);
 
-  // Mobile carousel render
+  // Mobile UI
   if (isMobile) {
     return (
+      <>
+
+       <div class="journey-header">
+        <h2 class="journey-heading">
+            OUR JOURNEY OF&nbsp;
+            <span class="journey-heading-accent itly">GROWTH</span><br/>
+            AND EXCELLENCE
+          </h2>
+      </div>
+
       <div className="mobileTimelineWrapper">
         <div className="mobileTimelineBlock">
           <div className="mobileYear">{timelineData[currentIndex].year}</div>
@@ -138,28 +153,35 @@ const JourneyTimeline = () => {
             {timelineData[currentIndex].content}
           </div>
         </div>
-        {/* <div className="mobileDots">
-          {timelineDataMobile.map((_, i) => (
-            <span
-              key={i}
-              className={`dot ${i === currentIndex ? "active" : ""}`}
-              onClick={() => setCurrentIndex(i)}
-            />
-          ))}
-        </div> */}
       </div>
+      </>
     );
   }
 
-  // Desktop render
+  const faded = getYears(currentIndex);
+
+  // Desktop
   return (
-    <section className="timelineWrapper" ref={wrapperRef}>
-      <div></div>
-      <div className="leftPanel">
-        <div className="fadedYear">{activeYear}</div>
-        <div className="currentYear">{activeYear}</div>
-        <div className="fadedYear">{activeYear}</div>
+    <>
+
+      <div class="journey-header">
+        <h2 class="journey-heading">OUR JOURNEY OF  
+       
+          <span class="journey-heading-accent itly">GROWTH&nbsp;</span> 
+             <br/>
+          AND EXCELLENCE
+          </h2>
       </div>
+
+
+
+    <section className="timelineWrapper" ref={wrapperRef}>
+      <div className="leftPanel">
+        <div className="fadedYear">{faded.prev}</div>
+        <div className="currentYear">{timelineData[currentIndex].year}</div>
+        <div className="fadedYear">{faded.next}</div>
+      </div>
+
       <div className="rightContent" ref={rightPanelRef}>
         {timelineData.map((item, i) => (
           <div
@@ -172,6 +194,10 @@ const JourneyTimeline = () => {
         ))}
       </div>
     </section>
+    </>
+
+
+
   );
 };
 

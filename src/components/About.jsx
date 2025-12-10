@@ -2,13 +2,8 @@ import React, { useEffect } from "react";
 import "../Css/about.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import video1 from '../assets/video1.mp4'
-// import  miniLogo from '../assets/images/miniLogo.png'
-import journeyImg from "../assets/images/journeyImg.png";
 import TeamGrid from "./TeamGrid";
-import nature from "../assets/images/nature.jpg";
 import { LearnMoreButton, HeadingComponent } from "./Buttons";
-import Journey from "./Journey";
 import MakeUsDifferent from "./MakeUsDifferent.jsx";
 import pushpender from "../assets/images/pushpender.jpg";
 import WhoWeWorkWith from "./WhoWeWorkWith.jsx";
@@ -87,11 +82,7 @@ const About = () => {
             that strengthen safety, quality, and sustainability.
           </p>
 
-          {/* <a href="#" className="hero-btn">
-            Discover more
-           
-            <span className="arrow">→</span>
-          </a> */}
+         
 
           <LearnMoreButton text="Discover more" link="/" marginTop="20" />
         </div>
@@ -139,26 +130,6 @@ const About = () => {
       {/* ------------------ */}
       <WhoWeWorkWith />
       {/* ----------------------- */}
-
-
-
-    {/* <--------------------------------img-section-----------------------> */}
-    {/* <div className="journeySection">
-      <div className="glance-footer">
-        <span>
-          <span className="journey-bold">OUR JOURNEY OF </span>
-          <span className="journey-italic">GROWTH</span>
-        </span>
-        <br />
-        <span className="journey-bold">AND EXCELLENCE</span>
-      </div>
-      <div>
-
-      <img src={journeyImg} className="journeyImg" alt="journey" />
-      </div>
-    </div> */}
-
-
 
     <JourneyTimeline />
 

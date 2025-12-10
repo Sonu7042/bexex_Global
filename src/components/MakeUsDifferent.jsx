@@ -1,8 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "../Css/makeUsDifferent.css";
 import { HeadingComponent } from "./Buttons";
-
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 const originalCards = [
   {
@@ -15,7 +16,7 @@ const originalCards = [
   },
   {
     title: "One Team, One Plan",
-    text: "Most firms specialize in fragments. We work end‑to‑end so your professionals cover strategy, operations, compliance, business excellence, and vendor coordination without silos.",
+    text: "Most firms specialize in fragments. We work end-to-end so your professionals cover strategy, operations, compliance, business excellence, and vendor coordination without silos.",
   },
   {
     title: "We’ve Been There",
@@ -27,94 +28,47 @@ const originalCards = [
   },
   {
     title: "One Team, One Plan",
-    text: "Most firms specialize in fragments. We work end‑to‑end so your professionals cover strategy, operations, compliance, business excellence, and vendor coordination without silos.",
+    text: "Most firms specialize in fragments. We work end-to-end so your professionals cover strategy, operations, compliance, business excellence, and vendor coordination without silos.",
   },
 ];
 
-// Duplicate cards to make infinite loop
-const cards = [...originalCards, ...originalCards, ...originalCards];
-
 const MakeUsDifferent = () => {
-  const listRef = useRef(null);
-  const [index, setIndex] = useState(originalCards.length); // Start centered in middle copy
-
-  const isDesktop = () => window.innerWidth >= 1025;
-
-  // AUTO SCROLL (infinite → only forward)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => prev + 1);
-    }, 3500);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  // Infinite LOOP LOGIC – reset silently
-  useEffect(() => {
-    if (index >= cards.length - originalCards.length) {
-      setIndex(originalCards.length); // jump back to middle copy
-    }
-  }, [index]);
-
-  // CENTER active card
-  useEffect(() => {
-    const el = listRef.current;
-    if (!el) return;
-
-    const cardsEl = el.querySelectorAll(".whyus-card");
-    const activeCard = cardsEl[index];
-    if (!activeCard) return;
-
-    const containerWidth = el.offsetWidth;
-    const cardWidth = activeCard.offsetWidth;
-
-    const scrollLeft = activeCard.offsetLeft - (containerWidth - cardWidth) / 2;
-
-    el.scrollTo({ left: scrollLeft, behavior: "smooth" });
-  }, [index]);
-
-  const handlePrev = () => {
-    if (!isDesktop()) return;
-    setIndex((prev) => prev - 1);
-  };
-
-  const handleNext = () => {
-    if (!isDesktop()) return;
-    setIndex((prev) => prev + 1);
-  };
-
   return (
     <section className="whyus-wrapper">
       <HeadingComponent text="Why Us" />
 
       <div className="whyus-header">
-        <div className="whyus-heading-box">
-          <h2 className="whyus-heading">
-            What Makes Us <br />
-            <span className="whyus-heading-accent itly">Different</span>
-          </h2>
-        </div>
-
-        <div className="whyus-arrow-group">
-          <button className="whyus-arrow-btn" onClick={handlePrev}>
-            ←
-          </button>
-          <button className="whyus-arrow-btn" onClick={handleNext}>
-            →
-          </button>
-        </div>
+        <h2 className="whyus-heading">
+          What Makes Us <br />
+          <span className="whyus-heading-accent itly">Different</span>
+        </h2>
       </div>
 
-      <div className="whyus-carousel" ref={listRef}>
-        {cards.map((card, i) => (
-          <article
-            key={i}
-            className={`whyus-card ${i === index ? "active" : ""}`}
-          >
-            <h3 className="whyus-card-title">{card.title}</h3>
-            <p className="whyus-card-text">{card.text}</p>
-          </article>
-        ))}
+      <div className="section-padding">
+        <Swiper
+          modules={[Autoplay]}
+          slidesPerView={3}
+          loop={true}
+          centeredSlides={true}
+          autoplay={{ delay: 2800 }}
+          speed={700}
+          spaceBetween={25}
+          breakpoints={{
+            0: { slidesPerView: 1.1 }, // Mobile
+            600: { slidesPerView: 1.8 }, // Small tablets
+            900: { slidesPerView: 2.3 }, // Tablets
+            1200: { slidesPerView: 3 }, // Desktop → EXACTLY 3 CARDS
+          }}
+        >
+          {[...originalCards, ...originalCards].map((card, i) => (
+            <SwiperSlide key={i}>
+              <div className="whyus-card-swiper">
+                <h3 className="whyus-card-title">{card.title}</h3>
+                <p className="whyus-card-text">{card.text}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
