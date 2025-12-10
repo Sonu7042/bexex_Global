@@ -4,7 +4,7 @@ import { HeadingComponent } from "./Buttons";
 
 import pushpender from '../assets/images/pushpender.jpg';
 import SanjayGupta from '../assets/images/sanjay_gupta.png';
-import Praveen_Sharma from '../assets/images/Praveen_Sharma.jpg';
+import Praveen_Sharma from '../assets/images/Praveen_Sharma.png';
 
 const teamMembers = [
   {
