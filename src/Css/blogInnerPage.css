@@ -1,18 +1,11 @@
 .blog-inner {
-  /* background: #e6e6e6;    */
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   position: relative;
-  /* padding: 32px 0; */
-  overflow-x: hidden;
-  font-family: 'Inter', sans-serif;
-  padding-top: 35px;
+  padding-top: 5rem;
 }
 .blog-inner-header {
   width: 100%;
-  padding: 0 40px 32px 40px;
-  display: flex;
-  align-items: flex-start;
 }
 .blog-back-link {
   font-weight: bold;
@@ -35,13 +28,11 @@
 
 .blog-inner-content {
   width: 100%;
-  display: flex;
-  align-items: flex-start;
-  gap: 44px;
-  padding: 0 40px;
-  margin-bottom: 28px;
-  position: relative;
+  margin-top: 2.875rem;
 }
+
+
+
 .blog-image-wrapper {
   flex-shrink: 0;
   margin: 0 auto;

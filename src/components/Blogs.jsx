@@ -8,20 +8,9 @@ export default function Blogs() {
   return (
     <section className="blog-section  " >
       <header className="blog-header">
-        {/* <div className="blog-logo-row">
-          <div className="brand-logo">
-          <img alt="miniLogo" src={miniLogo}></img>
-          </div>
-          <span className="blog-brand">Blog</span>
-        </div> */}
-
-        <HeadingComponent  text="Blog" paddingBottom="4"  />
-        
-
-      
+        <HeadingComponent  text="Blog" paddingBottom="0"  />
         <h1 className="blog-title">
-          Insights That <span className="blog-title-em">Drive Safety</span>,<br />
-          Quality & Excellence  
+          Insights That <span className="itly">Drive Safety ,</span> <br/> Quality & Excellence  
         </h1>
         <p className="blog-desc-link">
           Discover expert articles, guides, and industry updates on EHS, Sustainability, Quality Management,

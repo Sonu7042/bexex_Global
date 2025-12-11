@@ -24,6 +24,12 @@ h1, h2,h3 span p li{
     font-family: heading;
 }
 
+::selection {
+  background-color: #3C3C3C;
+  color: #E8E8E8;
+}
+
+
 
 p{
     font-family: heading;

@@ -18,9 +18,14 @@
 }
 
 /* LEFT SIDE */
-.newsletter-left {
+.newsletter-left-news {
   min-width: 290px;
   flex: 1.7;
+}
+.new-text-tital{
+  font-size: 3.875rem;
+  font-weight: 900;
+  line-height: 120%;
 }
 .newsletter-bar {
   display: flex;
@@ -88,7 +93,7 @@
   outline: none;
   color: #222;
 }
-.newsletter-submit-btn {
+/* .newsletter-submit-btn {
   background: #2583f1;
   color: white;
   border: none;
@@ -103,13 +108,18 @@
 }
 .newsletter-submit-btn:hover {
   background: #166ac3;
-}
+} */
 .newsletter-agree-text {
   font-size: 1rem;
   color: #535353;
   opacity: 0.9;
 }
-
+.newsletter-submit-btn{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-top: 1rem;
+}
 /* RESPONSIVE DESIGN */
 @media (max-width: 1250px) {
   .newsletter-flex {

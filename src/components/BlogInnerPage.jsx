@@ -20,6 +20,7 @@ const navItems = [
 const BlogInnerPage = () => (
     <>
   <section className="blog-inner page_indenation">
+
     <div className="blog-inner-header">
       {/* <a href="/blogs" className="blog-back-link">
         All blogs 
@@ -28,8 +29,10 @@ const BlogInnerPage = () => (
       </a> */}
 
       {/* Learn */}
-      <LearnMoreButton  text="All blogs" link="/"  marginTop="10"/>
+      <LearnMoreButton  text="All blogs" link="/resources/blog"  marginTop="0"/>
+
     </div>
+
     <div className="blog-inner-content">
       <div className="blog-image-wrapper">
         <img src={iso} alt="Blog visual" className="blog-main-image" />
@@ -37,7 +40,7 @@ const BlogInnerPage = () => (
     </div>
       <div className="blog-text">
         <h1>
-         What is ISO: A &nbsp;<span className="blog-amp">&amp;</span>&nbsp;
+         What is ISO : A &nbsp;<span className="blog-amp">&amp;</span>&nbsp;
           <span className="blog-highlight">Comprehensive</span> <br /> Overview
         </h1>
         <p className="blog-description">
@@ -58,9 +61,9 @@ const BlogInnerPage = () => (
 
 
       </div>
-    <div className="blog-brand-bg">
+    {/* <div className="blog-brand-bg">
         <img src={miniLogo} alt="miniLogo" />
-    </div>
+    </div> */}
   </section>
 
     
