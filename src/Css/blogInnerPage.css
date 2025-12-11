@@ -49,14 +49,11 @@
   border-radius: 25px;
 }
 .blog-text {
-  flex: 1;
-  /* max-width: 840px;
-  padding-top: 26px; */
+  margin-top: 1.875rem;
 }
 .blog-text h1 {
-  font-size: 3.7rem;
-  margin-bottom: 22px;
-  font-weight: 800;
+  font-size: 5vw;
+  font-weight: 900;
   color: #111;
   line-height: 1.1;
   letter-spacing: -2px;
@@ -65,15 +62,14 @@
   font-weight: 800;
 }
 .blog-highlight {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  color: #333;
+  color: #0073ff;
   font-weight: 700;
+  font-size: 5vw;
 }
 .blog-description {
-  font-size: 1.23rem;
+  margin-top: 1.4rem;
+  font-size: 1.3rem;
   color: #222;
-  margin-bottom: 35px;
   font-weight: 500;
   max-width: 680px;
   line-height: 1.5;
@@ -95,18 +91,17 @@
 .blog-discover-link:hover {
   background: #e8f1ff;
 }
-.blog-brand-bg {
+/* .blog-brand-bg {
   position: absolute;
     top: -7px;
     right: -207px;
     width: 495px;
     height: 350px;
-    /* background: transparent url(/yourIconOrSvg.svg) no-repeat right center; */
     background-size: contain;
     opacity: 0.33;
     z-index: 0;
     pointer-events: none;
-}
+} */
 
 /* Responsive styles */
 @media (max-width: 900px) {
@@ -136,11 +131,11 @@
   .blog-description {
     font-size: 1.05rem;
   }
-  .blog-brand-bg {
+  /* .blog-brand-bg {
     width: 110px;
     height: 110px;
     top: 60px;
-  }
+  } */
 }
 
 
@@ -170,8 +165,6 @@
   display: flex;
   width: 100%;
   min-height: 100vh;
-  /* background: #e6e6e6; */
-  padding: 0;
   position: relative;
 }
 
@@ -208,20 +201,27 @@
 
 .blog-intro {
   max-width: 700px;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   color: #333;
   margin: 0 0 0px auto;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 
 
 .blog-body {
   font-size: 1.09rem;
-  color: #474747;
+  /* color: #474747; */
   font-weight: 500;
-  margin-bottom: 13px;
-  max-width: 800px;
+  margin-top: 1.4rem;
+  max-width: 930px;
+}
+
+.blog-body-highlightColor{
+  color: #434343;
+}
+.blog-body-highlightColorBlue{
+  color: #0073ff;
 }
 
 /* Side nav/progress bar */
@@ -405,23 +405,34 @@
 
 
 .innertopText{
-  font-size: 1.09rem;
-  color: #0039A6;
-  font-weight: 500;
-  margin-bottom: 40px;
+  font-size: 2.875rem;
+  font-weight: 700;
+  line-height: 110%;
   max-width: 800px;
+  margin-top: 2rem;
+}
+
+
+.innertopTextSubHeading{
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 110%;
+  max-width: 800px;
+  margin-top: 2rem;
+}
+
+
+.innertopTextSubHeading_Points{
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 110%;
+  max-width: 800px;
+  margin-top: 2rem;
 
 }
 
-.nationalTextPara{
-   font-size: 1.09rem;
-  color: #474747;
-  font-weight: 500;
-  margin-bottom: 13px;
-  margin-top: 20px;
-  max-width: 800px;
-  
-}
+
+
 
 .blogContainerOfIso{
   display: flex;
