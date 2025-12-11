@@ -13,7 +13,7 @@ const NewsLetter = () => {
   };
   return (
     <>
-      <section className="newsletter-bg">
+      <section className="newsletter-bg page_indenation">
         {/* <HeadingComponent text="Subscribe"  paddingBottom="5" /> */}
         <div className="newsletter-flex">
           {/* Left Side Title */}

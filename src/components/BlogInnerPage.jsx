@@ -16,6 +16,35 @@ const navItems = [
   { label: "Conclusion", anchor: "conclusion" },
 ];
 
+
+
+
+
+
+const resources = [
+  {
+    title: "ISO 45001 Gap Analysis Checklist (Excel) ",
+    description:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    buttonLabel: "Download now",
+    badge: "X", // use icon or text
+    type: "primary",
+  },
+  {
+    title: "ISO 45001 Implementation in 10 Steps (Watch on YT)",
+    description:
+      "Video walkthrough of the complete implementation process with real-world examples from Indian manufacturing environments.",
+    buttonLabel: "Coming Soon",
+    type: "secondary",
+  },
+];
+
+
+const tags = ["ISO Systems", "Consulting", "Energy"];
+
+
+
+
 const BlogInnerPage = () => (
   <>
     <section className="blog-inner page_indenation">
@@ -365,6 +394,80 @@ const BlogInnerPage = () => (
     </section>
 
     <FrequentQuestion />
+
+    <div className="nextSteps page_indenation ">
+        <p className="innertopText">
+         Your <span className="blog-body-highlightColorBlue itly">Next</span>  Steps
+        </p>
+
+        <p className="blog-body">
+         ISO 45001 implementation represents a strategic investment in workforce protection and operational excellence. Organizations that approach it systematically transform workplace safety from compliance obligation into competitive advantage.
+        </p>
+
+
+
+         <p className="innertopTextSubHeading_Points">
+          Ready to begin your ISO 45001 journey? Download our comprehensive Gap Analysis Checklist to assess your current readiness and identify priority areas for development.
+         </p>
+
+
+           <p className="blog-body">
+           Need expert guidance? Bexex's experienced consultants have helped over 200 Indian manufacturers achieve certification while building safety cultures that protect workers and strengthen business performance. <span className="blog-body-highlightColorBlue"> Explore our ISO 45001 consulting services</span> or contact us for a complimentary consultation.
+          </p>
+
+
+      <div className="res-wrapper">
+        <div className="res-main-row">
+          <div className="res-cards">
+            {resources.map((item, i) => (
+              <article key={i} className="res-card">
+                <h3 className="res-card-title">{item.title}</h3>
+                <p className="res-card-desc">{item.description}</p>
+
+                <div className="res-card-footer">
+                  <button
+                    className={
+                      item.type === "primary"
+                        ? "res-btn res-btn-primary"
+                        : "res-btn res-btn-ghost"
+                    }
+                  >
+                    {item.buttonLabel}
+                  </button>
+
+                  {item.type === "primary" && (
+                    <span className="res-download-icon">{item.badge}</span>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="res-share">
+            <p className="res-share-label">Share it :</p>
+            <div className="res-share-icons">
+              <button className="res-icon-circle">in</button>
+              <button className="res-icon-circle">f</button>
+              <button className="res-icon-circle">◎</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="res-tags-row">
+          {tags.map((tag) => (
+            <button key={tag} className="res-tag">
+              {tag}
+            </button>
+          ))}
+        </div>
+      </div>
+
+         
+
+
+
+
+      </div>
 
 
 
