@@ -7,6 +7,10 @@ import Footer from "./Footer";
 import { LearnMoreButton } from "./Buttons";
 import construction_worker_img from "../assets/images/blog_imgs/constructionWorkerImg.png";
 import FrequentQuestion from "./FrequentQuestion";
+import { CiLinkedin } from "react-icons/ci";
+import { CiFacebook } from "react-icons/ci";
+import { PiInstagramLogoLight } from "react-icons/pi";
+
 
 const navItems = [
   { label: "Why Environment & Sustainability Matters", anchor: "why" },
@@ -435,9 +439,9 @@ const BlogInnerPage = () => (
                     {item.buttonLabel}
                   </button>
 
-                  {item.type === "primary" && (
+                  {/* {item.type === "primary" && (
                     <span className="res-download-icon">{item.badge}</span>
-                  )}
+                  )} */}
                 </div>
               </article>
             ))}
@@ -446,13 +450,13 @@ const BlogInnerPage = () => (
           <div className="res-share">
             <p className="res-share-label">Share it :</p>
             <div className="res-share-icons">
-              <button className="res-icon-circle">in</button>
-              <button className="res-icon-circle">f</button>
-              <button className="res-icon-circle">◎</button>
+              <button className="res-icon-circle"> <CiLinkedin /> </button>
+              <button className="res-icon-circle"><CiFacebook /></button>
+              <button className="res-icon-circle"><PiInstagramLogoLight /></button>
             </div>
           </div>
         </div>
-
+ 
         <div className="res-tags-row">
           {tags.map((tag) => (
             <button key={tag} className="res-tag">

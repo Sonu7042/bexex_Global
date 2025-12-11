@@ -42,7 +42,7 @@ const FrequentQuestion = () => {
     <div className="faq-page page_indenation">
       <div className="faq-wrapper">
         <h1 className="faq-heading">
-          Frequently <span>Asked</span> Questions
+          Frequently <span className="itly">Asked</span> Questions
         </h1>
 
         <div className="faq-list">
