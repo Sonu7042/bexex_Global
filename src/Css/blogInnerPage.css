@@ -235,7 +235,7 @@
 /* Side nav/progress bar */
 .blog-side-nav {
   flex: none;
-  width: var(--side-nav-width);
+  width: var(--side-nav-width); 
   display: flex;
   align-items: center;
   justify-content: flex-end;
