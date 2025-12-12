@@ -18,7 +18,7 @@
 
 /* LEFT SIDE */
 .newsletter-left-news {
-  min-width: 290px;
+  /* min-width: 290px; */
   flex: 1.7;
 }
 .new-text-tital{
