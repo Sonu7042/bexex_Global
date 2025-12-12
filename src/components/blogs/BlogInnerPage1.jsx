@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import "../Css/blogInnerPage.css";
+import "../../Css/blogInnerPage.css";
 import { Link } from "react-router-dom";
-import NewsLetter from "./NewsLetter";
-import LetsConnect from "./LetsConnect";
-import Footer from "./Footer";
-import { LearnMoreButton } from "./Buttons";
-import construction_worker_img from "../assets/images/blog_imgs/constructionWorkerImg.png";
-import FrequentQuestion from "./FrequentQuestion";
+import NewsLetter from "../NewsLetter";
+import LetsConnect from "../LetsConnect";
+import Footer from "../Footer";
+import { LearnMoreButton } from "../Buttons";
+import construction_worker_img from "../../assets/images/blog_imgs/constructionWorkerImg.png";
+import FrequentQuestion from "../FrequentQuestion";
 import { CiLinkedin } from "react-icons/ci";
 import { CiFacebook } from "react-icons/ci";
 import { PiInstagramLogoLight } from "react-icons/pi";
-import ReadMoreBlog from "./ReadMoreBlog";
+import ReadMoreBlog from "../ReadMoreBlog";
 
 const resources = [
   {

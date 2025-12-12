@@ -25,6 +25,7 @@ const blogPosts = [
     summary:
       "Insights on how ISO 45001 contributes to effective emergency preparedness and response in the workplace.",
     tags: ["ISO Systems", "Safty Managment"],
+    url: "/blog/iso-45001-implementation-guide"
   },
   {
     img: clearingAndAir,
@@ -34,6 +35,8 @@ const blogPosts = [
     summary:
       "Explore the verification process for greenhouse gas emissions as per ISO 14064:2019_Part 03.",
     tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/ehs-legal-register-compliance"
+
   },
   {
     img: navigating_Environment,
@@ -43,6 +46,7 @@ const blogPosts = [
     summary:
       "Understand the principles and benefits of ISO 14001 in environmental management.",
     tags: ["Environment Management", "ISO Systems"],
+    url:"#"
   },
   {
     img: oms,
@@ -52,6 +56,8 @@ const blogPosts = [
     summary:
       "Provide an overview of ISO 9001:2015, its principles, and the significance of Quality Management Systems.",
      tags: ["Environment Management", "ISO Systems"],
+    url:"#"
+
   },
   {
     img: safetyFirst,
@@ -61,6 +67,8 @@ const blogPosts = [
     summary:
       "A comprehensive guide to implementing ISO 45001 for occupational health and safety.",
     tags: ["Environment Management", "ISO Systems"],
+    url:"#"
+
   },
   {
     img: energizing,
@@ -70,6 +78,8 @@ const blogPosts = [
     summary:
       "A deep dive into the principles and steps involved in implementing ISO 50001.",
     tags: ["Environment Management", "ISO Systems"],
+    url:"#"
+
   },
   {
     img: ecofriendly,
@@ -79,6 +89,8 @@ const blogPosts = [
     summary:
       "Explore the principles of ISO 14001 and their application for eco-friendly practices.",
     tags: ["Environment Management", "ISO Systems"],
+    url:"#"
+
   },
   {
     img: navigating_iso,
@@ -88,6 +100,8 @@ const blogPosts = [
     summary:
       "Explore each stage of ISO 9001 implementation with practical tips and insights.",
     tags: ["Environment Management", "ISO Systems"],
+    url:"#"
+
   },
   {
     img: unralleving,
@@ -97,6 +111,8 @@ const blogPosts = [
     summary:
       "Explore the key features and benefits of ISO 9001:2015.",
     tags: ["Environment Management", "ISO Systems"],
+    url:"#"
+
   },
 ];
 
@@ -107,7 +123,7 @@ export default function BlogsGrid() {
     <section className="blog-grid-section">
       <div className="blog-grid-container">
         {blogPosts.map((post, idx) => (
-          <Link to={'/blog/iso-45001-implementation-guide'} className="blog-grid-card" key={idx}>
+          <Link to={post.url} className="blog-grid-card" key={idx}>
             <div className="blog-grid-img-wrap">
               <img src={post.img} alt={post.title} className="blog-grid-img" />
             </div>
