@@ -136,6 +136,9 @@
   .newsletter-title {
     font-size: 2.1rem;
   }
+  .new-text-tital{
+    font-size: 2.875rem;
+  }
 }
 @media (max-width: 620px) {
   .newsletter-flex {
