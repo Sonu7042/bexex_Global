@@ -21,6 +21,7 @@ import CommunitiesSectionLayout from "./components/CommunitiesSectionLayout";
 
 import BlogInnerPage1 from "./components/blogs/BlogInnerPage1";  
 import BlogInnerPage2 from "./components/blogs/BlogInnerPage2";  
+import BlogInnerPage3 from "./components/blogs/BlogInnerPage3";  
 
 
 
@@ -92,6 +93,7 @@ const App = () => {
 
         <Route path="/blog/iso-45001-implementation-guide" element={<BlogInnerPage1 />} />
         <Route path="/blog/ehs-legal-register-compliance" element={<BlogInnerPage2 />} />
+        <Route path="/blog/iso-9001-risk-based-thinking" element={<BlogInnerPage3 />} />
 
 
 
