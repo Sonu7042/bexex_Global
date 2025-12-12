@@ -22,6 +22,8 @@ import CommunitiesSectionLayout from "./components/CommunitiesSectionLayout";
 import BlogInnerPage1 from "./components/blogs/BlogInnerPage1";  
 import BlogInnerPage2 from "./components/blogs/BlogInnerPage2";  
 import BlogInnerPage3 from "./components/blogs/BlogInnerPage3";  
+import BlogInnerPage4 from "./components/blogs/BlogInnerPage4";  
+import BlogInnerPage5 from "./components/blogs/BlogInnerPage5";  
 
 
 
@@ -63,7 +65,6 @@ const App = () => {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
-
     requestAnimationFrame(raf);
 
     // 🔥 VERY IMPORTANT — tells AOS that scroll happened
@@ -94,6 +95,8 @@ const App = () => {
         <Route path="/blog/iso-45001-implementation-guide" element={<BlogInnerPage1 />} />
         <Route path="/blog/ehs-legal-register-compliance" element={<BlogInnerPage2 />} />
         <Route path="/blog/iso-9001-risk-based-thinking" element={<BlogInnerPage3 />} />
+        <Route path="/blog/internal-audit-process-guide" element={<BlogInnerPage4 />} />
+        <Route path="/blog/third-party-inspection-manufacturing" element={<BlogInnerPage5 />} />
 
 
 
