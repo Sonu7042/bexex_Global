@@ -17,7 +17,13 @@ import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
 
 import CommunitiesSectionLayout from "./components/CommunitiesSectionLayout";
-import BlogInnerPage from "./components/BlogInnerPage";
+
+
+import BlogInnerPage1 from "./components/blogs/BlogInnerPage1";  
+import BlogInnerPage2 from "./components/blogs/BlogInnerPage2";  
+
+
+
 import ResourcesNewsLetter from "./components/ResourcesNewsLetter";
 import Contact from "./components/Contact";
 
@@ -84,7 +90,8 @@ const App = () => {
         <Route path="/resources/newsletters" element={<ResourcesNewsLetter />} />
 
 
-        <Route path="/blog/iso-45001-implementation-guide" element={<BlogInnerPage />} />
+        <Route path="/blog/iso-45001-implementation-guide" element={<BlogInnerPage1 />} />
+        <Route path="/blog/ehs-legal-register-compliance" element={<BlogInnerPage2 />} />
 
 
 
