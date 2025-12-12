@@ -229,6 +229,7 @@
 }
 .blog-body-highlightColorBlue{
   color: #0073ff;
+  cursor: alias;
 }
 
 /* Side nav/progress bar */

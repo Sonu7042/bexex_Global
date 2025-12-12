@@ -56,7 +56,7 @@ const blogPosts = [
     summary:
       "Provide an overview of ISO 9001:2015, its principles, and the significance of Quality Management Systems.",
      tags: ["Environment Management", "ISO Systems"],
-    url:"#"
+    url:"/blog/internal-audit-process-guide"
 
   },
   {
@@ -67,53 +67,53 @@ const blogPosts = [
     summary:
       "A comprehensive guide to implementing ISO 45001 for occupational health and safety.",
     tags: ["Environment Management", "ISO Systems"],
-    url:"#"
+    url:"/blog/third-party-inspection-manufacturing"
 
   },
-  {
-    img: energizing,
-    date: "22 July 2024",
-    readTime: "4 min",
-    title: "Energizing Efficiency: ISO 50001 Implementation",
-    summary:
-      "A deep dive into the principles and steps involved in implementing ISO 50001.",
-    tags: ["Environment Management", "ISO Systems"],
-    url:"#"
+  // {
+  //   img: energizing,
+  //   date: "22 July 2024",
+  //   readTime: "4 min",
+  //   title: "Energizing Efficiency: ISO 50001 Implementation",
+  //   summary:
+  //     "A deep dive into the principles and steps involved in implementing ISO 50001.",
+  //   tags: ["Environment Management", "ISO Systems"],
+  //   url:"#"
 
-  },
-  {
-    img: ecofriendly,
-    date: "22 July 2024",
-    readTime: "4 min",
-    title: "Eco-Friendly Excellence: A Guide to ISO 14001",
-    summary:
-      "Explore the principles of ISO 14001 and their application for eco-friendly practices.",
-    tags: ["Environment Management", "ISO Systems"],
-    url:"#"
+  // },
+  // {
+  //   img: ecofriendly,
+  //   date: "22 July 2024",
+  //   readTime: "4 min",
+  //   title: "Eco-Friendly Excellence: A Guide to ISO 14001",
+  //   summary:
+  //     "Explore the principles of ISO 14001 and their application for eco-friendly practices.",
+  //   tags: ["Environment Management", "ISO Systems"],
+  //   url:"#"
 
-  },
-  {
-    img: navigating_iso,
-    date: "22 July 2024",
-    readTime: "4 min",
-    title: "Navigating ISO 9001: A Step-by-Step Guide",
-    summary:
-      "Explore each stage of ISO 9001 implementation with practical tips and insights.",
-    tags: ["Environment Management", "ISO Systems"],
-    url:"#"
+  // },
+  // {
+  //   img: navigating_iso,
+  //   date: "22 July 2024",
+  //   readTime: "4 min",
+  //   title: "Navigating ISO 9001: A Step-by-Step Guide",
+  //   summary:
+  //     "Explore each stage of ISO 9001 implementation with practical tips and insights.",
+  //   tags: ["Environment Management", "ISO Systems"],
+  //   url:"#"
 
-  },
-  {
-    img: unralleving,
-    date: "22 July 2024",
-    readTime: "4 min",
-    title: "Unraveling the Core Foundation of QMS",
-    summary:
-      "Explore the key features and benefits of ISO 9001:2015.",
-    tags: ["Environment Management", "ISO Systems"],
-    url:"#"
+  // },
+  // {
+  //   img: unralleving,
+  //   date: "22 July 2024",
+  //   readTime: "4 min",
+  //   title: "Unraveling the Core Foundation of QMS",
+  //   summary:
+  //     "Explore the key features and benefits of ISO 9001:2015.",
+  //   tags: ["Environment Management", "ISO Systems"],
+  //   url:"#"
 
-  },
+  // },
 ];
 
 export default function BlogsGrid() {

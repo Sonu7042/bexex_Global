@@ -62,6 +62,38 @@ const BlogInnerPage = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+
+
+
+   const faqData = [
+    {
+      question: "How many regulations typically apply to Indian manufacturing facilities?",
+      answer:
+        "This varies significantly based on industry sector, facility size, and location. Small manufacturing operations may face 50 to 100 discrete compliance requirements. Large chemical or pharmaceutical facilities can face 300 or more requirements spanning environmental, safety, and operational domains.",
+    },
+    {
+      question: "Should legal registers cover only central legislation or include state requirements?",
+      answer:
+        "Comprehensive legal registers must cover all applicable requirements—central legislation, state rules, local ordinances, and industry-specific requirements. Many compliance obligations arise from state-level implementation of central acts or from local authority requirements.",
+    },
+    {
+      question: "How often should legal registers be reviewed?",
+      answer:
+        "Quarterly reviews represent the minimum frequency for most organizations. Facilities in rapidly evolving regulatory environments or high-risk industries should conduct monthly reviews. Additionally, conduct ad-hoc reviews when major regulatory changes are announced.",
+    },
+    {
+      question: "Who should maintain the legal register?",
+      answer:
+        "Typically the EHS manager or compliance officer maintains the legal register. However, responsibility for individual requirements should be distributed to relevant departments. Environmental engineers track environmental requirements, safety officers track safety requirements, and HR departments track labor law requirements.",
+    },
+    {
+      question: "Can legal registers be outsourced?",
+      answer:
+        "Some organizations engage consultants or subscription services to maintain their legal registers. This can work if the service provider understands your specific operations and provides timely updates. However, internal personnel must still verify applicability and compliance status—outsourced services can identify requirements but can't verify compliance without facility knowledge.",
+    },
+  ];
+
   return (
     <>
       <section className="blog-inner page_indenation">
@@ -677,7 +709,7 @@ const BlogInnerPage = () => {
         Sectors. "
       </div>
     </div> */}
-      <FrequentQuestion />
+      <FrequentQuestion  data={faqData}/>
       <NewsLetter />
       <ReadMoreBlog />
       <LetsConnect />
