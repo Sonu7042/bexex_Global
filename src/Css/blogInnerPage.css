@@ -278,8 +278,8 @@
   border-radius: 50%;
   background: #2d2d2d;
   margin-right: 9px;
-  border: 2.5px solid #fff;
-  box-shadow: 0 0 0 2px #aaa;
+  /* border: 2.5px solid #fff; */
+  /* box-shadow: 0 0 0 2px #aaa; */
 }
 .blog-side-nav a.active .nav-dot {
   background: #fff;
@@ -383,8 +383,8 @@
   border-radius: 50%;
   background: #2d2d2d;
   margin-right: 9px;
-  border: 2.5px solid #fff;
-  box-shadow: 0 0 0 2px #aaa;
+  /* border: 2.5px solid #fff; */
+  /* box-shadow: 0 0 0 2px #aaa; */
   position: relative;
   z-index: 1;
 }
@@ -654,3 +654,7 @@
     font-size: 13px;
   }
 }
+
+
+
+

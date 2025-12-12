@@ -107,7 +107,7 @@ export default function BlogsGrid() {
     <section className="blog-grid-section">
       <div className="blog-grid-container">
         {blogPosts.map((post, idx) => (
-          <Link to={'/innerBlogPage'} className="blog-grid-card" key={idx}>
+          <Link to={'/blog/iso-45001-implementation-guide'} className="blog-grid-card" key={idx}>
             <div className="blog-grid-img-wrap">
               <img src={post.img} alt={post.title} className="blog-grid-img" />
             </div>

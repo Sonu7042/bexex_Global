@@ -82,7 +82,12 @@ const App = () => {
 
         <Route path="/resources/blog" element={<BlogSectionLayout />} />
         <Route path="/resources/newsletters" element={<ResourcesNewsLetter />} />
-        <Route path="/innerBlogPage" element={<BlogInnerPage />} />
+
+
+        <Route path="/blog/iso-45001-implementation-guide" element={<BlogInnerPage />} />
+
+
+
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Provider>

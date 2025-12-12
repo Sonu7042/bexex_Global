@@ -6,7 +6,7 @@ import {HeadingComponent} from './Buttons'
 
 export default function Blogs() {
   return (
-    <section className="blog-section  " >
+    <section className="blog-section" >
       <header className="blog-header">
         <HeadingComponent  text="Blog" paddingBottom="0"  />
         <h1 className="blog-title">
