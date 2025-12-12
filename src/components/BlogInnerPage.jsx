@@ -397,7 +397,6 @@ const BlogInnerPage = () => (
       </nav>
     </section>
 
-    <FrequentQuestion />
 
     <div className="nextSteps page_indenation ">
         <p className="innertopText">
@@ -492,7 +491,8 @@ const BlogInnerPage = () => (
         Sectors. "
       </div>
     </div> */}
-
+    <FrequentQuestion />
+     
     <NewsLetter />
     <LetsConnect />
     <Footer />
