@@ -46,7 +46,7 @@ const blogPosts = [
     summary:
       "Understand the principles and benefits of ISO 14001 in environmental management.",
     tags: ["Environment Management", "ISO Systems"],
-    url:"#"
+    url:"/blog/iso-9001-risk-based-thinking"
   },
   {
     img: oms,
