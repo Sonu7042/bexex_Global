@@ -33,13 +33,15 @@ const resources = [
 const tags = ["ISO Systems", "Consulting", "Energy"];
 
 const navItems = [
-  {
-    label: "Complete Guide to ISO 45001 Implementation",
-    anchor: "complete-guide",
-  },
-  { label: "Various ISO Standards", anchor: "iso-standards" },
-  { label: "Understanding the ISO 45001 Framework", anchor: "iso-framework" },
-  { label: "The Business Case Beyond Compliance", anchor: "business-case" },
+  { label: "How to Conduct an Internal Audit", anchor: "Conduct-Internal-Audit" },
+  { label: "Understanding Internal Audit Purpose", anchor: "Internal-Audit-Purpose" },
+  { label: "Planning the Audit Program", anchor: "the-Audit-Program" },
+  { label: "Preparing for Individual Audits", anchor: "Preparing-for-Individual-Audits" },
+  { label: "Conducting the Opening Meeting", anchor: "the-Opening-Meeting" },
+  { label: "Gathering Audit Evidence", anchor: "Gathering-Audit-Evidence" },
+  { label: "Identifying and Documenting Findings", anchor: "and-Documenting-Findings" },
+  { label: "Conducting the Closing Meeting", anchor: "Conducting-the-Closing-Meeting" },
+  { label: "Reporting and Follow-Up", anchor: "Reporting-and-Follow-Up" },
 ];
 
 const BlogInnerPage = () => {
@@ -143,7 +145,7 @@ const BlogInnerPage = () => {
 
       <section className="blog-content-outer ">
         <div className="blog-content-inner">
-          <p className="innertopText" id="complete-guide">
+          <p className="innertopText" id="Conduct-Internal-Audit">
             How to Conduct an Internal Audit: A Practical Guide
           </p>
 
@@ -193,7 +195,7 @@ const BlogInnerPage = () => {
             checks.
           </p>
 
-          <p className="innertopTextSubHeading" id="iso-standards">
+          <p className="innertopTextSubHeading" id="Internal-Audit-Purpose">
             Understanding Internal Audit Purpose
           </p>
           <p className="blog-body blog-body-highlightColor">
@@ -238,7 +240,7 @@ const BlogInnerPage = () => {
             organizational capability beyond the immediate audit scope.
           </p>
 
-          <p className="innertopTextSubHeading" id="iso-framework">
+          <p className="innertopTextSubHeading" id="the-Audit-Program">
             Planning the Audit Program
           </p>
           <p className="blog-body">
@@ -288,7 +290,7 @@ const BlogInnerPage = () => {
             provides a roadmap for audit execution.
           </p>
 
-          <p className="innertopTextSubHeading">
+          <p className="innertopTextSubHeading" id="Preparing-for-Individual-Audits">
             Preparing for Individual Audits
           </p>
           <p className="blog-body">
@@ -331,7 +333,7 @@ const BlogInnerPage = () => {
             shared understanding of findings.
           </p>
 
-          <p className="innertopTextSubHeading">
+          <p className="innertopTextSubHeading" id="the-Opening-Meeting">
             Conducting the Opening Meeting
           </p>
           <p className="blog-body">
@@ -371,7 +373,7 @@ const BlogInnerPage = () => {
             and improves cooperation.
           </p>
 
-          <p className="innertopTextSubHeading">Gathering Audit Evidence</p>
+          <p className="innertopTextSubHeading" id="Gathering-Audit-Evidence">Gathering Audit Evidence</p>
           <p className="blog-body">
             The heart of internal auditing lies in effective evidence gathering.
             Multiple techniques complement each other to build comprehensive
@@ -426,7 +428,7 @@ const BlogInnerPage = () => {
             defensible.
           </p>
 
-          <p className="innertopTextSubHeading">
+          <p className="innertopTextSubHeading" id="and-Documenting-Findings">
             Identifying and Documenting Findings
           </p>
           <p className="blog-body">
@@ -473,7 +475,7 @@ const BlogInnerPage = () => {
             apparent gaps.
           </p>
 
-          <p className="innertopTextSubHeading">
+          <p className="innertopTextSubHeading" id="Conducting-the-Closing-Meeting">
             Conducting the Closing Meeting
           </p>
           <p className="blog-body">
@@ -512,7 +514,7 @@ const BlogInnerPage = () => {
             benefit from clear audit follow-up procedures.
           </p>
 
-          <p className="innertopTextSubHeading">Reporting and Follow-Up</p>
+          <p className="innertopTextSubHeading" id="Reporting-and-Follow-Up">Reporting and Follow-Up</p>
           <p className="blog-body">
             Audit reports communicate findings to management and drive
             corrective actions. Effective reports balance completeness with
