@@ -20,3 +20,4 @@ const blogSectionLayout = () => {
 }
 
 export default blogSectionLayout
+

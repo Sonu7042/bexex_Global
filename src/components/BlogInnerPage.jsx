@@ -18,7 +18,7 @@ const resources = [
     description:
       "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
     buttonLabel: "Download now",
-    badge: "X", // use icon or text
+    // badge: "X", // use icon or text
     type: "primary",
   },
   {
