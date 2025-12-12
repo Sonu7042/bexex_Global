@@ -392,7 +392,7 @@
   top: 50px;
   right: 16px; /* horizontally center with .nav-dot (half of 15px + border) */
   width: 2.5px;
-  min-height: 80%;
+  min-height: 100%;
   background: #232323;
   border-radius: 6px;
   z-index: 0;
