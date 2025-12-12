@@ -33,10 +33,13 @@ const resources = [
 const tags = ["ISO Systems", "Consulting", "Energy"];
 
 const navItems = [
-  { label: "Complete Guide to ISO 45001 Implementation", anchor: "complete-guide" },
-  { label: "Various ISO Standards", anchor: "iso-standards" },
-  { label: "Understanding the ISO 45001 Framework", anchor: "iso-framework" },
-  { label: "The Business Case Beyond Compliance", anchor: "business-case" },
+  { label: "What Risk-Based Thinking Really Means", anchor: "thinking-really" },
+  { label: "Where Risk-Based Thinking Applies in ISO 9001", anchor: "thinking-applies" },
+  { label: "Practical Risk Identification Methods", anchor: "identification-methods" },
+  { label: "Assessing and Prioritizing Risks", anchor: "prioritizing-risks" },
+  { label: "Taking Action on Risks and Opportunities", anchor: "taking-action" },
+  { label: "Integrating Risk Thinking into Daily Operations", anchor: "daily-operations" },
+  { label: "Common Pitfalls to Avoid", anchor: "pitfalls-to-avoid" },
 ];
 
 const BlogInnerPage = () => {
@@ -64,29 +67,29 @@ const BlogInnerPage = () => {
   
    const faqData = [
     {
-      question: "How long does ISO 45001 implementation typically take?",
+      question: "Does ISO 9001:2015 require a documented risk register?",
       answer:
-        "Small organizations can complete implementation in 4 to 6 months. Medium-sized manufacturers typically require 8 to 12 months for thorough implementation. Focus on building a robust system rather than meeting arbitrary deadlines.",
+        "No. The standard requires risk-based thinking but doesn't mandate specific documentation formats. Organizations decide how to document their approach based on what's useful for their operations.",
     },
     {
-      question: "Can we implement ISO 45001 without hiring consultants?",
+      question: "How detailed should risk assessments be?",
       answer:
-        "Yes, many organizations successfully implement ISO 45001 using internal resources. Success factors include having personnel with time to dedicate to the project and access to competent internal auditor training. Consultants accelerate implementation but aren't mandatory., it is possible to implement ISO 45001 internally if your team has sufficient knowledge and capacity.",
+        "Sufficient to drive appropriate action. Complex quantitative analysis suits significant risks with major consequences. Simple qualitative judgment suffices for routine operational risks. Match assessment rigor to risk significance.",
     },
     {
-      question: "How much does ISO 45001 certification cost?",
+      question: "Who should conduct risk assessments?",
       answer:
-        "Total investment for a medium-sized manufacturer typically falls between ₹5 lakhs and ₹15 lakhs, including consultant fees, training, and certification body audit fees. Insurance savings and reduced incident costs often recover this investment within two years.",
+        "People with process knowledge and authority to implement treatments. Quality managers shouldn't assess all risks alone. Engage process owners, technical experts, and front-line employees who understand what can go wrong.",
     },
     {
-      question: "What’s the difference between ISO 45001 and OHSAS 18001?",
+      question: "How often should risks be reassessed?",
       answer:
-        "ISO 45001 replaced OHSAS 18001 in March 2018. Key differences include stronger emphasis on organizational context, enhanced worker participation requirements, explicit leadership accountability provisions, and integration with ISO's High-Level Structure.",
+        "When significant changes occur—new products, processes, equipment, or suppliers. Additionally, conduct periodic reviews at least annually. High-risk areas may warrant more frequent assessment.",
     },
     {
-      question: "How does ISO 45001 relate to India’s OSH Code 2020?",
+      question: "Can we use existing risk methods like FMEA?",
       answer:
-        "The OSH Code 2020 consolidates 13 previous labor laws. ISO 45001 complements rather than replaces these legal requirements. Organizations certified to ISO 45001 demonstrate systematic approaches to meeting regulatory obligations, though certification doesn't exempt anyone from legal compliance.",
+        "Absolutely. If you're already using FMEA, HAZOP, or other structured risk methods, they fulfill risk-based thinking requirements. ISO 9001:2015 doesn't prescribe methods—use what works for your organization.",
     },
   ];
 
@@ -173,7 +176,7 @@ const BlogInnerPage = () => {
             Effective risk-based thinking doesn't require elaborate risk matrices or complex calculations. It requires asking simple questions at every process step: What could go wrong? What's already working well? How can we improve?
           </p>
 
-          <p className="innertopTextSubHeading" id="iso-standards">
+          <p className="innertopTextSubHeading" id="thinking-really">
           What Risk-Based Thinking Really Means
           </p>
 
@@ -197,7 +200,7 @@ const BlogInnerPage = () => {
 
 
 
-          <p className="innertopTextSubHeading" id="iso-framework">
+          <p className="innertopTextSubHeading" id="thinking-applies">
           Where Risk-Based Thinking Applies in ISO 9001
           </p>
 
@@ -223,7 +226,7 @@ const BlogInnerPage = () => {
 
 
 
-          <p className="innertopTextSubHeading">
+          <p className="innertopTextSubHeading" id="identification-methods">
            Practical Risk Identification Methods
           </p>
           <p className="blog-body">
@@ -253,7 +256,7 @@ const BlogInnerPage = () => {
 
 
 
-          <p className="innertopTextSubHeading">
+          <p className="innertopTextSubHeading" id="prioritizing-risks">
             Assessing and Prioritizing Risks
           </p>
           <p className="blog-body">
@@ -287,7 +290,7 @@ const BlogInnerPage = () => {
 
 
 
-          <p className="innertopTextSubHeading">
+          <p className="innertopTextSubHeading" id="taking-action">
             Taking Action on Risks and Opportunities
           </p>
           <p className="blog-body">
@@ -316,7 +319,7 @@ const BlogInnerPage = () => {
 
 
 
-          <p className="innertopTextSubHeading">
+          <p className="innertopTextSubHeading" id="daily-operations">
             Integrating Risk Thinking into Daily Operations
           </p>
           <p className="blog-body">
@@ -341,7 +344,7 @@ const BlogInnerPage = () => {
 
 
 
-          <p className="innertopTextSubHeading">
+          <p className="innertopTextSubHeading " id="pitfalls-to-avoid">
            Common Pitfalls to Avoid
           </p>
           <p className="blog-body">
@@ -364,103 +367,6 @@ const BlogInnerPage = () => {
           </p>
 
 
-
-
-
-
-          {/* <p className="innertopTextSubHeading">
-            Frequently Asked Questions
-          </p>
-
-
-          <p className="innertopTextSubHeading_Points">
-           Does ISO 9001:2015 require a documented risk register?
-          </p>
-          <p className="blog-body">
-            No. The standard requires risk-based thinking but doesn't mandate specific documentation formats. Organizations decide how to document their approach based on what's useful for their operations.
-          </p>
-
-
-           <p className="innertopTextSubHeading_Points">
-           How detailed should risk assessments be?
-          </p>
-          <p className="blog-body">
-           Sufficient to drive appropriate action. Complex quantitative analysis suits significant risks with major consequences. Simple qualitative judgment suffices for routine operational risks. Match assessment rigor to risk significance.
-          </p>
-
-
-          <p className="innertopTextSubHeading_Points">
-          Who should conduct risk assessments?
-          </p>
-          <p className="blog-body">
-           People with process knowledge and authority to implement treatments. Quality managers shouldn't assess all risks alone. Engage process owners, technical experts, and front-line employees who understand what can go wrong.
-          </p>
-
-
-          <p className="innertopTextSubHeading_Points">
-          How often should risks be reassessed?
-          </p>
-          <p className="blog-body">
-          When significant changes occur—new products, processes, equipment, or suppliers. Additionally, conduct periodic reviews at least annually. High-risk areas may warrant more frequent assessment.
-          </p>
-
-
-
-          <p className="innertopTextSubHeading_Points">
-          Can we use existing risk methods like FMEA?
-          </p>
-          <p className="blog-body">
-          Absolutely. If you're already using FMEA, HAZOP, or other structured risk methods, they fulfill risk-based thinking requirements. ISO 9001:2015 doesn't prescribe methods—use what works for your organization.
-          </p>
- */}
-
-
-
-
-
-          {/* <p className="innertopTextSubHeading">
-           Your Next Steps
-          </p>
-          <p className="blog-body">
-           Risk-based thinking transforms quality management from reactive problem-solving to proactive excellence. Organizations that embed this mindset into daily operations prevent problems before they occur and seize opportunities others miss.
-          </p>
-
-          <p className="innertopTextSubHeading_Points">
-          Download our Risk Assessment Template to structure your risk identification and treatment planning.
-          </p>
-          <p className="blog-body">
-           Bexex helps organizations implement practical risk-based thinking that drives real operational improvement. Our consultants bring experience across diverse industries and guide teams through risk assessment methods suited to your context. Explore our ISO 9001 consulting services or contact us to discuss your risk management needs.
-          </p>
-
-          <div>
-            <p className="innertopTextSubHeading" id="business-case">
-              The Business Case Beyond Compliance
-            </p>
-
-            <p className="blog-body">
-              ISO 45001 certification delivers value extending far beyond
-              regulatory compliance. Supply chain access expands when
-              certification demonstrates capability to manage occupational
-              health and safety systematically. Insurance premiums often
-              decrease by 10 to 20 percent when insurers recognize effective
-              risk management.
-            </p>
-            <p className="blog-body">
-              Employee retention improves when workers recognize their
-              employer's genuine commitment to safety. Operational efficiency
-              gains emerge as hazard identification improves process
-              reliability. Organizations in specialized sectors benefit from
-              additional certifications—{" "}
-              <span className="blog-body-highlightColorBlue">
-                AS9100 for aerospace , IATF 16949 for automotive
-              </span>{" "}
-              or{" "}
-              <span className="blog-body-highlightColorBlue">
-                ISO 13485 for medical devices
-              </span>{" "}
-              .
-            </p> */}
-          {/* </div> */}
         </div>
 
         {/* Vertical Nav (Progress) */}

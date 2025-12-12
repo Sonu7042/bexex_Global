@@ -32,15 +32,26 @@ const resources = [
 
 const tags = ["ISO Systems", "Consulting", "Energy"];
 
+
+
+
+
 const navItems = [
   {
-    label: "Complete Guide to ISO 45001 Implementation",
-    anchor: "complete-guide",
+    label: "Why Legal Registers Matter",
+    anchor: "Registers-Matter",
   },
-  { label: "Various ISO Standards", anchor: "iso-standards" },
-  { label: "Understanding the ISO 45001 Framework", anchor: "iso-framework" },
-  { label: "The Business Case Beyond Compliance", anchor: "business-case" },
+  { label: "Understanding India's EHS Regulatory Framework", anchor: "Regulatory-Framework" },
+  { label: "Building Your Legal Register: Step-by-Step", anchor: "Your-Legal-Register" },
+  { label: "Maintaining and Updating Your Legal Register", anchor: "Maintaining-and-Updating" },
+  { label: "Common Legal Register Pitfalls", anchor: "Legal-Register-Pitfalls" },
+  { label: "Integrating Legal Registers with Management Systems", anchor: "with-Management-Systems" },
+  { label: "Technology Solutions for Legal Register Management", anchor: "for-Legal-Register-Management" },
 ];
+
+
+
+
 
 const BlogInnerPage = () => {
   const [active, setActive] = useState(navItems[0].anchor);
@@ -192,7 +203,7 @@ const BlogInnerPage = () => {
             problem that effective legal registers eliminate.
           </p>
 
-          <p className="innertopTextSubHeading" id="iso-standards">
+          <p className="innertopTextSubHeading" id="Registers-Matter">
             Why Legal Registers Matter
           </p>
 
@@ -244,7 +255,7 @@ const BlogInnerPage = () => {
             The legal register fulfills this mandatory requirement.
           </p>
 
-          <p className="innertopTextSubHeading" id="iso-framework">
+          <p className="innertopTextSubHeading" id="Regulatory-Framework">
             Understanding India's EHS Regulatory Framework
           </p>
 
@@ -300,7 +311,7 @@ const BlogInnerPage = () => {
             management system implementation.
           </p>
 
-          <p className="innertopTextSubHeading" id="iso-framework">
+          <p className="innertopTextSubHeading" id="Your-Legal-Register">
             Building Your Legal Register: Step-by-Step
           </p>
 
@@ -420,7 +431,7 @@ const BlogInnerPage = () => {
             treating compliance as separate from operations.
           </p>
 
-          <p className="innertopTextSubHeading" id="iso-framework">
+          <p className="innertopTextSubHeading" id="Maintaining-and-Updating">
             Maintaining and Updating Your Legal Register
           </p>
           <p className="blog-body">
@@ -461,7 +472,7 @@ const BlogInnerPage = () => {
             inspectors.
           </p>
 
-          <p className="innertopTextSubHeading" id="business-case">
+          <p className="innertopTextSubHeading" id="Legal-Register-Pitfalls">
             Common Legal Register Pitfalls
           </p>
           <p className="blog-body">
@@ -510,7 +521,7 @@ const BlogInnerPage = () => {
             that compliance claims withstand scrutiny.
           </p>
 
-          <p className="innertopTextSubHeading" id="business-case">
+          <p className="innertopTextSubHeading" id="with-Management-Systems">
             Integrating Legal Registers with Management Systems
           </p>
           <p className="blog-body">
@@ -556,7 +567,7 @@ const BlogInnerPage = () => {
           </p>
 
           <div>
-            <p className="innertopTextSubHeading" id="business-case">
+            <p className="innertopTextSubHeading" id="for-Legal-Register-Management">
               Technology Solutions for Legal Register Management
             </p>
 

@@ -389,10 +389,10 @@
 .blog-side-nav ul::before {
   content: "";
   position: absolute;
-  top: 60px;
+  top: 50px;
   right: 16px; /* horizontally center with .nav-dot (half of 15px + border) */
   width: 2.5px;
-  height: 80%;
+  min-height: 80%;
   background: #232323;
   border-radius: 6px;
   z-index: 0;
@@ -402,7 +402,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 36px;
+  margin-bottom: 18px;
 }
 .blog-side-nav li:last-child {
   margin-bottom: 0;
