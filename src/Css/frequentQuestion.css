@@ -1,8 +1,8 @@
 /* Page background and centering */
-.faq-page {
+/* .faq-page {
   height: 100vh;
   
-}
+} */
 
 /* Card wrapper */
 .faq-wrapper {
@@ -137,7 +137,7 @@
 @media (max-width: 768px) {
   .faq-wrapper {
     padding: 24px 16px 32px;
-    box-shadow: 0 0 0 10px #f0f0f0;
+    /* box-shadow: 0 0 0 10px #f0f0f0; */
   }
 
   .faq-heading {
