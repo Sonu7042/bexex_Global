@@ -79,29 +79,29 @@ const BlogInnerPage = () => {
 
    const faqData = [
     {
-      question: "How long does ISO 45001 implementation typically take?",
+      question: "How many regulations typically apply to Indian manufacturing facilities?",
       answer:
-        "Small organizations can complete implementation in 4 to 6 months. Medium-sized manufacturers typically require 8 to 12 months for thorough implementation. Focus on building a robust system rather than meeting arbitrary deadlines.",
+        "This varies significantly based on industry sector, facility size, and location. Small manufacturing operations may face 50 to 100 discrete compliance requirements. Large chemical or pharmaceutical facilities can face 300 or more requirements spanning environmental, safety, and operational domains.",
     },
     {
-      question: "Can we implement ISO 45001 without hiring consultants?",
+      question: "Should legal registers cover only central legislation or include state requirements?",
       answer:
-        "Yes, many organizations successfully implement ISO 45001 using internal resources. Success factors include having personnel with time to dedicate to the project and access to competent internal auditor training. Consultants accelerate implementation but aren't mandatory., it is possible to implement ISO 45001 internally if your team has sufficient knowledge and capacity.",
+        "Comprehensive legal registers must cover all applicable requirements—central legislation, state rules, local ordinances, and industry-specific requirements. Many compliance obligations arise from state-level implementation of central acts or from local authority requirements.",
     },
     {
-      question: "How much does ISO 45001 certification cost?",
+      question: "How often should legal registers be reviewed?",
       answer:
-        "Total investment for a medium-sized manufacturer typically falls between ₹5 lakhs and ₹15 lakhs, including consultant fees, training, and certification body audit fees. Insurance savings and reduced incident costs often recover this investment within two years.",
+        "Quarterly reviews represent the minimum frequency for most organizations. Facilities in rapidly evolving regulatory environments or high-risk industries should conduct monthly reviews. Additionally, conduct ad-hoc reviews when major regulatory changes are announced.",
     },
     {
-      question: "What’s the difference between ISO 45001 and OHSAS 18001?",
+      question: "Who should maintain the legal register?",
       answer:
-        "ISO 45001 replaced OHSAS 18001 in March 2018. Key differences include stronger emphasis on organizational context, enhanced worker participation requirements, explicit leadership accountability provisions, and integration with ISO's High-Level Structure.",
+        "Typically the EHS manager or compliance officer maintains the legal register. However, responsibility for individual requirements should be distributed to relevant departments. Environmental engineers track environmental requirements, safety officers track safety requirements, and HR departments track labor law requirements.",
     },
     {
-      question: "How does ISO 45001 relate to India’s OSH Code 2020?",
+      question: "Can legal registers be outsourced?",
       answer:
-        "The OSH Code 2020 consolidates 13 previous labor laws. ISO 45001 complements rather than replaces these legal requirements. Organizations certified to ISO 45001 demonstrate systematic approaches to meeting regulatory obligations, though certification doesn't exempt anyone from legal compliance.",
+        "Some organizations engage consultants or subscription services to maintain their legal registers. This can work if the service provider understands your specific operations and provides timely updates. However, internal personnel must still verify applicability and compliance status—outsourced services can identify requirements but can't verify compliance without facility knowledge.",
     },
   ];
 
