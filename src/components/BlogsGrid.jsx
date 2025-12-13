@@ -18,14 +18,14 @@ import NewsLetter from "./NewsLetter";
 
 const blogPosts = [
   {
-    img:emergency,
+    img: emergency,
     date: "22 July 2024",
     readTime: "4 min",
     title: "ISO 45001 Implementation Guide for Indian Industries",
     summary:
       "ISO 45001 certification, occupational health and safety management, workplace safety India, ISO 45001 guide",
     tags: ["ISO Systems", "Safty Managment"],
-    url: "/blog/iso-45001-implementation-guide"
+    url: "/blog/iso-45001-implementation-guide",
   },
   {
     img: clearingAndAir,
@@ -35,8 +35,7 @@ const blogPosts = [
     summary:
       "Explore the verification process for greenhouse gas emissions as per ISO 14064:2019_Part 03.",
     tags: ["Environment Management", "ISO Systems"],
-    url: "/blog/ehs-legal-register-compliance"
-
+    url: "/blog/ehs-legal-register-compliance",
   },
   {
     img: navigating_Environment,
@@ -46,7 +45,7 @@ const blogPosts = [
     summary:
       "risk-based thinking ISO 9001, quality management risk assessment, ISO 9001:2015 requirements, risk opportunities QMS",
     tags: ["Environment Management", "ISO Systems"],
-    url:"/blog/iso-9001-risk-based-thinking"
+    url: "/blog/iso-9001-risk-based-thinking",
   },
   {
     img: oms,
@@ -55,9 +54,8 @@ const blogPosts = [
     title: "How to Conduct an Internal Audit: A Practical Guide",
     summary:
       "ISO internal audit, audit planning, audit techniques, internal audit checklist, quality audit India",
-     tags: ["Environment Management", "ISO Systems"],
-    url:"/blog/internal-audit-process-guide"
-
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/internal-audit-process-guide",
   },
   {
     img: safetyFirst,
@@ -67,8 +65,7 @@ const blogPosts = [
     summary:
       "TPI services India, quality inspection services, pre-shipment inspection, manufacturing quality control, independent inspection",
     tags: ["Environment Management", "ISO Systems"],
-    url:"/blog/third-party-inspection-manufacturing"
-
+    url: "/blog/third-party-inspection-manufacturing",
   },
   {
     img: energizing,
@@ -78,8 +75,7 @@ const blogPosts = [
     summary:
       "A deep dive into the principles and steps involved in implementing ISO 50001.",
     tags: ["Environment Management", "ISO Systems"],
-    url:"#"
-
+    url: "#",
   },
   // {
   //   img: ecofriendly,
@@ -117,37 +113,46 @@ const blogPosts = [
 ];
 
 export default function BlogsGrid() {
-
   return (
     <>
-    <section className="blog-grid-section">
-      <div className="blog-grid-container">
-        {blogPosts.map((post, idx) => (
-          <Link to={post.url} className="blog-grid-card" key={idx}>
-            <div className="blog-grid-img-wrap">
-              <img src={post.img} alt={post.title} className="blog-grid-img" />
-            </div>
-            {/* <div className="blog-grid-meta">
+      <section className="blog-grid-section">
+        <div className="blog-grid-container">
+          {blogPosts.map((post, idx) => (
+            <Link
+              to={post.url}
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              className="blog-grid-card"
+              key={idx}
+            >
+              <div className="blog-grid-img-wrap">
+                <img
+                  src={post.img}
+                  alt={post.title}
+                  className="blog-grid-img"
+                />
+              </div>
+              {/* <div className="blog-grid-meta">
               <span>{post.date}</span>
               <span>•</span>
               <span>{post.readTime}</span>
             </div> */}
-            <h3 className="blog-grid-title">{post.title}</h3>
-            <p className="blog-grid-summary">{post.summary}</p>
-            <div className="blog-grid-tags">
-              {post.tags.map((tag, i) => (
-                <span className="blog-grid-tag" key={i}>{tag}</span>
-              ))}
-            </div>
-          </Link>
-        ))}
-      </div>
-    </section>
+              <h3 className="blog-grid-title">{post.title}</h3>
+              <p className="blog-grid-summary">{post.summary}</p>
+              <div className="blog-grid-tags">
+                {post.tags.map((tag, i) => (
+                  <span className="blog-grid-tag" key={i}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
 
-
-
-{/* --------------------------------------------section--------------------------------------------- */}
-     <NewsLetter />
+      {/* --------------------------------------------section--------------------------------------------- */}
+      <NewsLetter />
     </>
   );
 }
