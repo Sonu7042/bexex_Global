@@ -1,0 +1,263 @@
+
+/* services card rendering  style*/
+/* flex wrapper */
+.csCardsFlexWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 32px;
+  margin-top: 5rem;
+  
+}
+
+.searchContainerWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+/* card base */
+.csCardItem {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 calc(33.333% - 22px); /* 3 per row on desktop */
+}
+
+/* image area */
+.csCardItemImageShell {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.csCardItemImage {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+/* body area */
+.csCardItemBody {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+}
+
+.csCardItemTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+/* icons row */
+.csCardItemIconRow {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.csCardItemIconBox {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: #000;
+  color: #fff;
+  font-size: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CTA button */
+.csCardItemCta {
+  margin-top: auto;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #0d6dfd;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.csCardItemCtaArrow {
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #fff;
+  color: #0d6dfd;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* responsive breakpoints */
+@media (max-width: 992px) {
+  .csCardItem {
+    flex: 0 1 calc(50% - 20px); /* 2 per row on tablet */
+  }
+}
+
+@media (max-width: 640px) {
+  .csCardItem {
+    flex: 0 1 100%; /* 1 per row on mobile */
+  }
+
+  .csCardItemImage {
+    height: 180px;
+  }
+}
+
+
+
+
+
+
+
+/* filter css style  */
+.sfBarLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* heading */
+.sfBarHeading {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.sfBarHeadingEmphasis {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* filter row */
+.sfBarFiltersRow {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* "Filter" label with underline */
+.sfBarFilterLabel {
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* pills */
+.sfBarPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 26px;
+  border-radius: 999px; /* pill */
+  border: 1px solid #b0b0b0;
+  background: #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.sfBarPill--active {
+  border-color: #000000;
+}
+
+.sfBarPillIcon {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sfBarPillText {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+/* search area */
+.sfBarSearchWrap {
+  min-width: 260px;
+  max-width: 420px;
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sfBarSearchLabel {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* underline style input with icon on right */
+.sfBarSearchField {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sfBarSearchInput {
+  width: 100%;
+  padding: 8px 36px 8px 0;
+  border: none;
+  border-bottom: 2px solid #6b6b6b;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+}
+
+.sfBarSearchIcon {
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  color: #5a5a5a;
+}
+
+/* responsive: stack on small screens */
+@media (max-width: 900px) {
+  .sfBarWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sfBarSearchWrap {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .sfBarHeading {
+    font-size: 24px;
+  }
+
+  .sfBarFilterLabel {
+    font-size: 18px;
+  }
+
+  .sfBarPill {
+    padding-inline: 18px;
+  }
+
+  .sfBarPillText {
+    font-size: 14px;
+    white-space: normal; /* allow wrapping on very small screens */
+  }
+}

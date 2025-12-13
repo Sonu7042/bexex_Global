@@ -2,7 +2,7 @@
  
  import img1 from '../assets/images/nature.jpg'
  
- export const users = [
+ export const data = [
   {
     id: 1,
     img:img1,
