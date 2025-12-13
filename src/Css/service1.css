@@ -10,12 +10,6 @@
   
 }
 
-.searchContainerWrapper{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
 
 
 /* card base */
@@ -121,6 +115,17 @@
 
 
 /* filter css style  */
+
+
+.searchContainerWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+
 .sfBarLeft {
   display: flex;
   flex-direction: column;
@@ -260,4 +265,89 @@
     font-size: 14px;
     white-space: normal; /* allow wrapping on very small screens */
   }
+}
+
+
+
+/* dropdown menu */
+.sfBarPillMenu {
+  position: absolute;
+  top: 110%;            /* just under the pill */
+  left: 0;
+  min-width: 220px;
+  padding: 6px 0;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  z-index: 20;
+}
+
+/* menu items */
+.sfBarPillMenuItem {
+  width: 100%;
+  padding: 8px 18px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.sfBarPillMenuItem:hover {
+  background: #f2f2f2;
+}
+
+
+
+/* make the card section not fight with the search bar width */
+.csCardsFlexWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 32px;
+  margin-top: 5rem;
+}
+
+/* ensure filter + search take full width row above cards */
+.searchContainerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* NEW: wrapper around pill + dropdown */
+.sfBarPillDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* you already added these; keep them as-is, just ensure they come
+   AFTER .sfBarPillDropdown so they are applied correctly */
+
+.sfBarPillMenu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  min-width: 220px;
+  padding: 6px 0;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  z-index: 20;
+}
+
+.sfBarPillMenuItem {
+  width: 100%;
+  padding: 8px 18px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.sfBarPillMenuItem:hover {
+  background: #f2f2f2;
 }
