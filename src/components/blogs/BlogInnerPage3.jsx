@@ -5,7 +5,7 @@ import NewsLetter from "../NewsLetter";
 import LetsConnect from "../LetsConnect";
 import Footer from "../Footer";
 import { LearnMoreButton } from "../Buttons";
-import construction_worker_img from "../../assets/images/blog_imgs/constructionWorkerImg.png";
+import construction_worker_img from "../../assets/images/blog_imgs/ISO-90012015.png";
 import FrequentQuestion from "../FrequentQuestion";
 import { CiLinkedin } from "react-icons/ci";
 import { CiFacebook } from "react-icons/ci";
@@ -117,9 +117,7 @@ const BlogInnerPage = () => {
         </div>
         <div className="blog-text">
           <h1>
-            ISO 9001  &nbsp;<span className="blog-amp">&amp;</span>&nbsp;
-            <span className="blog-highlight itly">risk-based</span> <br />
-            thinking
+            ISO <span className="blog-body-highlightColorBlue">Risk</span> Management
           </h1>
           <p className="blog-description">
            Learn how to implement risk-based thinking in ISO 9001:2015. Practical approaches to identify risks, assess opportunities, and integrate into QMS.

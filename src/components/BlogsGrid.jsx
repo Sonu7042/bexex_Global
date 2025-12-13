@@ -2,14 +2,14 @@ import React from "react";
 import "../Css/blogsGrid.css";
 
 // Replace these imports with your actual image paths
-import emergency from "../assets/images/blog_imgs/emergency.png";
+import emergency from "../assets/images/blog_imgs/ISO-45001.png";
 import ecofriendly from "../assets/images/blog_imgs/eco-friendly.png";
 import clearingAndAir from "../assets/images/blog_imgs/clearingAndAir.png";
 import energizing from "../assets/images/blog_imgs/energizing.png";
-import navigating_Environment from "../assets/images/blog_imgs/navigating_Environment.png";
+import navigating_Environment from "../assets/images/blog_imgs/ISO-90012015.png";
 import navigating_iso from "../assets/images/blog_imgs/navigating_iso.png";
-import oms from "../assets/images/blog_imgs/oms.png";
-import safetyFirst from "../assets/images/blog_imgs/safetyFirst.png";
+import oms from "../assets/images/blog_imgs/internal-audit-process.png";
+import safetyFirst from "../assets/images/blog_imgs/third-party-inspection.png";
 import unralleving from "../assets/images/blog_imgs/unralleving.png";
 
 // import img3 from "./images/tablet.jpg";
@@ -21,9 +21,9 @@ const blogPosts = [
     img:emergency,
     date: "22 July 2024",
     readTime: "4 min",
-    title: "Emergency Preparedness and ISO 45001: A Holistic Approach to Safety",
+    title: "ISO 45001 Implementation Guide for Indian Industries",
     summary:
-      "Insights on how ISO 45001 contributes to effective emergency preparedness and response in the workplace.",
+      "ISO 45001 certification, occupational health and safety management, workplace safety India, ISO 45001 guide",
     tags: ["ISO Systems", "Safty Managment"],
     url: "/blog/iso-45001-implementation-guide"
   },
@@ -42,9 +42,9 @@ const blogPosts = [
     img: navigating_Environment,
     date: "22 July 2024",
     readTime: "4 min",
-    title: "ISO 14001: Navigating ISO 14001 for Environmental Management",
+    title: "ISO 9001:2015 Risk-Based Thinking Implementation Guide",
     summary:
-      "Understand the principles and benefits of ISO 14001 in environmental management.",
+      "risk-based thinking ISO 9001, quality management risk assessment, ISO 9001:2015 requirements, risk opportunities QMS",
     tags: ["Environment Management", "ISO Systems"],
     url:"/blog/iso-9001-risk-based-thinking"
   },
@@ -52,9 +52,9 @@ const blogPosts = [
     img: oms,
     date: "22 July 2024",
     readTime: "4 min",
-    title: "ISO 9001:2015 Introduction to QMS",
+    title: "How to Conduct an Internal Audit: A Practical Guide",
     summary:
-      "Provide an overview of ISO 9001:2015, its principles, and the significance of Quality Management Systems.",
+      "ISO internal audit, audit planning, audit techniques, internal audit checklist, quality audit India",
      tags: ["Environment Management", "ISO Systems"],
     url:"/blog/internal-audit-process-guide"
 
@@ -63,9 +63,9 @@ const blogPosts = [
     img: safetyFirst,
     date: "22 July 2024",
     readTime: "4 min",
-    title: "Safety First: ISO 45001 Implementation Guide",
+    title: "Third-Party Inspection: What Manufacturers Need to Know",
     summary:
-      "A comprehensive guide to implementing ISO 45001 for occupational health and safety.",
+      "TPI services India, quality inspection services, pre-shipment inspection, manufacturing quality control, independent inspection",
     tags: ["Environment Management", "ISO Systems"],
     url:"/blog/third-party-inspection-manufacturing"
 
