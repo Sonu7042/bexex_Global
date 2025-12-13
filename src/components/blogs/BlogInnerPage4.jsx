@@ -5,7 +5,7 @@ import NewsLetter from "../NewsLetter";
 import LetsConnect from "../LetsConnect";
 import Footer from "../Footer";
 import { LearnMoreButton } from "../Buttons";
-import construction_worker_img from "../../assets/images/blog_imgs/constructionWorkerImg.png";
+import construction_worker_img from "../../assets/images/blog_imgs/internal-audit-process.png";
 import FrequentQuestion from "../FrequentQuestion";
 import { CiLinkedin } from "react-icons/ci";
 import { CiFacebook } from "react-icons/ci";

@@ -1,22 +1,23 @@
 import React from "react";
 import "../Css/blog.css";
-import isoImg from "../assets/images/blog_imgs/iso.png"; 
+import isoImg from "../assets/images/blog_imgs/construction-work.jpg";
 // import miniLogo from "../assets/images/miniLogo.png"
-import {HeadingComponent} from './Buttons'
+import { HeadingComponent } from "./Buttons";
 import { Link } from "react-router-dom";
-
 
 export default function Blogs() {
   return (
-    <section className="blog-section" >
+    <section className="blog-section">
       <header className="blog-header">
-        <HeadingComponent  text="Blog" paddingBottom="0"  />
+        <HeadingComponent text="Blog" paddingBottom="0" />
         <h1 className="blog-title">
-          Insights That <span className="itly">Drive Safety ,</span> <br/> Quality & Excellence  
+          Insights That <span className="itly">Drive Safety ,</span> <br />{" "}
+          Quality & Excellence
         </h1>
         <p className="blog-desc-link">
-          Discover expert articles, guides, and industry updates on EHS, Sustainability, Quality Management,
-          and Business Excellence—curated to help your organization grow smarter and safer.
+          Discover expert articles, guides, and industry updates on EHS,
+          Sustainability, Quality Management, and Business Excellence—curated to
+          help your organization grow smarter and safer.
         </p>
         {/* <div className="blog-tabs">
           <button className="tab active">All</button>
@@ -26,8 +27,11 @@ export default function Blogs() {
       </header>
       <div className="blog-content">
         <h2 className="recent-post-text">Recent Post (08)</h2>
-        
-        <Link to="/blog/ehs-legal-register-compliance" className="blog-card-row">
+
+        <Link
+          to="/blog/ehs-legal-register-compliance"
+          className="blog-card-row"
+        >
           <div className="blog-image-wrap">
             <img src={isoImg} alt="Post" className="blog-image" />
           </div>
@@ -37,9 +41,15 @@ export default function Blogs() {
               <span>•</span>
               <span>4 min</span>
             </div> */}
-            <h3 className="blog-card-title">What is ISO: A Comprehensive Overview</h3>
+            <h3 className="blog-card-title">
+              Building an Effective Legal Register for EHS India
+            </h3>
             <p className="blog-card-summary">
-             ISO is derived from the Greek word "isos," which means "EQUAL''. The word ISO is often used as a prefix in scientific terminology to create new words. Such as: isosceles, isotope. The word ISO is used as an acronym by the International Organization for Standardization which is an independent, non-governmental international organization that develops and publishes standards for a wide range of industries and sectors. It was founded in 1947 and is headquartered in Geneva, Switzerland.
+              Environmental legal compliance requirements for businesses in
+              India. Proper legal register maintenance to meet statutory and
+              regulatory obligations. End-to-end HSE compliance aligned with
+              Indian environmental laws. Compliance with OSH Code 2020 and
+              applicable environmental laws in India.
             </p>
             {/* <div className="blog-card-tags">
               <span className="tag">Design</span>
