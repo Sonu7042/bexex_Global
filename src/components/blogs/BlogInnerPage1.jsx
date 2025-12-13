@@ -33,7 +33,10 @@ const resources = [
 const tags = ["ISO Systems", "Consulting", "Energy"];
 
 const navItems = [
-  { label: "Complete Guide to ISO 45001 Implementation", anchor: "complete-guide" },
+  {
+    label: "Complete Guide to ISO 45001 Implementation",
+    anchor: "complete-guide",
+  },
   { label: "Various ISO Standards", anchor: "iso-standards" },
   { label: "Understanding the ISO 45001 Framework", anchor: "iso-framework" },
   { label: "The Business Case Beyond Compliance", anchor: "business-case" },
@@ -58,12 +61,6 @@ const BlogInnerPage = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-
-
-
-
-
 
   // Frequent ask questions
   const faqData = [
@@ -93,9 +90,6 @@ const BlogInnerPage = () => {
         "The OSH Code 2020 consolidates 13 previous labor laws. ISO 45001 complements rather than replaces these legal requirements. Organizations certified to ISO 45001 demonstrate systematic approaches to meeting regulatory obligations, though certification doesn't exempt anyone from legal compliance.",
     },
   ];
-
-
-
 
   return (
     <>
