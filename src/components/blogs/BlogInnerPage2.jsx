@@ -45,8 +45,8 @@ const navItems = [
   { label: "Building Your Legal Register: Step-by-Step", anchor: "Your-Legal-Register" },
   { label: "Maintaining and Updating Your Legal Register", anchor: "Maintaining-and-Updating" },
   { label: "Common Legal Register Pitfalls", anchor: "Legal-Register-Pitfalls" },
-  { label: "Integrating Legal Registers with Management Systems", anchor: "with-Management-Systems" },
-  { label: "Technology Solutions for Legal Register Management", anchor: "for-Legal-Register-Management" },
+  { label: "Legal Registers & Management Systems", anchor: "with-Management-Systems" },
+  { label: "Legal Register Technology Solutions", anchor: "for-Legal-Register-Management" },
 ];
 
 
@@ -522,7 +522,7 @@ const BlogInnerPage = () => {
           </p>
 
           <p className="innertopTextSubHeading" id="with-Management-Systems">
-            Integrating Legal Registers with Management Systems
+            Legal Registers & Management Systems
           </p>
           <p className="blog-body">
             Legal registers shouldn't exist in isolation. They integrate with
@@ -568,7 +568,7 @@ const BlogInnerPage = () => {
 
           <div>
             <p className="innertopTextSubHeading" id="for-Legal-Register-Management">
-              Technology Solutions for Legal Register Management
+              Legal Register Technology Solutions
             </p>
 
             <p className="blog-body">
