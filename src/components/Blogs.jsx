@@ -3,6 +3,8 @@ import "../Css/blog.css";
 import isoImg from "../assets/images/blog_imgs/iso.png"; 
 // import miniLogo from "../assets/images/miniLogo.png"
 import {HeadingComponent} from './Buttons'
+import { Link } from "react-router-dom";
+
 
 export default function Blogs() {
   return (
@@ -24,7 +26,8 @@ export default function Blogs() {
       </header>
       <div className="blog-content">
         <h2 className="recent-post-text">Recent Post (08)</h2>
-        <div className="blog-card-row">
+        
+        <Link to="/blog/ehs-legal-register-compliance" className="blog-card-row">
           <div className="blog-image-wrap">
             <img src={isoImg} alt="Post" className="blog-image" />
           </div>
@@ -44,7 +47,7 @@ export default function Blogs() {
               <span className="tag">Frameworks</span>
             </div> */}
           </article>
-        </div>
+        </Link>
       </div>
     </section>
   );

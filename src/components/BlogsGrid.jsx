@@ -70,17 +70,17 @@ const blogPosts = [
     url:"/blog/third-party-inspection-manufacturing"
 
   },
-  // {
-  //   img: energizing,
-  //   date: "22 July 2024",
-  //   readTime: "4 min",
-  //   title: "Energizing Efficiency: ISO 50001 Implementation",
-  //   summary:
-  //     "A deep dive into the principles and steps involved in implementing ISO 50001.",
-  //   tags: ["Environment Management", "ISO Systems"],
-  //   url:"#"
+  {
+    img: energizing,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Energizing Efficiency: ISO 50001 Implementation",
+    summary:
+      "A deep dive into the principles and steps involved in implementing ISO 50001.",
+    tags: ["Environment Management", "ISO Systems"],
+    url:"#"
 
-  // },
+  },
   // {
   //   img: ecofriendly,
   //   date: "22 July 2024",
