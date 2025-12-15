@@ -36,10 +36,10 @@
 
 .contentBlock {
   height: 40vh; /* requested smaller height */
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ddd;
+  /* align-items: center; */
+  /* border-bottom: 1px solid #ddd; */
 }
 
 
@@ -48,7 +48,15 @@
   transform-origin: center;
   color: #d9d9d9;
   font-size: 1.375rem;
+  align-self: flex-end;
 }
+
+.contentBlock0 p {
+padding-bottom: 50px;
+}
+
+
+
 
 
 
@@ -136,6 +144,12 @@
 .journey-heading-accent {
   font-style: italic;
 }
+
+
+
+
+
+
 
 
 
