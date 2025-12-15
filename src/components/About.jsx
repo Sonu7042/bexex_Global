@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../Css/about.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -44,6 +44,19 @@ const About = () => {
     };
   }, []);
 
+
+   const videoRef = useRef(null);
+  const [muted, setMuted] = useState(true);
+
+  const toggleSound = () => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    video.muted = !muted;
+    setMuted(!muted);
+    video.play();
+  };
+
   return (
     <>
       <section className="hero-root">
@@ -58,18 +71,21 @@ const About = () => {
               {/* <i className=""></i> */}
             </span>
           </h1>
-
           <div className="hero-img-wrap">
             <video
+              ref={videoRef}
               src={aboutVideo}
               autoPlay
-              muted
+              muted={muted}
               loop
+              playsInline
               className="hero-video"
-            ></video>
-            {/* <img src={nature} alt="img" /> */}
-          </div>
+            />
 
+            <button className="video-sound-btn" onClick={toggleSound}>
+              {muted ? "🔊 Enable Sound" : "🔇 Mute"}
+            </button>
+          </div>
           <p className="hero-desc">
             Bexex Global Pvt. Ltd. delivers practical, cost-effective solutions
             that strengthen safety, quality, and sustainability.
@@ -99,7 +115,6 @@ const About = () => {
           enableBlur={true}
           baseRotation={5}
           blurStrength={10}
-         
         >
           Bexex Global Pvt. Ltd. is a premier consulting firm delivering
           affordable and integrated solutions in Environment, Health & Safety
