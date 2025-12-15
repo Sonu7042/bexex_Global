@@ -5,7 +5,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 32px;
+  gap: 40px 2rem;
   margin-top: 5rem;
   
 }
@@ -16,7 +16,7 @@
 .csCardItem {
   display: flex;
   flex-direction: column;
-  flex: 0 1 calc(33.333% - 22px); /* 3 per row on desktop */
+  flex: 23%; /* 3 per row on desktop */
 }
 
 /* image area */
@@ -40,7 +40,7 @@
 }
 
 .csCardItemTitle {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 600;
   margin: 0 0 12px;
 }
@@ -108,7 +108,18 @@
   }
 }
 
-
+@media(max-width:1024px){
+  .searchContainerWrapper{
+    gap: 1.875rem;
+  }
+  .sfBarLeft{
+    width: 100%;
+  }
+  .sfBarSearchWrap .sfFloatSearch{
+    width: 100%;
+    justify-content: flex-end
+  }
+}
 
 
 
@@ -120,7 +131,7 @@
 .searchContainerWrapper{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   width: 100%;
 }
 
@@ -167,11 +178,11 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 26px;
+  padding: 10px 15px;
   border-radius: 999px; /* pill */
-  border: 1px solid #b0b0b0;
+  border: 1px solid #000000;
   background: #ffffff;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12); */
   cursor: pointer;
 }
 
@@ -180,12 +191,13 @@
 }
 
 .sfBarPillIcon {
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
   border-radius: 999px;
   background: #000;
   color: #fff;
-  font-size: 14px;
+  font-size: 1rem;
+  font-weight: 500;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -231,9 +243,41 @@
 .sfBarSearchIcon {
   position: absolute;
   right: 0;
-  font-size: 20px;
+  font-size: 1.875rem;
   color: #5a5a5a;
+  margin-right: .5rem;
 }
+
+/* ===== Floating Search Label Fix ===== */
+
+.sfFloatSearchField {
+  position: relative;
+}
+
+/* label default position (inside input) */
+.sfFloatSearchLabel {
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  font-size: 1.4rem;
+  color: #6b6b6b; 
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+/* move label UP on focus or when text exists */
+.sfFloatSearchField:focus-within .sfFloatSearchLabel,
+.sfFloatSearchInput:not(:placeholder-shown) + .sfFloatSearchLabel {
+  transform: translateY(-30px);
+  font-size: 12px;
+  color: #333;
+}
+
+/* input spacing so text doesn’t overlap label */
+.sfFloatSearchInput {
+  padding-top: 14px;
+}
+
 
 /* responsive: stack on small screens */
 @media (max-width: 900px) {
@@ -297,6 +341,23 @@
   background: #f2f2f2;
 }
 
+/* smooth dropdown animation */
+.sfBarPillMenu--animate {
+  animation: dropdownFadeSlide 0.25s ease-out forwards;
+  transform-origin: top;
+}
+
+@keyframes dropdownFadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 
 
 /* make the card section not fight with the search bar width */
@@ -304,7 +365,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 32px;
+  gap: 40px 2rem;
   margin-top: 5rem;
 }
 
@@ -312,7 +373,8 @@
 .searchContainerWrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
+  flex-wrap: wrap;
   width: 100%;
   margin-bottom: 2rem;
 }

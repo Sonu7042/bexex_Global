@@ -1,7 +1,6 @@
 import img1 from "../assets/images/nature.jpg";
 
 
-
 const servicesCardData = [
   {
     title: "QUALITY & BUSINESS EXCELLENCE",

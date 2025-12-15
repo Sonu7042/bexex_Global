@@ -9,8 +9,8 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const menuItems = [
   // { label: "HOME", to: "/" },
-  { label: "SERVICES", to: "/services", dropdown: true, key: "services" },
   { label: "ABOUT US", to: "/about" },
+  { label: "SERVICES", to: "/services", dropdown: true, key: "services" },
   { label: "RESOURCES", to: "/resources", dropdown: true, key: "resources" },
   { label: "COMMUNITIES", to: "/communities" },
 ];
