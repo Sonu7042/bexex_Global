@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import "../../Css/service1.css";
 import { LearnMoreButton, HeadingComponent } from "../Buttons.jsx";
 import nature from "../../assets/images/nature.jpg";
-import servicesCardData from '../../dataStore/serviceData.js'
+import servicesCardData from "../../dataStore/serviceData.js";
+import { CiSearch } from "react-icons/ci";
+import { IoCheckmarkOutline } from "react-icons/io5";
 
 const cards = [
   {
@@ -227,7 +229,7 @@ const Service1 = () => {
           <div className="sfBarLeft">
             <h2 className="sfBarHeading">
               A Structured View of Our{" "}
-              <span className="sfBarHeadingEmphasis">Service Framework</span>
+              <span className="itly">Service Framework</span>
             </h2>
 
             <div className="sfBarFiltersRow">
@@ -242,12 +244,12 @@ const Service1 = () => {
                     setOpenMenu(openMenu === "first" ? null : "first")
                   }
                 >
-                  <span className="sfBarPillIcon">✔</span>
+                  <span className="sfBarPillIcon"><IoCheckmarkOutline /></span>
                   <span className="sfBarPillText">{selectedFilter}</span>
                 </button>
 
                 {openMenu === "first" && (
-                  <div className="sfBarPillMenu">
+                  <div className="sfBarPillMenu sfBarPillMenu--animate">
                     {options.map((opt) => (
                       <button
                         key={opt}
@@ -270,12 +272,12 @@ const Service1 = () => {
                     setOpenMenu(openMenu === "second" ? null : "second")
                   }
                 >
-                  <span className="sfBarPillIcon">✔</span>
+                  <span className="sfBarPillIcon"><IoCheckmarkOutline /></span>
                   <span className="sfBarPillText">{selectedSecondFilter}</span>
                 </button>
 
                 {openMenu === "second" && (
-                  <div className="sfBarPillMenu">
+                  <div className="sfBarPillMenu sfBarPillMenu--animate">
                     {secondaryOptions.map((opt) => (
                       <button
                         key={opt}
@@ -298,12 +300,12 @@ const Service1 = () => {
                     setOpenMenu(openMenu === "third" ? null : "third")
                   }
                 >
-                  <span className="sfBarPillIcon">✔</span>
+                  <span className="sfBarPillIcon"><IoCheckmarkOutline /></span>
                   <span className="sfBarPillText">{selectedthirdFilter}</span>
                 </button>
 
                 {openMenu === "third" && (
-                  <div className="sfBarPillMenu">
+                  <div className="sfBarPillMenu sfBarPillMenu--animate">
                     {safetyServices.map((opt) => (
                       <button
                         key={opt.name} // ✅ unique string key
@@ -319,18 +321,23 @@ const Service1 = () => {
             </div>
           </div>
 
-          <div className="sfBarSearchWrap">
-            <label className="sfBarSearchLabel" htmlFor="sfSearch">
-              Search
-            </label>
-            <div className="sfBarSearchField">
+          <div className="sfBarSearchWrap sfFloatSearch">
+            <div className="sfBarSearchField sfFloatSearchField">
               <input
                 id="sfSearch"
                 type="text"
                 placeholder=""
-                className="sfBarSearchInput"
+                className="sfBarSearchInput sfFloatSearchInput"
               />
-              <span className="sfBarSearchIcon">🔍</span>
+
+              <label
+                className="sfBarSearchLabel sfFloatSearchLabel"
+                htmlFor="sfSearch"
+              >
+                Search
+              </label>
+
+              <span className="sfBarSearchIcon"><CiSearch /></span>
             </div>
           </div>
         </div>
@@ -340,7 +347,7 @@ const Service1 = () => {
             <div className="csCardItemImageShell">
               <img
                 src={card.img}
-                alt={"img"+index}
+                alt={"img" + index}
                 className="csCardItemImage"
               />
             </div>
