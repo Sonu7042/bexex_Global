@@ -10,6 +10,8 @@ import WhoWeWorkWith from "./WhoWeWorkWith.jsx";
 import JourneyTimeline from "./JourneyTimeline.jsx";
 import aboutVideo from "../assets/video/aboutVideo.mp4";
 import AboutScrollReveal from "./AboutScrollReveal.jsx";
+import { GoUnmute } from "react-icons/go";
+import { GoMute } from "react-icons/go";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -83,7 +85,7 @@ const About = () => {
             />
 
             <button className="video-sound-btn" onClick={toggleSound}>
-              {muted ? "🔊 Enable Sound" : "🔇 Mute"}
+              {muted ? <GoUnmute /> : <GoMute />}
             </button>
           </div>
           <p className="hero-desc">
@@ -91,7 +93,7 @@ const About = () => {
             that strengthen safety, quality, and sustainability.
           </p>
 
-          <LearnMoreButton text="Discover more" link="/" marginTop="20" />
+          <LearnMoreButton text="Discover Services" link="/" marginTop="20" />
         </div>
       </section>
 
