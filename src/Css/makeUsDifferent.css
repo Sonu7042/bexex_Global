@@ -2,8 +2,8 @@
    SECTION WRAPPER
 -------------------------*/
 .whyus-wrapper {
-  padding-top: 5rem;
-  height: 100vh;
+  padding: 5rem 0rem;
+  /* height: 100vh; */
 }
 
 .whyus-header {

@@ -117,7 +117,9 @@ gap:1.4rem;
   box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
   box-sizing: border-box;
 }
-
+/* .tmulti-card:hover{
+  scale: 1.02;
+} */
 .tmulti-card-line {
   width: 2px;
   height: 70%;
@@ -188,6 +190,18 @@ gap:1.4rem;
   
 }
 
+/* =========================
+   TEXT-ONLY HOVER EFFECT
+========================= */
+
+.tmulti-card-title {
+  transition: transform 0.25s ease;
+  transform-origin: left center;
+}
+
+.tmulti-card:hover .tmulti-card-title {
+  transform: scale(1.06);
+}
 
 
 /* Big card */
@@ -508,3 +522,5 @@ gap:1.4rem;
     font-size: 0.9rem;
   }
 }
+
+
