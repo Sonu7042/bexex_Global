@@ -13,8 +13,8 @@
   display: flex;
   /* background: white; */
   box-shadow: 5px 5px 0 #000;
-  min-height: 80vh;
-  width: 96vw;
+  /* min-height: 80vh; */
+  width: 100%;
   max-width: 1400px;
   margin: 5rem auto;
 }
@@ -219,6 +219,9 @@
   align-items: stretch;
   background: none;
   overflow: hidden;
+}
+.contactmap-left iframe{
+  height: 100%;
 }
 .contactmap-img {
   width: 100%;
