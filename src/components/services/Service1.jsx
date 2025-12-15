@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../../Css/service1.css";
 import { LearnMoreButton, HeadingComponent } from "../Buttons.jsx";
 import nature from "../../assets/images/nature.jpg";
+import servicesCardData from '../../dataStore/serviceData.js'
 
 const cards = [
   {
@@ -334,18 +335,18 @@ const Service1 = () => {
           </div>
         </div>
 
-        {cards.map((card) => (
-          <article key={card.id} className="csCardItem">
+        {servicesCardData.map((card, index) => (
+          <article key={index} className="csCardItem">
             <div className="csCardItemImageShell">
               <img
-                src={card.image}
-                alt={card.title}
+                src={card.img}
+                alt={"img"+index}
                 className="csCardItemImage"
               />
             </div>
 
             <div className="csCardItemBody">
-              <h3 className="csCardItemTitle">{card.title}</h3>
+              <h3 className="csCardItemTitle">{card.value}</h3>
 
               {/* <div className="csCardItemIconRow">
               <span className="csCardItemIconBox">X</span>

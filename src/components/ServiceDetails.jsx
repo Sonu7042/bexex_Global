@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "../Css/serviceDetails.css";
-import { data } from "../dataStore/serviceData.js";
+// import { data } from "../dataStore/serviceData.js";
 import Service1 from "../components/services/Service1.jsx";
 
 const ServiceDetails = () => {
