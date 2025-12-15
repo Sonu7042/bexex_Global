@@ -5,7 +5,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 2rem;
+  gap: 40px 2.66rem;
   margin-top: 5rem;
   
 }
@@ -16,7 +16,7 @@
 .csCardItem {
   display: flex;
   flex-direction: column;
-  flex: 23%; /* 3 per row on desktop */
+  width: 23%; /* 3 per row on desktop */
 }
 
 /* image area */
