@@ -1,53 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../Css/service1.css";
 import { LearnMoreButton, HeadingComponent } from "../Buttons.jsx";
-import nature from "../../assets/images/nature.jpg";
-import servicesCardData from '../../dataStore/serviceData.js'
+import servicesCardData from "../../dataStore/serviceData.js";
 
-const cards = [
-  {
-    id: 1,
-    title: "Fire Safty Assesments",
-    image: nature,
-    tag: "Fire Safty Assesments",
-  },
-  {
-    id: 2,
-    title: "Fire Safty Assesments",
-    image: nature,
-    tag: "Fire Safty Assesments",
-  },
-  {
-    id: 3,
-    title: "Fire Safty Assesments",
-    image: nature,
-    tag: "Fire Safty Assesments",
-  },
-  {
-    id: 4,
-    title: "Fire Safty Assesments",
-    image: nature,
-    tag: "Fire Safty Assesments",
-  },
-  {
-    id: 5,
-    title: "Safety & Environment",
-    image: nature,
-    tag: "Safety & Environment",
-  },
-  {
-    id: 6,
-    title: "ISO Internal Audit",
-    image: nature,
-    tag: "ISO Internal Audit",
-  },
-];
 
 const Service1 = () => {
   //  first filter
   const [openMenu, setOpenMenu] = useState(null);
 
   const [selectedFilter, setSelectedFilter] = useState("Consulting");
+  const [searchText, setSearchText] = useState("");
+
 
   const options = ["Consulting", "Auditing", "Training", "Software Solution"];
 
@@ -56,11 +19,12 @@ const Service1 = () => {
     setOpenMenu(null);
   };
 
-  
-  // secondary filter
+  // second filter
   const [selectedSecondFilter, setSelectedSecondFilter] = useState(
     "environment, health & safety solutions"
   );
+
+  // console.log(selectedSecondFilter, "selectedSecondFilter")
   const secondaryOptions = [
     "quality & business excellence",
     "management systems and compliance",
@@ -202,10 +166,9 @@ const Service1 = () => {
     (item) => item.category.toLowerCase() === selectedSecondFilter.toLowerCase()
   );
 
-  console.log(safetyServices, "safetyServices");
-
   // third filter
   const [selectedthirdFilter, setselectedthirdFilter] = useState("");
+  // console.log(selectedthirdFilter, "selectedthirdFilter")
 
   useEffect(() => {
     if (safetyServices.length > 0) {
@@ -217,6 +180,62 @@ const Service1 = () => {
     setselectedthirdFilter(opt);
     setOpenMenu(null);
   };
+
+
+
+// search by type letter searchbar
+const handleSearch = (e) => {
+  setSearchText(e.target.value);
+};
+
+
+// filtering data from serviceCards
+  const normalize = (str = "") => str.toLowerCase().trim();
+
+
+ const filteredServices = servicesCardData.filter((item) => {
+  const matchTitle =
+    !selectedSecondFilter ||
+    normalize(item.title) === normalize(selectedSecondFilter);
+
+  const matchCategory =
+    !selectedthirdFilter ||
+    normalize(item.category) === normalize(selectedthirdFilter);
+
+  const matchSearch =
+    !searchText ||
+    normalize(item.value).includes(normalize(searchText)); 
+
+  return matchTitle && matchCategory && matchSearch;
+});
+
+// console.log(filteredServices, "filteredServices")  
+
+
+
+const dropdownRef = useRef(null);
+
+
+useEffect(() => {
+  const handleClickOutside = (event) => {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target)
+    ) {
+      setOpenMenu(null);
+    }
+  };
+
+  document.addEventListener("mousedown", handleClickOutside);
+
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, []);
+
+
+
+
 
   return (
     <>
@@ -231,7 +250,7 @@ const Service1 = () => {
               <span className="sfBarHeadingEmphasis">Service Framework</span>
             </h2>
 
-            <div className="sfBarFiltersRow">
+            <div className="sfBarFiltersRow"  ref={dropdownRef}>
               {/* <span className="sfBarFilterLabel">Filter</span> */}
 
               {/* pill with dropdown */}
@@ -330,18 +349,20 @@ const Service1 = () => {
                 type="text"
                 placeholder=""
                 className="sfBarSearchInput"
+                value={searchText}
+                onChange={handleSearch}
               />
               <span className="sfBarSearchIcon">🔍</span>
             </div>
           </div>
         </div>
 
-        {servicesCardData.map((card, index) => (
+        {filteredServices.map((card, index) => (
           <article key={index} className="csCardItem">
             <div className="csCardItemImageShell">
               <img
                 src={card.img}
-                alt={"img"+index}
+                alt={"img" + index}
                 className="csCardItemImage"
               />
             </div>
