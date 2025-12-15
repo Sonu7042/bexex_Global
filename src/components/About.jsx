@@ -12,6 +12,7 @@ import aboutVideo from "../assets/video/aboutVideo.mp4";
 import AboutScrollReveal from "./AboutScrollReveal.jsx";
 import { GoUnmute } from "react-icons/go";
 import { GoMute } from "react-icons/go";
+// import LetsConnect from './LetsConnect.jsx'
 
 gsap.registerPlugin(ScrollTrigger);
 
