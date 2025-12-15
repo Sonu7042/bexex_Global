@@ -9,7 +9,6 @@ const AboutUs = () => {
 
 
 
-  console.log(count)
   return (
     <div >
       <p className='text-center'>{count}</p>

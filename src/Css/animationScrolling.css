@@ -1,13 +1,17 @@
+/* ==========================
+   BASE STYLES
+   ========================== */
+
 .asc-section {
   position: relative;
   height: 100vh;
   width: 100%;
-  /* background: #111; */
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .asc-container {
   position: relative;
   width: 90%;
@@ -16,6 +20,7 @@
   justify-content: space-between;
   gap: 165px;
 }
+
 .asc-numbers {
   position: relative;
   width: 45%;
@@ -25,6 +30,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .asc-num {
   position: absolute;
   width: 100%;
@@ -37,8 +43,9 @@
   transform: translateY(100%);
   background-color: transparent;
 }
-.asc-numspan {  /* <-- Updated className name */
-  font-size: 93vh; /* fill the parent vertically (or use 60vw for wide screens) */
+
+.asc-numspan {
+  font-size: 93vh;
   font-weight: bold;
   width: 100%;
   height: 100%;
@@ -51,12 +58,14 @@
   user-select: none;
   overflow: hidden;
 }
+
 .asc-contents {
   position: relative;
   width: 70%;
   height: 100%;
   overflow: hidden;
 }
+
 .asc-contentbox {
   position: absolute;
   width: 100%;
@@ -65,7 +74,7 @@
   background: #fff;
   color: #333;
   border-radius: 7px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -74,6 +83,7 @@
   opacity: 0;
   pointer-events: none;
 }
+
 .asc-title {
   font-size: 2em;
   font-weight: bold;
@@ -81,17 +91,20 @@
   margin-bottom: 8px;
   letter-spacing: 1px;
 }
+
 .asc-desc {
   font-size: 1.1em;
   color: #555;
   margin-bottom: 8px;
   line-height: 1.4;
 }
+
 .asc-list {
   list-style: none;
   padding: 0;
   margin: 20px 0 0 0;
 }
+
 .asc-listitem {
   display: flex;
   align-items: center;
@@ -99,21 +112,22 @@
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 .asc-circle {
   display: inline-block;
   width: 15px;
   height: 15px;
-  /* border: 2.5px solid black; */
-  /* background-color: black; */
   border-radius: 50%;
   margin-right: 12px;
 }
+
 .asc-action {
   margin-top: 15px;
   display: flex;
   align-items: center;
   gap: 12px;
 }
+
 .asc-nextbtn {
   background: #0076ff;
   color: #fff;
@@ -127,30 +141,16 @@
   justify-content: center;
   cursor: pointer;
 }
+
 .asc-discover {
   font-weight: bold;
 }
-@media(max-width:768px) {
-  .asc-numspan { font-size: 35vh; }
-  .asc-contentbox{ font-size: 5vw; padding:20px; }
-}
-
-
-
-@media (max-width:768px){
-    .asc-numbers{
-        display: none;
-    }
-
-}
-
 
 /* ==========================
-   MOBILE (<768px) RESPONSIVE
+   MOBILE RESPONSIVE (<768px)
    ========================== */
 
 @media (max-width: 768px) {
-
   .asc-section {
     height: auto;
     padding: 40px 0;
@@ -163,12 +163,10 @@
     gap: 0;
   }
 
-  /* Hide numbers column */
   .asc-numbers {
     display: none;
   }
 
-  /* Content container full width */
   .asc-contents {
     width: 100%;
     height: auto;
@@ -176,7 +174,6 @@
     position: relative;
   }
 
-  /* Each content box becomes normal block */
   .asc-contentbox {
     position: relative;
     transform: none !important;
@@ -186,6 +183,10 @@
     height: auto;
     max-width: 100%;
     padding: 20px;
+  }
+
+  .asc-numspan {
+    font-size: 35vh;
   }
 
   .asc-title {
@@ -220,6 +221,3 @@
     font-size: 1em;
   }
 }
-
-
-
