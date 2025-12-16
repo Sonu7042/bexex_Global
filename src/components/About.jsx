@@ -13,7 +13,11 @@ import AboutScrollReveal from "./AboutScrollReveal.jsx";
 import { GoUnmute } from "react-icons/go";
 import { GoMute } from "react-icons/go";
 // import LetsConnect from './LetsConnect.jsx'
-import JourneyAnimation from "./JourneyAnimation.jsx";
+import {OurJourney} from './OurJourney'
+
+
+
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -60,6 +64,76 @@ const About = () => {
     setMuted(!muted);
     video.play();
   };
+
+
+
+
+  
+
+  const timelineData = [
+    {
+      title: "2023",
+      content: (
+        <p className="text-neutral-700 dark:text-neutral-300">
+          Started my journey learning React and modern frontend tools.
+        </p>
+      ),
+    },
+    {
+      title: "2024",
+      content: (
+        <div>
+          <h4 className="font-semibold mb-2">Major Milestones</h4>
+          <ul className="list-disc pl-5 space-y-1 text-neutral-700 dark:text-neutral-300">
+            <li>Built production apps</li>
+            <li>Learned animations with Framer Motion</li>
+            <li>Worked with GSAP timelines</li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: "2025",
+      content: (
+        <p className="text-neutral-700 dark:text-neutral-300">
+          Focusing on performance, animations, and scalable UI systems.
+        </p>
+      ),
+    },
+    {
+      title: "2025",
+      content: (
+        <p className="text-neutral-700 dark:text-neutral-300">
+          Focusing on performance, animations, and scalable UI systems.
+        </p>
+      ),
+    },
+    {
+      title: "2025",
+      content: (
+        <p className="text-neutral-700 dark:text-neutral-300">
+          Focusing on performance, animations, and scalable UI systems.
+        </p>
+      ),
+    },
+    {
+      title: "2025",
+      content: (
+        <p className="text-neutral-700 dark:text-neutral-300">
+          Focusing on performance, animations, and scalable UI systems.
+        </p>
+      ),
+    },
+    {
+      title: "2025",
+      content: (
+        <p className="text-neutral-700 dark:text-neutral-300">
+          Focusing on performance, animations, and scalable UI systems.
+        </p>
+      ),
+    },
+  ];
+
 
   return (
     <>
@@ -157,7 +231,7 @@ const About = () => {
       {/* ----------------------- */}
 
       {/* <JourneyTimeline /> */}
-      <JourneyAnimation />
+      <OurJourney  data={timelineData}/>
 
       <TeamGrid />
 
