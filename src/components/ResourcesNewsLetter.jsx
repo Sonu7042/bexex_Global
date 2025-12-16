@@ -7,7 +7,7 @@ import { LearnMoreButton, HeadingComponent } from "./Buttons";
 const ResourcesNewsLetter = () => {
   return (
     <>
-      <section className="page_indenation">
+      <section className="page_indenation seven-size-adjust">
         {/* <div className="newsletter-label applyfont">
           <div className="brand-logo">
             <img alt="miniLogo" src="/src/assets/images/miniLogo.png"/>
