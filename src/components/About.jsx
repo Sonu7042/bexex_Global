@@ -72,31 +72,42 @@ const About = () => {
 
   const timelineData = [
     {
+      title: "2017",
+      content: (
+        <p className="text-neutral-700 dark:text-neutral-300">
+          Established as eGrowth India, delivering  early consulting assignments and 200+  training hours—laying the foundation for  client trust and expertise.
+        </p>
+      ),
+    },
+    {
+      title: "2019",
+      content: (
+        <p className="text-neutral-700 dark:text-neutral-300">
+           Set up a dedicated office and  expanded the consulting and  training team to serve more sectors with structured project management
+        </p>
+      ),
+    },
+    {
+      title: "2021",
+      content: (
+        <p className="text-neutral-700 dark:text-neutral-300">
+          Achieved 5,000+ training hours  and completed 200+ consulting  projects, strengthening our footprint across industries.
+        </p>
+      ),
+    },
+    {
       title: "2023",
       content: (
         <p className="text-neutral-700 dark:text-neutral-300">
-          Started my journey learning React and modern frontend tools.
+          Registered as eGrowth  Training & Consultancy  Services under GST,  reaching 300+ projects and  100+ clients, and building a strong brand reputation
         </p>
       ),
     },
     {
       title: "2024",
       content: (
-        <div>
-          <h4 className="font-semibold mb-2">Major Milestones</h4>
-          <ul className="list-disc pl-5 space-y-1 text-neutral-700 dark:text-neutral-300">
-            <li>Built production apps</li>
-            <li>Learned animations with Framer Motion</li>
-            <li>Worked with GSAP timelines</li>
-          </ul>
-        </div>
-      ),
-    },
-    {
-      title: "2025",
-      content: (
         <p className="text-neutral-700 dark:text-neutral-300">
-          Focusing on performance, animations, and scalable UI systems.
+          Launched our online  training platform and  digital tools to support  remote learning  and enhance client experience.
         </p>
       ),
     },
@@ -104,31 +115,7 @@ const About = () => {
       title: "2025",
       content: (
         <p className="text-neutral-700 dark:text-neutral-300">
-          Focusing on performance, animations, and scalable UI systems.
-        </p>
-      ),
-    },
-    {
-      title: "2025",
-      content: (
-        <p className="text-neutral-700 dark:text-neutral-300">
-          Focusing on performance, animations, and scalable UI systems.
-        </p>
-      ),
-    },
-    {
-      title: "2025",
-      content: (
-        <p className="text-neutral-700 dark:text-neutral-300">
-          Focusing on performance, animations, and scalable UI systems.
-        </p>
-      ),
-    },
-    {
-      title: "2025",
-      content: (
-        <p className="text-neutral-700 dark:text-neutral-300">
-          Focusing on performance, animations, and scalable UI systems.
+          Rebranded as BEXEX  Global Pvt. Ltd., reflecting  our evolution into a  multi-domain firm focusing  on business excellence,  sustainability, and growth.
         </p>
       ),
     },

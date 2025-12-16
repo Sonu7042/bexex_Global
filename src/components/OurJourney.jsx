@@ -25,12 +25,8 @@ export const OurJourney = ({ data }) => {
   
   return (
     <div ref={containerRef} className="journey-wrapper">
-      <div className="journey-container">
-        <h2 className="journey-title">Changelog from my journey</h2>
-        <p className="journey-desc">
-          I've been working on Aceternity for the past 2 years. Here's a timeline
-          of my journey.
-        </p>
+      <div className="journey-container ">
+        <h2 data-aos="zoom-in-up" className="journey-title applyfont">Changelog from my journey</h2>
       </div>
 
       <div ref={ref} className="journey-timeline">
@@ -45,7 +41,7 @@ export const OurJourney = ({ data }) => {
             </div>
 
             {/* RIGHT (CONTENT) */}
-            <div className="journey-right">
+            <div data-aos="zoom-in-up" className="journey-right">
               <h3 className="journey-year-mobile">{item.title}</h3>
               {item.content}
             </div>
