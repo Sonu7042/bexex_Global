@@ -1,0 +1,59 @@
+
+
+
+
+
+#timeline-container {
+  display: flex;
+  gap: 20px;
+  height: 600px;
+  width: 500px;
+  margin: 40px auto;
+}
+
+/* Swiper */
+.swiper {
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* YEARS */
+.year {
+  font-size: 22px;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.year.selected {
+  font-size: 32px;
+  color: #ffcc00;
+}
+
+/* CONTENT */
+.content-slide {
+  text-align: center;
+}
+
+.content-slide img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.content-slide h1 {
+  font-size: 48px;
+  color: #ffcc00;
+}
+
+.content-slide p {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+}
+
+
+
