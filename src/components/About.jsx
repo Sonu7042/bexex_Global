@@ -158,6 +158,8 @@ const About = () => {
       <JourneyTimeline />
 
       <TeamGrid />
+
+      
     </>
   );
 };
