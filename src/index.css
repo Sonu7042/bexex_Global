@@ -51,10 +51,10 @@ padding-left: 2rem;   /* px-4 */
 }
 
 @media (min-width: 768px) {
-  .page_indenation {
-    padding-left: 4rem;   /* md:px-16 */
+  /* .page_indenation {
+    padding-left: 4rem;
     padding-right: 4rem;
-  }
+  } */
 }
 
     
