@@ -28,7 +28,7 @@ export default function JourneyAnimation() {
       trigger: wrapperRef.current,
       start: "top top",
       end: `+=${timelineData.length * window.innerHeight}`,
-      // pin: true,
+      pin: true,
       scrub: true
     });
 
@@ -40,7 +40,7 @@ export default function JourneyAnimation() {
     gsap.fromTo(
       ".journey-content-slide",
       { opacity: 0, scale: 0.92 },
-      { opacity: 1, scale: 1, duration: 0.6, ease: "power3.out" }
+      { opacity: 1, scale: 1, duration: 0.6, ease: "power3.out"}
     );
   }, [activeIndex]);
 
