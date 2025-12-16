@@ -22,6 +22,7 @@ export const OurJourney = ({ data }) => {
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
+  
   return (
     <div ref={containerRef} className="journey-wrapper">
       <div className="journey-container">
