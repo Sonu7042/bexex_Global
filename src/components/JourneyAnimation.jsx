@@ -28,7 +28,7 @@ export default function JourneyAnimation() {
       trigger: wrapperRef.current,
       start: "top top",
       end: `+=${timelineData.length * window.innerHeight}`,
-      pin: true,
+      // pin: true,
       scrub: true
     });
 
