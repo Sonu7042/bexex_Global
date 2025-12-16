@@ -13,6 +13,7 @@ import AboutScrollReveal from "./AboutScrollReveal.jsx";
 import { GoUnmute } from "react-icons/go";
 import { GoMute } from "react-icons/go";
 // import LetsConnect from './LetsConnect.jsx'
+import JourneyAnimation from "./JourneyAnimation.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -155,7 +156,8 @@ const About = () => {
       <WhoWeWorkWith />
       {/* ----------------------- */}
 
-      <JourneyTimeline />
+      {/* <JourneyTimeline /> */}
+      <JourneyAnimation />
 
       <TeamGrid />
 

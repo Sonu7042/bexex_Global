@@ -3,7 +3,6 @@ import About from './About'
 import Footer from './Footer'
       
 import LetsConnect  from './LetsConnect'
-import OnScrollingAnimation from './OnScrollingAnimation'
 
 const AboutSectionLayout = () => {
   return (
@@ -13,7 +12,6 @@ const AboutSectionLayout = () => {
     </main>
       <LetsConnect />
 
-      <OnScrollingAnimation />
 
     <Footer />
     </>
