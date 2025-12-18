@@ -1,0 +1,71 @@
+/* ---------- DARK THEME ---------- */
+.table-container.dark {
+  --bg: #323232;
+  --text: #ffffff;
+  --border: #555;
+  --head-bg: #3a3a3a;
+  --row-hover: #3f3f3f;
+}
+
+/* ---------- LIGHT THEME ---------- */
+.table-container.light {
+  --bg: #ffffff;
+  --text: #323232;
+  --border: #ccc;
+  --head-bg: #f5f5f5;
+  --row-hover: #eeeeee;
+}
+
+/* ---------- BASE ---------- */
+.table-container {
+  background: var(--bg);
+  color: var(--text);
+  padding: 20px;
+  
+}
+
+.table-heading {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* ---------- EXCEL STYLE TABLE ---------- */
+.table {
+  width: 100%;
+  border-collapse: collapse;           /* IMPORTANT */
+  border: 1px solid var(--border);     /* OUTER BORDER */
+}
+
+/* Column & Row borders */
+.table th,
+.table td {
+  padding: 12px 16px;
+  border: 1px solid var(--border);     /* CELL GRID */
+  text-align: left;
+}
+
+/* Header */
+.table th {
+  background: var(--head-bg);
+}
+
+/* Row hover */
+.table tbody tr:hover {
+  background: var(--row-hover);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  /* Keep excel layout even on mobile */
+  .table {
+    min-width: 600px;
+  }
+}

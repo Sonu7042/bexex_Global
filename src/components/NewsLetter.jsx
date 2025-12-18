@@ -10,6 +10,8 @@ const NewsLetter = () => {
     e.preventDefault();
     // handle subscribe logic here
     alert("Subscribed with " + email);
+
+    
   };
   return (
     <>
