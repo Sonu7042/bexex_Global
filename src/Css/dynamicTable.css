@@ -9,7 +9,7 @@
 
 /* ---------- LIGHT THEME ---------- */
 .table-container.light {
-  --bg: #ffffff;
+  /* --bg: #ffffff; */
   --text: #323232;
   --border: #ccc;
   --head-bg: #f5f5f5;
@@ -20,7 +20,7 @@
 .table-container {
   background: var(--bg);
   color: var(--text);
-  padding: 20px;
+  /* padding: 20px; */
   
 }
 
@@ -47,7 +47,9 @@
   border: 1px solid var(--border);     /* CELL GRID */
   text-align: left;
 }
-
+.table tr{
+  background-color: #ffffff;
+}
 /* Header */
 .table th {
   background: var(--head-bg);
