@@ -295,6 +295,9 @@
   border: 2.5px solid #232323;
   box-shadow: 0 0 0 2px #232323;
 }
+.innerBlogTextBold{
+  font-weight: bolder;
+}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
