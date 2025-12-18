@@ -106,6 +106,16 @@ const blogPosts = [
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/hira-hazard-risk-assessment",
   },
+  {
+    img: oms,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Management Review Meeting: Making It Meaningful",
+    summary:
+      "Learn how to conduct effective ISO management review meetings that drive strategic decisions, not just compliance checkboxes for Indian industries.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/management-review-meeting-iso",
+  },
 ];
 
 /* ---------- COMPONENT ---------- */
