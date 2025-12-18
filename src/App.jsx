@@ -26,6 +26,7 @@ import BlogInnerPage4 from "./components/blogs/BlogInnerPage4";
 import BlogInnerPage5 from "./components/blogs/BlogInnerPage5";
 import BlogInnerPage6 from "./components/blogs/BlogInnerPage6";
 import BlogInnerPage7 from "./components/blogs/BlogInnerPage7";
+import BlogInnerPage8 from "./components/blogs/BlogInnerPage8";
 
 
 
@@ -101,6 +102,7 @@ const App = () => {
         <Route path="/blog/third-party-inspection-manufacturing" element={<BlogInnerPage5 />} />
         <Route path="/blog/industrial-air-quality-testing" element={<BlogInnerPage6 />} />
         <Route path="/blog/iso-14001-implementation-india" element={<BlogInnerPage7 />} />
+        <Route path="/blog/iso-documentation-mistakes" element={<BlogInnerPage8 />} />
 
 
 
