@@ -86,6 +86,16 @@ const blogPosts = [
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/iso-14001-implementation-india",
   },
+  {
+    img: safetyFirst,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Common Mistakes in ISO Documentation (And How to Fix Them)",
+    summary:
+      "Learn the most common ISO documentation mistakes Indian manufacturers make and practical solutions to create effective, audit-ready documentation.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/iso-documentation-mistakes",
+  },
 ];
 
 /* ---------- COMPONENT ---------- */
