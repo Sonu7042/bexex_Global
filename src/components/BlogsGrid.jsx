@@ -71,12 +71,13 @@ const blogPosts = [
     img: energizing,
     date: "22 July 2024",
     readTime: "4 min",
-    title: "Energizing Efficiency: ISO 50001 Implementation",
+    title: "Air Quality Testing Guide",
     summary:
-      "A deep dive into the principles and steps involved in implementing ISO 50001.",
+      "Complete guide to industrial air quality testing in India. Learn monitoring requirements, parameters, compliance, and best practices for industries.",
     tags: ["Environment Management", "ISO Systems"],
-    url: "#",
+    url: "/blog/industrial-air-quality-testing",
   },
+
   // {
   //   img: ecofriendly,
   //   date: "22 July 2024",

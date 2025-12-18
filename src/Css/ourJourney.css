@@ -1,9 +1,10 @@
 /* Wrapper */
 .journey-wrapper {
   width: 100%;
-  background-color: #ffffff; /* bg-white */
+  /* background-color: #ffffff;  */
   font-family: sans-serif;   /* font-sans */
   color: #000;
+  overflow: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
