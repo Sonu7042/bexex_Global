@@ -111,7 +111,37 @@ const BlogInnerPage = () => {
 
 
 
+const tableConfig = {
+  heading: "User Management",
+  theme: "dark", // "dark" | "light"
+  columns: [
+    { key: "name", label: "Name" },
+    { key: "email", label: "Email" },
+    { key: "role", label: "Role" },
+    { key: "status", label: "Status" },
+  ],
+};
 
+const tableData = [
+  {
+    name: "John",
+    email: "john@gmail.com",
+    role: "Admin",
+    status: "Active",
+  },
+  {
+    name: "Sarah",
+    email: "sarah@gmail.com",
+    role: "User",
+    status: "Inactive",
+  },
+  {
+    name: "David",
+    email: "david@gmail.com",
+    role: "Manager",
+    status: "Active",
+  },
+];
 
 
   return (
@@ -137,13 +167,11 @@ const BlogInnerPage = () => {
         </div>
         <div className="blog-text">
           <h1>
-            Third-Party &nbsp;<span className="blog-amp">&amp;</span>&nbsp;
+           Third-Party &&nbsp;<span className="blog-amp"></span>
             <span className="blog-highlight itly">Inspection</span> <br />
           </h1>
           <p className="blog-description">
-            Complete guide to third-party inspection services for Indian
-            manufacturers. Learn when TPI is required, benefits, process, and
-            selection criteria.
+           ISO 14001 certification, environmental management system, EMS implementation, ISO 14001 benefits, environmental compliance India.
           </p>
 
           <LearnMoreButton text="Discover more " link="/" marginTop="10" />
@@ -161,12 +189,11 @@ const BlogInnerPage = () => {
       <section className="blog-content-outer ">
         <div className="blog-content-inner">
           <p className="innertopText" id="Third-Party-Inspection">
-            Third-Party Inspection (TPI): What Every Manufacturer Should Know
+            ISO 14001 for Indian Manufacturing: A Step-by-Step Approach
           </p>
 
           <p className="innertopTextSubHeading">
-            Independent quality verification that protects buyers and
-            manufacturers alike
+           Building environmental management systems that deliver business value
           </p>
 
           {/* <h2 id="why">
@@ -174,14 +201,7 @@ const BlogInnerPage = () => {
       </h2> */}
 
           <p className="blog-body blog-body-highlightColor">
-            Quality disputes between buyers and suppliers create costly
-            disruptions in manufacturing supply chains. Buyers receive shipments
-            that don't meet specifications. Suppliers insist their products
-            conform to requirements. Without objective evidence, these disputes
-            escalate into contract conflicts, payment delays, and relationship
-            breakdowns. The cost extends beyond individual
-            transactions—reputation damage affects future business
-            opportunities.
+           Environmental regulations in India have tightened significantly over the past decade. The Central Pollution Control Board enforces strict emission standards. State Pollution Control Boards conduct regular inspections. Communities demand environmental accountability. For manufacturers, environmental compliance has evolved from optional good practice to business necessity.
           </p>
 
           {/* <ul className="disk">
@@ -198,40 +218,29 @@ const BlogInnerPage = () => {
       </ul> */}
 
           <p className="blog-body blog-body-highlightColor">
-            Third-party inspection (TPI) addresses this challenge through
-            independent quality verification. Neutral inspectors assess products
-            against agreed specifications, providing objective evidence that
-            protects both parties. When conflicts arise, TPI reports offer
-            factual basis for resolution rather than subjective claims.
+            ISO 14001, the international standard for environmental management systems, provides a structured framework for managing environmental responsibilities while improving operational efficiency. Organizations implementing ISO 14001 don't just achieve compliance—they reduce waste, lower energy consumption, and strengthen stakeholder relationships.
           </p>
 
           <p className="blog-body blog-body-highlightColorBlue">
-            Indian manufacturing exports have grown substantially, with quality
-            assurance becoming increasingly critical. Industry data shows that
-            manufacturers using systematic TPI services experience 40% fewer
-            customer disputes and 30% faster payment cycles compared to those
-            relying solely on internal quality checks.
+   Indian manufacturers with ISO 14001 certification report 25% reduction in waste generation, 15% decrease in energy costs, and 40% fewer environmental non-compliances compared to pre-certification performance.
           </p>
+
+
+
+
+
+
 
           <p className="innertopTextSubHeading" id="Understanding-Third-Party">
-            Understanding Third-Party Inspection
+           Understanding ISO 14001:2015
           </p>
 
           <p className="blog-body blog-body-highlightColor">
-            Third-party inspection involves independent organizations verifying
-            that products, materials, or processes meet specified requirements.
-            Unlike first-party inspection (conducted by manufacturers) or
-            second-party inspection (conducted by buyers), TPI provides neutral
-            assessment accepted by both parties.
+        ISO 14001 specifies requirements for an environmental management system enabling organizations to enhance environmental performance through efficient use of resources and reduction of waste. The 2015 revision follows the High-Level Structure common to all ISO 
           </p>
 
           <p className="blog-body blog-body-highlightColor">
-            TPI services operate across diverse industries. Manufacturing
-            sectors from automotive to pharmaceuticals use TPI to verify
-            supplier quality. Construction projects employ TPI for materials and
-            workmanship verification. Export-oriented businesses use
-            pre-shipment inspection to confirm products meet destination country
-            requirements.
+            management standards, making integration straightforward for organizations already implementing <span className="blog-body-highlightColorBlue">ISO 9001</span>  or <span className="blog-body-highlightColorBlue">ISO 45001</span>.
           </p>
 
           <p className="blog-body blog-body-highlightColor">
@@ -597,7 +606,24 @@ const BlogInnerPage = () => {
             rework, customer complaints, and relationship damage. Compare these
             costs to inspection fees.
           </p>
+
+
+
+
+
+
+
+        {/* table  */}
+       <DynamicTable config={tableConfig} data={tableData}/>
         </div>
+
+
+
+
+
+
+
+
 
         {/* Vertical Nav (Progress) */}
         {/* Sticky Navigation */}

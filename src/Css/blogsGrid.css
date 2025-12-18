@@ -123,3 +123,39 @@
 }
 
 
+
+
+/* ================= SAFE OVERRIDES (DO NOT REMOVE OLD CSS) ================= */
+
+/* Force vertical stacking so button stays at bottom */
+.blog-grid-section {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ensure grid layout wins (over earlier flex rules) */
+.blog-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Bottom-centered See More button */
+.see-more-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Responsive grid safety */
+@media (max-width: 991px) {
+  .blog-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .blog-grid-container {
+    grid-template-columns: 1fr;
+  }
+}

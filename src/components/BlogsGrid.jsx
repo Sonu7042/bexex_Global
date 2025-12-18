@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react"; // ✅ ADDED useState
 import "../Css/blogsGrid.css";
 
 // Replace these imports with your actual image paths
@@ -12,10 +12,10 @@ import oms from "../assets/images/blog_imgs/internal-audit-process.png";
 import safetyFirst from "../assets/images/blog_imgs/third-party-inspection.png";
 import unralleving from "../assets/images/blog_imgs/unralleving.png";
 
-// import img3 from "./images/tablet.jpg";
 import { Link } from "react-router-dom";
 import NewsLetter from "./NewsLetter";
 
+/* ---------- YOUR EXISTING DATA (UNCHANGED) ---------- */
 const blogPosts = [
   {
     img: emergency,
@@ -77,48 +77,27 @@ const blogPosts = [
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/industrial-air-quality-testing",
   },
-
-  // {
-  //   img: ecofriendly,
-  //   date: "22 July 2024",
-  //   readTime: "4 min",
-  //   title: "Eco-Friendly Excellence: A Guide to ISO 14001",
-  //   summary:
-  //     "Explore the principles of ISO 14001 and their application for eco-friendly practices.",
-  //   tags: ["Environment Management", "ISO Systems"],
-  //   url:"#"
-
-  // },
-  // {
-  //   img: navigating_iso,
-  //   date: "22 July 2024",
-  //   readTime: "4 min",
-  //   title: "Navigating ISO 9001: A Step-by-Step Guide",
-  //   summary:
-  //     "Explore each stage of ISO 9001 implementation with practical tips and insights.",
-  //   tags: ["Environment Management", "ISO Systems"],
-  //   url:"#"
-
-  // },
-  // {
-  //   img: unralleving,
-  //   date: "22 July 2024",
-  //   readTime: "4 min",
-  //   title: "Unraveling the Core Foundation of QMS",
-  //   summary:
-  //     "Explore the key features and benefits of ISO 9001:2015.",
-  //   tags: ["Environment Management", "ISO Systems"],
-  //   url:"#"
-
-  // },
+   { img: energizing,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "ISO 14001 for Indian Manufacturing: Step-by-Step Guide",
+    summary:
+      "Complete guide to ISO 14001 implementation for Indian manufacturers. Learn environmental management system requirements, benefits, and certification.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/iso-14001-implementation-india",
+  },
 ];
 
+/* ---------- COMPONENT ---------- */
 export default function BlogsGrid() {
+  /* ✅ ADDED STATE (nothing removed) */
+  const [visibleCount, setVisibleCount] = useState(6); // 2 rows (3 cards × 2)
+
   return (
     <>
       <section className="blog-grid-section">
         <div className="blog-grid-container">
-          {blogPosts.map((post, idx) => (
+          {blogPosts.slice(0, visibleCount).map((post, idx) => ( // ✅ only change
             <Link
               to={post.url}
               data-aos="fade-up"
@@ -133,13 +112,10 @@ export default function BlogsGrid() {
                   className="blog-grid-img"
                 />
               </div>
-              {/* <div className="blog-grid-meta">
-              <span>{post.date}</span>
-              <span>•</span>
-              <span>{post.readTime}</span>
-            </div> */}
+
               <h3 className="blog-grid-title">{post.title}</h3>
               <p className="blog-grid-summary">{post.summary}</p>
+
               <div className="blog-grid-tags">
                 {post.tags.map((tag, i) => (
                   <span className="blog-grid-tag" key={i}>
@@ -150,6 +126,18 @@ export default function BlogsGrid() {
             </Link>
           ))}
         </div>
+
+        {/* ✅ ADDED SEE MORE (existing layout untouched) */}
+        {visibleCount < blogPosts.length && (
+          <div className="see-more-wrapper">
+            <button
+              className="see-more-btn"
+              onClick={() => setVisibleCount(visibleCount + 6)}
+            >
+              See More
+            </button>
+          </div>
+        )}
       </section>
 
       {/* --------------------------------------------section--------------------------------------------- */}
