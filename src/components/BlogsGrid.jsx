@@ -96,6 +96,16 @@ const blogPosts = [
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/iso-documentation-mistakes",
   },
+  {
+    img: energizing,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Hazard Identification and Risk Assessment (HIRA) Guide",
+    summary:
+      "Complete guide to HIRA for Indian industries. Learn hazard identification techniques, risk assessment methods, and control measures for workplace safety.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/hira-hazard-risk-assessment",
+  },
 ];
 
 /* ---------- COMPONENT ---------- */
