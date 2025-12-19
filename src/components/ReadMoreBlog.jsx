@@ -11,32 +11,34 @@ import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
-    img:emergency,
-    date: "22 July 2024",
-    readTime: "4 min",
-    title: "Emergency Preparedness and ISO 45001: A Holistic Approach to Safety",
-    summary:
-      "Insights on how ISO 45001 contributes to effective emergency preparedness and response in the workplace.",
-    tags: ["ISO Systems", "Safty Managment"],
-  },
-  {
-    img: clearingAndAir,
-    date: "22 July 2024",
-    readTime: "4 min",
-    title: "Clearing the Air: GHG Verification with ISO 14064",
-    summary:
-      "Explore the verification process for greenhouse gas emissions as per ISO 14064:2019_Part 03.",
-    tags: ["Environment Management", "ISO Systems"],
-  },
-  {
-    img: navigating_Environment,
-    date: "22 July 2024",
-    readTime: "4 min",
-    title: "ISO 14001: Navigating ISO 14001 for Environmental Management",
-    summary:
-      "Understand the principles and benefits of ISO 14001 in environmental management.",
-    tags: ["Environment Management", "ISO Systems"],
-  },
+     img: emergency,
+     date: "22 July 2024",
+     readTime: "4 min",
+     title: "Air Quality Testing Guide",
+     summary:
+       "Complete guide to industrial air quality testing in India. Learn monitoring requirements, parameters, compliance, and best practices for industries.",
+     tags: ["Environment Management", "ISO Systems"],
+     url: "/blog/industrial-air-quality-testing",
+   },
+    { img: clearingAndAir,
+     date: "22 July 2024",
+     readTime: "4 min",
+     title: "ISO 14001 for Indian Manufacturing: Step-by-Step Guide",
+     summary:
+       "Complete guide to ISO 14001 implementation for Indian manufacturers. Learn environmental management system requirements, benefits, and certification.",
+     tags: ["Environment Management", "ISO Systems"],
+     url: "/blog/iso-14001-implementation-india",
+   },
+   {
+     img: navigating_Environment,
+     date: "22 July 2024",
+     readTime: "4 min",
+     title: "Common Mistakes in ISO Documentation (And How to Fix Them)",
+     summary:
+       "Learn the most common ISO documentation mistakes Indian manufacturers make and practical solutions to create effective, audit-ready documentation.",
+     tags: ["Environment Management", "ISO Systems"],
+     url: "/blog/iso-documentation-mistakes",
+   },
 ];
 
 export default function ReadMoreBlog() {
@@ -48,7 +50,7 @@ export default function ReadMoreBlog() {
     <div className="blog-grid-section">
       <div className="blog-grid-container">
         {blogPosts.map((post, idx) => (
-          <Link to={'/innerBlogPage'} className="blog-grid-card" key={idx}>
+          <Link to={post.url} className="blog-grid-card" key={idx}>
             <div className="blog-grid-img-wrap">
               <img src={post.img} alt={post.title} className="blog-grid-img" />
             </div>
