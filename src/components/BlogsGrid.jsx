@@ -136,16 +136,7 @@ const blogPosts = [
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/document-control-system-iso",
   },
-  {
-    img: energizing,
-    date: "22 July 2024",
-    readTime: "4 min",
-    title: "CAPA Process Guide: ISO Corrective Actions",
-    summary:
-      "Complete guide to implementing effective CAPA processes in ISO systems. Learn root cause analysis, corrective actions, and prevention strategies.",
-    tags: ["Environment Management", "ISO Systems"],
-    url: "/blog/capa-process-iso-standards",
-  },
+ 
   {
     img: energizing,
     date: "22 July 2024",
@@ -175,6 +166,28 @@ const blogPosts = [
       "Complete guide to forming safety committees in Indian industries. Learn legal requirements, structure, responsibilities, and effective operations.",
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/safety-committee-requirements-india",
+  },
+
+   {
+    img: energizing,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "CAPA Process Guide: ISO Corrective Actions",
+    summary:
+      "Complete guide to implementing effective CAPA processes in ISO systems. Learn root cause analysis, corrective actions, and prevention strategies.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/capa-process-iso-standards",
+  },
+
+   {
+    img: safetyFirst,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "ISO 22000 Food Safety Management System Guide",
+    summary:
+      "Complete guide to ISO 22000 implementation for food businesses. Learn HACCP integration, certification process, and food safety compliance in India.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/iso-22000-food-safety-management",
   },
 ];
 
