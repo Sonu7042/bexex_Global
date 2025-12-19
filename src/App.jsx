@@ -38,6 +38,7 @@ import BlogInnerPage13 from "./components/blogs/BlogInnerPage13";
 import BlogInnerPage19 from "./components/blogs/BlogInnerPage19";
 import BlogInnerPage18 from "./components/blogs/BlogInnerPage18";
 import BlogInnerPage20 from "./components/blogs/BlogInnerPage20";
+import BlogInnerPage16 from "./components/blogs/BlogInnerPage16";
 
 
 
@@ -130,6 +131,7 @@ const App = () => {
         <Route path="/blog/iso-22000-food-safety-management" element={<BlogInnerPage19 />} />
         <Route path="/blog/soil-testing-contamination-assessment" element={<BlogInnerPage18 />} />
         <Route path="/blog/emergency-preparedness-response-plan" element={<BlogInnerPage20 />} />
+        <Route path="/blog/blog/iso-50001-energy-management" element={<BlogInnerPage16 />} />
 
 
 

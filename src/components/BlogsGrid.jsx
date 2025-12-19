@@ -209,6 +209,16 @@ const blogPosts = [
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/emergency-preparedness-response-plan",
   },
+  {
+    img: ecofriendly,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "ISO 50001: Energy Management Systems for Indian Industries",
+    summary:
+      "Complete guide to ISO 50001 implementation for Indian manufacturers. Learn energy management system requirements, benefits, and certification process.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/blog/iso-50001-energy-management",
+  },
 ];
 
 /* ---------- COMPONENT ---------- */
