@@ -189,6 +189,26 @@ const blogPosts = [
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/iso-22000-food-safety-management",
   },
+  {
+    img: energizing,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Soil Testing & Contamination Assessment Guide",
+    summary:
+      "Complete guide to soil testing and contamination assessment for Indian industries. Learn testing parameters, compliance requirements, and remediation.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/soil-testing-contamination-assessment",
+  },
+  {
+    img: unralleving,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Emergency Preparedness & Response Planning Guide",
+    summary:
+      "Complete guide to emergency preparedness and response planning for Indian industries. Learn ERP development, drills, compliance, and crisis management.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/emergency-preparedness-response-plan",
+  },
 ];
 
 /* ---------- COMPONENT ---------- */

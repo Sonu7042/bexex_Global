@@ -106,6 +106,9 @@
     max-width: 430px;
     min-width: 210px;
   }
+  .readMoreSection{
+    margin-top: 0!important;
+  }
 }
 
 

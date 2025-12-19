@@ -366,6 +366,12 @@
    .blog-highlight{
     font-size: 1.875rem;
   }
+  .faq-page{
+    padding: 0;
+  }
+  .newsletter-bg{
+    padding: 0;
+  }
 }
 
 
