@@ -123,7 +123,7 @@ const BlogInnerPage = () => {
 
   const tableConfig = {
     // heading: "User Management",
-    theme: "light", // "dark" | "light"
+    theme: "dark", // "dark" | "light"
     columns: [
       { key: "name", label: "Input Category" },
       { key: "email", label: "What to Review" },

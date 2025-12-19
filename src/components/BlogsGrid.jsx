@@ -146,6 +146,26 @@ const blogPosts = [
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/capa-process-iso-standards",
   },
+  {
+    img: energizing,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "ISO 27001: Information Security for Indian Businesses",
+    summary:
+      "Complete guide to ISO 27001 implementation for Indian businesses. Learn information security management, data protection, and certification benefits.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/iso-27001-information-security",
+  },
+  {
+    img: unralleving,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Noise Monitoring in Industrial Environments: Compliance",
+    summary:
+      "Complete guide to industrial noise monitoring in India. Learn compliance requirements, measurement techniques, and control measures for workplaces.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/industrial-noise-monitoring-compliance",
+  },
 ];
 
 /* ---------- COMPONENT ---------- */
