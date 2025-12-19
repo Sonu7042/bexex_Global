@@ -116,6 +116,16 @@ const blogPosts = [
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/management-review-meeting-iso",
   },
+  {
+    img: safetyFirst,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Safety Committee Formation: Legal Requirements and Best Practices",
+    summary:
+      "Complete guide to forming safety committees in Indian industries. Learn legal requirements, structure, responsibilities, and effective operations.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/safety-committee-requirements-india",
+  },
 ];
 
 /* ---------- COMPONENT ---------- */
