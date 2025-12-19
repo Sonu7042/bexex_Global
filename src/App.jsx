@@ -29,6 +29,9 @@ import BlogInnerPage7 from "./components/blogs/BlogInnerPage7";
 import BlogInnerPage8 from "./components/blogs/BlogInnerPage8";
 import BlogInnerPage9 from "./components/blogs/BlogInnerPage9";
 import BlogInnerPage10 from "./components/blogs/BlogInnerPage10";
+import BlogInnerPage11 from "./components/blogs/BlogInnerPage11";
+import BlogInnerPage14 from "./components/blogs/BlogInnerPage14";
+import BlogInnerPage17 from "./components/blogs/BlogInnerPage17";
 
 
 
@@ -107,6 +110,9 @@ const App = () => {
         <Route path="/blog/iso-documentation-mistakes" element={<BlogInnerPage8 />} />
         <Route path="/blog/hira-hazard-risk-assessment" element={<BlogInnerPage9 />} />
         <Route path="/blog/management-review-meeting-iso" element={<BlogInnerPage10 />} />
+        <Route path="/blog/water-quality-testing-india" element={<BlogInnerPage11 />} />
+        <Route path="/blog/document-control-system-iso" element={<BlogInnerPage14 />} />
+        <Route path="/blog/capa-process-iso-standards" element={<BlogInnerPage17 />} />
 
 
 

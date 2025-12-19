@@ -116,6 +116,36 @@ const blogPosts = [
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/management-review-meeting-iso",
   },
+  {
+    img: energizing,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Water Quality Testing: Parameters and Compliance",
+    summary:
+      "Complete guide to water quality testing for Indian industries. Learn parameters, compliance requirements, and best practices for monitoring programs.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/water-quality-testing-india",
+  },
+  {
+    img: oms,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Document Control System: From Paper to Digital",
+    summary:
+      "Learn how to build effective document control systems for ISO compliance. Covers paper and digital approaches, best practices, and common mistakes.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/document-control-system-iso",
+  },
+  {
+    img: energizing,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "CAPA Process Guide: ISO Corrective Actions",
+    summary:
+      "Complete guide to implementing effective CAPA processes in ISO systems. Learn root cause analysis, corrective actions, and prevention strategies.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/capa-process-iso-standards",
+  },
 ];
 
 /* ---------- COMPONENT ---------- */
