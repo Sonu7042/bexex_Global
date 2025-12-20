@@ -30,7 +30,6 @@ const resources = [
     type: "secondary",
   },
 ];
-
 const tags = ["ISO Systems", "Consulting", "Energy"];
 
 const navItems = [

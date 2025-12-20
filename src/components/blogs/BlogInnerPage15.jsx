@@ -6,6 +6,7 @@ import LetsConnect from "../LetsConnect";
 import Footer from "../Footer";
 import { LearnMoreButton } from "../Buttons";
 import construction_worker_img from "../../assets/images/blog_imgs/eco-friendly.png";
+import noiseMonitoring from "../../assets/images/blog_imgs/industrial-noise-monitoring.png";
 import FrequentQuestion from "../FrequentQuestion";
 import { CiLinkedin } from "react-icons/ci";
 import { CiFacebook } from "react-icons/ci";
@@ -191,7 +192,7 @@ const BlogInnerPage = () => {
         <div className="blog-inner-content">
           <div className="blog-image-wrapper">
             <img
-              src={construction_worker_img}
+              src={noiseMonitoring}
               alt="Blog visual"
               className="blog-main-image"
             />

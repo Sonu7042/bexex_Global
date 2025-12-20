@@ -11,6 +11,23 @@ import navigating_iso from "../assets/images/blog_imgs/navigating_iso.png";
 import oms from "../assets/images/blog_imgs/internal-audit-process.png";
 import safetyFirst from "../assets/images/blog_imgs/third-party-inspection.png";
 import unralleving from "../assets/images/blog_imgs/unralleving.png";
+import airquality from "../assets/images/blog_imgs/Air-quality-testing.png";
+import isoOneforth from "../assets/images/blog_imgs/ISO-14001.jpg";
+import isoMistake from "../assets/images/blog_imgs/ISO-documentation.png";
+import hazardIdentification from "../assets/images/blog_imgs/Hazard-Identification.png";
+import managementReview from "../assets/images/blog_imgs/management-review-meeting.png";
+import waterQuality from "../assets/images/blog_imgs/water-quality-testing.png";
+import ISOTwentySeven from "../assets/images/blog_imgs/ISO-27001-India.png";
+import safetyCommitteeIndia from "../assets/images/blog_imgs/safety-committee-India.png";
+import documentControlSystem from "../assets/images/blog_imgs/document-control-system.png";
+import noiseMonitoring from "../assets/images/blog_imgs/industrial-noise-monitoring.png";
+import energyManagement from "../assets/images/blog_imgs/energy-management.png";
+import CAPAProcess from "../assets/images/blog_imgs/CAPA-process.png";
+import soilTesting from "../assets/images/blog_imgs/soil-testing.png";
+import foodSafety from "../assets/images/blog_imgs/food-safety.png";
+import emergencyPreparedness from "../assets/images/blog_imgs/emergency-preparedness.png";
+import ambientAirQuality from "../assets/images/blog_imgs/ambient-air-quality.png";
+
 
 import { Link } from "react-router-dom";
 import NewsLetter from "./NewsLetter";
@@ -59,7 +76,7 @@ const blogPosts = [
     url: "/blog/third-party-inspection-manufacturing",
   },
   {
-    img: energizing,
+    img: airquality,
     date: "22 July 2024",
     readTime: "4 min",
     title: "Air Quality Testing Guide",
@@ -68,7 +85,7 @@ const blogPosts = [
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/industrial-air-quality-testing",
   },
-   { img: energizing,
+   { img: isoOneforth,
     date: "22 July 2024",
     readTime: "4 min",
     title: "ISO 14001 for Indian Manufacturing: Step-by-Step Guide",
@@ -78,7 +95,7 @@ const blogPosts = [
     url: "/blog/iso-14001-implementation-india",
   },
   {
-    img: safetyFirst,
+    img: isoMistake,
     date: "22 July 2024",
     readTime: "4 min",
     title: "Common Mistakes in ISO Documentation (And How to Fix Them)",
@@ -88,7 +105,7 @@ const blogPosts = [
     url: "/blog/iso-documentation-mistakes",
   },
   {
-    img: energizing,
+    img: hazardIdentification,
     date: "22 July 2024",
     readTime: "4 min",
     title: "Hazard Identification and Risk Assessment (HIRA) Guide",
@@ -98,7 +115,7 @@ const blogPosts = [
     url: "/blog/hira-hazard-risk-assessment",
   },
   {
-    img: oms,
+    img: managementReview,
     date: "22 July 2024",
     readTime: "4 min",
     title: "Management Review Meeting: Making It Meaningful",
@@ -108,7 +125,7 @@ const blogPosts = [
     url: "/blog/management-review-meeting-iso",
   },
   {
-    img: energizing,
+    img: waterQuality,
     date: "22 July 2024",
     readTime: "4 min",
     title: "Water Quality Testing: Parameters and Compliance",
@@ -118,7 +135,7 @@ const blogPosts = [
     url: "/blog/water-quality-testing-india",
   },
   {
-    img: oms,
+    img: documentControlSystem,
     date: "22 July 2024",
     readTime: "4 min",
     title: "Document Control System: From Paper to Digital",
@@ -129,7 +146,7 @@ const blogPosts = [
   },
  
   {
-    img: energizing,
+    img: ISOTwentySeven,
     date: "22 July 2024",
     readTime: "4 min",
     title: "ISO 27001: Information Security for Indian Businesses",
@@ -139,7 +156,7 @@ const blogPosts = [
     url: "/blog/iso-27001-information-security",
   },
   {
-    img: unralleving,
+    img: noiseMonitoring,
     date: "22 July 2024",
     readTime: "4 min",
     title: "Noise Monitoring in Industrial Environments: Compliance",
@@ -149,7 +166,7 @@ const blogPosts = [
     url: "/blog/industrial-noise-monitoring-compliance",
   },
   {
-    img: safetyFirst,
+    img: safetyCommitteeIndia,
     date: "22 July 2024",
     readTime: "4 min",
     title: "Safety Committee Formation: Legal Requirements and Best Practices",
@@ -160,7 +177,7 @@ const blogPosts = [
   },
 
    {
-    img: energizing,
+    img: CAPAProcess,
     date: "22 July 2024",
     readTime: "4 min",
     title: "CAPA Process Guide: ISO Corrective Actions",
@@ -171,7 +188,7 @@ const blogPosts = [
   },
 
    {
-    img: safetyFirst,
+    img: foodSafety,
     date: "22 July 2024",
     readTime: "4 min",
     title: "ISO 22000 Food Safety Management System Guide",
@@ -181,7 +198,7 @@ const blogPosts = [
     url: "/blog/iso-22000-food-safety-management",
   },
   {
-    img: energizing,
+    img: soilTesting,
     date: "22 July 2024",
     readTime: "4 min",
     title: "Soil Testing & Contamination Assessment Guide",
@@ -191,7 +208,7 @@ const blogPosts = [
     url: "/blog/soil-testing-contamination-assessment",
   },
   {
-    img: unralleving,
+    img: emergencyPreparedness,
     date: "22 July 2024",
     readTime: "4 min",
     title: "Emergency Preparedness & Response Planning Guide",
@@ -201,7 +218,7 @@ const blogPosts = [
     url: "/blog/emergency-preparedness-response-plan",
   },
   {
-    img: ecofriendly,
+    img: energyManagement,
     date: "22 July 2024",
     readTime: "4 min",
     title: "ISO 50001: Energy Management Systems for Indian Industries",
@@ -211,7 +228,7 @@ const blogPosts = [
     url: "/blog/iso-50001-energy-management",
   },
   {
-    img: clearingAndAir,
+    img: ambientAirQuality,
     date: "22 July 2024",
     readTime: "4 min",
     title: "Ambient Air Quality Monitoring: Guide for India",
