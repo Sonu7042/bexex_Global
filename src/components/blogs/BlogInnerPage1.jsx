@@ -220,9 +220,9 @@ const BlogInnerPage = () => {
             Supply chain partners increasingly demand proof of effective safety
             management, particularly in sectors like pharmaceuticals, chemicals,
             and construction where operational risks run high. Understanding{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/ehs-legal-register-compliance"} className="blog-body-highlightColorBlue">
               how to build an effective legal register for EHS compliance{" "}
-            </span>{" "}
+            </Link>{" "}
             becomes essential in this journey.
           </p>
 
@@ -234,8 +234,8 @@ const BlogInnerPage = () => {
             ISO 45001 follows the High-Level Structure common to all ISO
             management system standards, making integration straightforward for
             organizations already certified to{" "}
-            <span className="blog-body-highlightColorBlue"> ISO 9001</span> or{" "}
-            <span className="blog-body-highlightColorBlue">ISO 14001 </span> .
+            <Link to={'/blog/iso-9001-risk-based-thinking'} className="blog-body-highlightColorBlue"> ISO 9001</Link> or{" "}
+            <Link to={'/blog/iso-14001-implementation-india'} className="blog-body-highlightColorBlue">ISO 14001 </Link> .
             With the 2026 revisions of these standards expected to further
             harmonize requirements, organizations implementing ISO 45001 now
             position themselves advantageously for smoother transitions.
@@ -247,9 +247,9 @@ const BlogInnerPage = () => {
             performance. Worker participation represents another fundamental
             shift. ISO 45001 requires meaningful consultation with employees at
             every stage. Establishing a proper{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={'/blog/safety-committee-requirements-india'} className="blog-body-highlightColorBlue">
               safety committee structure
-            </span>{" "}
+            </Link>{" "}
             ensures this participation becomes systematic rather than sporadic.
           </p>
           <p className="blog-body">
@@ -312,9 +312,9 @@ const BlogInnerPage = () => {
             Create documented procedures for hazard identification, risk
             assessment, incident investigation, emergency response, and
             contractor management. Learning how to avoid{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={'/blog/iso-documentation-mistakes'} className="blog-body-highlightColorBlue">
               common mistakes in ISO documentation
-            </span>{" "}
+            </Link>{" "}
             can save significant time. Consider establishing a robust document
             control system from the start.
           </p>
@@ -332,20 +332,20 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Our detailed guide on{" "}
-            <span className="blog-body-highlightColorBlue">
-              hazard identification and risk assessment (HIRA)
-            </span>
+            <Link to={"/blog/hira-hazard-risk-assessment"} className="blog-body-highlightColorBlue">
+              hazard identification and risk assessment (HIRA) {" "}
+            </Link>
             provides step-by-step frameworks and templates for conducting
             thorough assessments.
           </p>
           <p className="blog-body">
-            For each identified hazard, assess the risk using a consistent
+            For each identified hazard, assess the risk using a consistent    
             methodology. Apply the hierarchy of controls—elimination,
             substitution, engineering controls, administrative controls, and
             personal protective equipment. Understanding{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={'/blog/ppe-selection-usage-guidelines'} className="blog-body-highlightColorBlue">
               proper PPE selection and usage
-            </span>{" "}
+            </Link>{" "}
             becomes critical when other controls prove insufficient.
           </p>
           <p className="blog-body">
@@ -368,9 +368,9 @@ const BlogInnerPage = () => {
             Provide training to close competence gaps, covering job-specific
             hazards, control measures, emergency procedures, and worker rights.
             Organizations benefit from structured programs like{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={'/blog/workplace-safety-training-culture'} className="blog-body-highlightColorBlue">
               workplace safety training{" "}
-            </span>{" "}
+            </Link>{" "}
             that build genuine safety cultures. Establish operational controls
             to manage identified risks. Develop safe work
           </p>
@@ -378,16 +378,16 @@ const BlogInnerPage = () => {
             procedures, implement permit-to-work systems for high-risk
             activities, and maintain equipment according to specifications. For
             facilities handling hazardous materials, proper{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={'/blog/chemical-safety-hazard-communication'} className="blog-body-highlightColorBlue">
               {" "}
               chemical safety and hazard communication
-            </span>{" "}
+            </Link>{" "}
             protocols are non-negotiable. Prepare for emergencies by identifying
             plausible scenarios—fires, chemical spills, medical emergencies. Our
             comprehensive guide on{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={'/blog/emergency-preparedness-response-plan'} className="blog-body-highlightColorBlue">
               emergency preparedness and response planning
-            </span>{" "}
+            </Link>{" "}
             provides detailed frameworks.
           </p>
 
@@ -404,24 +404,24 @@ const BlogInnerPage = () => {
           <p className="blog-body">
             Conduct regular workplace inspections using standardized checklists.
             Understanding{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={'/blog/internal-audit-process-guide'} className="blog-body-highlightColorBlue">
               {" "}
               how to conduct effective internal audits{" "}
-            </span>
+            </Link>
             ensures your audits go beyond checklist exercises. Investigate all
             incidents using root cause analysis, implementing{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={'/blog/capa-process-iso-standards'} className="blog-body-highlightColorBlue">
               corrective and preventive actions (CAPA)
-            </span>{" "}
+            </Link>{" "}
             systematically.
           </p>
           <p className="blog-body">
             Schedule internal audits at planned intervals to assess system
             conformity. Conduct{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={'/blog/management-review-meeting-iso'} className="blog-body-highlightColorBlue">
               {" "}
               management reviews
-            </span>{" "}
+            </Link>{" "}
             at least annually to evaluate safety performance and improvement
             opportunities.
           </p>
@@ -441,9 +441,9 @@ const BlogInnerPage = () => {
             45001 certificate valid for three years, subject to annual
             surveillance audits. Organizations pursuing excellence often
             integrate multiple standards. Our guide to sp{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={'/blog/integrated-management-systems-ims'} className="blog-body-highlightColorBlue">
               integrated management systems (IMS)
-            </span>{" "}
+            </Link>{" "}
             explains how to combine ISO 45001 with ISO 9001 and ISO 14001 for
             maximum efficiency.
           </p>
@@ -467,13 +467,13 @@ const BlogInnerPage = () => {
               gains emerge as hazard identification improves process
               reliability. Organizations in specialized sectors benefit from
               additional certifications—{" "}
-              <span className="blog-body-highlightColorBlue">
+              <Link to={'/blog/as9100-aerospace-quality-standard'} className="blog-body-highlightColorBlue">
                 AS9100 for aerospace , IATF 16949 for automotive
-              </span>{" "}
+              </Link>{" "}
               or{" "}
-              <span className="blog-body-highlightColorBlue">
+              <Link to={"/blog/iso-13485-medical-device-quality"} className="blog-body-highlightColorBlue">
                 ISO 13485 for medical devices
-              </span>{" "}
+              </Link>{" "}
               .
             </p>
           </div>
@@ -521,10 +521,10 @@ const BlogInnerPage = () => {
           Need expert guidance? Bexex's experienced consultants have helped over
           200 Indian manufacturers achieve certification while building safety
           cultures that protect workers and strengthen business performance.{" "}
-          <span className="blog-body-highlightColorBlue">
+          <Link to={''} className="blog-body-highlightColorBlue">
             {" "}
             Explore our ISO 45001 consulting services
-          </span>{" "}
+          </Link>{" "}
           or contact us for a complimentary consultation.
         </p>
 

@@ -238,9 +238,9 @@ const BlogInnerPage = () => {
             Third, legal registers enable compliance monitoring. Organizations
             can't monitor compliance with requirements they haven't identified.
             The legal register becomes the baseline for{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/environmental-compliance-audit-checklist"} className="blog-body-highlightColorBlue">
               environmental compliance audits
-            </span>{" "}
+            </Link>{" "}
             and management reviews. It answers the fundamental question: Are we
             meeting all our legal obligations?
           </p>
@@ -248,7 +248,7 @@ const BlogInnerPage = () => {
           <p className="blog-body blog-body-highlightColor">
             Fourth, legal registers support{" "}
             <span className="blog-body-highlightColorBlue">ISO 14001</span> and{" "}
-            <span className="blog-body-highlightColorBlue">ISO 45001</span>{" "}
+            <Link to={"/blog/iso-45001-implementation-guide"} className="blog-body-highlightColorBlue">ISO 45001</Link>{" "}
             compliance. Both standards require organizations to determine and
             have access to applicable legal requirements related to
             environmental aspects and occupational health and safety hazards.
@@ -304,7 +304,7 @@ const BlogInnerPage = () => {
 
           <p className="blog-body">
             For organizations implementing{" "}
-            <span className="blog-body-highlightColorBlue">ISO 45001,</span>{" "}
+            <Link to={"/blog/iso-45001-implementation-guide"} className="blog-body-highlightColorBlue">ISO 45001,</Link>{" "}
             understanding how these regulations interact with the standard's
             requirements ensures comprehensive safety management. The legal
             register serves as the bridge between regulatory compliance and
@@ -404,9 +404,9 @@ const BlogInnerPage = () => {
             them clearly. Responsible individuals need sufficient authority and
             resources to fulfill their obligations. Without clear ownership,
             requirements fall into gaps between departments. Establishing a
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/safety-committee-requirements-india"} className="blog-body-highlightColorBlue">
               safety committee structure
-            </span>{" "}
+            </Link>{" "}
             helps coordinate compliance efforts across departments.
           </p>
 
@@ -422,9 +422,9 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Link the legal register to your{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/document-control-system-iso"} className="blog-body-highlightColorBlue">
               document control system
-            </span>{" "}
+            </Link>{" "}
             so that relevant procedures, work instructions, and forms reference
             applicable legal requirements. This integration ensures operational
             activities incorporate compliance considerations rather than
@@ -458,9 +458,9 @@ const BlogInnerPage = () => {
           <p className="blog-body">
             Verify compliance status regularly. The legal register should
             reflect current compliance status, not static information. During{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/internal-audit-process-guide"} className="blog-body-highlightColorBlue">
               internal audits
-            </span>{" "}
+            </Link>{" "}
             and management reviews, verify that identified requirements remain
             current and compliance status remains accurate.
           </p>
@@ -507,9 +507,9 @@ const BlogInnerPage = () => {
             quickly. Organizations should treat legal register maintenance as
             ongoing EHS management activity, not one-time project. Integration
             with{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/management-review-meeting-iso"} className="blog-body-highlightColorBlue">
               management review meetings
-            </span>{" "}
+            </Link>{" "}
             ensures senior leadership remains aware of compliance status and
             emerging requirements.
           </p>
@@ -530,30 +530,30 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             For organizations implementing{" "}
-            <span className="blog-body-highlightColorBlue">ISO 14001,</span> the
+            <Link to={"/blog/iso-14001-implementation-india"} className="blog-body-highlightColorBlue">ISO 14001,</Link> the
             legal register addresses clause 6.1.3 requirements to determine
             applicable compliance obligations. The register becomes input to{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={""} className="blog-body-highlightColorBlue">
               environmental compliance audits
-            </span>{" "}
+            </Link>{" "}
             that verify conformance.
           </p>
           <p className="blog-body">
             ISO 45001 requires similar identification of legal requirements
             related to occupational health and safety. Organizations
             implementing{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/integrated-management-systems-ims"} className="blog-body-highlightColorBlue">
               integrated management systems
-            </span>{" "}
+            </Link>{" "}
             can maintain unified legal registers covering quality,
             environmental, and safety requirements, reducing duplication while
             ensuring comprehensive coverage.
           </p>
           <p className="blog-body">
             The legal register informs{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/hira-hazard-risk-assessment"} className="blog-body-highlightColorBlue">
               risk assessment processes.
-            </span>{" "}
+            </Link>{" "}
             Regulatory non-compliance represents significant risk. Risk
             assessments should consider compliance status when evaluating
             overall risk exposure.
@@ -590,9 +590,9 @@ const BlogInnerPage = () => {
             <p className="blog-body">
               When evaluating software solutions, consider integration with
               existing systems. Can the legal register software connect to your{" "}
-              <span className="blog-body-highlightColorBlue">
+              <Link to={"/blog/document-control-system-iso"} className="blog-body-highlightColorBlue">
                 document management system,
-              </span>{" "}
+              </Link>{" "}
               training management system, or incident reporting system?
               Integration reduces data entry burden and ensures consistency
               across EHS systems.

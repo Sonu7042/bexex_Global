@@ -9,54 +9,18 @@
 
   // import img3 from "./images/tablet.jpg";
   import { Link } from "react-router-dom";
+  import blogPosts from '../components/blogs/BlogsData'
 
-  const blogPosts = [
-    {
-      img: emergency,
-      date: "22 July 2024",
-      readTime: "4 min",
-      title: "Air Quality Testing Guide",
-      summary:
-        "Complete guide to industrial air quality testing in India. Learn monitoring requirements, parameters, compliance, and best practices for industries.",
-      tags: ["Environment Management", "ISO Systems"],
-      url: "/blog/industrial-air-quality-testing",
-    },
-    {
-      img: clearingAndAir,
-      date: "22 July 2024",
-      readTime: "4 min",
-      title: "ISO 14001 for Indian Manufacturing: Step-by-Step Guide",
-      summary:
-        "Complete guide to ISO 14001 implementation for Indian manufacturers. Learn environmental management system requirements, benefits, and certification.",
-      tags: ["Environment Management", "ISO Systems"],
-      url: "/blog/iso-14001-implementation-india",
-    },
-    {
-      img: navigating_Environment,
-      date: "22 July 2024",
-      readTime: "4 min",
-      title: "Common Mistakes in ISO Documentation (And How to Fix Them)",
-      summary:
-        "Learn the most common ISO documentation mistakes Indian manufacturers make and practical solutions to create effective, audit-ready documentation.",
-      tags: ["Environment Management", "ISO Systems"],
-      url: "/blog/iso-documentation-mistakes",
-    },
-  ];
+  
 
   export default function ReadMoreBlog() {
     const location = useLocation();
-    console.log(location.pathname, "location")
 
     const suggestedBlogs = blogPosts.filter(
-      (item) => console.log(item.url, "url")
-    );
-    // const suggestedBlogs = blogPosts.filter(
-    //   (item) => item.url !== location.pathname
-    // );
+      (item) => item.url !== location.pathname).sort(() => 0.5 - Math.random()).slice(0, 3);
 
     // console.log(suggestedBlogs, "suggestedBlogs")
 
-    // console.log(suggestedBlogs, "filterBlogs");
 
     return (
       <>
