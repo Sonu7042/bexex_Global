@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-import { Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 import { store } from "./redux/store";
 import { Provider } from "react-redux";
 
@@ -30,13 +30,18 @@ import BlogInnerPage8 from "./components/blogs/BlogInnerPage8";
 import BlogInnerPage9 from "./components/blogs/BlogInnerPage9";
 import BlogInnerPage10 from "./components/blogs/BlogInnerPage10";
 import BlogInnerPage11 from "./components/blogs/BlogInnerPage11";
-import BlogInnerPage14 from "./components/blogs/BlogInnerPage14";
+import BlogInnerPage14 from "./components/blogs/BlogInnerPage14"; 
 import BlogInnerPage17 from "./components/blogs/BlogInnerPage17";
 import BlogInnerPage12 from "./components/blogs/BlogInnerPage12";
 import BlogInnerPage15 from "./components/blogs/BlogInnerPage15";
 import BlogInnerPage13 from "./components/blogs/BlogInnerPage13";
+import BlogInnerPage19 from "./components/blogs/BlogInnerPage19";
 import BlogInnerPage18 from "./components/blogs/BlogInnerPage18";
 import BlogInnerPage20 from "./components/blogs/BlogInnerPage20";
+import BlogInnerPage16 from "./components/blogs/BlogInnerPage16";
+import BlogInnerPage22 from "./components/blogs/BlogInnerPage22";
+import BlogInnerPage24 from "./components/blogs/BlogInnerPage24";
+import BlogInnerPage25 from "./components/blogs/BlogInnerPage25";
 
 
 
@@ -46,6 +51,9 @@ import Contact from "./components/Contact";
 // AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+import ScrollToTop  from './components/ScrollToTop'
+
 
 const App = () => {
 
@@ -90,8 +98,10 @@ const App = () => {
 
   return (
     <Provider store={store}>
-      <Header />
 
+       <ScrollToTop />
+      <Header />
+  
       <Routes>
         <Route path="/" element={<HeroSectionLayout />} />
         <Route path="/about" element={<AboutSectionLayout />} />
@@ -121,8 +131,13 @@ const App = () => {
         <Route path="/blog/iso-27001-information-security" element={<BlogInnerPage12 />} />
         <Route path="/blog/industrial-noise-monitoring-compliance" element={<BlogInnerPage15 />} />
         <Route path="/blog/safety-committee-requirements-india" element={<BlogInnerPage13 />} />
+        <Route path="/blog/iso-22000-food-safety-management" element={<BlogInnerPage19 />} />
         <Route path="/blog/soil-testing-contamination-assessment" element={<BlogInnerPage18 />} />
         <Route path="/blog/emergency-preparedness-response-plan" element={<BlogInnerPage20 />} />
+        <Route path="/blog/blog/iso-50001-energy-management" element={<BlogInnerPage16 />} />
+        <Route path="/blog/iso-13485-medical-device-quality" element={<BlogInnerPage22 />} />
+        <Route path="/blog/iso-13485-medical-device-quality" element={<BlogInnerPage24 />} />
+        <Route path="/blog/integrated-management-systems-ims" element={<BlogInnerPage25 />} />
 
 
 

@@ -136,16 +136,7 @@ const blogPosts = [
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/document-control-system-iso",
   },
-  {
-    img: energizing,
-    date: "22 July 2024",
-    readTime: "4 min",
-    title: "CAPA Process Guide: ISO Corrective Actions",
-    summary:
-      "Complete guide to implementing effective CAPA processes in ISO systems. Learn root cause analysis, corrective actions, and prevention strategies.",
-    tags: ["Environment Management", "ISO Systems"],
-    url: "/blog/capa-process-iso-standards",
-  },
+ 
   {
     img: energizing,
     date: "22 July 2024",
@@ -176,6 +167,28 @@ const blogPosts = [
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/safety-committee-requirements-india",
   },
+
+   {
+    img: energizing,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "CAPA Process Guide: ISO Corrective Actions",
+    summary:
+      "Complete guide to implementing effective CAPA processes in ISO systems. Learn root cause analysis, corrective actions, and prevention strategies.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/capa-process-iso-standards",
+  },
+
+   {
+    img: safetyFirst,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "ISO 22000 Food Safety Management System Guide",
+    summary:
+      "Complete guide to ISO 22000 implementation for food businesses. Learn HACCP integration, certification process, and food safety compliance in India.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/iso-22000-food-safety-management",
+  },
   {
     img: energizing,
     date: "22 July 2024",
@@ -195,6 +208,46 @@ const blogPosts = [
       "Complete guide to emergency preparedness and response planning for Indian industries. Learn ERP development, drills, compliance, and crisis management.",
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/emergency-preparedness-response-plan",
+  },
+  {
+    img: ecofriendly,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "ISO 50001: Energy Management Systems for Indian Industries",
+    summary:
+      "Complete guide to ISO 50001 implementation for Indian manufacturers. Learn energy management system requirements, benefits, and certification process.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/blog/iso-50001-energy-management",
+  },
+  {
+    img: safetyFirst,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "ISO 13485 Medical Device Quality Management Guide",
+    summary:
+      "Complete guide to ISO 13485 for medical device manufacturers. Learn QMS requirements, regulatory compliance, certification process, and risk management.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/iso-13485-medical-device-quality",
+  },
+  {
+    img: unralleving,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Stack Emission Monitoring: Compliance Best Practices",
+    summary:
+      "Complete guide to stack emission monitoring for Indian industries. Learn CPCB requirements, testing parameters, compliance procedures, and reporting.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/stack-emission-monitoring-compliance",
+  },
+  {
+    img: ecofriendly,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Integrated Management Systems: Combining ISO Standards",
+    summary:
+      "Complete guide to Integrated Management Systems (IMS) combining ISO 9001, ISO 14001, ISO 45001. Learn integration benefits, implementation, and auditing.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/integrated-management-systems-ims",
   },
 ];
 
