@@ -1,8 +1,5 @@
 import React, { useState } from "react"; // ✅ ADDED useState
 import "../Css/blogsGrid.css";
-
-// Replace these imports with your actual image paths
-
 import { Link } from "react-router-dom";
 import NewsLetter from "./NewsLetter";
 import blogPosts from '../components/blogs/BlogsData'

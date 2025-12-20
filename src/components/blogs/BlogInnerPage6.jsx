@@ -5,13 +5,14 @@ import NewsLetter from "../NewsLetter";
 import LetsConnect from "../LetsConnect";
 import Footer from "../Footer";
 import { LearnMoreButton } from "../Buttons";
-import construction_worker_img from "../../assets/images/blog_imgs/third-party-inspection.png";
+import airQuality from "../../assets/images/blog_imgs/Air-quality-testing.png";
 import FrequentQuestion from "../FrequentQuestion";
 import { CiLinkedin } from "react-icons/ci";
 import { CiFacebook } from "react-icons/ci";
 import { PiInstagramLogoLight } from "react-icons/pi";
 import ReadMoreBlog from "../ReadMoreBlog";
 import DynamicTable from "../DynamicTable";
+
 
 const resources = [
   {
@@ -170,7 +171,7 @@ const BlogInnerPage = () => {
         <div className="blog-inner-content">
           <div className="blog-image-wrapper">
             <img
-              src={construction_worker_img}
+              src={airQuality}
               alt="Blog visual"
               className="blog-main-image"
             />

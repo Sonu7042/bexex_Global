@@ -6,6 +6,7 @@ import LetsConnect from "../LetsConnect";
 import Footer from "../Footer";
 import { LearnMoreButton } from "../Buttons";
 import construction_worker_img from "../../assets/images/blog_imgs/third-party-inspection.png";
+import isoOneforth from "../../assets/images/blog_imgs/ISO-14001.jpg";
 import FrequentQuestion from "../FrequentQuestion";
 import { CiLinkedin } from "react-icons/ci";
 import { CiFacebook } from "react-icons/ci";
@@ -379,7 +380,7 @@ const tableConfig3 = {
         <div className="blog-inner-content">
           <div className="blog-image-wrapper">
             <img
-              src={construction_worker_img}
+              src={isoOneforth}
               alt="Blog visual"
               className="blog-main-image"
             />
@@ -387,8 +388,7 @@ const tableConfig3 = {
         </div>
         <div className="blog-text">
           <h1>
-           Third-Party &&nbsp;<span className="blog-amp"></span>
-            <span className="blog-highlight itly">Inspection</span> <br />
+            <span className="blog-highlight itly">ISO 14001</span> implementation India
           </h1>
           <p className="blog-description">
            ISO 14001 certification, environmental management system, EMS implementation, ISO 14001 benefits, environmental compliance India.

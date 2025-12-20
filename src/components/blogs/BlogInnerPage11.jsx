@@ -6,6 +6,7 @@ import LetsConnect from "../LetsConnect";
 import Footer from "../Footer";
 import { LearnMoreButton } from "../Buttons";
 import construction_worker_img from "../../assets/images/blog_imgs/third-party-inspection.png";
+import waterQuality from "../../assets/images/blog_imgs/water-quality-testing.png";
 import FrequentQuestion from "../FrequentQuestion";
 import { CiLinkedin } from "react-icons/ci";
 import { CiFacebook } from "react-icons/ci";
@@ -173,7 +174,7 @@ const tableData = [
         <div className="blog-inner-content">
           <div className="blog-image-wrapper">
             <img
-              src={construction_worker_img}
+              src={waterQuality}
               alt="Blog visual"
               className="blog-main-image"
             />
