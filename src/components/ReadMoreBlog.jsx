@@ -5,6 +5,7 @@ import "../Css/blogsGrid.css";
 import emergency from "../assets/images/blog_imgs/emergency.png";
 import clearingAndAir from "../assets/images/blog_imgs/clearingAndAir.png";
 import navigating_Environment from "../assets/images/blog_imgs/navigating_Environment.png";
+import { useLocation } from "react-router-dom";
 
 // import img3 from "./images/tablet.jpg";
 import { Link } from "react-router-dom";
@@ -39,10 +40,19 @@ const blogPosts = [
      tags: ["Environment Management", "ISO Systems"],
      url: "/blog/iso-documentation-mistakes",
    },
+  
 ];
 
 export default function ReadMoreBlog() {
+  
+  const location = useLocation();
 
+   const filterBlogs = blogPosts.filter((item)=>item.url === location.pathname)
+  
+
+  console.log(filterBlogs, "filterBlogs")
+
+    
   return (
     <>
     <section className="page_indenation readMoreSection">

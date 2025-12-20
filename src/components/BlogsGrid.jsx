@@ -27,16 +27,7 @@ const blogPosts = [
     tags: ["ISO Systems", "Safty Managment"],
     url: "/blog/iso-45001-implementation-guide",
   },
-  {
-    img: clearingAndAir,
-    date: "22 July 2024",
-    readTime: "4 min",
-    title: "Clearing the Air: GHG Verification with ISO 14064",
-    summary:
-      "Explore the verification process for greenhouse gas emissions as per ISO 14064:2019_Part 03.",
-    tags: ["Environment Management", "ISO Systems"],
-    url: "/blog/ehs-legal-register-compliance",
-  },
+  
   {
     img: navigating_Environment,
     date: "22 July 2024",
@@ -217,7 +208,27 @@ const blogPosts = [
     summary:
       "Complete guide to ISO 50001 implementation for Indian manufacturers. Learn energy management system requirements, benefits, and certification process.",
     tags: ["Environment Management", "ISO Systems"],
-    url: "/blog/blog/iso-50001-energy-management",
+    url: "/blog/iso-50001-energy-management",
+  },
+  {
+    img: clearingAndAir,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Ambient Air Quality Monitoring: Guide for India",
+    summary:
+      "Complete guide to ambient air quality monitoring for Indian industries. Learn CPCB requirements, monitoring parameters, compliance, and best practices.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/ambient-air-quality-monitoring",
+  },
+  {
+    img: ecofriendly,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Supplier Evaluation & Approval Process Guide",
+    summary:
+      "Complete guide to supplier evaluation and approval under ISO standards. Learn assessment criteria, audit procedures, and performance monitoring.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/supplier-evaluation-approval-iso",
   },
 ];
 

@@ -30,15 +30,17 @@ import BlogInnerPage8 from "./components/blogs/BlogInnerPage8";
 import BlogInnerPage9 from "./components/blogs/BlogInnerPage9";
 import BlogInnerPage10 from "./components/blogs/BlogInnerPage10";
 import BlogInnerPage11 from "./components/blogs/BlogInnerPage11";
-import BlogInnerPage14 from "./components/blogs/BlogInnerPage14"; 
-import BlogInnerPage17 from "./components/blogs/BlogInnerPage17";
 import BlogInnerPage12 from "./components/blogs/BlogInnerPage12";
-import BlogInnerPage15 from "./components/blogs/BlogInnerPage15";
 import BlogInnerPage13 from "./components/blogs/BlogInnerPage13";
-import BlogInnerPage19 from "./components/blogs/BlogInnerPage19";
-import BlogInnerPage18 from "./components/blogs/BlogInnerPage18";
-import BlogInnerPage20 from "./components/blogs/BlogInnerPage20";
+import BlogInnerPage14 from "./components/blogs/BlogInnerPage14"; 
+import BlogInnerPage15 from "./components/blogs/BlogInnerPage15";
 import BlogInnerPage16 from "./components/blogs/BlogInnerPage16";
+import BlogInnerPage17 from "./components/blogs/BlogInnerPage17";
+import BlogInnerPage18 from "./components/blogs/BlogInnerPage18";
+import BlogInnerPage19 from "./components/blogs/BlogInnerPage19";
+import BlogInnerPage20 from "./components/blogs/BlogInnerPage20";
+import BlogInnerPage21 from "./components/blogs/BlogInnerPage21";
+import BlogInnerPage23 from "./components/blogs/BlogInnerPage23";
 
 
 
@@ -131,7 +133,9 @@ const App = () => {
         <Route path="/blog/iso-22000-food-safety-management" element={<BlogInnerPage19 />} />
         <Route path="/blog/soil-testing-contamination-assessment" element={<BlogInnerPage18 />} />
         <Route path="/blog/emergency-preparedness-response-plan" element={<BlogInnerPage20 />} />
-        <Route path="/blog/blog/iso-50001-energy-management" element={<BlogInnerPage16 />} />
+        <Route path="/blog/iso-50001-energy-management" element={<BlogInnerPage16 />} />
+        <Route path="/blog/ambient-air-quality-monitoring" element={<BlogInnerPage21 />} />
+        <Route path="/blog/supplier-evaluation-approval-iso" element={<BlogInnerPage23/>} />
 
 
 
