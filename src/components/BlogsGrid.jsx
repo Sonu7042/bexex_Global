@@ -230,6 +230,36 @@ const blogPosts = [
     tags: ["Environment Management", "ISO Systems"],
     url: "/blog/supplier-evaluation-approval-iso",
   },
+  {
+    img: safetyFirst,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "ISO 13485 Medical Device Quality Management Guide",
+    summary:
+      "Complete guide to ISO 13485 for medical device manufacturers. Learn QMS requirements, regulatory compliance, certification process, and risk management.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/iso-13485-medical-device-quality",
+  },
+  {
+    img: unralleving,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Stack Emission Monitoring: Compliance Best Practices",
+    summary:
+      "Complete guide to stack emission monitoring for Indian industries. Learn CPCB requirements, testing parameters, compliance procedures, and reporting.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/stack-emission-monitoring-compliance",
+  },
+  {
+    img: ecofriendly,
+    date: "22 July 2024",
+    readTime: "4 min",
+    title: "Integrated Management Systems: Combining ISO Standards",
+    summary:
+      "Complete guide to Integrated Management Systems (IMS) combining ISO 9001, ISO 14001, ISO 45001. Learn integration benefits, implementation, and auditing.",
+    tags: ["Environment Management", "ISO Systems"],
+    url: "/blog/integrated-management-systems-ims",
+  },
 ];
 
 /* ---------- COMPONENT ---------- */

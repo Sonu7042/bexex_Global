@@ -41,6 +41,9 @@ import BlogInnerPage19 from "./components/blogs/BlogInnerPage19";
 import BlogInnerPage20 from "./components/blogs/BlogInnerPage20";
 import BlogInnerPage21 from "./components/blogs/BlogInnerPage21";
 import BlogInnerPage23 from "./components/blogs/BlogInnerPage23";
+import BlogInnerPage22 from "./components/blogs/BlogInnerPage22";
+import BlogInnerPage24 from "./components/blogs/BlogInnerPage24";
+import BlogInnerPage25 from "./components/blogs/BlogInnerPage25";
 
 
 
@@ -136,6 +139,9 @@ const App = () => {
         <Route path="/blog/iso-50001-energy-management" element={<BlogInnerPage16 />} />
         <Route path="/blog/ambient-air-quality-monitoring" element={<BlogInnerPage21 />} />
         <Route path="/blog/supplier-evaluation-approval-iso" element={<BlogInnerPage23/>} />
+        <Route path="/blog/iso-13485-medical-device-quality" element={<BlogInnerPage22 />} />
+        <Route path="/blog/iso-13485-medical-device-quality" element={<BlogInnerPage24 />} />
+        <Route path="/blog/integrated-management-systems-ims" element={<BlogInnerPage25 />} />
 
 
 
