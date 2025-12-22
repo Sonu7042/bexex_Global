@@ -1,10 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import "../Css/serviceDetails.css";
-// <<<<<<< HEAD
-// import { data } from "../dataStore/serviceData.js";
-// =======
-// >>>>>>> 2c52875b3e4918498264026e4c9af7c758b736c3
 import Service1 from "../components/services/Service1.jsx";
 
 const ServiceDetails = () => {

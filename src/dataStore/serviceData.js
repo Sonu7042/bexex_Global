@@ -203,7 +203,7 @@ const servicesCardData = [
   {
     title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
     category: "Fire Safety",
-    value: "Fire Risk Assessments as per NBC",
+    value: "Fire Risk   Assessments as per NBC",
     img:img1,
   },
   {

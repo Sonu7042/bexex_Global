@@ -50,11 +50,17 @@ import BlogInnerPage25 from "./components/blogs/BlogInnerPage25";
 import ResourcesNewsLetter from "./components/ResourcesNewsLetter";
 import Contact from "./components/Contact";
 
+
+
+
 // AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
 import ScrollToTop  from './components/ScrollToTop'
+
+import AllServiceShowPage from "./components/AllServiceShowPage";
 
 
 const App = () => {
@@ -107,8 +113,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HeroSectionLayout />} />
         <Route path="/about" element={<AboutSectionLayout />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/resources" element={<AboutUs />} />
+        {/* <Route path="/services" element={<Services />} /> */}
+        {/* <Route path="/resources" element={<AboutUs />} /> */}
         <Route path="/communities" element={<CommunitiesSectionLayout />} />
 
         <Route path="/services/:id" element={<ServiceDetails />} />
@@ -145,6 +151,13 @@ const App = () => {
 
 
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="/Services" element={<AllServiceShowPage/>}/>
+
+
+
+       
+
       </Routes>
     </Provider>
   );

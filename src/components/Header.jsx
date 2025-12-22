@@ -2,16 +2,13 @@ import React, { useState, useEffect } from "react";
 import "../Css/header.css";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
-import header_logo from '../assets/images/Bexexlogo.png'
-// import { LearnMoreButton } from "./Buttons";
-// import { FaArrowRight } from "react-icons/fa";
+import header_logo from "../assets/images/Bexexlogo.png";
 import { IoIosArrowDown } from "react-icons/io";
 
 const menuItems = [
-  // { label: "HOME", to: "/" },
   { label: "ABOUT US", to: "/about" },
-  { label: "SERVICES", to: "/services", dropdown: true, key: "services" },
-  { label: "RESOURCES", to: "/resources", dropdown: true, key: "resources" },
+  { label: "SERVICES", to: "/Services", dropdown: true, key: "services" },
+  { label: "RESOURCES", to: "#", dropdown: true, key: "resources" },
   { label: "COMMUNITIES", to: "/communities" },
 ];
 
@@ -25,193 +22,145 @@ const services = [
 ];
 
 const resources = [
-  { title: "Blogs",        link: "/resources/blog" },
-  { title: "NewsLetters",  link: "/resources/newsletters" },
+  { title: "Blogs", link: "/resources/blog" },
+  { title: "NewsLetters", link: "/resources/newsletters" },
 ];
 
 const Header = () => {
-  const [searchActive, setSearchActive] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [serviceOpen, setServiceOpen] = useState(false);
   const [resourceOpen, setResourceOpen] = useState(false);
 
-  const handleSearchToggle = () => {
-    setSearchActive(prev => !prev);
-    setMenuOpen(false);
-    setServiceOpen(false);
-    setResourceOpen(false);
-  };
-
-
-  const handleDropdownClick = (e, key) => {
-    e.preventDefault();
-
+  /* =========================
+     ✅ NEW: Hover handlers
+  ========================= */
+  const handleMouseEnter = (key) => {
     if (key === "services") {
-      setServiceOpen(prev => !prev);
+      setServiceOpen(true);
       setResourceOpen(false);
     } else if (key === "resources") {
-      setResourceOpen(prev => !prev);
+      setResourceOpen(true);
       setServiceOpen(false);
     }
+  };
 
-    setMenuOpen(false);
+  const handleMouseLeave = () => {
+    setServiceOpen(false);
+    setResourceOpen(false);
   };
 
   const handleHamburgerToggle = () => {
-    setMenuOpen(prev => !prev);
+    setMenuOpen((prev) => !prev);
     setServiceOpen(false);
     setResourceOpen(false);
-    setSearchActive(false);
   };
 
+  const closeAllMenus = () => {
+    setMenuOpen(false);
+    setServiceOpen(false);
+    setResourceOpen(false);
+  };
+
+  /* =========================
+     Close menu on outside click
+  ========================= */
   useEffect(() => {
-    function handleClose(e) {
+    const handleClose = (e) => {
       if (!e.target.closest(".header")) {
-        setMenuOpen(false);
-        setServiceOpen(false);
-        setResourceOpen(false);
-        setSearchActive(false);
+        closeAllMenus();
       }
-    }
+    };
     document.addEventListener("mousedown", handleClose);
     return () => document.removeEventListener("mousedown", handleClose);
   }, []);
 
-
-
-  useEffect(() => {
-    if (menuOpen) {
-      setServiceOpen(false);
-      setResourceOpen(false);
-    }
-  }, [menuOpen]);
-
-
-  // const hideMenuList =(menuName)=>{
-  //   console.log(menuItems, "sonu")
-  //   if(menuName=="service"){
-  //     setServiceOpen(false);
-  //   }else if (menuName=="resource"){
-  //     setResourceOpen(false);
-  //   }
-  // }
-
-
-  const closeAllMenus = () => {
-  setMenuOpen(false);
-  setServiceOpen(false);
-  setResourceOpen(false);
-  setSearchActive(false);
-};
-
-  
-
-
-
   return (
-    <header className={`header ${searchActive ? "search-open" : ""}`} data-aos="fade-down">
+    <header className="header" data-aos="fade-down">
       <div className="header-inner">
         <Link to="/" className="logo-area">
-          {/* <span className="logo">b e x e x</span> */}
           <img src={header_logo} alt="header Logo" />
         </Link>
 
         <button
           className={`hamburger ${menuOpen ? "open" : ""}`}
-          aria-label="Toggle navigation"
           onClick={handleHamburgerToggle}
         >
           <span />
           <span />
           <span />
-        </button>   
+        </button>
 
-          <nav className={`nav-menu ${menuOpen ? "mobile-open" : ""}`}>
-            {menuItems.map((item, idx) => {
-              if (item.dropdown) {
-                return (
-                  <a
-                    key={idx}
-                    href="#"
-                    className="nav-link applyfont"
-                    onClick={(e) =>  handleDropdownClick(e, item.key)  } // prevent default here
-                  >
-                    {item.label}
-                    <span className="dropdown-icon"><IoIosArrowDown /></span>
-                  </a>
-                );
-              }
+        {/* =========================
+            NAV MENU
+        ========================= */}
+        <nav className={`nav-menu ${menuOpen ? "mobile-open" : ""}`}>
+          {menuItems.map((item, idx) => {
+            if (item.dropdown) {
               return (
                 <Link
                   key={idx}
-                  to={item.to}
+                  to={item.to} // ✅ Click → navigate
                   className="nav-link applyfont"
+                  onMouseEnter={() => handleMouseEnter(item.key)} // ✅ Hover open
                   onClick={closeAllMenus}
                 >
                   {item.label}
+                  <span className="dropdown-icon">
+                    <IoIosArrowDown />
+                  </span>
                 </Link>
               );
-            })}
-          </nav>
+            }
 
+            return (
+              <Link
+                key={idx}
+                to={item.to}
+                className="nav-link applyfont"
+                onClick={closeAllMenus}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
+        </nav>
 
-        <div className="search-area">
-          {/* <input
-            type="text"
-            className={`search-input ${searchActive ? "visible" : ""}`}
-            placeholder="Search..."
-            autoFocus={searchActive}
-            style={{ display: searchActive ? "block" : "none" }}
-          />
-          <button
-            className={`search-icon ${searchActive ? "active" : ""}`}
-            onClick={handleSearchToggle}
-            aria-label="Search"
-          >
-            <svg
-              height="22"
-              width="22"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#222"
-              strokeWidth="2.2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <circle cx="11" cy="11" r="8" />
-              <line x1="21" y1="21" x2="16.6" y2="16.6" />
-            </svg>
-          </button> */}
-
-
-      <Link to="/contact">
-        <button className="talk-us">
-      Talk to us
-      <div className="arrow-ho">
-        <svg className="arrow-need" width="20" height="20" viewBox="0 0 24 24">
-          <path
-            d="M5 12h14M13 6l6 6-6 6"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-        </svg>
-        <span className="fill-bg"></span>
-      </div>
-    </button>
-      </Link>
-        </div>
-
-
-
+        <Link to="/contact">
+          <button className="talk-us">
+            Talk to us
+            <div className="arrow-ho">
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path
+                  d="M5 12h14M13 6l6 6-6 6"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                />
+              </svg>
+              <span className="fill-bg"></span>
+            </div>
+          </button>
+        </Link>
       </div>
 
-      {/* SERVICES dropdown */}
-      <div className={`service-menu-dropdown services-dropdown ${serviceOpen ? "open" : ""}`}>
+      {/* =========================
+          SERVICES DROPDOWN
+      ========================= */}
+      <div
+        className={`service-menu-dropdown services-dropdown ${
+          serviceOpen ? "open" : ""
+        }`}
+        onMouseEnter={() => handleMouseEnter("services")} // ✅ keep open
+        onMouseLeave={handleMouseLeave} // ✅ close on leave
+      >
         <div className="services-grid_Head">
           {services.map((service, idx) => (
-            <Link className="header-service-card" onClick={closeAllMenus} to={service.link} key={idx}>
+            <Link
+              key={idx}
+              to={service.link}
+              className="header-service-card"
+              onClick={closeAllMenus}
+            >
               <div className="service-title">{service.title}</div>
               <span className="service-icon">
                 <MdArrowOutward />
@@ -221,11 +170,24 @@ const Header = () => {
         </div>
       </div>
 
-      {/* RESOURCES dropdown */}
-      <div className={`service-menu-dropdown resources-dropdown ${resourceOpen ? "open" : ""}`}>
+      {/* =========================
+          RESOURCES DROPDOWN
+      ========================= */}
+      <div
+        className={`service-menu-dropdown resources-dropdown ${
+          resourceOpen ? "open" : ""
+        }`}
+        onMouseEnter={() => handleMouseEnter("resources")}
+        onMouseLeave={handleMouseLeave}
+      >
         <div className="services-grid_Head-resources">
           {resources.map((item, idx) => (
-            <Link className="header-service-card" onClick={closeAllMenus}  to={item.link} key={idx}>
+            <Link
+              key={idx}
+              to={item.link}
+              className="header-service-card"
+              onClick={closeAllMenus}
+            >
               <div className="service-title">{item.title}</div>
               <span className="service-icon">
                 <MdArrowOutward />
