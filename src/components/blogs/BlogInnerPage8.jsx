@@ -271,7 +271,7 @@ const BlogInnerPage = () => {
           </p>
 
           <p className="blog-body blog-body-highlightColor">
-            Understanding ISO 9001 risk-based thinking helps identify which
+            Understanding <Link to={"/blog/iso-9001-risk-based-thinking"} className="blog-body-highlightColorBlue">ISO 9001 risk-based thinking</Link> helps identify which
             processes require detailed documentation versus simple guidelines.
           </p>
 
@@ -314,9 +314,9 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Organizations implementing{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/integrated-management-systems-ims"} className="blog-body-highlightColorBlue">
               integrated management systems
-            </span>{" "}
+            </Link>{" "}
             benefit from consolidated documentation covering quality,
             environmental, and safety requirements in unified procedures.
           </p>
@@ -385,9 +385,9 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Understanding{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/internal-audit-process-guide"} className="blog-body-highlightColorBlue">
               how to conduct effective internal audits
-            </span>{" "}
+            </Link>{" "}
             helps identify gaps between documentation and practice before
             certification audits occur.
           </p>
@@ -413,9 +413,9 @@ const BlogInnerPage = () => {
           <p className="blog-body">
             <span className="innerBlogTextBold">The Solution :</span> Implement
             systematic{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/document-control-system-iso"} className="blog-body-highlightColorBlue">
               document control systems
-            </span>{" "}
+            </Link>{" "}
             with these essential elements:
           </p>
 
@@ -512,11 +512,11 @@ const BlogInnerPage = () => {
           </ul>
           <p className="blog-body">
             Tie reviews to{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/management-review-meeting-iso"} className="blog-body-highlightColorBlue">
               management review meetings
-            </span>{" "}
+            </Link>{" "}
             to ensure leadership visibility. Use{" "}
-            <span className="blog-body-highlightColorBlue">CAPA processes</span>{" "}
+            <Link to={"/blog/capa-process-iso-standards"} className="blog-body-highlightColorBlue">CAPA processes</Link>{" "}
             to trigger procedure updates when incidents reveal documentation
             gaps.
           </p>
@@ -552,8 +552,8 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Organizations implementing{" "}
-            <span className="blog-body-highlightColorBlue">ISO 45001</span> or{" "}
-            <span className="blog-body-highlightColorBlue">ISO 14001</span>{" "}
+            <Link to={"/blog/iso-45001-implementation-guide"} className="blog-body-highlightColorBlue">ISO 45001</Link> or{" "}
+            <Link to={"/blog/iso-14001-implementation-india"} className="blog-body-highlightColorBlue">ISO 14001</Link>{" "}
             should integrate documentation across management systems rather than
             creating separate document sets for quality, environment, and
             safety.

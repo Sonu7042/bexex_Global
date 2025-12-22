@@ -246,11 +246,11 @@ const BlogInnerPage = () => {
           <p className="blog-body blog-body-highlightColor">
             can and cannot achieve helps organizations use these services
             effectively. For organizations implementing{" "}
-            <span className="blog-body-highlightColorBlue">ISO 9001</span>, TPI
+            <Link to={"/blog/iso-9001-risk-based-thinking"} className="blog-body-highlightColorBlue">ISO 9001</Link>, TPI
             provides objective evidence for{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/supplier-evaluation-approval-iso"} className="blog-body-highlightColorBlue">
               supplier evaluation and approval processes
-            </span>
+            </Link>
             . TPI reports document supplier capability and conformity,
             supporting risk-based supplier management decisions.
           </p>
@@ -369,10 +369,10 @@ const BlogInnerPage = () => {
             consistently produce conforming items. Factory audits support
             supplier selection and development programs, particularly for
             organizations implementing{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/integrated-management-systems-ims"} className="blog-body-highlightColorBlue">
               {" "}
               integrated management systems
-            </span>{" "}
+            </Link>{" "}
             .
           </p>
           <p className="blog-body">
@@ -426,9 +426,9 @@ const BlogInnerPage = () => {
             measurement tools, conduct functional tests, verify quantities, and
             photograph findings. Systematic approaches ensure comprehensive
             coverage. Understanding{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/internal-audit-process-guide"} className="blog-body-highlightColorBlue">
               internal audit processes{" "}
-            </span>{" "}
+            </Link>{" "}
             helps suppliers prepare for TPI visits, as preparation methods
             overlap.
           </p>
@@ -522,14 +522,14 @@ const BlogInnerPage = () => {
             Do certain suppliers consistently have specific defects? Do
             particular processes generate more problems? Use this intelligence
             for{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/supplier-quality-audit-process"} className="blog-body-highlightColorBlue">
               supplier quality audits
-            </span>{" "}
+            </Link>{" "}
             and improvement initiatives.
           </p>
           <p className="blog-body">
             Integrate TPI with{" "}
-            <span className="blog-body-highlightColorBlue">CAPA processes</span>{" "}
+            <Link to={"/blog/capa-process-iso-standards"} className="blog-body-highlightColorBlue">CAPA processes</Link>{" "}
             . When inspections reveal non-conformities, investigate root causes
             and implement corrective actions. TPI findings provide objective
             evidence supporting improvement efforts.
@@ -552,10 +552,10 @@ const BlogInnerPage = () => {
             demonstrating consistent quality may require less frequent
             inspection. Those with recurring issues need closer monitoring. This
             risk-based approach aligns with{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/iso-9001-risk-based-thinking"} className="blog-body-highlightColorBlue">
               {" "}
               ISO 9001 risk-based thinking
-            </span>
+            </Link>
             .
           </p>
 

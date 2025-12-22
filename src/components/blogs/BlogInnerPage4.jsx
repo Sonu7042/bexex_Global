@@ -81,9 +81,9 @@ const BlogInnerPage = () => {
         <>
           ISO standards require auditors to be competent but don't mandate
           specific certifications. Many organizations provide{" "}
-          <span className="blog-body-highlightColorBlue">
+          <Link to={" "} className="blog-body-highlightColorBlue">
             internal auditor training
-          </span>{" "}
+          </Link>{" "}
           to build this competence.
         </>
       ),
@@ -209,9 +209,9 @@ const BlogInnerPage = () => {
             Audits confirm that the organization's management system meets
             standard requirements and follows documented procedures. This
             conformity check satisfies{" "}
-            <span className="blog-body-highlightColorBlue">ISO 9001</span>,{" "}
-            <span className="blog-body-highlightColorBlue">ISO 14001</span>, and{" "}
-            <span className="blog-body-highlightColorBlue">ISO 45001</span>
+            <Link to={"/blog/iso-9001-risk-based-thinking"} className="blog-body-highlightColorBlue">ISO 9001</Link>,{" "}
+            <Link to={"/blog/iso-14001-implementation-india"} className="blog-body-highlightColorBlue">ISO 14001</Link>, and{" "}
+            <Link to={"/blog/iso-45001-implementation-guide"} className="blog-body-highlightColorBlue">ISO 45001</Link>
             requirements for periodic internal assessment.
           </p>
 
@@ -228,9 +228,9 @@ const BlogInnerPage = () => {
             system performance. Audit reports aggregate findings across the
             organization, revealing patterns, systemic issues, and areas
             requiring management attention. This information feeds into{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/management-review-meeting-iso"} className="blog-body-highlightColorBlue">
               management review meetings
-            </span>{" "}
+            </Link>{" "}
             where strategic decisions occur.
           </p>
           <p className="blog-body blog-body-highlightColor">
@@ -254,9 +254,9 @@ const BlogInnerPage = () => {
             functions critical to customer satisfaction warrant more frequent
             auditing. Stable, low-risk processes can be audited less frequently.
             This risk-based approach aligns with{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link  to={"/blog/iso-9001-risk-based-thinking"} className="blog-body-highlightColorBlue">
               ISO 9001's risk-based thinking
-            </span>{" "}
+            </Link>{" "}
             principles.
           </p>
           <p className="blog-body">
@@ -277,9 +277,9 @@ const BlogInnerPage = () => {
             Consider integration opportunities for organizations with multiple
             management systems. Rather than separately auditing quality,
             environmental, and safety systems,{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/integrated-management-systems-ims"} className="blog-body-highlightColorBlue">
               integrated audits
-            </span>{" "}
+            </Link>{" "}
             improve efficiency and highlight system interactions.
           </p>
           <p className="blog-body">
@@ -383,9 +383,9 @@ const BlogInnerPage = () => {
             Document examination verifies that required documentation exists and
             meets requirements. Review procedures, work instructions, forms, and
             records for completeness, currency, and adequacy. Check that{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/document-control-system-iso"} className="blog-body-highlightColorBlue">
               document control systems
-            </span>{" "}
+            </Link>{" "}
             prevent use of obsolete documents.
           </p>
           <p className="blog-body">
@@ -394,9 +394,9 @@ const BlogInnerPage = () => {
             through how you handle incoming materials." Avoid yes/no questions
             that generate minimal information. Listen actively, allowing people
             to fully explain before probing deeper. Understanding{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/iso-documentation-mistakes"} className="blog-body-highlightColorBlue">
               common ISO documentation mistakes
-            </span>{" "}
+            </Link>{" "}
             helps auditors recognize when documented procedures don't reflect
             reality.
           </p>
@@ -441,9 +441,9 @@ const BlogInnerPage = () => {
             absence of required system elements. Minor non-conformities reflect
             isolated lapses that don't indicate systemic breakdown. Learning to
             write clear{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={" "} className="blog-body-highlightColorBlue">
               audit non-conformities and corrective action requests
-            </span>{" "}
+            </Link>{" "}
             ensures findings drive effective improvement.
           </p>
           <p className="blog-body">
@@ -510,7 +510,7 @@ const BlogInnerPage = () => {
             Thank participants for their cooperation and time. End on a
             constructive note that emphasizes shared commitment to improvement.
             Organizations implementing{" "}
-            <span className="blog-body-highlightColorBlue">CAPA processes</span>{" "}
+            <Link to={"/blog/capa-process-iso-standards"} className="blog-body-highlightColorBlue">CAPA processes</Link>{" "}
             benefit from clear audit follow-up procedures.
           </p>
 
@@ -547,9 +547,9 @@ const BlogInnerPage = () => {
             area, type, or process. Analyze whether repeat findings indicate
             ineffective corrective actions or deeper systemic issues. Share
             these analyses during{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/management-review-meeting-iso"} className="blog-body-highlightColorBlue">
               management reviews
-            </span>{" "}
+            </Link>{" "}
             to inform strategic decisions.
           </p>
 

@@ -274,7 +274,7 @@ const BlogInnerPage = () => {
             management system. The standard follows the High-Level Structure
             common to ISO management standards, making integration
             straightforward for organizations already implementing{" "}
-            <span className="blog-body-highlightColorBlue">ISO 9001</span> or
+            <Link to={"/blog/iso-9001-risk-based-thinking"} className="blog-body-highlightColorBlue">ISO 9001</Link> or
             other management systems.
           </p>
           <p className="blog-body blog-body-highlightColor">
@@ -356,9 +356,9 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Understanding{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={" "} className="blog-body-highlightColorBlue">
               context of the organization
-            </span>{" "}
+            </Link>{" "}
             helps identify external parties and compliance obligations affecting
             ISMS design.
           </p>
@@ -381,9 +381,9 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             This process mirrors{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/hira-hazard-risk-assessment"} className="blog-body-highlightColorBlue">
               HIRA methodology
-            </span>{" "}
+            </Link>{" "}
             familiar to organizations implementing safety management systems.
           </p>
 
@@ -420,9 +420,9 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Regular{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={" "} className="blog-body-highlightColorBlue">
               security awareness training
-            </span>{" "}
+            </Link>{" "}
             transforms culture from viewing security as IT's problem to
             recognizing it as everyone's responsibility.
           </p>
@@ -438,20 +438,20 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Conduct{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/internal-audit-process-guide"} className="blog-body-highlightColorBlue">
               internal audits
-            </span>{" "}
+            </Link>{" "}
             verifying ISMS implementation and effectiveness. Address findings
             through systematic{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/capa-process-iso-standards"} className="blog-body-highlightColorBlue">
               corrective actions.
-            </span>
+            </Link>
           </p>
           <p className="blog-body">
             Hold{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/management-review-meeting-iso"} className="blog-body-highlightColorBlue">
               management reviews
-            </span>{" "}
+            </Link>{" "}
             evaluating whether ISMS remains suitable, adequate, and effective
             given changing threat landscape and business context.
           </p>
@@ -507,9 +507,9 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Organizations implementing multiple management systems benefit from{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/integrated-management-systems-ims"} className="blog-body-highlightColorBlue">
               integrated approaches
-            </span>{" "}
+            </Link>{" "}
             combining ISO 27001 with ISO 9001 for quality and ISO 45001 for
             safety. Common elements like document control, internal audits, and
             management review consolidate across standards.

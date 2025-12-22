@@ -316,7 +316,7 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Organizations implementing{" "}
-            <span className="blog-body-highlightColorBlue">ISO 45001</span> must
+            <Link to={"/blog/iso-45001-implementation-guide"} className="blog-body-highlightColorBlue">ISO 45001</Link> must
             identify noise as significant occupational health hazard and
             implement systematic controls.
           </p>

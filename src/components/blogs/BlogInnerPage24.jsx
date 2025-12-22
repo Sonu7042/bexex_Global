@@ -6,6 +6,7 @@ import LetsConnect from "../LetsConnect";
 import Footer from "../Footer";
 import { LearnMoreButton } from "../Buttons";
 import construction_worker_img from "../../assets/images/blog_imgs/eco-friendly.png";
+import stackEmission from "../../assets/images/blog_imgs/stack-emission-monitoring.png";
 import FrequentQuestion from "../FrequentQuestion";
 import { CiLinkedin } from "react-icons/ci";
 import { CiFacebook } from "react-icons/ci";
@@ -182,7 +183,7 @@ const BlogInnerPage = () => {
         <div className="blog-inner-content">
           <div className="blog-image-wrapper">
             <img
-              src={construction_worker_img}
+              src={stackEmission}
               alt="Blog visual"
               className="blog-main-image"
             />
@@ -625,16 +626,40 @@ const BlogInnerPage = () => {
             proceedings.
           </p>
           <p className="blog-body">
-            Test reports from NABL-accredited laboratories include sampling methodology, analytical results, quality assurance data, and certification statements. Complete reports document sampling locations, conditions, calculations, and regulatory compliance determinations. Retain reports for minimum five years supporting historical compliance demonstration.
+            Test reports from NABL-accredited laboratories include sampling
+            methodology, analytical results, quality assurance data, and
+            certification statements. Complete reports document sampling
+            locations, conditions, calculations, and regulatory compliance
+            determinations. Retain reports for minimum five years supporting
+            historical compliance demonstration.
           </p>
           <p className="blog-body">
-            Consent compliance reports submitted to State Pollution Control Boards consolidate monitoring results, operational data, and compliance status. Monthly or quarterly reporting frequencies depend on consent conditions. Timely submission prevents compliance violations from late reporting separate from emission performance.
+            Consent compliance reports submitted to State Pollution Control
+            Boards consolidate monitoring results, operational data, and
+            compliance status. Monthly or quarterly reporting frequencies depend
+            on consent conditions. Timely submission prevents compliance
+            violations from late reporting separate from emission performance.
           </p>
           <p className="blog-body">
-            Exceedance investigations document violation causes, corrective actions, and prevention measures. Self-reporting violations with investigation findings demonstrates good faith regulatory cooperation. Organizations maintaining <span className="blog-body-highlightColorBlue">management review processes</span> systematically address environmental performance including emission compliance.
+            Exceedance investigations document violation causes, corrective
+            actions, and prevention measures. Self-reporting violations with
+            investigation findings demonstrates good faith regulatory
+            cooperation. Organizations maintaining{" "}
+            <span className="blog-body-highlightColorBlue">
+              management review processes
+            </span>{" "}
+            systematically address environmental performance including emission
+            compliance.
           </p>
           <p className="blog-body">
-            Annual environmental statements consolidate all environmental monitoring, waste generation, and compliance status into comprehensive regulatory submissions. Stack emission data integrates with <span className="blog-body-highlightColorBlue">ambient air monitoring</span>, water discharge testing, and waste management records.
+            Annual environmental statements consolidate all environmental
+            monitoring, waste generation, and compliance status into
+            comprehensive regulatory submissions. Stack emission data integrates
+            with{" "}
+            <span className="blog-body-highlightColorBlue">
+              ambient air monitoring
+            </span>
+            , water discharge testing, and waste management records.
           </p>
 
           {/* <ul className="disk">
@@ -672,17 +697,33 @@ const BlogInnerPage = () => {
         </p>
 
         <p className="blog-body">
-          Effective stack emission monitoring requires proper methodology, quality equipment, trained personnel, and systematic data management supporting both compliance and operational optimization.
+          Effective stack emission monitoring requires proper methodology,
+          quality equipment, trained personnel, and systematic data management
+          supporting both compliance and operational optimization.
         </p>
         <p className="innertopTextSubHeading_Points">
-          Download our Stack Emission Testing Protocol providing standardized procedures for sampling, quality assurance, and regulatory reporting ensuring consistent compliance monitoring.
+          Download our Stack Emission Testing Protocol providing standardized
+          procedures for sampling, quality assurance, and regulatory reporting
+          ensuring consistent compliance monitoring.
         </p>
 
         <p className="blog-body">
-          Need expert guidance with stack emission monitoring programs or pollution control optimization? Bexex environmental specialists provide comprehensive emission testing services, continuous monitoring system installation, and regulatory compliance support. <span className="blog-body-highlightColorBlue">Explore our environmental monitoring services</span> or contact us for site-specific assessment.
+          Need expert guidance with stack emission monitoring programs or
+          pollution control optimization? Bexex environmental specialists
+          provide comprehensive emission testing services, continuous monitoring
+          system installation, and regulatory compliance support.{" "}
+          <span className="blog-body-highlightColorBlue">
+            Explore our environmental monitoring services
+          </span>{" "}
+          or contact us for site-specific assessment.
         </p>
         <p className="blog-body">
-          <span className="innerBlogTextBold">Expert Tip :</span> Schedule stack emission testing during normal production conditions rather than reduced loads or optimal operating periods. Testing during representative operations provides realistic compliance assessment while identifying issues requiring correction before regulatory inspections or violations occur.
+          <span className="innerBlogTextBold">Expert Tip :</span> Schedule stack
+          emission testing during normal production conditions rather than
+          reduced loads or optimal operating periods. Testing during
+          representative operations provides realistic compliance assessment
+          while identifying issues requiring correction before regulatory
+          inspections or violations occur.
         </p>
 
         <div className="res-wrapper">

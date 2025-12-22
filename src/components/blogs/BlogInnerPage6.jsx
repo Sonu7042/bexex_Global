@@ -281,18 +281,18 @@ const BlogInnerPage = () => {
 
           <p className="blog-body blog-body-highlightColor">
             For organizations pursuing{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/iso-14001-implementation-india"} className="blog-body-highlightColorBlue">
               ISO 14001 certification,
-            </span>{" "}
+            </Link>{" "}
             air quality monitoring provides objective evidence of environmental
             performance. Monitoring data feeds into{" "}
             <span className="blog-body-highlightColorBlue">
               environmental compliance audits
             </span>{" "}
             and{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/management-review-meeting-iso"} className="blog-body-highlightColorBlue">
               management reviews
-            </span>
+            </Link>
             .
           </p>
 
@@ -341,12 +341,11 @@ const BlogInnerPage = () => {
             </span>{" "}
             assesses workplace environments for parameters including respirable
             dust, chemical vapors, and welding fumes. This testing informs{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={" "} className="blog-body-highlightColorBlue">
               personal protective equipment selection
-            </span>
+            </Link>
             and ventilation system design. Organizations implementing{" "}
-            <span className="blog-body-highlightColorBlue">ISO 45001</span>
-            integrate workplace air monitoring into comprehensive safety
+            <Link to={"/blog/iso-45001-implementation-guide"} className="blog-body-highlightColorBlue">ISO 45001</Link> integrate workplace air monitoring into comprehensive safety
             management.
           </p>
 
@@ -354,9 +353,9 @@ const BlogInnerPage = () => {
 
           <p className="blog-body">
             Understanding{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/hira-hazard-risk-assessment"} className="blog-body-highlightColorBlue">
               hazard identification and risk assessment
-            </span>{" "}
+            </Link>{" "}
             helps organizations identify which air pollutants their operations
             generate and implement appropriate controls.
           </p>
@@ -431,9 +430,9 @@ const BlogInnerPage = () => {
             capacity adequately matches production capacity. If emissions vary
             with fuel quality, consider fuel procurement specifications.
             Understanding{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/capa-process-iso-standards"} className="blog-body-highlightColorBlue">
               corrective and preventive action processes
-            </span>{" "}
+            </Link>{" "}
             helps organizations address findings systematically.
           </p>
           <p className="blog-body">
@@ -465,9 +464,9 @@ const BlogInnerPage = () => {
             who coordinates testing, who reviews results, and who implements
             corrective actions. Accountability prevents tasks falling through
             organizational cracks. Integrate monitoring with{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/document-control-system-iso"} className="blog-body-highlightColorBlue">
               document control systems
-            </span>{" "}
+            </Link>{" "}
             to maintain organized records of test reports, calibration
             certificates, and equipment maintenance logs.
           </p>
@@ -480,9 +479,9 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Include air quality performance in{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/management-review-meeting-iso"} className="blog-body-highlightColorBlue">
               management review meetings.
-            </span>
+            </Link>
             Regular management attention ensures resources for monitoring
             programs and timely responses to findings.
           </p>
