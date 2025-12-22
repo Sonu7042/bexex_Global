@@ -6,46 +6,8 @@ import servicesCardData from "../../dataStore/serviceData.js";
 import { CiSearch } from "react-icons/ci";
 import { IoCheckmarkOutline } from "react-icons/io5";
 
-const cards = [
-  {
-    id: 1,
-    title: "Fire Safty Assesments",
-    image: nature,
-    tag: "Fire Safty Assesments",
-  },
-  {
-    id: 2,
-    title: "Fire Safty Assesments",
-    image: nature,
-    tag: "Fire Safty Assesments",
-  },
-  {
-    id: 3,
-    title: "Fire Safty Assesments",
-    image: nature,
-    tag: "Fire Safty Assesments",
-  },
-  {
-    id: 4,
-    title: "Fire Safty Assesments",
-    image: nature,
-    tag: "Fire Safty Assesments",
-  },
-  {
-    id: 5,
-    title: "Safety & Environment",
-    image: nature,
-    tag: "Safety & Environment",
-  },
-  {
-    id: 6,
-    title: "ISO Internal Audit",
-    image: nature,
-    tag: "ISO Internal Audit",
-  },
-];
 
-const Service1 = () => {
+const Service1 = ({serviceName}) => {
   //  first filter
   const [openMenu, setOpenMenu] = useState(null);
 
@@ -60,23 +22,67 @@ const Service1 = () => {
     setOpenMenu(null);
   };
 
-  // second filter
-  const [selectedSecondFilter, setSelectedSecondFilter] = useState(
-    "environment, health & safety solutions"
-  );
+
+  
+
+   
+
+
+
+// second filter
+const [selectedSecondFilter, setSelectedSecondFilter] = useState("");
+
+  useEffect(() => {
+  if (serviceName) {
+    setSelectedSecondFilter(serviceName);
+  }
+}, [serviceName]);
+  
+
+
 
   // console.log(selectedSecondFilter, "selectedSecondFilter")
-  const secondaryOptions = [
-    "quality & business excellence",
-    "management systems and compliance",
-    "esg and sustainability services",
-    "software & digital solutions",
-    "training & competency development",
-    "environment, health & safety solutions",
-  ];
+const secondaryOptions = [
+  {
+    key: "quality_business_excellence",
+    value: "Consulting",
+    label: "quality & business excellence",
+  },
+  {
+    key: "management_systems_compliance",
+    value: "Auditing",
+    label: "management systems and compliance",
+  },
+  {
+    key: "esg_sustainability_services",
+    value: "Consulting",
+    label: "esg and sustainability services",
+  },
+  {
+    key: "software_digital_solutions",
+    value: "Software Solution",
+    label: "software & digital solutions",
+  },
+  {
+    key: "training_competency_development",
+    value: "Training",
+    label: "training & competency development",
+  },
+  {
+    key: "environment_health_safety",
+    value: "Auditing",
+    label: "environment, health & safety solutions",
+  },
+];
+
+
+
+
 
   const handleSecondSelect = (opt) => {
-    setSelectedSecondFilter(opt);
+    setSelectedSecondFilter(opt.label);
+    setSelectedFilter(opt.value);
+
     setOpenMenu(null);
   };
 
@@ -335,15 +341,15 @@ useEffect(() => {
                   <span className="sfBarPillText">{selectedSecondFilter}</span>
                 </button>
 
-                {openMenu === "second" && (
+               {openMenu === "second" && (
                   <div className="sfBarPillMenu sfBarPillMenu--animate">
                     {secondaryOptions.map((opt) => (
                       <button
-                        key={opt}
+                        key={opt.key}
                         className="sfBarPillMenuItem"
-                        onClick={() => handleSecondSelect(opt)}
+                        onClick={() => handleSecondSelect(opt)} // pass full object
                       >
-                        {opt}
+                        {opt.label} {/* ✅ render label, not object */}
                       </button>
                     ))}
                   </div>

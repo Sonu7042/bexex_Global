@@ -1,15 +1,60 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../Css/serviceDetails.css";
 import Service1 from "../components/services/Service1.jsx";
 
+
 const ServiceDetails = () => {
+
+  const [serviceName, setServiceName]=useState("")
   const { id } = useParams();
+
+
+  useEffect(()=>{
+    switch (id) {
+      case '1':
+        setServiceName("environment, health & safety solutions")
+        break;
+
+      case '2':
+        setServiceName("management systems and compliance")
+        break;
+
+      case '3':
+        setServiceName("training & competency development")
+        break;
+
+      case '4':
+        setServiceName("software & digital solutions")
+        break;
+
+      case '5':
+        setServiceName("esg and sustainability services")
+        break;
+
+      case '6':
+        setServiceName("quality & business excellence")
+        break;
+
+      default:
+        setServiceName("")
+
+    }
+
+  })
+
+
+
+
+
+
+
+
 
   return (
     <>
       <main className="px-4 md:px-16 lg:px-12">
-        {id == 1 ? <Service1 /> : ""}
+        {id == 1 ? <Service1 serviceName={serviceName} /> : ""}
         {id == 2 ? <div style={{height:'100vh', display:"flex", alignItems:"center", justifyContent:"center", fontSize:"30px"}}>Under Construction</div> : ""}
         {id == 3 ?  <div style={{height:'100vh', display:"flex", alignItems:"center", justifyContent:"center", fontSize:"30px"}}>Under Construction</div>  : ""}
         {id == 4 ?  <div style={{height:'100vh', display:"flex", alignItems:"center", justifyContent:"center", fontSize:"30px"}}>Under Construction</div>  : ""}
