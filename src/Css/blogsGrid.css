@@ -143,12 +143,12 @@
 }
 
 /* Bottom-centered See More button */
-.see-more-wrapper {
+/* .see-more-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 40px;
-}
+} */
 
 /* Responsive grid safety */
 @media (max-width: 991px) {
@@ -161,4 +161,87 @@
   .blog-grid-container {
     grid-template-columns: 1fr;
   }
+}
+
+
+.see-more-wrapper {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 40px; */
+}
+
+.see-more-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #323232;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.see-more-text {
+  line-height: 1;
+}
+
+/* Arrow Box */
+.arrow-box {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #0a6cff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Arrows */
+.arrow2 {
+  position: absolute;
+  font-size: 1rem;
+  color: #000000;
+  transition: transform 0.4s ease;
+}
+
+.arrow-default {
+  transform: translateY(0);
+  background-color: none!important;
+}
+
+.arrow-hover {
+  transform: translateY(-100%);
+  opacity: 0;
+  /* transition-delay: 0.15s; */
+}
+
+/* Black overlay */
+.arrow-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transform: translateY(-100%) scale(0);
+  transition: 0.35s ease;
+  z-index: -1;
+}
+
+/* Hover Effects */
+.see-more-btn:hover .arrow-overlay {
+  transform: translateY(0) scale(1);
+}
+
+.see-more-btn:hover .arrow-default {
+  transform: translateY(100%);
+  opacity: 0;
+  color: white;
+}
+
+.see-more-btn:hover .arrow-hover {
+  transform: translateY(0);
+  opacity: 1;
+  color: white;
 }

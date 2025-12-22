@@ -140,7 +140,7 @@ const App = () => {
         <Route path="/blog/ambient-air-quality-monitoring" element={<BlogInnerPage21 />} />
         <Route path="/blog/supplier-evaluation-approval-iso" element={<BlogInnerPage23/>} />
         <Route path="/blog/iso-13485-medical-device-quality" element={<BlogInnerPage22 />} />
-        <Route path="/blog/iso-13485-medical-device-quality" element={<BlogInnerPage24 />} />
+        <Route path="/blog/stack-emission-monitoring-compliance" element={<BlogInnerPage24 />} />
         <Route path="/blog/integrated-management-systems-ims" element={<BlogInnerPage25 />} />
 
 

@@ -238,7 +238,7 @@ const BlogInnerPage = () => {
             Third, legal registers enable compliance monitoring. Organizations
             can't monitor compliance with requirements they haven't identified.
             The legal register becomes the baseline for{" "}
-            <Link to={"/blog/environmental-compliance-audit-checklist"} className="blog-body-highlightColorBlue">
+            <Link to={" "} className="blog-body-highlightColorBlue">
               environmental compliance audits
             </Link>{" "}
             and management reviews. It answers the fundamental question: Are we

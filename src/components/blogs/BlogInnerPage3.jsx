@@ -191,7 +191,7 @@ const BlogInnerPage = () => {
           </p>
 
           <p className="blog-body blog-body-highlightColor">
-           Organizations already implementing <span className="blog-body-highlightColorBlue"> ISO 45001</span> or <span className="blog-body-highlightColorBlue">ISO 14001</span>  may find risk-based thinking familiar. Both standards emphasize systematic risk assessment. The principles translate readily across management systems, particularly for organizations pursuing <span className="blog-body-highlightColorBlue">integrated management systems.</span> 
+           Organizations already implementing <Link to={"/blog/iso-45001-implementation-guide"} className="blog-body-highlightColorBlue"> ISO 45001</Link> or <Link to={"/blog/iso-14001-implementation-india"} className="blog-body-highlightColorBlue">ISO 14001</Link>  may find risk-based thinking familiar. Both standards emphasize systematic risk assessment. The principles translate readily across management systems, particularly for organizations pursuing <Link to={"/blog/integrated-management-systems-ims"} className="blog-body-highlightColorBlue">integrated management systems.</Link> 
           </p>
 
 
@@ -206,7 +206,7 @@ const BlogInnerPage = () => {
            Risk-based thinking isn't confined to one clause of ISO 9001:2015. It permeates the entire standard, influencing how organizations approach quality management at every level.
           </p>
           <p className="blog-body">
-           Understanding <span className="blog-body-highlightColorBlue">context of the organization</span>  requires risk thinking. Organizations must identify external issues like regulatory changes, market conditions, and competitive pressures that create uncertainty. Internal issues like resource constraints, workforce capabilities, and infrastructure limitations also generate risks and opportunities.
+           Understanding <Link to={""} className="blog-body-highlightColorBlue">context of the organization</Link>  requires risk thinking. Organizations must identify external issues like regulatory changes, market conditions, and competitive pressures that create uncertainty. Internal issues like resource constraints, workforce capabilities, and infrastructure limitations also generate risks and opportunities.
           </p>
           <p className="blog-body">
            Planning the QMS demands explicit risk assessment. Clause 6.1 requires organizations to determine risks and opportunities that need addressing to ensure the QMS achieves intended results, enhance desirable effects, and prevent undesirable effects. Organizations must plan actions to address these risks and integrate them into QMS processes.
@@ -215,10 +215,10 @@ const BlogInnerPage = () => {
           Operational planning incorporates risk thinking. When organizations design and develop products, they must determine potential failures and their consequences. When selecting suppliers, they assess risks associated with external providers. When planning production, they consider risks that could affect conformity of products and services.
           </p>
           <p className="blog-body">
-         Performance evaluation includes risk considerations. <span className="blog-body-highlightColorBlue"> Internal audits</span> should focus on high-risk processes. <span className="blog-body-highlightColorBlue">Management reviews</span>  must evaluate effectiveness of actions taken to address risks and opportunities.
+         Performance evaluation includes risk considerations. <Link to={"/blog/internal-audit-process-guide"} className="blog-body-highlightColorBlue"> Internal audits</Link> should focus on high-risk processes. <Link to={"/blog/management-review-meeting-iso"} className="blog-body-highlightColorBlue">Management reviews</Link>  must evaluate effectiveness of actions taken to address risks and opportunities.
           </p>
           <p className="blog-body">
-       Improvement activities respond to risks. When nonconformities occur, <span className="blog-body-highlightColorBlue">corrective actions</span>  eliminate causes to prevent recurrence—essentially risk mitigation. Organizations should proactively improve processes in areas where risks to quality exist, even if problems haven't yet occurred.
+       Improvement activities respond to risks. When nonconformities occur, <Link to={"/blog/capa-process-iso-standards"} className="blog-body-highlightColorBlue">corrective actions</Link>  eliminate causes to prevent recurrence—essentially risk mitigation. Organizations should proactively improve processes in areas where risks to quality exist, even if problems haven't yet occurred.
           </p>
 
 
@@ -241,7 +241,7 @@ const BlogInnerPage = () => {
           Historical data analysis identifies patterns. Review past nonconformities, customer complaints, audit findings, and process performance data. Recurring problems indicate systemic risks requiring attention. A pattern of late deliveries from specific suppliers signals supply chain risk. Consistent measurement errors from particular equipment indicate calibration or training risks.
           </p>
           <p className="blog-body">
-         Customer feedback highlights external risks. What concerns do your customers express? What additional requirements are they imposing? Changes in customer expectations create risks if your processes can't adapt. Understanding <span className="blog-body-highlightColorBlue">supplier evaluation processes</span>  helps assess risks from your supply chain perspective, while considering your position as a supplier helps identify customer-related risks.
+         Customer feedback highlights external risks. What concerns do your customers express? What additional requirements are they imposing? Changes in customer expectations create risks if your processes can't adapt. Understanding <Link to={"/blog/supplier-evaluation-approval-iso"} className="blog-body-highlightColorBlue">supplier evaluation processes</Link>  helps assess risks from your supply chain perspective, while considering your position as a supplier helps identify customer-related risks.
           </p>
           <p className="blog-body">
         Industry benchmarking reveals risks you might miss. What challenges face other companies in your sector? Industry associations, technical forums, and professional networks share common risk experiences. Learning from others' problems allows proactive risk management rather than reactive firefighting.
@@ -274,7 +274,7 @@ const BlogInnerPage = () => {
            Quantitative assessment helps for significant risks. Calculate potential costs of risk realization—customer loss, warranty claims, regulatory penalties, operational downtime. Compare these costs to mitigation investments. This business case approach helps secure management support for risk treatment.            
           </p>
           <p className="blog-body">
-          Organizations in specialized sectors may need sector-specific risk assessment. <span className="blog-body-highlightColorBlue">IATF 16949 automotive quality</span>  systems emphasize FMEA (Failure Mode and Effects Analysis). <span className="blog-body-highlightColorBlue">AS9100 aerospace standards</span>  require configuration management to address change-related risks. <span className="blog-body-highlightColorBlue">ISO 13485 medical device</span>  systems demand risk management per ISO 14971. Adapt your approach to industry expectations while maintaining practical simplicity.            
+          Organizations in specialized sectors may need sector-specific risk assessment. <span className="blog-body-highlightColorBlue">IATF 16949 automotive quality</span>  systems emphasize FMEA (Failure Mode and Effects Analysis). <span className="blog-body-highlightColorBlue">AS9100 aerospace standards</span>  require configuration management to address change-related risks. <Link to={"/blog/iso-13485-medical-device-quality"} className="blog-body-highlightColorBlue">ISO 13485 medical device</Link>  systems demand risk management per ISO 14971. Adapt your approach to industry expectations while maintaining practical simplicity.            
           </p>
 
 
@@ -324,7 +324,7 @@ const BlogInnerPage = () => {
            The real test of risk-based thinking isn't documentation—it's whether people actually think about risks in daily work. Integration requires cultural change supported by practical mechanisms.
           </p>
           <p className="blog-body">
-            Include risk discussions in regular meetings. Production meetings should ask "What risks do we face this week?" Project reviews should evaluate whether planned risk treatments are working. <span className="blog-body-highlightColorBlue">Management reviews</span>  should assess overall effectiveness of risk-based thinking.
+            Include risk discussions in regular meetings. Production meetings should ask "What risks do we face this week?" Project reviews should evaluate whether planned risk treatments are working. <Link to={"/blog/management-review-meeting-iso"} className="blog-body-highlightColorBlue">Management reviews</Link>  should assess overall effectiveness of risk-based thinking.
           </p>
           <p className="blog-body">
             Embed risk considerations in decision-making. When evaluating process changes, ask what new risks they introduce. When launching products, assess what could affect customer satisfaction. When selecting suppliers, consider beyond price to evaluate reliability, quality capability, and business stability.
@@ -358,7 +358,7 @@ const BlogInnerPage = () => {
            Disconnect between documentation and reality undermines effectiveness. Risk registers created for certification audits but never referenced operationally serve no purpose. If your team doesn't use risk information, it's waste.
           </p>
           <p className="blog-body">
-          Static risk assessments miss changing conditions. Risks evolve as your business changes. Periodic review and update ensures risk thinking remains relevant. Integrate risk reviews into <span className="blog-body-highlightColorBlue"> internal audit</span> schedules and management review cycles.
+          Static risk assessments miss changing conditions. Risks evolve as your business changes. Periodic review and update ensures risk thinking remains relevant. Integrate risk reviews into <Link to={"/blog/internal-audit-process-guide"} className="blog-body-highlightColorBlue"> internal audit</Link> schedules and management review cycles.
           </p>
           <p className="blog-body">
          Neglecting opportunities limits benefits. Risk-based thinking encompasses both threats and opportunities. Organizations focused solely on preventing problems miss the standard's encouragement to pursue improvement opportunities proactively.

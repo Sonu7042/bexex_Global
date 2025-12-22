@@ -177,7 +177,7 @@ const BlogInnerPage = () => {
       name: "Audit Results",
       email: (
         <>
-          <span className="blog-body-highlightColorBlue">Internal audit </span>{" "}
+          <Link to={"/blog/internal-audit-process-guide"} className="blog-body-highlightColorBlue">Internal audit </Link>{" "}
           findings, external audit results
         </>
       ),
@@ -200,7 +200,7 @@ const BlogInnerPage = () => {
       name: "Effectiveness of Actions",
       email: (
         <>
-          <span className="blog-body-highlightColorBlue">CAPA</span>{" "}
+          <Link to={"/blog/capa-process-iso-standards"} className="blog-body-highlightColorBlue">CAPA</Link>{" "}
           effectiveness, improvement results{" "}
         </>
       ),
@@ -314,9 +314,9 @@ const BlogInnerPage = () => {
             management system at planned intervals to ensure continuing
             suitability, adequacy, and effectiveness. This isn't optional—it's a
             mandatory requirement across{" "}
-            <span className="blog-body-highlightColorBlue">ISO 9001</span>,{" "}
-            <span className="blog-body-highlightColorBlue">ISO 14001</span>, and{" "}
-            <span className="blog-body-highlightColorBlue">ISO 45001</span>.
+            <Link to={"/blog/iso-9001-risk-based-thinking"} className="blog-body-highlightColorBlue">ISO 9001</Link>,{" "}
+            <Link to={"/blog/iso-14001-implementation-india"} className="blog-body-highlightColorBlue">ISO 14001</Link>, and{" "}
+            <Link to={"/blog/iso-45001-implementation-guide"} className="blog-body-highlightColorBlue">ISO 45001</Link>.
           </p>
 
           <p className="innertopTextSubHeading_Points">
@@ -381,9 +381,9 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             For organizations implementing{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/integrated-management-systems-ims"} className="blog-body-highlightColorBlue">
               integrated management systems
-            </span>
+            </Link>
             , conducting unified reviews covering quality, environment, and
             safety reduces meeting overhead while providing holistic performance
             perspective.
@@ -403,6 +403,7 @@ const BlogInnerPage = () => {
           </p>
           {/* table  */}
           <DynamicTable config={tableConfig} data={tableData} />
+
           <p className="blog-body">
             For ISO 45001 specifically, add consultation and participation of
             workers, adequacy of resources for OH&S management, and incident
@@ -502,9 +503,9 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Understanding{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/iso-9001-risk-based-thinking"} className="blog-body-highlightColorBlue">
               ISO 9001 risk-based thinking
-            </span>{" "}
+            </Link>{" "}
             helps frame discussions around strategic risks and opportunities
             rather than just operational compliance.
           </p>
@@ -578,7 +579,7 @@ const BlogInnerPage = () => {
             reviews.
           </p>
           <p className="blog-body">
-            Organizations implementing effective CAPA processes find that
+            Organizations implementing effective <Link to={""} className="blog-body-highlightColorBlue">CAPA processes</Link> find that
             management review decisions receive systematic implementation
             tracking.
           </p>

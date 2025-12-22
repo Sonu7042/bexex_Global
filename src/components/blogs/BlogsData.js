@@ -24,6 +24,10 @@ import soilTesting from "../../assets/images/blog_imgs/soil-testing.png";
 import foodSafety from "../../assets/images/blog_imgs/food-safety.png";
 import emergencyPreparedness from "../../assets/images/blog_imgs/emergency-preparedness.png";
 import ambientAirQuality from "../../assets/images/blog_imgs/ambient-air-quality.png";
+import medicalDeviceQuality from "../../assets/images/blog_imgs/medical-device-quality.png";
+import supplierEvaluationApproval from "../../assets/images/blog_imgs/supplier-evaluation-approval.png";
+import stackEmission from "../../assets/images/blog_imgs/stack-emission-monitoring.png";
+import integratedManagement from "../../assets/images/blog_imgs/integrated-management.png";
 
 
 /* ---------- YOUR EXISTING DATA (UNCHANGED) ---------- */
@@ -232,7 +236,7 @@ const blogPosts = [
     url: "/blog/ambient-air-quality-monitoring",
   },
   {
-    img: ecofriendly,
+    img: supplierEvaluationApproval,
     date: "22 July 2024",
     readTime: "4 min",
     title: "Supplier Evaluation & Approval Process Guide",
@@ -242,7 +246,7 @@ const blogPosts = [
     url: "/blog/supplier-evaluation-approval-iso",
   },
   {
-    img: safetyFirst,
+    img: medicalDeviceQuality,
     date: "22 July 2024",
     readTime: "4 min",
     title: "ISO 13485 Medical Device Quality Management Guide",
@@ -252,7 +256,7 @@ const blogPosts = [
     url: "/blog/iso-13485-medical-device-quality",
   },
   {
-    img: unralleving,
+    img: stackEmission,
     date: "22 July 2024",
     readTime: "4 min",
     title: "Stack Emission Monitoring: Compliance Best Practices",
@@ -262,7 +266,7 @@ const blogPosts = [
     url: "/blog/stack-emission-monitoring-compliance",
   },
   {
-    img: ecofriendly,
+    img: integratedManagement,
     date: "22 July 2024",
     readTime: "4 min",
     title: "Integrated Management Systems: Combining ISO Standards",
