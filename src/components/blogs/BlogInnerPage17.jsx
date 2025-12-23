@@ -48,6 +48,11 @@ const navItems = [
     anchor: "Common-CAPA-Implementation-Failures",
   },
   {
+    label: "Root Cause Analysis Methodologies",
+    anchor: "Root-Cause-Analysis-Methodologies",
+  },
+
+  {
     label: "Implementing Corrective Actions Effectively",
     anchor: "Implementing-Corrective-Actions-Effectively",
   },
@@ -268,9 +273,9 @@ const BlogInnerPage = () => {
             action. Correction addresses immediate symptoms—replacing a
             defective part or cleaning a spill. Corrective action eliminates why
             defects or spills occur, preventing recurrence. Understanding{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/internal-audit-process-guide"} className="blog-body-highlightColorBlue">
               internal audit processes
-            </span>{" "}
+            </Link>{" "}
             helps identify nonconformities requiring corrective action.
           </p>
 
@@ -304,13 +309,60 @@ const BlogInnerPage = () => {
             months later, the cycle begins again.
           </p>
           <p className="blog-body">
-            Manufacturing facilities preparing for ISO 9001 certification often
+            Manufacturing facilities preparing for <Link to={"/blog/iso-9001-risk-based-thinking"} className="blog-body-highlightColorBlue">ISO 9001 certification</Link> often
             discover these gaps during certification audits. Auditors reviewing
             CAPA records immediately recognize patterns indicating superficial
             implementation—identical root causes across multiple findings,
             unrealistic implementation timelines, or missing effectiveness
             verification.
           </p>
+
+
+
+
+
+
+
+
+
+
+
+       <p
+            className="innertopTextSubHeading"
+            id="Common-CAPA-Implementation-Failures"
+          >
+            <p
+            className="innertopTextSubHeading"
+            id="Root-Cause-Analysis-Methodologies"
+          >
+            Root Cause Analysis Methodologies
+          </p>
+
+          <p className="blog-body">
+        Effective CAPA depends entirely on accurate root cause identification. Multiple methodologies suit different problem types and organizational contexts.
+          </p>
+
+          <p className="blog-body">
+           The 5 Whys technique works well for straightforward issues with clear cause-and-effect relationships. Ask "why" repeatedly until reaching fundamental cause. A production line stops. Why? Conveyor motor failed. Why? Overheating. Why? Cooling fan broken. Why? Maintenance schedule missed. Why? No tracking system for preventive maintenance. The root cause isn't the motor failure—it's inadequate maintenance management.
+          </p>
+          <p className="blog-body">
+            Fishbone (Ishikawa) diagrams suit complex problems with multiple contributing factors. The diagram organizes potential causes across categories: manpower, methods, materials, machinery, measurement, and environment. Teams brainstorm all possible contributors, then investigate each to identify actual root causes.
+          </p>
+          <p className="blog-body">
+           Failure Mode and Effects Analysis (FMEA) helps prioritize preventive actions for systematic issues. This structured approach evaluates potential failure modes, their effects, and causes, ranking them by severity, occurrence probability, and detection difficulty. High-priority items receive preventive attention before failures occur.
+          </p>
+          </p>
+
+          <p className="blog-body">
+           Manufacturing operations dealing with <Link to={"/blog/hira-hazard-risk-assessment"} className="blog-body-highlightColorBlue"> hazard identification </Link>often use FMEA for preventive safety actions, identifying potential incidents before they cause injuries.
+          </p>
+
+       
+
+
+
+
+
 
           {/* start from here  */}
           <p
@@ -348,9 +400,9 @@ const BlogInnerPage = () => {
           <p className="blog-body">
             Implementation requires coordination across functions. Process
             changes may require updating{" "}
-            <span className="blog-body blog-body-highlightColor">
+            <Link to={"/blog/iso-documentation-mistakes"} className="blog-body blog-body-highlightColor">
               documentation systems
-            </span>{" "}
+            </Link>{" "}
             , training personnel, modifying equipment, or adjusting inspection
             methods. Track progress systematically, addressing obstacles
             promptly.
@@ -379,10 +431,10 @@ const BlogInnerPage = () => {
             Auditors identifying minor compliance gaps or improvement
             opportunities enable proactive correction before they escalate to
             significant nonconformities. Similarly,{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/management-review-meeting-iso"} className="blog-body-highlightColorBlue">
               {" "}
               management review meetings
-            </span>{" "}
+            </Link>{" "}
             should analyze system performance trends, identifying areas
             requiring preventive strengthening.
           </p>
@@ -431,9 +483,9 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Organizations maintaining{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/document-control-system-iso"} className="blog-body-highlightColorBlue">
               document control systems
-            </span>{" "}
+            </Link>{" "}
             integrate CAPA records ensuring controlled access, version
             management, and retention compliance.
           </p>

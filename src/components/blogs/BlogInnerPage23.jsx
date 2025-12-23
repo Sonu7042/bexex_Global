@@ -209,11 +209,11 @@ const BlogInnerPage = () => {
           </p>
 
           <p className="blog-body">
-           Risk-based thinking shapes supplier control intensity. Suppliers providing safety-critical components, regulated materials, or single-source items demand comprehensive evaluation. Alternative sources, commodity items, or low-impact purchases justify streamlined approaches. Understanding <span className="blog-body blog-body-highlightColorBlue"> risk-based thinking </span> helps calibrate supplier management efforts appropriately.
+           Risk-based thinking shapes supplier control intensity. Suppliers providing safety-critical components, regulated materials, or single-source items demand comprehensive evaluation. Alternative sources, commodity items, or low-impact purchases justify streamlined approaches. Understanding <Link to={"/blog/iso-9001-risk-based-thinking"} className="blog-body blog-body-highlightColorBlue"> risk-based thinking </Link> helps calibrate supplier management efforts appropriately.
           </p>
           <p className="blog-body">
 
-          Documentation requirements include defining criteria for evaluation, selection, monitoring, and re-evaluation. Organizations maintain approved supplier lists, evaluation records, performance monitoring data, and actions taken based on evaluations. These records demonstrate systematic supplier management during <span className="blog-body-highlightColorBlue">internal audits</span>  and certification assessments.
+          Documentation requirements include defining criteria for evaluation, selection, monitoring, and re-evaluation. Organizations maintain approved supplier lists, evaluation records, performance monitoring data, and actions taken based on evaluations. These records demonstrate systematic supplier management during <Link to={"/blog/internal-audit-process-guide"} className="blog-body-highlightColorBlue">internal audits</Link>  and certification assessments.
 
           </p>
 
@@ -239,7 +239,7 @@ const BlogInnerPage = () => {
           </p>
 
           <p className="blog-body">
-          Quality capability assessment determines whether suppliers possess technical competence, quality systems, and process controls producing conforming products. Quality certifications like ISO 9001 provide baseline assurance. Sector-specific certifications <span className="blog-body-highlightColorBlue"> ISO 13485 for medical devices, ISO 22000 for food safety</span>, or IATF 16949 for automotive—indicate specialized capabilities.
+          Quality capability assessment determines whether suppliers possess technical competence, quality systems, and process controls producing conforming products. Quality certifications like ISO 9001 provide baseline assurance. Sector-specific certifications <Link to={"/blog/iso-13485-medical-device-quality"} className="blog-body-highlightColorBlue"> ISO 13485 for medical devices </Link>, <Link to={"/blog/iso-22000-food-safety-management"} className="blog-body-highlightColorBlue">ISO 22000 for food safety</Link>, or IATF 16949 for automotive—indicate specialized capabilities.
           </p>
           <p className="blog-body">
             Technical capability evaluation assesses equipment, technology, and expertise delivering specified products or services. Manufacturing suppliers need appropriate machinery, inspection equipment, and technical personnel. Service providers require qualified personnel and necessary resources. Site visits verify claimed capabilities matching actual infrastructure.
@@ -248,7 +248,7 @@ const BlogInnerPage = () => {
             Financial stability analysis prevents supplier failures disrupting supply continuity. Financial statements, credit reports, and market reputation indicate business viability. Unstable suppliers pose risks regardless of technical capabilities—bankruptcies, ownership changes, or financial distress interrupt supply chains unpredictably.
           </p>
           <p className="blog-body">
-          Regulatory compliance verification ensures suppliers meet legal obligations affecting purchased items. Environmental compliance matters when purchasing chemicals or hazardous materials. Labor law compliance affects suppliers using contract workers. Export/import compliance determines cross-border supplier suitability. Organizations maintaining  <span className="blog-body-highlightColorBlue"> legal registers </span>verify suppliers satisfy applicable regulations.
+          Regulatory compliance verification ensures suppliers meet legal obligations affecting purchased items. Environmental compliance matters when purchasing chemicals or hazardous materials. Labor law compliance affects suppliers using contract workers. Export/import compliance determines cross-border supplier suitability. Organizations maintaining  <Link to={"/blog/ehs-legal-register-compliance"} className="blog-body-highlightColorBlue"> legal registers </Link>verify suppliers satisfy applicable regulations.
           </p>
           <p className="blog-body">
            Delivery performance history examines on-time delivery rates, lead time consistency, and responsiveness. Late deliveries disrupt production schedules regardless of product quality. Reliable delivery performance distinguishes capable suppliers from problematic ones.   
@@ -274,7 +274,7 @@ const BlogInnerPage = () => {
             Document review examines certifications, test reports, quality manuals, process flows, and capability studies. ISO certifications from accredited bodies provide reliable quality system evidence. Test reports demonstrate product conformance. Process documentation reveals manufacturing approaches and control methods. Document review identifies obvious gaps before expensive site visits.
           </p>
           <p className="blog-body">
-             Supplier audits provide firsthand facility assessment verifying claimed capabilities and identifying unreported issues. Audit teams examine production processes, quality controls, equipment condition, housekeeping, and management systems. Structured checklists ensure consistent evaluation across suppliers. Organizations conducting  <span className="blog-body-highlightColorBlue">supplier quality audits</span>  develop standardized approaches balancing thoroughness with efficiency.
+             Supplier audits provide firsthand facility assessment verifying claimed capabilities and identifying unreported issues. Audit teams examine production processes, quality controls, equipment condition, housekeeping, and management systems. Structured checklists ensure consistent evaluation across suppliers. Organizations conducting  <Link to={"/blog/supplier-quality-audit-process"} className="blog-body-highlightColorBlue">supplier quality audits</Link>  develop standardized approaches balancing thoroughness with efficiency.
           </p>
           <p className="blog-body">
       Sample evaluation tests actual products against specifications before committing to large purchases. Laboratory analysis, performance testing, or trial production runs reveal quality issues not apparent from documentation or audits. Initial sample approval prevents discovering defects after receiving production quantities.
@@ -329,7 +329,7 @@ const BlogInnerPage = () => {
           Responsiveness evaluation assesses supplier communication, problem resolution, and change management. Suppliers ignoring quality concerns, delaying corrective actions, or resisting improvement requests create ongoing issues regardless of baseline performance. Responsiveness metrics complement quality and delivery data.
           </p>
           <p className="blog-body">
-         Scorecards consolidate multiple metrics into overall supplier ratings. Weighted scoring reflects relative importance of quality, delivery, cost, and service. Quarterly scorecards shared with suppliers establish performance expectations and improvement priorities. Understanding <span className="blog-body-highlightColorBlue"></span> CAPA processes helps develop supplier improvement requirements.
+         Scorecards consolidate multiple metrics into overall supplier ratings. Weighted scoring reflects relative importance of quality, delivery, cost, and service. Quarterly scorecards shared with suppliers establish performance expectations and improvement priorities. Understanding <Link to={"/blog/capa-process-iso-standards"} className="blog-body-highlightColorBlue">CAPA processes</Link>  helps develop supplier improvement requirements.
           </p>
           <p className="blog-body">
         Automated monitoring systems integrate procurement data, quality inspection results, and delivery records providing real-time supplier performance visibility. Dashboard displays, exception alerts, and trend reports enable proactive supplier management replacing reactive firefighting.

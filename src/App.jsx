@@ -134,18 +134,18 @@ const App = () => {
         <Route path="/blog/hira-hazard-risk-assessment" element={<BlogInnerPage9 />} />
         <Route path="/blog/management-review-meeting-iso" element={<BlogInnerPage10 />} />
         <Route path="/blog/water-quality-testing-india" element={<BlogInnerPage11 />} />
-        <Route path="/blog/document-control-system-iso" element={<BlogInnerPage14 />} />
-        <Route path="/blog/capa-process-iso-standards" element={<BlogInnerPage17 />} />
         <Route path="/blog/iso-27001-information-security" element={<BlogInnerPage12 />} />
-        <Route path="/blog/industrial-noise-monitoring-compliance" element={<BlogInnerPage15 />} />
         <Route path="/blog/safety-committee-requirements-india" element={<BlogInnerPage13 />} />
-        <Route path="/blog/iso-22000-food-safety-management" element={<BlogInnerPage19 />} />
-        <Route path="/blog/soil-testing-contamination-assessment" element={<BlogInnerPage18 />} />
-        <Route path="/blog/emergency-preparedness-response-plan" element={<BlogInnerPage20 />} />
+        <Route path="/blog/document-control-system-iso" element={<BlogInnerPage14 />} />
+        <Route path="/blog/industrial-noise-monitoring-compliance" element={<BlogInnerPage15 />} />
         <Route path="/blog/iso-50001-energy-management" element={<BlogInnerPage16 />} />
+        <Route path="/blog/capa-process-iso-standards" element={<BlogInnerPage17 />} />
+        <Route path="/blog/soil-testing-contamination-assessment" element={<BlogInnerPage18 />} />
+        <Route path="/blog/iso-22000-food-safety-management" element={<BlogInnerPage19 />} />
+        <Route path="/blog/emergency-preparedness-response-plan" element={<BlogInnerPage20 />} />
         <Route path="/blog/ambient-air-quality-monitoring" element={<BlogInnerPage21 />} />
-        <Route path="/blog/supplier-evaluation-approval-iso" element={<BlogInnerPage23/>} />
         <Route path="/blog/iso-13485-medical-device-quality" element={<BlogInnerPage22 />} />
+        <Route path="/blog/supplier-evaluation-approval-iso" element={<BlogInnerPage23/>} />
         <Route path="/blog/stack-emission-monitoring-compliance" element={<BlogInnerPage24 />} />
         <Route path="/blog/integrated-management-systems-ims" element={<BlogInnerPage25 />} />
 

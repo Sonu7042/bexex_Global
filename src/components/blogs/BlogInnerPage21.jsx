@@ -249,7 +249,7 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
 
-            Different area classifications have varying standards. Industrial areas tolerate higher pollution levels than residential zones, while ecologically sensitive areas demand the strictest limits. Understanding applicable area classification determines compliance obligations. Organizations implementing <span className="blog-body-highlightColorBlue">ISO 14001 environmental management</span>  integrate ambient monitoring into broader environmental compliance frameworks.
+            Different area classifications have varying standards. Industrial areas tolerate higher pollution levels than residential zones, while ecologically sensitive areas demand the strictest limits. Understanding applicable area classification determines compliance obligations. Organizations implementing <Link to={"/blog/iso-14001-implementation-india"} className="blog-body-highlightColorBlue">ISO 14001 environmental management</Link>  integrate ambient monitoring into broader environmental compliance frameworks.
 
           </p>
 
@@ -290,7 +290,7 @@ const BlogInnerPage = () => {
             Carbon monoxide (CO) from incomplete combustion poses health risks through oxygen transport interference in blood. Industries with significant combustion equipment monitor CO levels ensuring worker and community safety.       
           </p>
           <p className="blog-body">
-              Volatile organic compounds (VOCs) including benzene require monitoring near petroleum, chemical, or solvent-using industries. These compounds contribute to photochemical smog and pose direct health hazards. Facilities conducting <span className="blog-body-highlightColorBlue">soil contamination assessment</span>  often monitor associated VOCs in ambient air.      
+              Volatile organic compounds (VOCs) including benzene require monitoring near petroleum, chemical, or solvent-using industries. These compounds contribute to photochemical smog and pose direct health hazards. Facilities conducting <Link to={"/blog/soil-testing-contamination-assessment"} className="blog-body-highlightColorBlue">soil contamination assessment</Link>  often monitor associated VOCs in ambient air.      
           </p>
 
           
@@ -318,7 +318,7 @@ const BlogInnerPage = () => {
           Sensitive receptor locations near schools, hospitals, residential areas, or ecologically sensitive zones require monitoring even if not directly downwind, addressing community concerns and demonstrating protective measures for vulnerable populations.
           </p>
           <p className="blog-body">
-        Adequate spacing between monitoring locations prevents redundancy while ensuring coverage. CPCB guidelines suggest minimum 200-meter separation between stations for meaningful data variation. Organizations planning <span className="blog-body-highlightColorBlue">environmental monitoring programs </span>  balance comprehensive coverage against resource constraints.
+        Adequate spacing between monitoring locations prevents redundancy while ensuring coverage. CPCB guidelines suggest minimum 200-meter separation between stations for meaningful data variation. Organizations planning <Link to={'/blog/industrial-air-quality-testing'} className="blog-body-highlightColorBlue">environmental monitoring programs </Link>  balance comprehensive coverage against resource constraints.
           </p>
 
 
@@ -361,7 +361,7 @@ const BlogInnerPage = () => {
         Quality assurance procedures validate data accuracy through field blanks, duplicate samples, and inter-laboratory comparisons. Outlier investigation identifies instrument malfunctions, sampling errors, or genuine pollution events requiring different responses.
           </p>
           <p className="blog-body">
-             Statistical analysis calculates 24-hour averages, annual averages, and percentile values for comparison against NAAQS limits. Trend analysis identifies seasonal variations, long-term changes, or emission control effectiveness. Organizations implementing  <span className="blog-body-highlightColorBlue">CAPA processes </span> use monitoring trends to trigger corrective actions before violations occur.
+             Statistical analysis calculates 24-hour averages, annual averages, and percentile values for comparison against NAAQS limits. Trend analysis identifies seasonal variations, long-term changes, or emission control effectiveness. Organizations implementing  <Link to={'/blog/capa-process-iso-standards'} className="blog-body-highlightColorBlue">CAPA processes </Link> use monitoring trends to trigger corrective actions before violations occur.
           </p>
           <p className="blog-body">
           Regulatory reporting submits monitoring data to State Pollution Control Boards at prescribed frequencies—typically monthly or quarterly. Reports include raw data, averages, exceedance analysis, and explanations for any limit violations. Annual environmental statements consolidate monitoring results with emission inventories and compliance status.
@@ -370,7 +370,7 @@ const BlogInnerPage = () => {
          Public disclosure requirements increasingly mandate sharing air quality data with communities. Web-based displays, public meetings, or community reports build transparency and trust. Proactive communication prevents misinformation and demonstrates environmental responsibility.
           </p>
           <p className="blog-body">
-        Data retention requirements typically mandate five-year record keeping for regulatory inspection. Digital archiving simplifies storage while enabling historical trend analysis supporting <span className="blog-body-highlightColorBlue">management review</span>  and strategic planning.
+        Data retention requirements typically mandate five-year record keeping for regulatory inspection. Digital archiving simplifies storage while enabling historical trend analysis supporting <Link to={"/blog/management-review-meeting-iso"} className="blog-body-highlightColorBlue">management review</Link>  and strategic planning.
           </p>
 
 
@@ -394,7 +394,7 @@ const BlogInnerPage = () => {
             Corrective actions address facility-caused exceedances through emission source control, operational adjustments, or enhanced pollution control equipment. Temporary production curtailment may prevent continued violations while permanent solutions are implemented.
           </p>
           <p className="blog-body">
-            Communication with regulatory authorities demonstrates proactive management. Self-reporting exceedances with investigation findings and corrective action plans maintains regulatory credibility better than waiting for enforcement action. Organizations maintaining  <span className="blog-body-highlightColorBlue">legal compliance registers</span>  systematically track reporting obligations.
+            Communication with regulatory authorities demonstrates proactive management. Self-reporting exceedances with investigation findings and corrective action plans maintains regulatory credibility better than waiting for enforcement action. Organizations maintaining  <Link to={"/blog/ehs-legal-register-compliance"} className="blog-body-highlightColorBlue">legal compliance registers</Link>  systematically track reporting obligations.
           </p>
 
 

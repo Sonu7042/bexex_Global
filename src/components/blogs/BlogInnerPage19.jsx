@@ -246,11 +246,11 @@ const BlogInnerPage = () => {
 
           <p className="blog-body">
             HACCP integration forms ISO 22000's core, requiring systematic hazard analysis identifying biological, chemical, and physical hazards. Organizations determine critical control points where hazards must be controlled, establish critical limits, implement monitoring procedures, and define corrective actions when limits are exceeded. Understanding
-            <span className="blog-body blog-body-highlightColorBlue">CAPA processes</span>strengthens corrective action effectiveness.
+            <Link to={"/blog/capa-process-iso-standards"} className="blog-body blog-body-highlightColorBlue">CAPA processes</Link>strengthens corrective action effectiveness.
             helps identify nonconformities requiring corrective action.
           </p>
           <p className="blog-body">
-            Management system requirements align ISO 22000 with other ISO standards, facilitating integration with <span className="blog-body-highlightColorBlue"> ISO 9001 quality management or ISO 14001 environmental systems</span>. Top management commitment, documented procedures, internal audits, and continual improvement create sustainable food safety performance.
+            Management system requirements align ISO 22000 with other ISO standards, facilitating integration with <Link to={"/blog/iso-9001-risk-based-thinking"} className="blog-body-highlightColorBlue"> ISO 9001 quality management </Link> or <Link to={"/blog/iso-14001-implementation-india"} className="blog-body-highlightColorBlue"> ISO 14001 environmental systems</Link> . Top management commitment, documented procedures, internal audits, and continual improvement create sustainable food safety performance.
           </p>
 
 
@@ -280,7 +280,20 @@ const BlogInnerPage = () => {
           <p className="blog-body">
             Chemical hazards encompass allergens, pesticide residues, cleaning chemicals, food additives, and environmental contaminants. Undeclared allergens cause severe reactions in sensitive consumers, making allergen management essential. Chemical contamination from improper cleaning or storage requires strict segregation and handling procedures.
           </p>
-         Hazard analysis considers likelihood and severity, determining which hazards require control through prerequisite programs versus critical control points. <span className="blog-body-highlightColorBlue">Risk assessment methodologies</span>  adapted to food safety contexts support systematic hazard evaluation.
+            
+          <p className="blog-body">
+            Physical hazards include metal fragments, glass, plastic, stones, or other foreign materials. Metal detectors, filters, and visual inspection provide detection and removal controls. Maintenance programs prevent equipment degradation that could introduce metal fragments or other contaminants.
+          </p>
+            
+
+
+
+           <p className="blog-body">
+              Hazard analysis considers likelihood and severity, determining which hazards require control through prerequisite programs versus critical control points. <Link to={"/blog/hira-hazard-risk-assessment"} className="blog-body-highlightColorBlue">Risk assessment methodologies</Link>  adapted to food safety contexts support systematic hazard evaluation.
+           </p>
+
+
+
 
           {/* start from here  */}
           <p
@@ -320,7 +333,7 @@ const BlogInnerPage = () => {
            Facility design and maintenance prevent contamination through proper layout, construction materials, and upkeep. Food-grade surfaces, adequate drainage, pest-proof construction, and separation between raw and ready-to-eat areas reduce contamination risks. Regular maintenance prevents equipment deterioration that could introduce hazards.
           </p>
           <p className="blog-body">
-           Cleaning and sanitation programs remove food residues and reduce microbial contamination. Documented procedures specify cleaning agents, methods, frequencies, and verification. Effective sanitation requires understanding chemical compatibility with surfaces, contact times, and rinsing requirements. Organizations maintaining <span className="blog-body-highlightColorBlue">document control systems</span>  ensure sanitation procedures remain current and accessible.
+           Cleaning and sanitation programs remove food residues and reduce microbial contamination. Documented procedures specify cleaning agents, methods, frequencies, and verification. Effective sanitation requires understanding chemical compatibility with surfaces, contact times, and rinsing requirements. Organizations maintaining <Link to={"/blog/document-control-system-iso"} className="blog-body-highlightColorBlue">document control systems</Link>  ensure sanitation procedures remain current and accessible.
           </p>
           <p className="blog-body">
             Personnel hygiene controls prevent human contamination sources. Health screening, hand washing facilities, protective clothing, and behavior rules reduce contamination risks. Training ensures workers understand hygiene importance and follow established procedures consistently.
@@ -339,11 +352,11 @@ const BlogInnerPage = () => {
             Validation confirms that food safety measures actually control identified hazards before implementation. Scientific evidence, challenge studies, or expert consultation demonstrates control measure effectiveness. Cooking time-temperature combinations should be validated through microbial testing confirming pathogen destruction.
           </p>
           <p className="blog-body">
-        Verification ensures implemented food safety system operates as planned. <span className="blog-body-highlightColorBlue"> Internal audits </span>evaluate system compliance with documented procedures. Calibration programs verify monitoring equipment accuracy. Product testing confirms control effectiveness. Environmental monitoring detects potential contamination in processing areas.
+        Verification ensures implemented food safety system operates as planned. <Link to={"/blog/internal-audit-process-guide"} className="blog-body-highlightColorBlue"> Internal audits </Link>evaluate system compliance with documented procedures. Calibration programs verify monitoring equipment accuracy. Product testing confirms control effectiveness. Environmental monitoring detects potential contamination in processing areas.
           </p>
           <p className="blog-body">
-            Trend analysis identifies patterns suggesting system weaknesses before failures occur. Rising microbial counts, increasing customer complaints, or more frequent corrective actions signal need for system improvements. <span>
-              Management review meetings</span>  analyze verification data, directing resources toward system enhancements.
+            Trend analysis identifies patterns suggesting system weaknesses before failures occur. Rising microbial counts, increasing customer complaints, or more frequent corrective actions signal need for system improvements. <Link to={"/blog/management-review-meeting-iso"} className="blog-body-highlightColorBlue">
+              Management review meetings</Link>  analyze verification data, directing resources toward system enhancements.
           </p>
 
 
