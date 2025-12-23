@@ -349,7 +349,7 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Understanding{" "}
-            <span className="blog-body-highlightColorBlue">HIRA processes</span>{" "}
+            <Link to={"/blog/hira-hazard-risk-assessment"} className="blog-body-highlightColorBlue">HIRA processes</Link>{" "}
             helps integrate noise hazards into comprehensive risk assessment
             programs.
           </p>
@@ -478,9 +478,9 @@ const BlogInnerPage = () => {
             </li>
             <li>
               Implement{" "}
-              <span className="blog-body-highlightColorBlue">
+              <Link to={"/blog/workplace-safety-training-culture"} className="blog-body-highlightColorBlue">
                 workplace safety training
-              </span>{" "}
+              </Link>{" "}
               on noise hazards
             </li>
             {/* <li>Implement vibration isolation preventing structure-borne noise transmission</li> */}
@@ -549,7 +549,7 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Organizations using{" "}
-            <span className="blog-body-highlightColorBlue">CAPA processes</span>{" "}
+            <Link to={"/blog/capa-process-iso-standards"} className="blog-body-highlightColorBlue">CAPA processes</Link>{" "}
             systematically address audiometric test results showing hearing
             threshold shifts.
           </p>
@@ -594,9 +594,9 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Include noise performance in{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/management-review-meeting-iso"} className="blog-body-highlightColorBlue">
               management review meetings
-            </span>{" "}
+            </Link>{" "}
             ensuring leadership attention to both occupational and environmental
             noise management.
           </p>
@@ -643,9 +643,9 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Organizations implementing{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={" "} className="blog-body-highlightColorBlue">
               environmental compliance programs
-            </span>{" "}
+            </Link>{" "}
             integrate noise monitoring into broader environmental management.
           </p>
 
@@ -664,9 +664,9 @@ const BlogInnerPage = () => {
             <span className="innerBlogTextBold">
               Safety Committee Involvement :{" "}
             </span>{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/safety-committee-requirements-india"} className="blog-body-highlightColorBlue">
               Safety committees
-            </span>{" "}
+            </Link>{" "}
             should review noise monitoring results, participate in control
             measure selection, and monitor implementation effectiveness.
           </p>
@@ -675,9 +675,9 @@ const BlogInnerPage = () => {
               Internal Audit Coverage :{" "}
             </span>{" "}
             Include noise monitoring compliance in{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/internal-audit-process-guide"} className="blog-body-highlightColorBlue">
               internal audits
-            </span>
+            </Link>
             . Verify measurements conducted on schedule, controls maintained
             properly, and hearing protection used consistently.
           </p>

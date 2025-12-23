@@ -301,9 +301,9 @@ const BlogInnerPage = () => {
             ownership. Previous operators may have followed practices considered
             acceptable decades ago but creating contamination by current
             standards. Organizations implementing{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/iso-14001-implementation-india"} className="blog-body-highlightColorBlue">
               ISO 14001 environmental management
-            </span>{" "}
+            </Link>{" "}
             often discover historical contamination during initial environmental
             reviews.
           </p>
@@ -352,9 +352,9 @@ const BlogInnerPage = () => {
             environmental clearance conditions or development permissions.
             Understanding the complete regulatory landscape prevents compliance
             gaps. Organizations developing{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/ehs-legal-register-compliance"} className="blog-body-highlightColorBlue">
               environmental compliance programs
-            </span>{" "}
+            </Link>{" "}
             integrate soil testing into broader environmental management
             systems.
           </p>
@@ -408,9 +408,9 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Facilities conducting{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/water-quality-testing-india"} className="blog-body-highlightColorBlue">
               water quality testing
-            </span>{" "}
+            </Link>{" "}
             should coordinate soil assessment, as contamination often affects
             both media. Integrated testing reveals complete environmental
             impact.
@@ -525,9 +525,9 @@ const BlogInnerPage = () => {
           </p>
           <p className="blog-body">
             Organizations implementing{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/iso-9001-risk-based-thinking"} className="blog-body-highlightColorBlue">
               risk management frameworks
-            </span>{" "}
+            </Link>{" "}
             apply similar systematic approaches to environmental contamination
             assessment, evaluating likelihood and consequences of various
             exposure scenarios.
@@ -581,9 +581,9 @@ const BlogInnerPage = () => {
             Remediation planning requires cost-benefit analysis, regulatory
             consultation, and stakeholder communication. Organizations
             addressing soil contamination should integrate efforts with broader{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/iso-14001-implementation-india"} className="blog-body-highlightColorBlue">
               environmental management systems
-            </span>{" "}
+            </Link>{" "}
             ensuring systematic contamination prevention going forward.
           </p>
 

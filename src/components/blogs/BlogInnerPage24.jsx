@@ -304,9 +304,9 @@ const BlogInnerPage = () => {
             emission limits. Pharmaceutical manufacturing faces solvent emission
             controls. Power plants operate under dedicated emission regulations.
             Organizations maintaining{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/ehs-legal-register-compliance"} className="blog-body-highlightColorBlue">
               environmental compliance registers
-            </span>{" "}
+            </Link>{" "}
             systematically track overlapping regulatory requirements.
           </p>
           <p className="blog-body blog-body-highlightColor">
@@ -391,9 +391,9 @@ const BlogInnerPage = () => {
             industries monitor volatile organic compounds or specific chemicals.
             Metal processing facilities test for heavy metal emissions.
             Understanding{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/industrial-air-quality-testing"} className="blog-body-highlightColorBlue">
               industrial air quality testing
-            </span>{" "}
+            </Link>{" "}
             helps identify all applicable parameters.
           </p>
 
@@ -545,9 +545,9 @@ const BlogInnerPage = () => {
             violations occur. Gradually rising emissions suggest pollution
             control equipment degradation, process changes, or fuel quality
             variations. Implementing{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/capa-process-iso-standards"} className="blog-body-highlightColorBlue">
               corrective actions
-            </span>{" "}
+            </Link>{" "}
             based on trends prevents violations rather than reacting to
             exceedances.
           </p>
@@ -608,9 +608,9 @@ const BlogInnerPage = () => {
             Process modifications may achieve compliance more economically than
             add-on controls. Reducing process temperatures lowers NOx formation.
             Improving material handling reduces fugitive dust. Understanding{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/iso-14001-implementation-india"} className="blog-body-highlightColorBlue">
               environmental management systems
-            </span>{" "}
+            </Link>{" "}
             integrates emission reduction into process design.
           </p>
 
@@ -645,9 +645,9 @@ const BlogInnerPage = () => {
             actions, and prevention measures. Self-reporting violations with
             investigation findings demonstrates good faith regulatory
             cooperation. Organizations maintaining{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/management-review-meeting-iso"} className="blog-body-highlightColorBlue">
               management review processes
-            </span>{" "}
+            </Link>{" "}
             systematically address environmental performance including emission
             compliance.
           </p>
@@ -656,9 +656,9 @@ const BlogInnerPage = () => {
             monitoring, waste generation, and compliance status into
             comprehensive regulatory submissions. Stack emission data integrates
             with{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link to={"/blog/ambient-air-quality-monitoring"} className="blog-body-highlightColorBlue">
               ambient air monitoring
-            </span>
+            </Link>
             , water discharge testing, and waste management records.
           </p>
 
