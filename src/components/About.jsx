@@ -148,7 +148,7 @@ const About = () => {
             />
 
             <button className="video-sound-btn" onClick={toggleSound}>
-              {muted ? <GoUnmute /> : <GoMute />}
+              {muted ? <GoMute /> : <GoUnmute /> }
             </button>
           </div>
           <p className="hero-desc">

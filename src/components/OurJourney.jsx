@@ -37,7 +37,7 @@ export const OurJourney = ({ data }) => {
               <div className="journey-dot-outer">
                 <div className="journey-dot-inner" />
               </div>
-              <h3 className="journey-year">{item.title}</h3>
+              <h3 data-aos="zoom-in-up" className="journey-year">{item.title}</h3>
             </div>
 
             {/* RIGHT (CONTENT) */}
