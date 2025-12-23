@@ -61,6 +61,7 @@ import "aos/dist/aos.css";
 import ScrollToTop  from './components/ScrollToTop'
 
 import AllServiceShowPage from "./components/AllServiceShowPage";
+import InnerServicePage from "./components/InnerServicePage";
 
 
 const App = () => {
@@ -156,6 +157,14 @@ const App = () => {
 
 
 
+
+
+        <Route path="/innerServicePage" element={<InnerServicePage/>}/>
+
+
+
+
+       
        
 
       </Routes>

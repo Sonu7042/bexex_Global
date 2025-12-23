@@ -24,7 +24,7 @@ export const OurJourney = ({ data }) => {
 
   
   return (
-    <div ref={containerRef} className="journey-wrapper">
+    <div ref={containerRef} className="journey-wrappers">
       <div className="journey-container ">
         <h2 data-aos="zoom-in-up" className="journey-title applyfont">Changelog from my journey</h2>
       </div>

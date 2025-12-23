@@ -1,0 +1,249 @@
+/* FireSafetySection.css - Converted to Flexbox (No Grid) */
+
+:root {
+  --fs-bg: #e3e3e3;
+  --fs-text: #222;
+  --fs-accent: #1a4be3;
+  --fs-card-bg: #ffffff;
+  --fs-muted: #666;
+  --fs-btn: #2d2d2d;
+  --fs-btn-text: #ffffff;
+  --fs-shadow-soft: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Main page - FLEX instead of GRID */
+.fs-page {
+  height: 100vh;
+  color: var(--fs-text);
+  display: flex;              /* CHANGED: flex instead of grid */
+  flex-wrap: wrap;            /* NEW: allow wrapping */
+  gap: 2.5rem;
+  box-sizing: border-box;
+  padding-top: 1.875rem;
+}
+
+/* LEFT SIDE */
+.fs-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  flex: 1.1;                  /* NEW: flex-grow equivalent to 1.1fr */
+  min-width: 0;               /* NEW: shrink-to-fit */
+}
+
+.fs-pdca-img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+/* ISO card under PDCA - FLEX instead of GRID */
+.fs-iso-card {
+  display: flex;                          /* CHANGED: flex instead of grid */
+  gap: 1.5rem;
+  background: var(--fs-card-bg);
+  border-radius: 6px;
+  padding: 1.75rem 1.5rem;
+  box-shadow: var(--fs-shadow-soft);
+  align-items: center;
+}
+
+.fs-iso-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1.6;                      /* NEW: flex-grow equivalent to 1.6fr */
+}
+
+.fs-iso-title {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.fs-iso-em {
+  font-style: italic;
+  color: var(--fs-accent);
+}
+
+.fs-iso-desc {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--fs-muted);
+}
+
+.fs-download-btn {
+  margin-top: 0.75rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  background: var(--fs-btn);
+  color: var(--fs-btn-text);
+  font-size: 0.9rem;
+  cursor: pointer;
+  align-self: flex-start;
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.fs-download-btn:hover {
+  background: #000;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+.fs-iso-flyer-wrapper {
+  flex-shrink: 0;                 /* NEW: prevent shrinking */
+  display: flex;
+  align-items: center;
+  justify-content: center;        /* NEW: center flyer */
+}
+
+.fs-iso-flyer {
+  width: 150px;
+  max-width: 100%;
+  box-shadow: var(--fs-shadow-soft);
+}
+
+/* RIGHT SIDE */
+.fs-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1.3;                      /* NEW: flex-grow equivalent to 1.3fr */
+  min-width: 0;
+}
+
+.fs-header {
+  max-width: 40rem;
+}
+
+.fs-why-title {
+  margin: 0 0 1rem;
+  font-size: 2.75rem;
+  letter-spacing: 0.02em;
+}
+
+.fs-why-highlight {
+  color: var(--fs-accent);
+}
+
+.fs-why-text {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--fs-muted);
+}
+
+/* Cover list */
+.fs-cover-title {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+}
+
+.fs-cover-list {
+  margin: 0;
+  padding-left: 1.3rem;
+  display: grid;  /* List can stay grid - it's single column */
+  gap: 0.35rem;
+  font-size: 0.95rem;
+}
+
+/* Badges */
+.fs-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.fs-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.fs-badge-icon {
+  font-size: 1.4rem;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Large tablets: stack vertically */
+@media (max-width: 1100px) {
+  .fs-page {
+    flex-direction: column;      /* CHANGED: stack vertically */
+    padding: 1.75rem 1.5rem 2.25rem;
+  }
+
+  .fs-right {
+    order: 2;                   /* NEW: content after left */
+  }
+
+  .fs-left {
+    order: 1;
+  }
+
+  .fs-why-title {
+    font-size: 2.2rem;
+  }
+
+  .fs-cover-title {
+    font-size: 1.7rem;
+  }
+}
+
+/* Tablets / small screens */
+@media (max-width: 768px) {
+  .fs-iso-card {
+    flex-direction: column;     /* CHANGED: stack card vertically */
+    text-align: left;
+  }
+
+  .fs-iso-flyer-wrapper {
+    justify-content: flex-start;  /* CHANGED: left align flyer */
+  }
+
+  .fs-download-btn {
+    width: auto;
+  }
+
+  .fs-why-title {
+    font-size: 1.9rem;
+  }
+
+  .fs-why-text {
+    font-size: 0.92rem;
+  }
+
+  .fs-cover-list {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .fs-page {
+    padding: 1.25rem 1rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .fs-why-title {
+    font-size: 1.7rem;
+  }
+
+  .fs-cover-title {
+    font-size: 1.4rem;
+  }
+
+  .fs-iso-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .fs-iso-flyer {
+    width: 120px;
+  }
+}
