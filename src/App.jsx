@@ -154,10 +154,6 @@ const App = () => {
 
         <Route path="/Services" element={<AllServiceShowPage/>}/>
 
-
-
-       
-
       </Routes>
     </Provider>
   );

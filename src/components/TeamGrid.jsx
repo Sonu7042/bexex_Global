@@ -67,7 +67,7 @@ const TeamGrid = () => {
 
       <div className="team-grid">
         {teamMembers.map((member, idx) => (
-          <div className="team-card" key={idx}>
+          <div data-aos="fade-up" className="team-card" key={idx}>
             <div className="team-img-wrap">
               <img src={member.img} alt={member.name} className="team-img" />
             </div>
