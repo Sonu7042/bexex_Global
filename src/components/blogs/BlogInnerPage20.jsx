@@ -63,7 +63,6 @@ const navItems = [
     label: "Regulatory Compliance Requirements",
     anchor: "Regulatory-Compliance-Requirements",
   },
-
 ];
 
 const BlogInnerPage = () => {
@@ -109,8 +108,18 @@ const BlogInnerPage = () => {
     },
     {
       question: "What documentation is mandatory?",
-      answer:<>
-        Required documentation includes written emergency response plans, drill records with attendance and evaluation notes, training records, equipment inspection logs, and external agency coordination evidence. Retain records for regulatory inspection and <span className="blog-body-highlightColorBlue">management review</span>.</>,
+      answer: (
+        <>
+          Required documentation includes written emergency response plans,
+          drill records with attendance and evaluation notes, training records,
+          equipment inspection logs, and external agency coordination evidence.
+          Retain records for regulatory inspection and{" "}
+          <Link to={"/blog/management-review-meeting-iso"} className="blog-body-highlightColorBlue">
+            management review
+          </Link>
+          .
+        </>
+      ),
     },
   ];
 
@@ -291,9 +300,12 @@ const BlogInnerPage = () => {
             exposure pathways. Toxic gases demand immediate evacuation, while
             liquid spills may allow controlled containment. Organizations
             implementing{" "}
-            <span className="blog-body-highlightColorBlue">
+            <Link
+              to={"/blog/iso-14001-implementation-india"}
+              className="blog-body-highlightColorBlue"
+            >
               ISO 14001 environmental systems
-            </span>{" "}
+            </Link>{" "}
             integrate chemical emergency planning with broader environmental
             management.
           </p>
@@ -308,8 +320,14 @@ const BlogInnerPage = () => {
           <p className="blog-body blog-body-highlightColor">
             Medical emergencies from workplace injuries, sudden illness, or
             exposure incidents demand immediate first aid and medical evacuation
-            capabilities. Understanding <span className="blog-body-highlightColorBlue">occupational health requirements</span> helps
-            integrate medical emergency response with workplace safety
+            capabilities. Understanding{" "}
+            <Link
+              to={"/blog/iso-45001-implementation-guide"}
+              className="blog-body-highlightColorBlue"
+            >
+              occupational health requirements
+            </Link>{" "}
+            helps integrate medical emergency response with workplace safety
             management.
           </p>
           <p className="blog-body blog-body-highlightColor">
@@ -319,24 +337,53 @@ const BlogInnerPage = () => {
             industry, and facility profile.
           </p>
 
-          <p className="innertopTextSubHeading" id="Developing-Emergency-Response-Plans">
+          <p
+            className="innertopTextSubHeading"
+            id="Developing-Emergency-Response-Plans"
+          >
             Developing Emergency Response Plans
           </p>
           <p className="blog-body">
-            Effective emergency response plans provide clear guidance enabling rapid, coordinated response under stressful conditions. Documentation must be concise, accessible, and regularly updated.
+            Effective emergency response plans provide clear guidance enabling
+            rapid, coordinated response under stressful conditions.
+            Documentation must be concise, accessible, and regularly updated.
           </p>
 
           <p className="blog-body">
-            Command structure establishes authority and responsibilities during emergencies. Incident commanders coordinate overall response, making critical decisions and allocating resources. Functional roles include evacuation coordinators, first aid responders, fire brigade members, communication officers, and shutdown operators. Clear succession planning ensures leadership continuity if primary responders are unavailable.
+            Command structure establishes authority and responsibilities during
+            emergencies. Incident commanders coordinate overall response, making
+            critical decisions and allocating resources. Functional roles
+            include evacuation coordinators, first aid responders, fire brigade
+            members, communication officers, and shutdown operators. Clear
+            succession planning ensures leadership continuity if primary
+            responders are unavailable.
           </p>
           <p className="blog-body">
-            Emergency contact information enables rapid communication with internal response teams, external emergency services, regulatory authorities, and key stakeholders. Contact lists require regular verification—outdated numbers render plans ineffective. Include 24/7 contact methods for critical personnel and maintain both digital and printed copies accessible during power or system failures.
+            Emergency contact information enables rapid communication with
+            internal response teams, external emergency services, regulatory
+            authorities, and key stakeholders. Contact lists require regular
+            verification—outdated numbers render plans ineffective. Include 24/7
+            contact methods for critical personnel and maintain both digital and
+            printed copies accessible during power or system failures.
           </p>
           <p className="blog-body">
-            Facility-specific procedures address unique risks and configurations. Chemical facilities document spill containment procedures, neutralization methods, and exposure treatment. Manufacturing plants detail equipment shutdown sequences preventing secondary damage. Multi-story buildings specify evacuation routes, assembly points, and disabled personnel assistance procedures.
+            Facility-specific procedures address unique risks and
+            configurations. Chemical facilities document spill containment
+            procedures, neutralization methods, and exposure treatment.
+            Manufacturing plants detail equipment shutdown sequences preventing
+            secondary damage. Multi-story buildings specify evacuation routes,
+            assembly points, and disabled personnel assistance procedures.
           </p>
           <p className="blog-body">
-            Resource inventories identify emergency equipment locations—fire extinguishers, spill kits, first aid supplies, personal protective equipment, and emergency tools. Maps showing equipment locations, utility shutoffs, and hazardous material storage enable rapid response. Organizations maintaining <span className="blog-body-highlightColorBlue">document control systems</span> ensure emergency plans remain current as facilities change.
+            Resource inventories identify emergency equipment locations—fire
+            extinguishers, spill kits, first aid supplies, personal protective
+            equipment, and emergency tools. Maps showing equipment locations,
+            utility shutoffs, and hazardous material storage enable rapid
+            response. Organizations maintaining{" "}
+            <Link to={"/blog/document-control-system-iso"} className="blog-body-highlightColorBlue">
+              document control systems
+            </Link>{" "}
+            ensure emergency plans remain current as facilities change.
           </p>
 
           <p
@@ -349,19 +396,42 @@ const BlogInnerPage = () => {
           <DynamicTable config={tableConfig} data={tableData} /> */}
 
           <p className="blog-body">
-            Plans alone don't ensure effective response. Trained, equipped teams with practiced procedures determine actual emergency performance.
+            Plans alone don't ensure effective response. Trained, equipped teams
+            with practiced procedures determine actual emergency performance.
           </p>
           <p className="blog-body">
-            Emergency response team formation identifies personnel with appropriate skills, physical fitness, and willingness to assume emergency roles. Team size depends on facility scale and shift patterns—24/7 operations require teams across all shifts. Redundancy prevents capability gaps when key personnel are absent.
+            Emergency response team formation identifies personnel with
+            appropriate skills, physical fitness, and willingness to assume
+            emergency roles. Team size depends on facility scale and shift
+            patterns—24/7 operations require teams across all shifts. Redundancy
+            prevents capability gaps when key personnel are absent.
           </p>
           <p className="blog-body">
-            Training programs develop competencies for assigned roles. Fire response training covers extinguisher types, fire behavior, and safe fighting techniques. First aid certification enables injury treatment pending medical evacuation. Hazmat response training addresses containment, decontamination, and exposure management. Regular refresher training maintains skills and updates procedures.
+            Training programs develop competencies for assigned roles. Fire
+            response training covers extinguisher types, fire behavior, and safe
+            fighting techniques. First aid certification enables injury
+            treatment pending medical evacuation. Hazmat response training
+            addresses containment, decontamination, and exposure management.
+            Regular refresher training maintains skills and updates procedures.
           </p>
           <p className="blog-body">
-            Equipment provision supplies tools for effective response. Fire suppression systems, portable extinguishers, emergency lighting, communication devices, first aid kits, spill containment materials, and personal protective equipment must be available, maintained, and accessible. Inspection schedules verify equipment functionality before emergencies occur.
+            Equipment provision supplies tools for effective response. Fire
+            suppression systems, portable extinguishers, emergency lighting,
+            communication devices, first aid kits, spill containment materials,
+            and personal protective equipment must be available, maintained, and
+            accessible. Inspection schedules verify equipment functionality
+            before emergencies occur.
           </p>
           <p className="blog-body">
-            Communication systems enable coordination during chaotic situations. Public address systems broadcast evacuation orders. Two-way radios connect response teams. Emergency sirens signal specific threats. Backup power ensures systems function during infrastructure failures. <span className="blog-body-highlightColorBlue">Internal audit processes</span> verify communication system readiness.
+            Communication systems enable coordination during chaotic situations.
+            Public address systems broadcast evacuation orders. Two-way radios
+            connect response teams. Emergency sirens signal specific threats.
+            Backup power ensures systems function during infrastructure
+            failures.{" "}
+            <Link to={"/blog/internal-audit-process-guide"} className="blog-body-highlightColorBlue">
+              Internal audit processes
+            </Link>{" "}
+            verify communication system readiness.
           </p>
 
           <p
@@ -371,22 +441,49 @@ const BlogInnerPage = () => {
             Conducting Effective Emergency Drills
           </p>
           <p className="blog-body">
-            Emergency drills validate preparedness, identify weaknesses, and build response confidence through realistic practice under controlled conditions.
+            Emergency drills validate preparedness, identify weaknesses, and
+            build response confidence through realistic practice under
+            controlled conditions.
           </p>
           <p className="blog-body">
-            Drill planning defines scenarios, objectives, and success criteria before execution. Announced drills allow evaluation of procedural understanding, while unannounced drills test spontaneous response capabilities. Vary scenarios across drills—fires, chemical spills, medical emergencies, or evacuations—ensuring comprehensive preparedness.
+            Drill planning defines scenarios, objectives, and success criteria
+            before execution. Announced drills allow evaluation of procedural
+            understanding, while unannounced drills test spontaneous response
+            capabilities. Vary scenarios across drills—fires, chemical spills,
+            medical emergencies, or evacuations—ensuring comprehensive
+            preparedness.
           </p>
           <p className="blog-body">
-            Tabletop exercises gather response personnel discussing hypothetical scenarios without physical activity. These low-resource exercises test decision-making, communication protocols, and procedural understanding. Facilitators introduce complications—equipment failures, injured responders, or changing conditions—evaluating adaptation capabilities.
+            Tabletop exercises gather response personnel discussing hypothetical
+            scenarios without physical activity. These low-resource exercises
+            test decision-making, communication protocols, and procedural
+            understanding. Facilitators introduce complications—equipment
+            failures, injured responders, or changing conditions—evaluating
+            adaptation capabilities.
           </p>
           <p className="blog-body">
-            Full-scale drills simulate actual emergencies with evacuation, equipment deployment, and external coordination. Time evacuation completion, assess assembly point accountability, and evaluate response team effectiveness. Include external agencies—fire departments, medical services, or pollution control boards—building relationships and coordination before real emergencies.
+            Full-scale drills simulate actual emergencies with evacuation,
+            equipment deployment, and external coordination. Time evacuation
+            completion, assess assembly point accountability, and evaluate
+            response team effectiveness. Include external agencies—fire
+            departments, medical services, or pollution control boards—building
+            relationships and coordination before real emergencies.
           </p>
           <p className="blog-body">
-           Post-drill evaluations identify improvement opportunities through structured debriefing. What worked well? What failed? Were procedures clear? Was equipment adequate? Did communication function effectively? Document findings and implement <span className="blog-body-highlightColorBlue">corrective actions</span> addressing identified gaps.
+            Post-drill evaluations identify improvement opportunities through
+            structured debriefing. What worked well? What failed? Were
+            procedures clear? Was equipment adequate? Did communication function
+            effectively? Document findings and implement{" "}
+            <Link to={"/blog/capa-process-iso-standards"} className="blog-body-highlightColorBlue">
+              corrective actions
+            </Link>{" "}
+            addressing identified gaps.
           </p>
           <p className="blog-body">
-           Drill frequency balances preparedness needs against operational disruption. Regulatory minimums often specify annual drills, though quarterly or monthly exercises maintain higher readiness levels, particularly for high-risk operations.
+            Drill frequency balances preparedness needs against operational
+            disruption. Regulatory minimums often specify annual drills, though
+            quarterly or monthly exercises maintain higher readiness levels,
+            particularly for high-risk operations.
           </p>
           {/* 
           <p className="blog-body">
@@ -405,16 +502,32 @@ const BlogInnerPage = () => {
             Integrating External Emergency Services
           </p>
           <p className="blog-body">
-           Industrial emergencies often exceed internal response capabilities, requiring fire departments, medical services, hazmat teams, or law enforcement assistance. Pre-emergency coordination ensures effective collaboration during crises.
+            Industrial emergencies often exceed internal response capabilities,
+            requiring fire departments, medical services, hazmat teams, or law
+            enforcement assistance. Pre-emergency coordination ensures effective
+            collaboration during crises.
           </p>
           <p className="blog-body">
-            Facility familiarization allows external responders understanding site layouts, hazards, and resources before emergencies. Arrange facility tours showing access routes, hazardous areas, utility controls, and water sources. Share emergency plans, chemical inventories, and facility maps. This preparation enables faster, safer external response.
+            Facility familiarization allows external responders understanding
+            site layouts, hazards, and resources before emergencies. Arrange
+            facility tours showing access routes, hazardous areas, utility
+            controls, and water sources. Share emergency plans, chemical
+            inventories, and facility maps. This preparation enables faster,
+            safer external response.
           </p>
           <p className="blog-body">
-            Joint exercises build working relationships and test coordination procedures. Include external agencies in drills, practicing communication protocols, resource integration, and unified command. Address practical issues radio compatibility, access permissions, or hazard communication methods—before crises occur.
+            Joint exercises build working relationships and test coordination
+            procedures. Include external agencies in drills, practicing
+            communication protocols, resource integration, and unified command.
+            Address practical issues radio compatibility, access permissions, or
+            hazard communication methods—before crises occur.
           </p>
           <p className="blog-body">
-           Mutual aid agreements with neighboring facilities provide backup resources and expertise. Chemical plants might share hazmat capabilities. Manufacturing complexes coordinate fire response resources. These arrangements multiply available resources beyond individual facility capabilities.
+            Mutual aid agreements with neighboring facilities provide backup
+            resources and expertise. Chemical plants might share hazmat
+            capabilities. Manufacturing complexes coordinate fire response
+            resources. These arrangements multiply available resources beyond
+            individual facility capabilities.
           </p>
           {/* <ul className="disk">
             <li>Install acoustic enclosures around noisy equipment</li>
@@ -429,7 +542,6 @@ const BlogInnerPage = () => {
             </li>
           </ul> */}
 
-
           <p
             className="innertopTextSubHeading"
             id="Regulatory-Compliance-Requirements"
@@ -437,16 +549,27 @@ const BlogInnerPage = () => {
             Regulatory Compliance Requirements
           </p>
           <p className="blog-body">
-            Multiple regulations mandate emergency preparedness for Indian industries, with specific requirements varying by industrial category and location.
+            Multiple regulations mandate emergency preparedness for Indian
+            industries, with specific requirements varying by industrial
+            category and location.
           </p>
           <p className="blog-body">
-            The Factories Act 1948 requires emergency exits, fire-fighting equipment, and alarm systems. The Manufacture, Storage, and Import of Hazardous Chemicals Rules (MSIHC) impose detailed emergency planning requirements for chemical facilities including on-site and off-site emergency plans.
+            The Factories Act 1948 requires emergency exits, fire-fighting
+            equipment, and alarm systems. The Manufacture, Storage, and Import
+            of Hazardous Chemicals Rules (MSIHC) impose detailed emergency
+            planning requirements for chemical facilities including on-site and
+            off-site emergency plans.
           </p>
           <p className="blog-body">
-           The Disaster Management Act 2005 mandates disaster management plans for critical facilities. State Pollution Control Boards require environmental emergency plans for industries handling hazardous materials. <span className="blog-body-highlightColorBlue">Legal register maintenance</span> helps track applicable emergency preparedness obligations.
+            The Disaster Management Act 2005 mandates disaster management plans
+            for critical facilities. State Pollution Control Boards require
+            environmental emergency plans for industries handling hazardous
+            materials.{" "}
+            <Link to={"/blog/ehs-legal-register-compliance"} className="blog-body-highlightColorBlue">
+              Legal register maintenance
+            </Link>{" "}
+            helps track applicable emergency preparedness obligations.
           </p>
-
-          
 
           {/* <ul className="disk">
             <li>Does this procedure still reflect current practice?</li>
@@ -483,17 +606,32 @@ const BlogInnerPage = () => {
         </p>
 
         <p className="blog-body">
-          Effective emergency preparedness requires systematic development, regular practice, and continuous improvement based on drill findings and incident learning.
+          Effective emergency preparedness requires systematic development,
+          regular practice, and continuous improvement based on drill findings
+          and incident learning.
         </p>
         <p className="innertopTextSubHeading_Points">
-          Download our Emergency Response Plan Template providing structured framework for documenting facility-specific emergency procedures aligned with regulatory requirements
+          Download our Emergency Response Plan Template providing structured
+          framework for documenting facility-specific emergency procedures
+          aligned with regulatory requirements
         </p>
 
         <p className="blog-body">
-          Need expert guidance developing comprehensive emergency preparedness programs? Bexex safety specialists have supported industrial facilities across India with emergency planning, response team training, and drill facilitation. <span className="blog-body-highlightColorBlue">Explore our EHS consulting services</span> or contact us for emergency preparedness assessment.
+          Need expert guidance developing comprehensive emergency preparedness
+          programs? Bexex safety specialists have supported industrial
+          facilities across India with emergency planning, response team
+          training, and drill facilitation.{" "}
+          <span className="blog-body-highlightColorBlue">
+            Explore our EHS consulting services
+          </span>{" "}
+          or contact us for emergency preparedness assessment.
         </p>
         <p className="blog-body">
-          <span className="innerBlogTextBold">Expert Tip :</span> Schedule emergency drills during shift changes, holidays, or unusual conditions testing response capabilities under realistic constraints. Most emergencies don't occur during ideal staffing conditions—preparedness must account for reduced crews and non-routine situations.
+          <span className="innerBlogTextBold">Expert Tip :</span> Schedule
+          emergency drills during shift changes, holidays, or unusual conditions
+          testing response capabilities under realistic constraints. Most
+          emergencies don't occur during ideal staffing conditions—preparedness
+          must account for reduced crews and non-routine situations.
         </p>
 
         <div className="res-wrapper">
