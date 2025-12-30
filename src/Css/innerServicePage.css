@@ -39,8 +39,8 @@
   display: flex;
   gap: 1.5rem;
   background: var(--fs-card-bg);
-  border-radius: 6px;
-  padding: 1.75rem 1.5rem;
+  border-radius: 16px;
+  /* padding: 1.75rem 1.5rem; */
   box-shadow: var(--fs-shadow-soft);
   align-items: center;
 }
@@ -50,6 +50,7 @@
   flex-direction: column;
   gap: 0.75rem;
   flex: 1.6;
+  padding: 1.875rem 1.875rem;
 }
 
 .fs-iso-title {
@@ -144,19 +145,32 @@
 .fs-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  /* gap: 1.5rem; */
   margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  
 }
 
 .fs-badge {
+  width: 48%;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.95rem;
+  justify-content: center;
+  gap: 0.7rem;
+  font-size: 1.08rem;
+  background-color: #363636;
+  padding: 1rem 1rem;
+  color: #E6E6E6;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: .5s all cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
+.fs-badge:hover {
+  background-color: #414141;
+}
 .fs-badge-icon {
-  font-size: 1.4rem;
+  font-size: 1.875rem;
 }
 
 /* GALLERY SECTION */
