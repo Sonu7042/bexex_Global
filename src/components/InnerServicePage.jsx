@@ -3,10 +3,13 @@ import "../Css/innerServicePage.css";
 import React, { useState } from "react";
 import { Play } from "lucide-react";
 import { useLocation } from "react-router-dom";
+import Footer from "./Footer";
+import LetsConnect from "./LetsConnect";
 
 export default function InnerServicePage() {
   const { state } = useLocation();
   const card = state?.card;
+  console.log(card, "card")
 
 
   const [selectedMedia, setSelectedMedia] = useState(card?.media?.[0]);
@@ -14,6 +17,7 @@ export default function InnerServicePage() {
   if (!card) return <p>Data not found</p>;
 
   return (
+    <>
     <section className="px-4 md:px-16 lg:px-12">
       <div className="fs-page">
         {/* LEFT COLUMN */}
@@ -138,5 +142,12 @@ export default function InnerServicePage() {
         </div>
       </div>
     </section>
+
+     <LetsConnect/>   
+      <Footer />
+
+        </>
+
+
   );
 }

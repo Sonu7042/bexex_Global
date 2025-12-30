@@ -35,8 +35,8 @@ const HeroSectionLayout = () => {
     <Clients/>
     <CompareConsulting/> 
     </main>
-    <LetsConnect/>   
-     <Footer />
+      <LetsConnect/>   
+      <Footer />
     </>
   )
 }
