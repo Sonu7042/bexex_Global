@@ -49,7 +49,7 @@ export default function InnerServicePage() {
 
 
   return (
-    <section className="px-4 md:px-10 lg:px-16 mt-8">
+    <section className="px-4 md:px-16 lg:px-12">
       <div className="fs-page">
         {/* LEFT COLUMN */}
         <div className="fs-left">
@@ -162,7 +162,7 @@ export default function InnerServicePage() {
 
           <section className="fs-cover-section">
             <h2 className="fs-cover-title">What We Cover During Trainings:</h2>
-            <ul className="fs-cover-list">
+            <ul type="disc" className="fs-cover-list">
               <li>Introduction to Fire Behavior and the Fire Triangle</li>
               <li>Types and Classes of Fire</li>
               <li>Common Workplace Fire Hazards and Prevention Tips</li>
