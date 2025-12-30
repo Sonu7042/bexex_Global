@@ -39,8 +39,8 @@ export default function InnerServicePage() {
       {/* RIGHT CONTENT */}
       <div className="fs-right">
         <header className="fs-header">
-          <h1 className="fs-why-title">
-            Why <span className="fs-why-highlight">Fire Safety</span>?
+          <h1 className="fs-why-title applyfont">
+            Why <span className="fs-why-highlight itly">Fire Safety</span>?
           </h1>
           <p className="fs-why-text">
             Fire emergencies can occur anytime, anywhere often due to small, overlooked hazards.

@@ -116,14 +116,15 @@
   min-width: 0;
 }
 
-.fs-header {
+/* .fs-header {
   max-width: 40rem;
-}
+} */
 
 .fs-why-title {
   margin: 0 0 1rem;
   font-size: 2.75rem;
   letter-spacing: 0.02em;
+  font-weight: 600;
 }
 
 .fs-why-highlight {

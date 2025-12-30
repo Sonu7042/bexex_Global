@@ -426,7 +426,7 @@
   /* margin-bottom: 18px; */
   padding: 5%;
   /* background-color: gray; */
-  width: 100%;
+  width: fit-content;
   justify-content: flex-end;
 }
 .blog-side-nav li:last-child {
@@ -516,9 +516,9 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: fit-content;
   justify-content: flex-end;
-  padding: 14px 18px;
+  padding: 14px 20px;
   border-radius: 14px;
   transition: all 0.25s ease;
 }
@@ -562,7 +562,7 @@ cubic-bezier(1, -0.03, 0, 1.49);
 
 .blog-side-nav li:has(a.active) {
   background-color: #111111;
-  transform: translateX(-22px);
+  transform: translateX(-30px);
 }
 
 .blog-side-nav li:has(a.active) a {

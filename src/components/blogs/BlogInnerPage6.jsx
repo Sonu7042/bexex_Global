@@ -37,7 +37,7 @@ const tags = ["ISO Systems", "Consulting", "Energy"];
 const navItems = [
   { label: "Environmental Monitoring", anchor: "Environmental-Monitoring" },
   {
-    label: "Understanding Air Quality Monitoring Requirements",
+    label: "Air Quality Monitoring Requirements",
     anchor: "Understanding-Air-Quality-Monitoring-Requirements",
   },
   {
