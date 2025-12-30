@@ -14,7 +14,7 @@ export default function InnerServicePage() {
   if (!card) return <p>Data not found</p>;
 
   return (
-    <section className="px-4 md:px-10 lg:px-16 mt-8">
+    <section className="px-4 md:px-16 lg:px-12">
       <div className="fs-page">
         {/* LEFT COLUMN */}
         <div className="fs-left">
