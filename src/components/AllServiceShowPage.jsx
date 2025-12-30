@@ -5,6 +5,7 @@ import nature from "../assets/images/nature.jpg";
 import servicesCardData from "../dataStore/serviceData.js";
 import { CiSearch } from "react-icons/ci";
 import { IoCheckmarkOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 
 const AllServiceShowPage = ({serviceName}) => {
@@ -418,7 +419,7 @@ useEffect(() => {
         </div>
 
         {filteredServices.map((card, index) => (
-          <article key={index} className="csCardItem">
+          <Link to={"/innerServicePage"} key={index} state={{ card }} className="csCardItem">
             <div className="csCardItemImageShell">
               <img
                 src={card.img}
@@ -439,7 +440,7 @@ useEffect(() => {
 
              <LearnMoreButton text="Discover more" link="/" marginTop="0" /> */}
             </div>
-          </article>
+          </Link>
         ))}
       </section>
     </>
