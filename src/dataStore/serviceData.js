@@ -23,6 +23,7 @@ const servicesCardData = [
     downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
     downlaodheadingSubText: "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
     downlaodheadingImg: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf: "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
     media: [
       {
         id: 1,

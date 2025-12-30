@@ -7,7 +7,7 @@ import { useLocation } from "react-router-dom";
 export default function InnerServicePage() {
   const { state } = useLocation();
   const card = state?.card;
-  console.log(card, "sonu")
+
 
   const [selectedMedia, setSelectedMedia] = useState(card?.media?.[0]);
 
