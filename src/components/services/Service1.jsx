@@ -5,6 +5,8 @@ import nature from "../../assets/images/nature.jpg";
 import servicesCardData from "../../dataStore/serviceData.js";
 import { CiSearch } from "react-icons/ci";
 import { IoCheckmarkOutline } from "react-icons/io5";
+import InnerServicePage from "../InnerServicePage.jsx";
+import { Link, redirect } from "react-router-dom";
 
 
 const Service1 = ({serviceName}) => {
@@ -24,11 +26,6 @@ const Service1 = ({serviceName}) => {
 
 
   
-
-   
-
-
-
 // second filter
 const [selectedSecondFilter, setSelectedSecondFilter] = useState("");
 
@@ -283,6 +280,11 @@ useEffect(() => {
 
 
 
+const redirect = (card) => {
+
+  <InnerServicePage card={card} />;
+}
+
 
   return (
     <>
@@ -410,7 +412,7 @@ useEffect(() => {
         </div>
 
         {filteredServices.map((card, index) => (
-          <article key={index} className="csCardItem">
+          <Link to={"/innerServicePage"} key={index} state={{ card }} className="csCardItem" >
             <div className="csCardItemImageShell">
               <img
                 src={card.img}
@@ -428,10 +430,10 @@ useEffect(() => {
               <span className="csCardItemIconBox">PPT</span>
               <span className="csCardItemIconBox">W</span>
             </div>
-
+            
              <LearnMoreButton text="Discover more" link="/" marginTop="0" /> */}
             </div>
-          </article>
+            </Link>
         ))}
       </section>
     </>
