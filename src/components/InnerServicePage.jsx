@@ -145,22 +145,20 @@ export default function InnerServicePage() {
           </div>
         </div>
 
-        {/* RIGHT COLUMN */}
-        <div className="fs-right">
-          <header className="fs-header">
-            <h1 className="fs-why-title">
-              Why <span className="fs-why-highlight">Fire Safety</span>?
-            </h1>
-            <p className="fs-why-text">
-              Fire emergencies can occur anytime, anywhere often due to small,
-              overlooked hazards. Most fires are preventable when people
-              understand how fires start, how to stop them from spreading, and
-              what actions to take in the first few critical minutes. Our Fire
-              Safety Training helps participants recognize risks, understand
-              fire prevention principles, and respond effectively in
-              emergencies.
-            </p>
-          </header>
+      {/* RIGHT CONTENT */}
+      <div className="fs-right">
+        <header className="fs-header">
+          <h1 className="fs-why-title applyfont">
+            Why <span className="fs-why-highlight itly">Fire Safety</span>?
+          </h1>
+          <p className="fs-why-text">
+            Fire emergencies can occur anytime, anywhere often due to small, overlooked hazards.
+            Most fires are preventable when people understand how fires start, how to stop them
+            from spreading, and what actions to take in the first few critical minutes. Our Fire
+            Safety Training helps participants recognize risks, understand fire prevention
+            principles, and respond effectively in emergencies.
+          </p>
+        </header>
 
           <section className="fs-cover-section">
             <h2 className="fs-cover-title">What We Cover During Trainings:</h2>
