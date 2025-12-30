@@ -5,6 +5,8 @@ import { Play } from "lucide-react";
 import { useLocation } from "react-router-dom";
 import Footer from "./Footer";
 import LetsConnect from "./LetsConnect";
+import { LiaSwatchbookSolid } from "react-icons/lia";
+import { PiCertificate } from "react-icons/pi";
 
 export default function InnerServicePage() {
   const { state } = useLocation();
@@ -131,11 +133,11 @@ export default function InnerServicePage() {
           {/* BADGES */}
           <div className="fs-badges">
             <div className="fs-badge">
-              <span className="fs-badge-icon">📚</span>
+              <span className="fs-badge-icon"><LiaSwatchbookSolid /></span>
               <span>Training Material (PDF Format)</span>
             </div>
             <div className="fs-badge">
-              <span className="fs-badge-icon">🎓</span>
+              <span className="fs-badge-icon"><PiCertificate /></span>
               <span>Training Certificate</span>
             </div>
           </div>
