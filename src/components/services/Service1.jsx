@@ -280,10 +280,6 @@ useEffect(() => {
 
 
 
-const redirect = (card) => {
-
-  <InnerServicePage card={card} />;
-}
 
 
   return (
