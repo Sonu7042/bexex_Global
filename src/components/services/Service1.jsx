@@ -414,7 +414,7 @@ useEffect(() => {
                 src={card.img}
                 alt={"img" + index}
                 className="csCardItemImage"
-              />
+              />  
             </div>
 
             <div className="csCardItemBody">

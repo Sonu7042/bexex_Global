@@ -49,6 +49,12 @@ const servicesCardData = [
         url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
         title: "Urban Design",
       },
+      {
+        id: 5,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
     ],
   },
 
@@ -58,7 +64,50 @@ const servicesCardData = [
     value: "DMADV Project Implementation",
     mainService: "Consulting",
     img: img1,
+    Heading: "WHY BBS SAFETY?",
+    paragrapgh:"It is found that 90% of workplace accidents are triggered by ‘unsafe acts’. Behavioural safety provides a way of reducinginjuries, through the analysis of the risk behaviors in the current work environment. BBS's purpose is not to enforce safety rules, force change, etc. Its purpose is to identify safe and at-risk behaviours, identify the possibility for injury, communicating the risk & helping to identify safer solutions. Despite having introduced numerous safety systems, whichhave reduced hazards & improved safety performance, accidents could not get eliminated. Rather stressing on implementation of procedures / rules & regulations, we motivate people for behaving safely",
+    subHeading: "What We Cover During Trainings:",
+    listItems: [
+     "Understand Behavior Based Safety & its role in accident prevention and safety culture. ",
+     "To teach leaders to observe people as they work",
+     "To learn how to acknowledge safe acts, correct unsafe acts andmotivating for safe work.",
+     "To sensitize for self responsibility for safe work. ",
+     "To increase peer to peer communication to enhancesafe work habit & actions. ",
+     "To involve all in creating atotal safety culture ",
+     
+    ],
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText: "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf: "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "Six Sigma",
