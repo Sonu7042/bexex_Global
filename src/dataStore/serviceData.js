@@ -1,5 +1,4 @@
 import img1 from "../assets/images/nature.jpg";
-import qualityCardImg from "../assets/images/service_image/brochure_eGrowth.jpg";
 
 const servicesCardData = [
   {
@@ -23,7 +22,7 @@ const servicesCardData = [
     ],
     downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
     downlaodheadingSubText: "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
-    downlaodheadingImg: qualityCardImg,
+    downlaodheadingImg: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
     downloadPdf: "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
     media: [
       {
@@ -50,12 +49,6 @@ const servicesCardData = [
         url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
         title: "Urban Design",
       },
-      {
-        id: 5,
-        type: "image",
-        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
-        title: "Urban Design",
-      },
     ],
   },
 
@@ -75,7 +68,8 @@ const servicesCardData = [
      "To sensitize for self responsibility for safe work. ",
      "To increase peer to peer communication to enhancesafe work habit & actions. ",
      "To involve all in creating atotal safety culture ",
-     
+     "Basic Fire Safety Do's & Don'ts",
+     "Case Discussions and Interactive Q&A"
     ],
     downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
     downlaodheadingSubText: "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",

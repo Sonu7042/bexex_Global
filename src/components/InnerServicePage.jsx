@@ -151,7 +151,7 @@ export default function InnerServicePage() {
             </section>
 
             {/* BADGES */}
-            {/* <div className="fs-badges">
+            <div className="fs-badges">
               <div className="fs-badge">
                 <span className="fs-badge-icon">
                   <img width={"30px"} src={booksIcon} alt="icon" />
@@ -164,7 +164,7 @@ export default function InnerServicePage() {
                 </span>
                 <span>Training Certificate</span>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
