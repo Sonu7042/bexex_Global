@@ -27,7 +27,7 @@ export default function VerifyEmail() {
   return (
     <div className="auth-wrapper">
     
-    <form onSubmit={handleSubmit}>
+    <form className="loginForm" onSubmit={handleSubmit}>
       <h2>Verify Email</h2>
       <input
         placeholder="Enter OTP"

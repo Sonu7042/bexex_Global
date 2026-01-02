@@ -40,7 +40,7 @@ export default function Signup() {
   
   return (
     <div className="auth-wrapper">
-      <form onSubmit={handleSubmit}>
+      <form  className="loginForm" onSubmit={handleSubmit}>
       <h2>Signup</h2>
       <input name="name" placeholder="Name"  onChange={handleChange} />
       <input name="email" placeholder="Email"  onChange={handleChange} />

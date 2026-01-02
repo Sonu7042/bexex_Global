@@ -31,7 +31,7 @@ export default function Login() {
 
   return (
     <div className="auth-wrapper">
-    <form onSubmit={handleSubmit}>
+    <form className="loginForm" onSubmit={handleSubmit}>
       <h2>Login</h2>
       <input name="email" placeholder="Email" onChange={handleChange} />
       <input name="password" type="password" placeholder="Password" onChange={handleChange} />
