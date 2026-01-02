@@ -4,26 +4,40 @@ const servicesCardData = [
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "Six Sigma",
-    value: "DMAIC Project Implementation",
+    value: "ISO 9001:2015 REFRESHER COURSEISO",
     mainService: "Consulting",
     img: img1,
-    Heading: "Why Fire Safety?",
-    paragrapgh:"Fire emergencies can occur anytime, anywhere often due to small, overlooked hazards. Most fires are preventable when people understand how fires start, how to stop them from spreading, and what actions to take in the first few critical minutes. Our Fire Safety Training helps participants recognize risks, understand fire prevention principles, and respond effectively in emergencies.",
-    subHeading: "What We Cover During Trainings:",
+    headingParts: [
+      { text: "WHY ", highlight: false },
+      { text: "ISO 9001:2015", highlight: true },
+      { text: " REFRESHER COURSE?", highlight: false },
+    ],
+    paragrapgh:[
+      "The ISO 9001:2015 Refresher Course is designed forprofessionals who already have a working knowledge of Quality Management Systems and want to realign withcurrent ISO 9001 requirements. The training revisits coreconcepts, clarifies key clauses, and highlights practicalimplications of the standard to ensure effectiveimplementation and sustained compliance. It helpsparticipants sharpen their understanding and confidentlysupport QMS maintenance and continual improvement."],
+    subHeading: "What You'll Gain :",
     listItems: [
-     "Introduction to Fire Behavior and the Fire Triangle",
-     "Types and Classes of Fire",
-     "Common Workplace Fire Hazards and Prevention Tips",
-     "Introduction to Fire Extinguishers and Their Applications",
-     "Emergency Evacuation Procedures and Safe Assembly",
-     "Roles of Employees During a Fire Emergency",
-     "Basic Fire Safety Do's & Don'ts",
-     "Case Discussions and Interactive Q&A"
+      "Review updates and critical interpretations of ISO 9001:2015",
+      "Apply ISO 9001 requirements to real-world operational scenarios",
+      "Gain practical insights into continual improvement and performance evaluation ",
+      "Discuss case studies showcasing effective and successful QMS implementation",
+    ],
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Overview and intent of ISO 9001:2015 clauses ",
+      "Key updates, interpretations, and common gaps in implementation",
+      "Quality Management Principles and their practical application ",
+      "Process approach, risk-based thinking, and PDCA cycle ",
+      "Documentation and record control: what to retain, what to simplify ",
+      "Roles, responsibilities, and leadership involvement in QMS",
+      "Case Discussions and Interactive Q&A ",
     ],
     downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
-    downlaodheadingSubText: "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
-    downlaodheadingImg: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
-    downloadPdf: "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
     media: [
       {
         id: 1,
@@ -55,26 +69,41 @@ const servicesCardData = [
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "Six Sigma",
-    value: "DMADV Project Implementation",
+    value: "ISO 9001:2015 AWARENESS SESSION",
     mainService: "Consulting",
     img: img1,
-    Heading: "WHY BBS SAFETY?",
-    paragrapgh:"It is found that 90% of workplace accidents are triggered by ‘unsafe acts’. Behavioural safety provides a way of reducinginjuries, through the analysis of the risk behaviors in the current work environment. BBS's purpose is not to enforce safety rules, force change, etc. Its purpose is to identify safe and at-risk behaviours, identify the possibility for injury, communicating the risk & helping to identify safer solutions. Despite having introduced numerous safety systems, whichhave reduced hazards & improved safety performance, accidents could not get eliminated. Rather stressing on implementation of procedures / rules & regulations, we motivate people for behaving safely",
-    subHeading: "What We Cover During Trainings:",
+    headingParts: [
+      { text: "WHY ", highlight: false },
+      { text: "ISO 9001:2015", highlight: true },
+      { text: " AWARENESS SESSION?", highlight: false },
+    ],
+    paragrapgh:[
+      "The ISO 9001:2015 Awareness Session is designed to build a common understanding of QMS requirements across all levels of the organization. It helps employees recognize how ISO 9001 applies to their daily roles, why compliance matters, and how individual actions contribute to quality objectives and customer satisfaction. This session supports smooth QMS implementation and strengthens engagement during audits and continual improvement initiatives."],
+    subHeading: "What You'll Gain :",
     listItems: [
-     "Understand Behavior Based Safety & its role in accident prevention and safety culture. ",
-     "To teach leaders to observe people as they work",
-     "To learn how to acknowledge safe acts, correct unsafe acts andmotivating for safe work.",
-     "To sensitize for self responsibility for safe work. ",
-     "To increase peer to peer communication to enhancesafe work habit & actions. ",
-     "To involve all in creating atotal safety culture ",
-     "Basic Fire Safety Do's & Don'ts",
-     "Case Discussions and Interactive Q&A"
+      "Clear understanding of ISO 9001:2015 intent and key requirements",
+      "Awareness of employee roles and responsibilities within the QMS",
+      "Improved alignment between day-to-day activities and quality objectives",
+      "Better preparedness for internal and external audits",
+      "Enhanced ownership and participation in quality improvement ",
+    ],
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Purpose and benefits of ISO 9001:2015 ",
+      "Overview of the standard and High-Level Structure (Annex SL) ",
+      "Quality policy, objectives, and their relevance to employees ",
+      "Process approach and riskbased thinking in daily work",
+      "Roles of employees in maintaining QMS effectiveness",
+      "Audit awareness and do’s & don’ts during assessments",
+      "Case Discussions and Interactive Q&A ",
     ],
     downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
-    downlaodheadingSubText: "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
-    downlaodheadingImg: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
-    downloadPdf: "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
     media: [
       {
         id: 1,
@@ -106,23 +135,199 @@ const servicesCardData = [
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "Six Sigma",
-    value: "Green Belt Project Mentoring",
-    mainService: "Training",
+    value: "FIRE SAFETY TRAINING",
+    mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "WHY ", highlight: false },
+      { text: "FIRE SAFETY?", highlight: true },
+    ],
+    paragrapgh:[
+      "Fire incidents escalate rapidly and cause severe loss to life, assets, and business continuity, most fires result from preventable unsafe conditions and delayed response. Fire Safety Training focuses on building awareness, preparedness, and correct response behaviors so employees can prevent fires, react quickly, and minimize impact. Ratherthan only relying on equipment and procedures, this training empowers people to recognize fire risks, use firefighting systems correctly, and respond calmly during emergencies."],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Reduced fire risk through early hazard identification and prevention ",
+      "Faster, safer response during fire and evacuation scenarios ",
+      "Improved confidence in using fire extinguishers and emergency systems ",
+      "Compliance with statutory and insurance requirements ",
+      "A prepared workforce aligned with emergency response roles and responsibilities ",
+    ],
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to Fire Behavior and the Fire Triangle ",
+      "Types and Classes of Fire",
+      "Common Workplace Fire Hazards and Prevention Tips ",
+      "Introduction to Fire Extinguishers and Their Applications ",
+      "Emergency Evacuation Procedures and Safe Assembly ",
+      "Roles of Employees During a Fire Emergency ",
+      "Basic Fire Safety Do’s & Don’ts ",
+      "Case Discussions and Interactive Q&A ",
+    ],
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "Six Sigma",
-    value: "Black Belt Project Mentoring",
-    mainService: "Training",
+    value: "BEHAVIOR BASED SAFETY (BBS) TRAINING",
+    mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "WHY ", highlight: false },
+      { text: "BBS SAFETY?", highlight: true },
+    ],
+    paragrapgh:[
+      "It is found that 90% of workplace accidents are triggered by ‘unsafe acts’. Behavioural safety provides a way of reducing injuries, through the analysis of the risk behaviors in the current work environment. BBS's purpose is not to enforce safety rules, force change, etc. Its purpose is to identify safe and at-risk behaviours, identify the possibility for injury, communicating the risk & helping to identify safer solutions.",
+      "Despite having introduced numerous safety systems, which have reduced hazards & improved safety performance,accidents could not get eliminated. Rather stressing on implementation of procedures / rules & regulations, wemotivate people for behaving safely"
+  ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Reduced incidents and injuries through proactive behavior change ",
+      "Improved employee engagement in safety programs ",
+      "A sustainable, observation-driven safety culture ",
+      "Tools for real-time feedback and continuous improvement",
+      "Aligned leadership and workforce on safety expectations ",
+    ],
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to Fire Behavior and the Fire Triangle ",
+      "Types and Classes of Fire",
+      "Common Workplace Fire Hazards and Prevention Tips ",
+      "Introduction to Fire Extinguishers and Their Applications ",
+      "Emergency Evacuation Procedures and Safe Assembly ",
+      "Roles of Employees During a Fire Emergency ",
+      "Basic Fire Safety Do’s & Don’ts ",
+      "Case Discussions and Interactive Q&A ",
+    ],
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+  
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "Six Sigma",
-    value: "Statistical Process Control (SPC)",
-    mainService: "Software Solution",
+    value: "ISO 9001:2015 INTRODUCTION TO QMS",
+    mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "WHY INTRODUCTION TO", highlight: false },
+      { text: " QMS? ", highlight: true },
+    ],
+    paragrapgh:[
+      "The ISO 9001:2015 Introduction to QMS training provides a clear and practical overview of Quality Management System fundamentals for professionals and organizations beginning their ISO journey. The course explains the intent, structure, and key requirements of ISO 9001, helping participants understand how a process-based approach improves quality, efficiency, and customer satisfaction. It sets a strong foundation for effective implementation and future certification."
+  ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Understand the basic principles and structure of ISO 9001:2015",
+      "Identify key ISO 9001 requirements and their role in continual improvement ",
+      "Learn essential documentation and record-keeping practices for compliance ",
+      " Gain clarity on the steps to initiate ISO 9001 certification for an organization",
+    ],
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Overview of Quality Management Systems and ISO philosophy ",
+      "ISO 9001:2015 structure (High-Level Structure – Annex SL) ",
+      "Quality management principles and process approach ",
+      "Documented information: policies, procedures, and records ",
+      "Basic roadmap for ISO 9001 implementation and certification",
+      "Case Discussions and Interactive Q&A ",
+    ],
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
 
   {
