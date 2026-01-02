@@ -10,7 +10,8 @@ import { PiCertificate } from "react-icons/pi";
 import { FiDownload } from "react-icons/fi";
 import { HeadingComponent } from "./Buttons";
 import booksIcon from "../assets/images/service_image/innerServices_booksIcons/books-svgrepo-com.svg";
-import certificateicn from "../assets/images/service_image/innerServices_booksIcons/certificate-contract-svgrepo-com.svg"
+import certificateicn from "../assets/images/service_image/innerServices_booksIcons/certificate-contract-svgrepo-com.svg";
+import freeLearningicon from "../assets/images/service_image/innerServices_booksIcons/free-learning.png";
 
 export default function InnerServicePage() {
   const { state } = useLocation();
@@ -25,11 +26,7 @@ export default function InnerServicePage() {
     <>
       <section className="px-4 md:px-16 lg:px-12 pt-[2.875rem]">
         <div className="heading-portion">
-          <HeadingComponent
-            text="Service"
-            marginTop="0"
-            paddingBottom="0"
-          />
+          <HeadingComponent text="Service" marginTop="0" paddingBottom="0" />
         </div>
         <div className="fs-page">
           {/* LEFT COLUMN */}
@@ -131,20 +128,36 @@ export default function InnerServicePage() {
           <div className="fs-right">
             <header className="fs-header">
               <h1 className="fs-why-title applyfont">
-                {card.Heading.split(" ")[0]}{" "}
-                <span className="fs-why-highlight itly">
-                  {card.Heading.split(" ").slice(1).join(" ")}
-                </span>
+                {card.headingParts.map((part, index) => (
+                  <span key={index} className={part.highlight ? "itly" : ""}>
+                    {part.text}
+                  </span>
+                ))}
               </h1>
 
-              <p className="fs-why-text">{card.paragrapgh}</p>
+              <div className="fs-why-text">
+                {card.paragrapgh.map((text, index) => (
+                  <p key={index}>{text}</p>
+                ))}
+              </div>
             </header>
 
             {/* COVER LIST */}
             <section className="fs-cover-section">
               <h2 className="fs-cover-title">{card.subHeading}</h2>
-              <ul className="fs-cover-list">
+              <ul className="fs-cover-list-ticked">
                 {card.listItems.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </section>
+
+            {/* COVER SECOND LIST */}
+
+            <section className="fs-cover-section">
+              <h2 className="fs-cover-title">{card.secondSubHeading}</h2>
+              <ul className="fs-cover-list">
+                {card.secondListItems.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
@@ -163,6 +176,12 @@ export default function InnerServicePage() {
                   <img width={"30px"} src={certificateicn} alt="icon" />
                 </span>
                 <span>Training Certificate</span>
+              </div>
+              <div className="fs-badge">
+                <span className="fs-badge-icon">
+                  <img width={"40px"} src={freeLearningicon} alt="icon" />
+                </span>
+                <span>Free Learning Resources</span>
               </div>
             </div>
           </div>
