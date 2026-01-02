@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { signup } from "../api/authApi";
-import {useNavigate} from 'react-router-dom'
+import {useLocation, useNavigate} from 'react-router-dom'
 import './auth.css'
 
 
@@ -9,6 +9,10 @@ export default function Signup() {
  const [form, setForm]= useState({name:"", email:"", password:""})
 
  const navigate= useNavigate()
+
+  const { state } = useLocation();
+  const card = state?.card;
+  console.log(card, "signup")
 
  const handleChange=(e)=>{
     setForm({...form, [e.target.name]: e.target.value})
@@ -20,7 +24,12 @@ export default function Signup() {
     try{
         await signup(form)
         alert("Signup successful! Check your email for OTP.")
-        navigate('/verify-email', {state:{email: form.email}})
+        navigate('/verify-email',{
+          state:{
+            email: form.email,
+            card: card
+          }
+         })
 
     }catch(err){
        alert(err.response.data.message || "Signup failed")

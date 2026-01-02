@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { login } from "../api/authApi";
-import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import './auth.css'
 
 export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
-  const navigate = useNavigate();
 
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
+
+    const { state } = useLocation();
+    const card = state?.card;
+    console.log(card, "sonu")
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -16,7 +19,10 @@ export default function Login() {
       const res = await login(form);
       localStorage.setItem("token", res.data.token);
       alert("Login successful");
+
+      if(card?.downloadPdf) {
       window.open(card.downloadPdf, "_blank");
+    }
       
     } catch (err) {
       alert(err.response?.data?.message || "Login failed");

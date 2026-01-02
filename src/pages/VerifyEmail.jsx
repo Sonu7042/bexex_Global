@@ -7,16 +7,18 @@ import './auth.css'
 export default function VerifyEmail() {
   const [code, setCode] = useState("");
   const navigate = useNavigate();
-  const location = useLocation();
+  const {state} = useLocation();
 
-  const email = location.state?.email;
+  const email = state?.email;
+ const card = state?.card;
+ console.log(card, "verifyEmail")
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await verifyEmail({ email, code });
       alert("Email verified successfully");
-      navigate("/login");
+      navigate("/login",  {state: {card}})
     } catch (err) {
       alert(err.response?.data?.message || "Verification failed");
     }

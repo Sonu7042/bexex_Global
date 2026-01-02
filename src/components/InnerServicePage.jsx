@@ -17,6 +17,7 @@ import freeLearningicon from "../assets/images/service_image/innerServices_books
 export default function InnerServicePage() {
   const { state } = useLocation();
   const card = state?.card;
+  console.log(card, "innerpage")
 
 
   const [selectedMedia, setSelectedMedia] = useState(card?.media?.[0]);
@@ -29,7 +30,7 @@ export default function InnerServicePage() {
   const downloadPdfWithAuth = () => {
     const token = localStorage.getItem("token");
     if(!token){
-      navigate('/signup');
+      navigate('/signup', {state: {card}});
       return;
     }
 
