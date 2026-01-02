@@ -16,6 +16,7 @@
     "@tabler/icons-react": "^3.36.0",
     "@tailwindcss/vite": "^4.1.17",
     "aos": "^2.3.4",
+    "axios": "^1.13.2",
     "clsx": "^2.1.1",
     "git-filter-repo": "^0.0.30",
     "gsap": "^3.14.1",

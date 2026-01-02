@@ -62,6 +62,9 @@ import ScrollToTop  from './components/ScrollToTop'
 
 import AllServiceShowPage from "./components/AllServiceShowPage";
 import InnerServicePage from "./components/InnerServicePage";
+import Signup from "./pages/Signup";
+import VerifyEmail from "./pages/VerifyEmail";
+import Login from "./pages/Login";
 
 
 const App = () => {
@@ -160,6 +163,11 @@ const App = () => {
 
 
         <Route path="/innerServicePage" element={<InnerServicePage/>}/>
+
+
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/verify-email" element={<VerifyEmail />} />
+        <Route path="/login" element={<Login />} />
 
 
 

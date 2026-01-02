@@ -1,0 +1,46 @@
+import { useState } from "react";
+import { signup } from "../api/authApi";
+import {useNavigate} from 'react-router-dom'
+import './auth.css'
+
+
+export default function Signup() {
+
+ const [form, setForm]= useState({name:"", email:"", password:""})
+
+ const navigate= useNavigate()
+
+ const handleChange=(e)=>{
+    setForm({...form, [e.target.name]: e.target.value})
+
+ }
+
+ const handleSubmit= async (e)=>{
+    e.preventDefault();
+    try{
+        await signup(form)
+        alert("Signup successful! Check your email for OTP.")
+        navigate('/verify-email', {state:{email: form.email}})
+
+    }catch(err){
+       alert(err.response.data.message || "Signup failed")
+    }
+
+ }
+ 
+  
+  return (
+    <div className="auth-wrapper">
+      <form onSubmit={handleSubmit}>
+      <h2>Signup</h2>
+      <input name="name" placeholder="Name"  onChange={handleChange} />
+      <input name="email" placeholder="Email"  onChange={handleChange} />
+      <input name="password" type="password" placeholder="Password" onChange={handleChange} />
+      <button type="submit">Signup</button>
+    </form>
+
+    </div>
+
+   
+  );
+}

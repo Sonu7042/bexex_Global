@@ -2,7 +2,7 @@
 import "../Css/innerServicePage.css";
 import React, { useState } from "react";
 import { Play } from "lucide-react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 import LetsConnect from "./LetsConnect";
 import { LiaSwatchbookSolid } from "react-icons/lia";
@@ -13,14 +13,28 @@ import booksIcon from "../assets/images/service_image/innerServices_booksIcons/b
 import certificateicn from "../assets/images/service_image/innerServices_booksIcons/certificate-contract-svgrepo-com.svg";
 import freeLearningicon from "../assets/images/service_image/innerServices_booksIcons/free-learning.png";
 
+
 export default function InnerServicePage() {
   const { state } = useLocation();
   const card = state?.card;
-  console.log(card, "card");
+
 
   const [selectedMedia, setSelectedMedia] = useState(card?.media?.[0]);
+  const navigate = useNavigate();
 
   if (!card) return <p>Data not found</p>;
+
+
+
+  const downloadPdfWithAuth = () => {
+    const token = localStorage.getItem("token");
+    if(!token){
+      navigate('/signup');
+      return;
+    }
+
+    window.open(card.downloadPdf, "_blank")
+  }
 
   return (
     <>
@@ -100,7 +114,7 @@ export default function InnerServicePage() {
 
                 <div
                   className="download-button"
-                  onClick={() => window.open(card.downloadPdf, "_blank")}
+                  onClick={downloadPdfWithAuth}
                   role="button"
                   tabIndex={0}
                   onKeyDown={(e) =>
