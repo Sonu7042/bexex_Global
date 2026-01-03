@@ -58,9 +58,6 @@ export default function Signup() {
         {loading ? "Signing up..." : "Signup"}
       </button>
     </form>
-
-    </div>
-
-   
+    </div>   
   );
 }
