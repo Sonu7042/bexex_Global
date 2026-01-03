@@ -22,7 +22,8 @@ export default function VerifyEmail() {
     setLoading(true);
 
     try {
-      await verifyEmail({ email, code });
+       const res = await verifyEmail({ email, code });
+      localStorage.setItem("token", res.data.token);
       alert("Email verified successfully");
       navigate("/innerServicePage",{
         replace: true,
