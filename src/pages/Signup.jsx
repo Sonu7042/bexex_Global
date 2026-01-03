@@ -47,9 +47,6 @@ export default function Signup() {
       <input name="password" type="password" placeholder="Password" onChange={handleChange} />
       <button type="submit">Signup</button>
     </form>
-
-    </div>
-
-   
+    </div>   
   );
 }
