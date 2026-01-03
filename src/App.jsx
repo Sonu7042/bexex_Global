@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-import {Routes, Route } from "react-router-dom";
+import {Routes, Route, useLocation } from "react-router-dom";
 import { store } from "./redux/store";
 import { Provider } from "react-redux";
 
@@ -69,6 +69,11 @@ import Login from "./pages/Login";
 
 const App = () => {
 
+
+const location = useLocation();
+const hideHeaderRoutes = ["/login", "/signup", "/verify-email"];
+
+const shouldHideHeader = hideHeaderRoutes.includes(location.pathname);
   /* ------------------------------
      INIT AOS
   ------------------------------ */
@@ -112,7 +117,7 @@ const App = () => {
     <Provider store={store}>
 
        <ScrollToTop />
-      <Header />
+       {!shouldHideHeader && <Header />}
   
       <Routes>
         <Route path="/" element={<HeroSectionLayout />} />
