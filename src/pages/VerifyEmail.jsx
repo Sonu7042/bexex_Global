@@ -24,7 +24,16 @@ export default function VerifyEmail() {
     try {
       await verifyEmail({ email, code });
       alert("Email verified successfully");
-      navigate("/login",  {state: {card}})
+      navigate("/innerServicePage",{
+        replace: true,
+        state: {card}
+      } 
+    );
+
+      if(card?.downloadPdf) {
+      window.open(card.downloadPdf, "_blank");
+    }
+      // navigate("/login",  {state: {card}})
     } catch (err) {
       alert(err.response?.data?.message || "Verification failed");
     }

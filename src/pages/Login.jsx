@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { login } from "../api/authApi";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate} from "react-router-dom";
 import './auth.css'
 
 export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
  const [loading, setLoading]= useState(false)
+
+  const navigate = useNavigate();
 
 
   const handleChange = (e) =>
@@ -25,6 +27,12 @@ export default function Login() {
       const res = await login(form);
       localStorage.setItem("token", res.data.token);
       alert("Login successful");
+      navigate("/innerServicePage", {
+        replace: true,
+        state: {card}
+      }  
+    );
+
 
       if(card?.downloadPdf) {
       window.open(card.downloadPdf, "_blank");
@@ -44,6 +52,7 @@ export default function Login() {
       <button type="submit" disabled={loading}>
         {loading ? "Logging in..." : "Login"}
       </button>
+      <p>Don't have an account? <Link to="/signup" state={{card}}>Signup</Link></p>
     </form>
     </div>
   );

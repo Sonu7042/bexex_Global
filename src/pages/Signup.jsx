@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { signup } from "../api/authApi";
-import {useLocation, useNavigate} from 'react-router-dom'
+import {Link, useLocation, useNavigate} from 'react-router-dom'
 import './auth.css'
 
 
@@ -31,11 +31,13 @@ export default function Signup() {
 
         alert("Signup successful! Check your email for OTP.")
         navigate('/verify-email',{
+          replace: true,
           state:{
             email: form.email,
             card: card
           }
-         })
+         },
+        )
 
     }catch(err){
        alert(err.response.data.message || "Signup failed")
@@ -57,7 +59,9 @@ export default function Signup() {
       <button type="submit" disabled={loading}>
         {loading ? "Signing up..." : "Signup"}
       </button>
+    <p>Already Account <Link to="/login" state={{card}} replace  >Login</Link></p>
     </form>
+
     </div>   
   );
 }
