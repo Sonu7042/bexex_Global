@@ -7,12 +7,13 @@ import './auth.css'
 export default function Signup() {
 
  const [form, setForm]= useState({name:"", email:"", password:""})
+ const [loading, setLoading]= useState(false)
 
  const navigate= useNavigate()
 
   const { state } = useLocation();
   const card = state?.card;
-  console.log(card, "signup")
+  // console.log(card, "signup")
 
  const handleChange=(e)=>{
     setForm({...form, [e.target.name]: e.target.value})
@@ -21,8 +22,13 @@ export default function Signup() {
 
  const handleSubmit= async (e)=>{
     e.preventDefault();
+    if(loading) return;
+
+    setLoading(true);
+
     try{
         await signup(form)
+
         alert("Signup successful! Check your email for OTP.")
         navigate('/verify-email',{
           state:{
@@ -33,6 +39,9 @@ export default function Signup() {
 
     }catch(err){
        alert(err.response.data.message || "Signup failed")
+    }
+    finally{
+        setLoading(false);
     }
 
  }
@@ -45,7 +54,9 @@ export default function Signup() {
       <input name="name" placeholder="Name"  onChange={handleChange} />
       <input name="email" placeholder="Email"  onChange={handleChange} />
       <input name="password" type="password" placeholder="Password" onChange={handleChange} />
-      <button type="submit">Signup</button>
+      <button type="submit" disabled={loading}>
+        {loading ? "Signing up..." : "Signup"}
+      </button>
     </form>
 
     </div>

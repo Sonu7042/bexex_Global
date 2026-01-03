@@ -6,15 +6,21 @@ import './auth.css'
 
 export default function VerifyEmail() {
   const [code, setCode] = useState("");
+ const [loading, setLoading]= useState(false)
+
   const navigate = useNavigate();
   const {state} = useLocation();
 
   const email = state?.email;
  const card = state?.card;
- console.log(card, "verifyEmail")
+//  console.log(card, "verifyEmail")
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (loading) return;
+    setLoading(true);
+
     try {
       await verifyEmail({ email, code });
       alert("Email verified successfully");
@@ -34,7 +40,9 @@ export default function VerifyEmail() {
         value={code}
         onChange={(e) => setCode(e.target.value)}
       />
-      <button type="submit">Verify</button>
+      <button type="submit" disabled={loading}>
+        {loading ? "Verifying..." : "Verify"}
+      </button>
     </form>
     </div>
   );

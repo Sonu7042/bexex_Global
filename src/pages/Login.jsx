@@ -5,16 +5,22 @@ import './auth.css'
 
 export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
+ const [loading, setLoading]= useState(false)
+
 
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 
     const { state } = useLocation();
     const card = state?.card;
-    console.log(card, "sonu")
+    // console.log(card, "sonu")
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if(loading) return;
+    setLoading(true);
+
+
     try {
       const res = await login(form);
       localStorage.setItem("token", res.data.token);
@@ -35,7 +41,9 @@ export default function Login() {
       <h2>Login</h2>
       <input name="email" placeholder="Email" onChange={handleChange} />
       <input name="password" type="password" placeholder="Password" onChange={handleChange} />
-      <button type="submit">Login</button>
+      <button type="submit" disabled={loading}>
+        {loading ? "Logging in..." : "Login"}
+      </button>
     </form>
     </div>
   );
