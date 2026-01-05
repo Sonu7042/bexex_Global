@@ -43,9 +43,11 @@ export default function Signup() {
     setLoading(true);
 
     try {
-      await signup(form);
+       const res = await signup(form);
+       setTermsError(res.data.message);
+       console.log(res.data.message, 'sonu')
 
-      alert("Signup successful! Check your email for OTP.");
+      // alert("Signup successful! Check your email for OTP.");
       navigate(
         "/verify-email",
         {
@@ -63,6 +65,8 @@ export default function Signup() {
     }
   };
 
+
+  
   return (
     <div className="auth-wrapper full-layout">
       {/* Left illustration section */}
@@ -89,16 +93,19 @@ export default function Signup() {
         <form className="loginForm" onSubmit={handleSubmit}>
           <input
             name="name"
+            required
             placeholder="Full Name"
             onChange={handleChange}
           />
           <input
             name="email"
+            required
             placeholder="Email"
             onChange={handleChange}
           />
           <input
             name="password"
+            required
             type="password"
             placeholder="Enter Your Password"
             onChange={handleChange}
