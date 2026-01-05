@@ -56,17 +56,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   /* background-color: #E8E8E8; */
   height: 100%;
   border-radius: 1rem;
 }
-
+.auth-header{
+  width: 450px;
+}
 /* Header (title + "already have account") */
 .auth-header h1 {
   font-size: 2.875rem;
   margin-bottom: 0.25rem;
   color: #F1F1F1;
+  line-height: 110%;
 }
 
 .auth-header p {
@@ -83,7 +86,7 @@
 .loginForm {
   background: transparent;
   width: 100%;
-  max-width: 430px;
+  max-width: 450px;
 }
 
 /* ===== INPUTS ===== */
@@ -142,7 +145,7 @@
 }
 
 /* ===== BUTTON ===== */
-.loginForm button {
+.loginForm .loginForm-submit {
   width: 100%;
   padding: 12px;
   border: none;
@@ -154,11 +157,11 @@
   transition: background 0.3s ease;
 }
 
-.loginForm button:hover:enabled {
+.loginForm-submit:hover:enabled {
   background: #1d4ed8;
 }
 
-.loginForm button:disabled {
+.loginForm-submit:disabled {
   cursor: not-allowed;
   opacity: 0.7;
 }
@@ -182,17 +185,25 @@
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  background: #fff;
+  background: transparent;
   cursor: pointer;
   font-size: 14px;
+  color: #F1F1F1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
-
+.social-btn:hover {
+  background: #181818;
+}
 .google-btn {
   /* add icon via background if you want */
 }
 
-.facebook-btn {
-  /* add icon via background if you want */
+.social-icon {
+  color: #1877F2;
+  font-size: 1.2rem;
 }
 
 /* ===== LINKS (existing) ===== */
@@ -276,5 +287,11 @@
 
   .loginForm button {
     font-size: 15px;
+  }
+  .auth-header{
+    width: 100%;
+  }
+  .auth-header h1{
+    line-height: 110%;
   }
 }

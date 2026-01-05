@@ -81,7 +81,10 @@ export default function Login() {
              {/* Error paragraph right after T&C line */}
           <p className="error-text">{error}</p>
 
-          <button type="submit" disabled={loading}>
+             {/* Error paragraph right after T&C line */}
+          
+
+          <button className="loginForm-submit" type="submit" disabled={loading}>
             {loading ? "Logging in..." : "Login"}
           </button>
         </form>

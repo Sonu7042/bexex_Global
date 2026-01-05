@@ -76,7 +76,7 @@ export default function VerifyEmail() {
             {/* Error paragraph right after T&C line */}
           <p className="error-text">{error}</p>
 
-          <button type="submit" disabled={loading}>
+          <button className="loginForm-submit" type="submit" disabled={loading}>
             {loading ? "Verifying..." : "Verify"}
           </button>
         </form>

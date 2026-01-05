@@ -3,6 +3,8 @@ import { signup } from "../api/authApi";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./auth.css";
 import bexexLogoLogin from "../assets/images/Bexexlogo.png";
+import { FcGoogle } from "react-icons/fc";
+import { SiFacebook } from "react-icons/si";
 
 
 export default function Signup() {
@@ -129,14 +131,14 @@ export default function Signup() {
                 checked={agree}
                 onChange={handleTermsChange}
               />
-              I agree to the <span className="terms-link">Term & Conditions</span>
+              I agree to the &nbsp;<span className="terms-link">Term & Conditions</span>
             </label>
           </div>
 
           {/* Error paragraph right after T&C line */}
           <p className="error-text">{error}</p>
 
-          <button type="submit" disabled={loading || !agree}>
+          <button className="loginForm-submit" type="submit" disabled={loading || !agree}>
             {loading ? "Signing up..." : "Create account"}
           </button>
 
@@ -144,9 +146,11 @@ export default function Signup() {
 
           <div className="social-row">
             <button type="button" className="social-btn google-btn">
+              <span className="social-icon"><FcGoogle /></span>
               Google
             </button>
             <button type="button" className="social-btn facebook-btn">
+              <span className="social-icon"><SiFacebook /></span>
               Facebook
             </button>
           </div>
