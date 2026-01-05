@@ -330,39 +330,46 @@ const servicesCardData = [
     ],
   },
 
-
-
-
-
-
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
-    value: "5-S Implementation",
+    value: "ISO 9001:2015 Internal Auditors Training Course",
     mainService: "Consulting",
     img: img1,
      headingParts: [
-      { text: "ISO 9001:2015 Internal Auditors Training Course", highlight: false },
-      { text: "", highlight: true },
+      { text: "ISO ", highlight: false },
+      { text: "9001:2015 ", highlight: true },
+      { text: "Internal Auditors Training Course", highlight: false },
     ],
     paragrapgh:[
-      "The ISO 9001:2015 Internal Auditors Training Course is designed to develop competent internal auditors who can effectively evaluate, maintain, and improve an organization’s Quality Management System (QMS)."
+      "The ISO 9001:2015 Internal Auditors Training Course is designed to develop competent internal auditors who can effectively evaluate, maintain, and improve an organization’s Quality Management System (QMS).",
+      "Internal audits are a critical requirement of ISO 9001:2015 and play a key role in ensuring compliance, effectiveness, and continual improvement. This training helps participants understand not just how to audit, but why auditing is essential for identifying risks, nonconformities, and improvement opportunities. The course emphasizes a process-based and risk-based auditing approach, aligned with ISO 19011 guidelines.",
+      "It equips participants with the confidence and skills to conduct value-added internal audits, rather than checklist-based or compliance-only audits.",
     ],
     subHeading: "What You'll Gain :",
     listItems: [
-      "Understand the basic principles and  structure of ISO 9001:2015",
-      "Identify key ISO 9001 requirements and their role in continual improvement ",
-      "Learn essential documentation and record-keeping practices for compliance ",
-      "Gain clarity on the steps to initiate ISO 9001 certification for an organization",
+      "Understand ISO 9001:2015 requirements from an internal auditor’s viewpoint",
+      "Plan, conduct, and report effective internal audits",
+      "Apply process approach, PDCA, and risk-based thinking during audits",
+      "Identify nonconformities, risks, and improvement opportunities",
+      "Communicate audit findings confidently and professionally",
+      "Support continual improvement and management review inputs",
+      "Add value to the organization beyond basic compliance",
     ],
     secondSubHeading: "What We Cover During Trainings :",
     secondListItems: [
-      "Overview of Quality Management Systems and ISO philosophy ",
-      "ISO 9001:2015 structure (High-Level Structure – Annex SL) ",
-      "Quality management principles and process approach ",
-      "Documented information: policies, procedures, and records ",
-      "Basic roadmap for ISO 9001 implementation and certification",
-      "Case Discussions and Interactive Q&A ",
+      "Overview and intent of ISO 9001:2015 clauses from an auditor’s perspective",
+      "Internal audit requirements as per ISO 9001:2015",
+      "Audit principles and guidelines based on ISO 19011",
+      "Audit planning and preparation",
+      "Process-based and risk-based audit approach",
+      "Developing audit checklists and audit trails",
+      "Conducting opening and closing meetings",
+      "Interview techniques and evidence collection",
+      "Identifying, writing, and grading nonconformities",
+      "Root cause understanding and corrective action follow-up",
+      "Audit reporting and monitoring audit effectiveness",
+      "Case studies, role plays, and mock audits",
     ],
     downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
     downlaodheadingSubText:
@@ -398,6 +405,7 @@ const servicesCardData = [
       },
     ],
   },
+  
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
