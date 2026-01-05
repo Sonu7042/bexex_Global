@@ -11,22 +11,32 @@
 
 /* Two-column layout like screenshot */
 .full-layout {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
-  background: #e6e6e6;
-  border-radius: 16px;
+  background: #252525;
+  /* border-radius: 16px; */
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: 1.2fr 1fr;
   overflow: hidden;
+  gap: 1rem;
 }
 
 /* Left illustration area */
 .auth-illustration {
-  background: #f7dca4;
+  background: url(../assets/images/service_image/login-image.png) no-repeat center center;
+  background-size: cover;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
+  align-items: flex-start;
+  justify-content: start;
+  /* padding: 2rem; */
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1rem 0rem 0rem 1rem;
+}
+.logoLogin{
+  width: 12%;
 }
 
 .illustration-box {
@@ -42,22 +52,26 @@
 
 /* Right side content wrapper */
 .auth-content {
-  padding: 3rem 3rem 3rem 2rem;
+  padding: 3rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* align-items: center; */
+  /* background-color: #E8E8E8; */
+  height: 100%;
+  border-radius: 1rem;
 }
 
 /* Header (title + "already have account") */
 .auth-header h1 {
-  font-size: 2rem;
+  font-size: 2.875rem;
   margin-bottom: 0.25rem;
-  color: #333;
+  color: #F1F1F1;
 }
 
 .auth-header p {
   margin-bottom: 1.5rem;
-  color: #555;
+  color: #F1F1F1;
 }
 
 .auth-header a {
@@ -81,6 +95,10 @@
   border: 1px solid #ccc;
   font-size: 15px;
   transition: all 0.3s ease;
+  color: #F1F1F1;
+}
+.loginForm input::placeholder {
+  color: #F1F1F1;
 }
 
 .loginForm input:focus {
@@ -93,12 +111,23 @@
 .terms-row {
   margin-bottom: 0.25rem;
   font-size: 14px;
-  color: #555;
+  color: #F1F1F1;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
 }
 
 .terms-row input[type="checkbox"] {
   margin-right: 6px;
+  width: fit-content;
+  margin-top: .30rem;
 }
+.imputTick{
+  display: flex;
+  /* align-items: center; */
+  /* margin-bottom: 0.5rem;   */
+}
+
 
 .terms-link {
   color: #667eea;
@@ -139,7 +168,7 @@
   text-align: center;
   margin: 1.25rem 0 0.75rem;
   font-size: 14px;
-  color: #777;
+  color: #F1F1F1;
 }
 
 /* Social buttons row */
@@ -200,6 +229,13 @@
 .dashboard button {
   margin-top: 1.5rem;
   width: 200px;
+}
+
+.logImage{
+  width: 100%;
+  height: auto;
+  image-resolution: 360dpi;
+
 }
 
 /* ===== ANIMATION (kept) ===== */

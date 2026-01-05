@@ -2,6 +2,8 @@ import { useState } from "react";
 import { signup } from "../api/authApi";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./auth.css";
+import bexexLogoLogin from "../assets/images/Bexexlogo.png";
+
 
 export default function Signup() {
   const [form, setForm] = useState({ name: "", email: "", password: "" });
@@ -67,11 +69,7 @@ export default function Signup() {
     <div className="auth-wrapper full-layout">
       {/* Left illustration section */}
       <div className="auth-illustration">
-        {/* You can replace this with an <img> if you have the artwork */}
-        <div className="illustration-box">
-          <h3>Construction in progress</h3>
-          <p>Manage your projects and accounts with Bexex Global Pvt. Ltd.</p>
-        </div>
+        <img className="logoLogin" src={bexexLogoLogin} alt="img" />
       </div>
 
       {/* Right form section */}
@@ -106,14 +104,13 @@ export default function Signup() {
 
           {/* Terms & conditions + error P */}
           <div className="terms-row">
-            <label>
+            <label className="imputTick">
               <input
                 type="checkbox"
                 checked={agree}
                 onChange={handleTermsChange}
-              />{" "}
-              I agree to the{" "}
-              <span className="terms-link">Term &amp; Conditions</span>
+              />
+              I agree to the <span className="terms-link">Term & Conditions</span>
             </label>
           </div>
 

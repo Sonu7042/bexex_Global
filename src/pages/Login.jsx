@@ -2,6 +2,7 @@ import { useState } from "react";
 import { login } from "../api/authApi";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./auth.css";
+import bexexLogoLogin from "../assets/images/Bexexlogo.png";
 
 export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
@@ -40,10 +41,7 @@ export default function Login() {
     <div className="auth-wrapper full-layout">
       {/* Left illustration (same as signup) */}
       <div className="auth-illustration">
-        <div className="illustration-box">
-          <h3>Welcome back</h3>
-          <p>Access your projects and accounts securely.</p>
-        </div>
+        <img className="logoLogin" src={bexexLogoLogin} alt="img" />
       </div>
 
       {/* Right content */}

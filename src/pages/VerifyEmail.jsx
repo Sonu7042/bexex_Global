@@ -2,6 +2,8 @@ import { useState } from "react";
 import { verifyEmail } from "../api/authApi";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./auth.css";
+import bexexLogoLogin from "../assets/images/Bexexlogo.png";
+
 
 export default function VerifyEmail() {
   const [code, setCode] = useState("");
@@ -40,19 +42,13 @@ export default function VerifyEmail() {
     <div className="auth-wrapper full-layout">
       {/* Left illustration side */}
       <div className="auth-illustration">
-        <div className="illustration-box">
-          <h3>Verify your email</h3>
-          <p>Enter the OTP sent to your email to continue.</p>
-        </div>
+        <img className="logoLogin" src={bexexLogoLogin} alt="img" />
       </div>
 
       {/* Right content side */}
       <div className="auth-content">
         <div className="auth-header">
-          <h1>Verify Email</h1>
-          <p>Please enter the one-time password you received.</p>
         </div>
-
         <form className="loginForm" onSubmit={handleSubmit}>
           <input
             placeholder="Enter OTP"
