@@ -157,16 +157,7 @@ export default function InnerServicePage() {
               </div>
             </header>
 
-            {/* COVER LIST */}
-            <section className="fs-cover-section">
-              <h2 className="fs-cover-title">{card.subHeading}</h2>
-              <ul className="fs-cover-list-ticked">
-                {card.listItems.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
-            </section>
-
+           
             {/* COVER SECOND LIST */}
 
             <section className="fs-cover-section">
@@ -177,6 +168,18 @@ export default function InnerServicePage() {
                 ))}
               </ul>
             </section>
+
+
+             {/* COVER LIST */}
+            <section className="fs-cover-section">
+              <h2 className="fs-cover-title">{card.subHeading}</h2>
+              <ul className="fs-cover-list-ticked">
+                {card.listItems.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </section>
+
 
             {/* BADGES */}
             <div className="fs-badges">

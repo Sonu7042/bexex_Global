@@ -353,7 +353,7 @@ const servicesCardData = [
       "Understand the basic principles and  structure of ISO 9001:2015",
       "Identify key ISO 9001 requirements and their role in continual improvement ",
       "Learn essential documentation and record-keeping practices for compliance ",
-      " Gain clarity on the steps to initiate ISO 9001 certification for an organization",
+      "Gain clarity on the steps to initiate ISO 9001 certification for an organization",
     ],
     secondSubHeading: "What We Cover During Trainings :",
     secondListItems: [
