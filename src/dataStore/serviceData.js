@@ -330,11 +330,6 @@ const servicesCardData = [
     ],
   },
 
-
-
-
-
-
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
@@ -375,7 +370,6 @@ const servicesCardData = [
       "Root cause understanding and corrective action follow-up",
       "Audit reporting and monitoring audit effectiveness",
       "Case studies, role plays, and mock audits",
-      "Interactive discussions and Q&A sessions",
     ],
     downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
     downlaodheadingSubText:
@@ -411,6 +405,7 @@ const servicesCardData = [
       },
     ],
   },
+  
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
