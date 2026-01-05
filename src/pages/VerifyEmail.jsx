@@ -8,6 +8,8 @@ import bexexLogoLogin from "../assets/images/Bexexlogo.png";
 export default function VerifyEmail() {
   const [code, setCode] = useState("");
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
 
   const navigate = useNavigate();
   const { state } = useLocation();
@@ -15,16 +17,28 @@ export default function VerifyEmail() {
   const email = state?.email;
   const card = state?.card;
 
+
+
+  const handleChange = (e) => {
+    setCode(e.target.value);
+    setError("");
+  };
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     if (loading) return;
+    setError("");
     setLoading(true);
 
     try {
       const res = await verifyEmail({ email, code });
       localStorage.setItem("token", res.data.token);
-      alert("Email verified successfully");
+      if(res.data.success == false){
+        setError(res.data?.message || "Verification failed");
+        return; 
+      }
+
       navigate("/innerServicePage", {
         replace: true,
         state: { card },
@@ -34,7 +48,10 @@ export default function VerifyEmail() {
         window.open(card.downloadPdf, "_blank");
       }
     } catch (err) {
-      alert(err.response?.data?.message || "Verification failed");
+      setError(err.response?.data?.message || "Server error. Try again.");
+    }
+    finally {
+      setLoading(false);
     }
   };
 
@@ -53,8 +70,12 @@ export default function VerifyEmail() {
           <input
             placeholder="Enter OTP"
             value={code}
-            onChange={(e) => setCode(e.target.value)}
+            onChange={handleChange}
           />
+
+            {/* Error paragraph right after T&C line */}
+          <p className="error-text">{error}</p>
+
           <button className="loginForm-submit" type="submit" disabled={loading}>
             {loading ? "Verifying..." : "Verify"}
           </button>

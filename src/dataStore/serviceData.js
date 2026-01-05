@@ -330,12 +330,86 @@ const servicesCardData = [
     ],
   },
 
+
+
+
+
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
-    value: "5-S Implementation",
+    value: "ISO 9001:2015 Internal Auditors Training Course",
     mainService: "Consulting",
     img: img1,
+     headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "9001:2015 ", highlight: true },
+      { text: "Internal Auditors Training Course", highlight: false },
+    ],
+    paragrapgh:[
+      "The ISO 9001:2015 Internal Auditors Training Course is designed to develop competent internal auditors who can effectively evaluate, maintain, and improve an organization’s Quality Management System (QMS).",
+      "Internal audits are a critical requirement of ISO 9001:2015 and play a key role in ensuring compliance, effectiveness, and continual improvement. This training helps participants understand not just how to audit, but why auditing is essential for identifying risks, nonconformities, and improvement opportunities. The course emphasizes a process-based and risk-based auditing approach, aligned with ISO 19011 guidelines.",
+      "It equips participants with the confidence and skills to conduct value-added internal audits, rather than checklist-based or compliance-only audits.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Understand ISO 9001:2015 requirements from an internal auditor’s viewpoint",
+      "Plan, conduct, and report effective internal audits",
+      "Apply process approach, PDCA, and risk-based thinking during audits",
+      "Identify nonconformities, risks, and improvement opportunities",
+      "Communicate audit findings confidently and professionally",
+      "Support continual improvement and management review inputs",
+      "Add value to the organization beyond basic compliance",
+    ],
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Overview and intent of ISO 9001:2015 clauses from an auditor’s perspective",
+      "Internal audit requirements as per ISO 9001:2015",
+      "Audit principles and guidelines based on ISO 19011",
+      "Audit planning and preparation",
+      "Process-based and risk-based audit approach",
+      "Developing audit checklists and audit trails",
+      "Conducting opening and closing meetings",
+      "Interview techniques and evidence collection",
+      "Identifying, writing, and grading nonconformities",
+      "Root cause understanding and corrective action follow-up",
+      "Audit reporting and monitoring audit effectiveness",
+      "Case studies, role plays, and mock audits",
+      "Interactive discussions and Q&A sessions",
+    ],
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
   {
     title: "QUALITY & BUSINESS EXCELLENCE",

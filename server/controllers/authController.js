@@ -14,7 +14,7 @@ const signup= async (req, res)=>{
 
     const userExists= await User.findOne({email})
     if(userExists){
-        return res.status(400).json({meassage:"User already exists"})
+        return res.status(400).json({success:false, message:"User already exists"})
     }
 
     const hashedPassword= await brypt.hash(password,10)
@@ -40,6 +40,7 @@ const signup= async (req, res)=>{
 
     
     await res.status(201).json({
+        success:true,
         message:"User Signup successfully. Verification code sent to email."
     })
 }
@@ -53,8 +54,8 @@ const verifyEmail= async(req, res)=>{
 
      const user = await User.findOne({email});
 
-     if(!user || user.verificationCode !== code || user.verificationCodeExpiry < Date.now()){
-        return res.status(400).json({message: "Invalid or expired verification code."});
+     if(!user || user.verificationCode !== code || user.verificationCodeExpiry  <  Date.now()){
+        return res.status(400).json({ success: false, message: "Invalid or expired verification code."});
      }
 
 
@@ -77,6 +78,7 @@ const verifyEmail= async(req, res)=>{
 
 
      res.status(200).json({
+        success:true,
         message: "Email verified successfully.",
         token,
         user:{  
@@ -95,16 +97,16 @@ const login= async(req, res)=>{
 
     const user = await User.findOne({email});
     if(!user){
-        return res.status(400).json({message: "Invalid credentials."});
+        return res.status(400).json({ success: false, message: "Invalid credentials."});
     }
 
     if(!user.isVerified){
-        return res.status(400).json({message: "Email not verified."});
+        return res.status(400).json({ success: false, message: "Email not verified."});
     }
 
     const isMatch = await brypt.compare(password, user.password);
     if(!isMatch){
-        return res.status(400).json({message: "Invalid credentials."});
+        return res.status(400).json({ success: false, message: "Invalid credentials."});
     }
 
     const token= jwt.sign(
@@ -114,6 +116,7 @@ const login= async(req, res)=>{
     )
 
     res.json({
+        success:true,
         message:"Login successful",
         token,
         user:{  
