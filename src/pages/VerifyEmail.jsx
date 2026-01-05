@@ -55,7 +55,7 @@ export default function VerifyEmail() {
             value={code}
             onChange={(e) => setCode(e.target.value)}
           />
-          <button type="submit" disabled={loading}>
+          <button className="loginForm-submit" type="submit" disabled={loading}>
             {loading ? "Verifying..." : "Verify"}
           </button>
         </form>

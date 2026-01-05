@@ -70,7 +70,7 @@ export default function Login() {
             onChange={handleChange}
           />
 
-          <button type="submit" disabled={loading}>
+          <button className="loginForm-submit" type="submit" disabled={loading}>
             {loading ? "Logging in..." : "Login"}
           </button>
         </form>
