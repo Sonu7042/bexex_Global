@@ -9,6 +9,7 @@ export default function Signup() {
   const [form, setForm] = useState({ name: "", email: "", password: "" });
   const [loading, setLoading] = useState(false);
 
+  
   // NEW: terms checkbox state + error text
   const [agree, setAgree] = useState(false);
   const [termsError, setTermsError] = useState("");
@@ -22,15 +23,18 @@ export default function Signup() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+
+
   const handleTermsChange = (e) => {
     const checked = e.target.checked;
     setAgree(checked);
-
     // clear error when user checks the box
     if (checked) {
       setTermsError("");
     }
   };
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -41,14 +45,15 @@ export default function Signup() {
       setTermsError("You must agree to the Terms & Conditions.");
       return;
     }
-
     setLoading(true);
+
+
 
     try {
        const res = await signup(form);
        setTermsError(res.data.message);
        console.log(res.data.message, 'sonu')
-
+  
       // alert("Signup successful! Check your email for OTP.");
       navigate(
         "/verify-email",
