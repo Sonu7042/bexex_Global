@@ -13,6 +13,7 @@ export default function Signup() {
   // NEW: terms checkbox state + error text
   const [agree, setAgree] = useState(false);
   const [termsError, setTermsError] = useState("");
+  const [error, setError] = useState("");
 
   const navigate = useNavigate();
 
@@ -21,6 +22,7 @@ export default function Signup() {
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+     setError(""); 
   };
 
 
@@ -28,10 +30,8 @@ export default function Signup() {
   const handleTermsChange = (e) => {
     const checked = e.target.checked;
     setAgree(checked);
-    // clear error when user checks the box
-    if (checked) {
-      setTermsError("");
-    }
+    setTermsError("");
+    setError("");
   };
 
 
@@ -39,6 +39,9 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (loading) return;
+
+    setError("");
+  setTermsError("");
 
     // keep your logic & API, just guard on terms
     if (!agree) {
@@ -50,9 +53,12 @@ export default function Signup() {
 
 
     try {
-       const res = await signup(form);
-       setTermsError(res.data.message);
-       console.log(res.data.message, 'sonu')
+        const res = await signup(form);
+        if (res.data?.success==false) {
+          console.log("fetcing sonu")
+        setError(res.data?.message || "Signup failed");
+        return; 
+       }
   
       // alert("Signup successful! Check your email for OTP.");
       navigate(
@@ -66,7 +72,7 @@ export default function Signup() {
         }
       );
     } catch (err) {
-      alert(err.response?.data?.message || "Signup failed");
+      setError(err.response?.data?.message || "Server error. Try again.");
     } finally {
       setLoading(false);
     }
@@ -83,6 +89,7 @@ export default function Signup() {
 
       {/* Right form section */}
       <div className="auth-content">
+
         <div className="auth-header">
           <h1>Create an account</h1>
           <p>
@@ -127,7 +134,7 @@ export default function Signup() {
           </div>
 
           {/* Error paragraph right after T&C line */}
-          <p className="error-text">{termsError}</p>
+          <p className="error-text">{error}</p>
 
           <button type="submit" disabled={loading || !agree}>
             {loading ? "Signing up..." : "Create account"}

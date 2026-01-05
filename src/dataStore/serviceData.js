@@ -330,12 +330,73 @@ const servicesCardData = [
     ],
   },
 
+
+
+
+
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "5-S Implementation",
     mainService: "Consulting",
     img: img1,
+     headingParts: [
+      { text: "ISO 9001:2015 Internal Auditors Training Course", highlight: false },
+      { text: "", highlight: true },
+    ],
+    paragrapgh:[
+      "The ISO 9001:2015 Internal Auditors Training Course is designed to develop competent internal auditors who can effectively evaluate, maintain, and improve an organization’s Quality Management System (QMS)."
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Understand the basic principles and  structure of ISO 9001:2015",
+      "Identify key ISO 9001 requirements and their role in continual improvement ",
+      "Learn essential documentation and record-keeping practices for compliance ",
+      " Gain clarity on the steps to initiate ISO 9001 certification for an organization",
+    ],
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Overview of Quality Management Systems and ISO philosophy ",
+      "ISO 9001:2015 structure (High-Level Structure – Annex SL) ",
+      "Quality management principles and process approach ",
+      "Documented information: policies, procedures, and records ",
+      "Basic roadmap for ISO 9001 implementation and certification",
+      "Case Discussions and Interactive Q&A ",
+    ],
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
