@@ -13,47 +13,45 @@ import AboutScrollReveal from "./AboutScrollReveal.jsx";
 import { GoUnmute } from "react-icons/go";
 import { GoMute } from "react-icons/go";
 // import LetsConnect from './LetsConnect.jsx'
-import {OurJourney} from './OurJourney'
-
-
-
-
+import { OurJourney } from "./OurJourney";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   useEffect(() => {
+  const ctx = gsap.context(() => {
     ScrollTrigger.matchMedia({
-      // ❌ Mobile (GSAP OFF)
-      "(max-width: 768px)": function () {
-        ScrollTrigger.getAll().forEach((t) => t.kill());
-        gsap.killTweensOf(".hero-img-wrap");
-      },
+      // ❌ Mobile + Tablet
+      "(max-width: 1024px)": () => {},
 
-      // ✅ Desktop & Tablet (GSAP ON)
-      "(min-width: 770px)": function () {
-        gsap.to(".hero-img-wrap", {
-          scale: 2,
-          y: 600,
-          ease: "none",
+      // ✅ Desktop only
+      "(min-width: 1025px)": () => {
+        gsap.timeline({
           scrollTrigger: {
-            trigger: ".hero-root",
+            trigger: ".hero-content",
             start: "top top",
-            end: "40% top",
+            endTrigger: ".spacer-section",
+            end: "center center", // 👈 PERFECT AUTO END
             scrub: true,
+            pin: ".hero-img-wrap",
+            pinSpacing: false,
+            invalidateOnRefresh: true,
             markers: false,
           },
+        })
+        .to(".hero-img-wrap", {
+          scale: 2,
+          ease: "none",
         });
       },
     });
+  });
 
-    return () => {
-      ScrollTrigger.getAll().forEach((t) => t.kill());
-    };
-  }, []);
+  return () => ctx.revert();
+}, []);
 
 
-   const videoRef = useRef(null);
+  const videoRef = useRef(null);
   const [muted, setMuted] = useState(true);
 
   const toggleSound = () => {
@@ -65,17 +63,14 @@ const About = () => {
     video.play();
   };
 
-
-
-
-  
-
   const timelineData = [
     {
       title: "2017",
       content: (
         <p className="text-neutral-700 dark:text-neutral-300">
-          Established as eGrowth India, delivering  early consulting assignments and 200+  training hours—laying the foundation for  client trust and expertise.
+          Established as eGrowth India, delivering early consulting assignments
+          and 200+ training hours—laying the foundation for client trust and
+          expertise.
         </p>
       ),
     },
@@ -83,7 +78,8 @@ const About = () => {
       title: "2019",
       content: (
         <p className="text-neutral-700 dark:text-neutral-300">
-           Set up a dedicated office and  expanded the consulting and  training team to serve more sectors with structured project management
+          Set up a dedicated office and expanded the consulting and training
+          team to serve more sectors with structured project management
         </p>
       ),
     },
@@ -91,7 +87,8 @@ const About = () => {
       title: "2021",
       content: (
         <p className="text-neutral-700 dark:text-neutral-300">
-          Achieved 5,000+ training hours  and completed 200+ consulting  projects, strengthening our footprint across industries.
+          Achieved 5,000+ training hours and completed 200+ consulting projects,
+          strengthening our footprint across industries.
         </p>
       ),
     },
@@ -99,7 +96,9 @@ const About = () => {
       title: "2023",
       content: (
         <p className="text-neutral-700 dark:text-neutral-300">
-          Registered as eGrowth  Training & Consultancy  Services under GST,  reaching 300+ projects and  100+ clients, and building a strong brand reputation
+          Registered as eGrowth Training & Consultancy Services under GST,
+          reaching 300+ projects and 100+ clients, and building a strong brand
+          reputation
         </p>
       ),
     },
@@ -107,7 +106,8 @@ const About = () => {
       title: "2024",
       content: (
         <p className="text-neutral-700 dark:text-neutral-300">
-          Launched our online  training platform and  digital tools to support  remote learning  and enhance client experience.
+          Launched our online training platform and digital tools to support
+          remote learning and enhance client experience.
         </p>
       ),
     },
@@ -115,12 +115,13 @@ const About = () => {
       title: "2025",
       content: (
         <p className="text-neutral-700 dark:text-neutral-300">
-          Rebranded as BEXEX  Global Pvt. Ltd., reflecting  our evolution into a  multi-domain firm focusing  on business excellence,  sustainability, and growth.
+          Rebranded as BEXEX Global Pvt. Ltd., reflecting our evolution into a
+          multi-domain firm focusing on business excellence, sustainability, and
+          growth.
         </p>
       ),
     },
   ];
-
 
   return (
     <>
@@ -148,7 +149,7 @@ const About = () => {
             />
 
             <button className="video-sound-btn" onClick={toggleSound}>
-              {muted ? <GoMute /> : <GoUnmute /> }
+              {muted ? <GoMute /> : <GoUnmute />}
             </button>
           </div>
           <p className="hero-desc">
@@ -159,6 +160,12 @@ const About = () => {
           <LearnMoreButton text="Discover Services" link="/" marginTop="20" />
         </div>
       </section>
+
+      {/* ----------------- */}
+
+      <section class="spacer-section"></section>
+
+      {/* ------------------------- */}
 
       {/* --------------------- */}
 
@@ -218,11 +225,9 @@ const About = () => {
       {/* ----------------------- */}
 
       {/* <JourneyTimeline /> */}
-      <OurJourney  data={timelineData}/>
+      <OurJourney data={timelineData} />
 
       <TeamGrid />
-
-      
     </>
   );
 };
