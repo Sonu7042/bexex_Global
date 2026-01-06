@@ -12,8 +12,9 @@ const servicesCardData = [
       { text: "ISO 9001:2015", highlight: true },
       { text: " REFRESHER COURSE?", highlight: false },
     ],
-    paragrapgh:[
-      "The ISO 9001:2015 Refresher Course is designed forprofessionals who already have a working knowledge of Quality Management Systems and want to realign withcurrent ISO 9001 requirements. The training revisits coreconcepts, clarifies key clauses, and highlights practicalimplications of the standard to ensure effectiveimplementation and sustained compliance. It helpsparticipants sharpen their understanding and confidentlysupport QMS maintenance and continual improvement."],
+    paragrapgh: [
+      "The ISO 9001:2015 Refresher Course is designed forprofessionals who already have a working knowledge of Quality Management Systems and want to realign withcurrent ISO 9001 requirements. The training revisits coreconcepts, clarifies key clauses, and highlights practicalimplications of the standard to ensure effectiveimplementation and sustained compliance. It helpsparticipants sharpen their understanding and confidentlysupport QMS maintenance and continual improvement.",
+    ],
     subHeading: "What You'll Gain :",
     listItems: [
       "Review updates and critical interpretations of ISO 9001:2015",
@@ -77,8 +78,9 @@ const servicesCardData = [
       { text: "ISO 9001:2015", highlight: true },
       { text: " AWARENESS SESSION?", highlight: false },
     ],
-    paragrapgh:[
-      "The ISO 9001:2015 Awareness Session is designed to build a common understanding of QMS requirements across all levels of the organization. It helps employees recognize how ISO 9001 applies to their daily roles, why compliance matters, and how individual actions contribute to quality objectives and customer satisfaction. This session supports smooth QMS implementation and strengthens engagement during audits and continual improvement initiatives."],
+    paragrapgh: [
+      "The ISO 9001:2015 Awareness Session is designed to build a common understanding of QMS requirements across all levels of the organization. It helps employees recognize how ISO 9001 applies to their daily roles, why compliance matters, and how individual actions contribute to quality objectives and customer satisfaction. This session supports smooth QMS implementation and strengthens engagement during audits and continual improvement initiatives.",
+    ],
     subHeading: "What You'll Gain :",
     listItems: [
       "Clear understanding of ISO 9001:2015 intent and key requirements",
@@ -142,8 +144,9 @@ const servicesCardData = [
       { text: "WHY ", highlight: false },
       { text: "FIRE SAFETY?", highlight: true },
     ],
-    paragrapgh:[
-      "Fire incidents escalate rapidly and cause severe loss to life, assets, and business continuity, most fires result from preventable unsafe conditions and delayed response. Fire Safety Training focuses on building awareness, preparedness, and correct response behaviors so employees can prevent fires, react quickly, and minimize impact. Ratherthan only relying on equipment and procedures, this training empowers people to recognize fire risks, use firefighting systems correctly, and respond calmly during emergencies."],
+    paragrapgh: [
+      "Fire incidents escalate rapidly and cause severe loss to life, assets, and business continuity, most fires result from preventable unsafe conditions and delayed response. Fire Safety Training focuses on building awareness, preparedness, and correct response behaviors so employees can prevent fires, react quickly, and minimize impact. Ratherthan only relying on equipment and procedures, this training empowers people to recognize fire risks, use firefighting systems correctly, and respond calmly during emergencies.",
+    ],
     subHeading: "What You'll Gain :",
     listItems: [
       "Reduced fire risk through early hazard identification and prevention ",
@@ -208,10 +211,10 @@ const servicesCardData = [
       { text: "WHY ", highlight: false },
       { text: "BBS SAFETY?", highlight: true },
     ],
-    paragrapgh:[
+    paragrapgh: [
       "It is found that 90% of workplace accidents are triggered by ‘unsafe acts’. Behavioural safety provides a way of reducing injuries, through the analysis of the risk behaviors in the current work environment. BBS's purpose is not to enforce safety rules, force change, etc. Its purpose is to identify safe and at-risk behaviours, identify the possibility for injury, communicating the risk & helping to identify safer solutions.",
-      "Despite having introduced numerous safety systems, which have reduced hazards & improved safety performance,accidents could not get eliminated. Rather stressing on implementation of procedures / rules & regulations, wemotivate people for behaving safely"
-  ],
+      "Despite having introduced numerous safety systems, which have reduced hazards & improved safety performance,accidents could not get eliminated. Rather stressing on implementation of procedures / rules & regulations, wemotivate people for behaving safely",
+    ],
     subHeading: "What You'll Gain :",
     listItems: [
       "Reduced incidents and injuries through proactive behavior change ",
@@ -265,7 +268,7 @@ const servicesCardData = [
       },
     ],
   },
-  
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "Six Sigma",
@@ -276,9 +279,9 @@ const servicesCardData = [
       { text: "WHY INTRODUCTION TO", highlight: false },
       { text: " QMS? ", highlight: true },
     ],
-    paragrapgh:[
-      "The ISO 9001:2015 Introduction to QMS training provides a clear and practical overview of Quality Management System fundamentals for professionals and organizations beginning their ISO journey. The course explains the intent, structure, and key requirements of ISO 9001, helping participants understand how a process-based approach improves quality, efficiency, and customer satisfaction. It sets a strong foundation for effective implementation and future certification."
-  ],
+    paragrapgh: [
+      "The ISO 9001:2015 Introduction to QMS training provides a clear and practical overview of Quality Management System fundamentals for professionals and organizations beginning their ISO journey. The course explains the intent, structure, and key requirements of ISO 9001, helping participants understand how a process-based approach improves quality, efficiency, and customer satisfaction. It sets a strong foundation for effective implementation and future certification.",
+    ],
     subHeading: "What You'll Gain :",
     listItems: [
       "Understand the basic principles and structure of ISO 9001:2015",
@@ -336,12 +339,12 @@ const servicesCardData = [
     value: "ISO 9001:2015 Internal Auditors Training Course",
     mainService: "Consulting",
     img: img1,
-     headingParts: [
+    headingParts: [
       { text: "ISO ", highlight: false },
       { text: "9001:2015 ", highlight: true },
       { text: "Internal Auditors Training Course", highlight: false },
     ],
-    paragrapgh:[
+    paragrapgh: [
       "The ISO 9001:2015 Internal Auditors Training Course is designed to develop competent internal auditors who can effectively evaluate, maintain, and improve an organization’s Quality Management System (QMS).",
       "Internal audits are a critical requirement of ISO 9001:2015 and play a key role in ensuring compliance, effectiveness, and continual improvement. This training helps participants understand not just how to audit, but why auditing is essential for identifying risks, nonconformities, and improvement opportunities. The course emphasizes a process-based and risk-based auditing approach, aligned with ISO 19011 guidelines.",
       "It equips participants with the confidence and skills to conduct value-added internal audits, rather than checklist-based or compliance-only audits.",
@@ -405,49 +408,464 @@ const servicesCardData = [
       },
     ],
   },
-  
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
-    value: "5-S Trainings",
-    mainService: "Training",
-    img: img1,
-  },
-  {
-    title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "5-S Workplace Organization",
-    value: "5-S Workshops",
-    mainService: "Training",
-    img: img1,
-  },
-  {
-    title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "5-S Workplace Organization",
-    value: "5-S Audits",
-    mainService: "Auditing",
-    img: img1,
-  },
-  {
-    title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "5-S Workplace Organization",
-    value: "Visual Management System Design",
+    value: "ISO 9001:2015 Certified Lead Implementor Program",
     mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "9001:2015 ", highlight: true },
+      { text: "Certified Lead Implementor Program", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 9001:2015 Certified Lead Implementor Program is designed for professionals who are responsible for designing, implementing, managing, and improving a Quality Management System (QMS) in line with ISO 9001:2015.",
+      "This program goes beyond awareness or auditing and focuses on end-to-end QMS implementation. It equips participants with the knowledge and practical skills needed to translate ISO 9001 requirements into effective business processes, align quality objectives with organizational strategy, and ensure sustained compliance and continual improvement.",
+      "The training is ideal for those who want to lead QMS implementation projects, support certification readiness, and act as a key link between top management, process owners, and external auditors.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Lead the design and implementation of an ISO 9001:2015 compliant QMS",
+      "Interpret and apply ISO 9001 requirements to real business processes",
+      "Identify risks, opportunities, and improvement areas across the organization",
+      "Develop and maintain effective QMS documentation",
+      "Coordinate internal audits and management reviews",
+      "Support successful ISO 9001 certification and ongoing compliance",
+      "Drive continual improvement and customer satisfaction",
+      "Act confidently as a Lead Implementor or QMS Representative",
+    ],
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Detailed interpretation of ISO 9001:2015 clauses and their intent",
+      "Understanding organizational context, interested parties, and scope",
+      "Leadership roles, responsibilities, and strategic alignment of QMS",
+      "Establishing and managing process-based QMS",
+      "Risk-based thinking and opportunity management",
+      "Setting quality objectives, KPIs, and performance monitoring",
+      "Documentation strategy – manuals, procedures, records, and simplification",
+      "Resource management, competence, and awareness",
+      "Operational planning and control",
+      "Monitoring, measurement, analysis, and evaluation",
+      "Internal audit, management review, and continual improvement",
+      "Preparing for certification and surveillance audits",
+      "Implementation case studies, workshops, and practical exercises",
+      "Interactive discussions and Q&A sessions",
+    ],
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
-    value: "Visual Management System Development",
+    value: "ISO 9001:2015 Lead Auditors Training Course",
     mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "9001:2015 ", highlight: true },
+      { text: "Lead Auditors Training Course", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 9001:2015 Lead Auditor Training Course is designed for professionals who want to develop the competence to plan, conduct, lead, and manage first-, second-, and third-party audits of a Quality Management System (QMS) in accordance with ISO 9001:2015.",
+      "This course builds advanced auditing skills by combining in-depth standard interpretation, audit leadership techniques, and practical audit simulations. It follows the principles and guidelines of ISO 19011 and prepares participants to confidently lead audit teams, communicate with top management, and ensure objective, value-added audit outcomes.",
+      "The training is ideal for those aspiring to become certification body auditors, lead internal auditors, supplier auditors, or QMS consultants.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Interpret ISO 9001:2015 requirements with auditor-level depth",
+      "Plan and lead effective and compliant QMS audits",
+      "Manage audit teams and communicate professionally with stakeholders",
+      "Identify systemic issues, risks, and improvement opportunities",
+      "Write high-quality audit reports aligned with certification body expectations",
+      "Support organizations in achieving and maintaining ISO 9001 certification",
+      "Build competence toward becoming a Certified ISO 9001 Lead Auditor",
+    ],
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Detailed interpretation of ISO 9001:2015 clauses from a lead auditor’s perspective",
+      "Audit principles, ethics, and competence requirements (ISO 19011)",
+      "Roles and responsibilities of a Lead Auditor",
+      "Audit types: first-party, second-party, and third-party audits",
+      "Audit planning, audit programs, and team management",
+      "Process-based and risk-based audit approach",
+      "Developing audit checklists and audit trails",
+      "Conducting opening meetings, interviews, and evidence collection",
+      "Identifying, classifying, and reporting nonconformities",
+      "Writing clear, objective, and actionable audit findings and reports",
+      "Handling difficult audit situations and auditee interactions",
+      "Audit follow-up, corrective actions, and verification of effectiveness",
+      "Mock audits, role plays, and case studies",
+      "Interactive discussions and Q&A sessions",
+    ],
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
-    value: "Standard Operating Procedures Creation",
+    value: "ISO 9001:2015 Quality Management Principles",
     mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "9001:2015 ", highlight: true },
+      { text: "Quality Management Principles", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 9001:2015 Quality Management Principles (QMPs) form the foundation of an effective Quality Management System. Understanding these principles helps organizations move beyond clause-by-clause compliance and build a culture focused on customer satisfaction, leadership, and continual improvement.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clearly understand and explain the seven Quality Management Principles",
+      "Apply QMPs to design, implement, and improve QMS processes",
+      "Strengthen leadership involvement and employee engagement",
+      "Improve customer satisfaction and process performance",
+      "Make informed, evidence-based decisions",
+      "Build strong and effective supplier and stakeholder relationships",
+      "Support continual improvement beyond audit-driven compliance",
+    ],
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Customer Focus – meeting and exceeding customer expectations",
+      "Leadership – establishing unity of purpose and direction",
+      "Engagement of People – competence, empowerment, and accountability",
+      "Process Approach – managing activities as interrelated processes",
+      "Improvement – continual improvement as a permanent objective",
+      "Evidence-Based Decision Making – using data and information effectively",
+      "Relationship Management – managing suppliers and interested parties",
+    ],
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+
+  {
+    title: "QUALITY & BUSINESS EXCELLENCE",
+    category: "5-S Workplace Organization",
+    value: "ISO 9001:2015 Customer Focus and Satisfaction",
+    mainService: "Consulting",
+    img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "9001:2015 ", highlight: true },
+      { text: "Customer Focus and Satisfaction", highlight: false },
+    ],
+    paragrapgh: [
+      "Customer focus is the first and most important Quality Management Principle of ISO 9001:2015. This training is designed to help organizations understand how to consistently identify customer needs, meet requirements, and enhance customer satisfaction in a structured and measurable way.",
+      "Many organizations collect customer feedback but fail to effectively analyze or act on it. This program explains how ISO 9001:2015 integrates customer focus into planning, operations, performance evaluation, and improvement, ensuring customer satisfaction is not incidental but systematically managed.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Understand and apply customer focus requirements of ISO 9001:2015",
+      "Identify and manage customer requirements effectively",
+      "Establish effective methods to measure and monitor customer satisfaction",
+      "Analyze customer feedback to identify risks and improvement opportunities",
+      "Improve customer communication and complaint handling",
+      "Enhance customer trust, loyalty, and retention",
+    ],
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Understanding customer requirements (stated, implied, and statutory)",
+      "Customer focus requirements in ISO 9001:2015 clauses",
+      "Identifying interested parties and their expectations",
+      "Aligning products and services with customer needs",
+      "Managing customer communication and feedback",
+      "Methods for measuring customer satisfaction",
+      "Analysis and evaluation of customer feedback data",
+      "Handling customer complaints and nonconformities",
+      "Linking customer feedback to risk-based thinking",
+      "Using customer satisfaction data for continual improvement",
+      "Case studies and real-life examples",
+      "Interactive discussions and Q&A sessions",
+    ],
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+  },
+
+  {
+    title: "QUALITY & BUSINESS EXCELLENCE",
+    category: "5-S Workplace Organization",
+    value: "ISO 9001:2015 Integrated with Other Management System",
+    mainService: "Consulting",
+    img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "9001:2015 ", highlight: true },
+      { text: "Integrated with Other Management System", highlight: false },
+    ],
+    paragrapgh: [
+      "Organizations today often operate multiple management systems such as ISO 14001 (Environmental), ISO 45001 (OH&S), ISO 27001 (Information Security), and ISO 22000 (Food Safety). Managing these systems separately can lead to duplication, inefficiencies, and increased costs.",
+      "The ISO 9001:2015 Integrated Management Systems (IMS) approach enables organizations to align, combine, and streamline common requirements across different ISO standards using the Annex SL high-level structure. This training helps participants understand how to build and maintain an integrated system that improves efficiency, consistency, and overall organizational performance.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Understand how ISO 9001:2015 aligns with other ISO management systems",
+      "Design and implement an Integrated Management System (IMS)",
+      "Reduce duplication of documents, audits, and processes",
+      "Improve coordination across quality, environment, safety, and other functions",
+      "Conduct integrated audits and management reviews",
+      "Enhance organizational efficiency and compliance",
+      "Support continual improvement across multiple management systems",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Understanding Annex SL / High-Level Structure (HLS)",
+      "Common clauses across ISO management system standards",
+      "Integration of context of the organization and interested parties",
+      "Unified approach to leadership, policy, and objectives",
+      "Integrated risk and opportunity management",
+      "Common documented information control",
+      "Integrated operational planning and controls",
+      "Combined competence, awareness, and communication",
+      "Integrated internal audits and management reviews",
+      "Performance evaluation and continual improvement across systems",
+      "Benefits and challenges of integration",
+      "Practical examples and case studies",
+      "Interactive discussions and Q&A session",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+  },
+
+  {
+    title: "QUALITY & BUSINESS EXCELLENCE",
+    category: "5-S Workplace Organization",
+    value: "ISO 9001:2015 vs IATF 16949:2016",
+    mainService: "Consulting",
+    img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "9001:2015 ", highlight: true },
+      { text: "vs IATF 16949:2016", highlight: false },
+    ],
+    paragrapgh: [
+      "ISO 9001:2015 is a generic Quality Management System standard applicable to all industries, IATF 16949:2016 is a sector-specific QMS standard for the automotive industry. Many organizations struggle to understand the additional requirements, expectations, and gaps between these two standards.",
+      "This training is designed to clearly explain the similarities, differences, and added automotive-specific requirements of IATF 16949:2016 in comparison with ISO 9001:2015. It helps organizations transitioning from ISO 9001 to IATF 16949 or managing both standards to implement requirements effectively and avoid audit nonconformities.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clearly understand the key differences and similarities between ISO 9001 and IATF 16949",
+      "Identify additional requirements needed for automotive compliance",
+      "Assess gaps when transitioning from ISO 9001 to IATF 16949",
+      "Implement customer-specific and automotive requirements effectively",
+      "Prepare confidently for IATF certification and surveillance audits",
+      "Reduce audit risks and nonconformities",
+      "Support continual improvement in automotive QMS",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Overview and purpose of ISO 9001 vs IATF 16949",
+      "Common structure based on Annex SL",
+      "Clauses of ISO 9001 adopted by IATF 16949",
+      "Additional IATF 16949 requirements beyond ISO 9001",
+      "Automotive-specific requirements and expectations",
+      "Customer-specific requirements (CSRs)",
+      "Risk-based thinking vs product and process risk management",
+      "Documentation and record control differences",
+      "Change management and product safety requirements",
+      "Internal audit, second-party, and layered process audits",
+      "Management review and performance evaluation differences",
+      "Common transition challenges and implementation gaps",
+      "Case studies and practical examples",
+      "Interactive discussions and Q&A sessions",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+  },
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
