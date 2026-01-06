@@ -1,22 +1,29 @@
 /* MAIN PAGE ROOT */
 .hero-root {
-  height: 190vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   padding-top: 5rem;
 }
-
+.hero-img-wrap {
+  will-change: transform;
+}
+.spacer-section {
+  height: 100vh; /* 👈 second section */
+  margin-top: 2.875rem;
+}
 /* CONTENT */
 .hero-content {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   max-width: 1180px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1.875rem;
+  /* margin-top: 1.875rem; */
+  padding-top: 1.875rem;
 }
 
 .hero-content h1 {
@@ -142,6 +149,11 @@
   }
   .hero-img-wrap {
     height: 211px;
+  }
+}
+@media (max-width: 1024px){
+  .spacer-section{
+    height: 0%; /* 👈 second section */
   }
 }
 
