@@ -14,12 +14,12 @@ const menuItems = [
 ];
 
 const services = [
-  { title: "Environment, health & safety (ehs) solution", link: "/services/1" },
-  { title: "Managements systems & compliance", link: "/services/2" },
-  { title: "Training & competency development", link: "/services/3" },
-  { title: "Software & digital solution", link: "/services/4" },
-  { title: "Sustainability & ESG services", link: "/services/5" },
-  { title: "Quality & business excellence", link: "/services/6" },
+  { title: "Environment, Health & Safety (EHS) Solution", link: "/services/1" },
+  { title: "Managements Systems & Compliance", link: "/services/2" },
+  { title: "Training & Dompetency Development", link: "/services/3" },
+  { title: "Software & Sigital Solution", link: "/services/4" },
+  { title: "Sustainability & ESG Services", link: "/services/5" },
+  { title: "Quality & Susiness Excellence", link: "/services/6" },
 ];
 
 const resources = [

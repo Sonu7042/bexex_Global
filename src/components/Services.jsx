@@ -54,37 +54,34 @@ export default function Services() {
               {cardData.slice(start, start + 2).map((card, i) => {
                 const index = start + i;
                 return (
-                  <div
-                    key={card.title}
-                    className={`service-card ${
-                      hovered === index
-                        ? "expanded"
-                        : hovered !== null
-                        ? "shrunk"
-                        : ""
-                    }`}
-                    onMouseEnter={() => setHovered(index)}
-                    onMouseLeave={() => setHovered(null)}
-                  >
-                    <div className="service-card-header">
-                      <span className="service-card-title">{card.title}</span>
-                      <span className="service-card-plus">
-                        <svg
-                          stroke="currentColor"
-                          fill="currentColor"
-                          strokeWidth="0"
-                          viewBox="0 0 24 24"
-                          height="1em"
-                          width="1em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path fill="none" d="M0 0h24v24H0z"></path>
-                          <path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
-                        </svg>
-                      </span>
-                    </div>
-                    <p className="service-card-desc">{card.desc}</p>
-                  </div>
+                 <div
+  key={card.title}
+  className={`service-card ${
+    hovered === index
+      ? "expanded"
+      : hovered !== null
+      ? "shrunk"
+      : ""
+  }`}
+  onMouseEnter={() => setHovered(index)}
+  onMouseLeave={() => setHovered(null)}
+>
+  {/* Always visible header */}
+  <div className="service-card-header">
+    <span className="service-card-title">{card.title}</span>
+    <span className="service-card-plus">{/* icon */}</span>
+  </div>
+
+  {/* Overlay description (no movement) */}
+  <div
+    className={`service-card-overlay ${
+      hovered === index ? "show" : ""
+    }`}
+  >
+    <p className="service-card-desc">{card.desc}</p>
+  </div>
+</div>
+
                 );
               })}
             </div>

@@ -42,7 +42,7 @@ export default function Login() {
         window.open(card.downloadPdf, "_blank");
       }
     } catch (err) {
-        setError(err.response?.data?.message || "Server error. Try again.");
+        setError(err.response?.data?.message || "Server error. Try again.");  
     }
     finally {
       setLoading(false);
