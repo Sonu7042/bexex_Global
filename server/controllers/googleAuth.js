@@ -20,12 +20,11 @@ const googleAuth = async (req, res) => {
     
     const { sub, email, name } = payload;
 
-    let user = await user.findOne({ email });
-
+    let user = await User.findOne({ email });
 
 
     if (!user) {
-      user = new User.create({
+      user =  User.create({
         name,
         email,
         password: sub,
@@ -33,12 +32,11 @@ const googleAuth = async (req, res) => {
         providerId: sub,
         isVerified: true,
       });
-      await user.save();
     }
 
     const jwtToken = jwt.sign(
       {
-        userId: user._id,
+        id: user._id,
       },
       process.env.JWT_SECRET,
       { expiresIn: "1d" }

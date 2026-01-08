@@ -218,6 +218,20 @@ export default function InnerServicePage() {
 
 
 
+
+const openPdfInNewTab = () => {
+  // if (card?.downloadPdf) {
+  //   window.open(card.downloadPdf, "_blank", "noopener,noreferrer");
+  // }
+
+    if (card?.downloadPdf) {
+    window.location.href = card.downloadPdf; 
+  }
+};
+
+
+
+// GOOGLE LOGIN / SIGNUP HANDLER
 const handleGoogleLogin = async (googleToken) => {
   try {
     const res = await fetch("http://localhost:5000/api/auth/google-auth", {
@@ -228,12 +242,25 @@ const handleGoogleLogin = async (googleToken) => {
 
     const data = await res.json();
 
+    if (!data.success) {
+      setLoginError("Google authentication failed");
+      return;
+    }
+
     localStorage.setItem("token", data.token);
+
     setShowAuthModal(false);
+
+    openPdfInNewTab();
+
   } catch (err) {
     console.error(err);
+    setLoginError("Google login failed. Try again.");
   }
 };
+
+
+
 
 
 
@@ -708,12 +735,14 @@ const handleGoogleLogin = async (googleToken) => {
                     <div className="auth-divider">or register with</div>
 
                     <div className="social-row">
-                      <button type="button" className="social-btn google-btn">
-                        <span className="social-icon">
-                          <FcGoogle />
-                        </span>
-                        Google
-                      </button>
+                      <GoogleLogin
+                            onSuccess={(credentialResponse) => {
+                              handleGoogleLogin(credentialResponse.credential);
+                            }}
+                            onError={() => {
+                              console.log("Google Login Failed");
+                            }}
+                          />
                       <button type="button" className="social-btn facebook-btn">
                         <span className="social-icon">
                           <SiFacebook />
