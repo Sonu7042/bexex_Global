@@ -215,10 +215,6 @@ export default function InnerServicePage() {
 
 
 
-
-
-
-
 const openPdfInNewTab = () => {
   // if (card?.downloadPdf) {
   //   window.open(card.downloadPdf, "_blank", "noopener,noreferrer");
@@ -493,6 +489,7 @@ const handleGoogleLogin = async (googleToken) => {
           </div>
         </div>
       )}
+
       <section className="px-4 md:px-16 lg:px-12 pt-[2.875rem]">
         <div className="heading-portion">
           <HeadingComponent text="Service" marginTop="0" paddingBottom="0" />

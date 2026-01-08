@@ -9,6 +9,7 @@
   --fs-shadow-soft: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
+
 /* OUTER SECTION */
 .fs-page {
   border-radius: 10px;
@@ -205,11 +206,13 @@
 /* GALLERY SECTION */
 .gallery-container {
   margin-top: 0.5rem;
+  height: 50vh;
 }
 
 .gallery-flex {
   display: flex;
   gap: 1.5rem;
+  height: 100%;
 }
 
 /* small thumbs */
@@ -242,7 +245,8 @@
 /* big selected media */
 .media-wrapper {
   flex: 1;
-  height: 50vh;
+  /* height: 50vh; */
+  height: 100%;
 }
 
 .media-card {
@@ -454,6 +458,9 @@
   .thumb-img, .video-thumb {
     width: 60px;
     height: 60px;
+  }
+  .gallery-container{
+    height: auto;
   }
 }
 
