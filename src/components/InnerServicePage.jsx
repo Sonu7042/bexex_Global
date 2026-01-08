@@ -2,19 +2,16 @@
 import "../Css/innerServicePage.css";
 import "../pages/auth.css";
 import React, { useState } from "react";
-import { Play } from "lucide-react";
-import { X } from "lucide-react"; // <--- ADD THIS
-import { useLocation, useNavigate, Link } from "react-router-dom";
+import { Play, X } from "lucide-react";
+import { useLocation, useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 import LetsConnect from "./LetsConnect";
-import { LiaSwatchbookSolid } from "react-icons/lia";
-import { PiCertificate } from "react-icons/pi";
 import { FiDownload } from "react-icons/fi";
 import { HeadingComponent } from "./Buttons";
 import booksIcon from "../assets/images/service_image/innerServices_booksIcons/books-svgrepo-com.svg";
 import certificateicn from "../assets/images/service_image/innerServices_booksIcons/certificate-contract-svgrepo-com.svg";
 import freeLearningicon from "../assets/images/service_image/innerServices_booksIcons/free-learning.png";
-import { signup } from "../api/authApi";
+import { signup, verifyEmail, login } from "../api/authApi";
 import { FcGoogle } from "react-icons/fc";
 import { SiFacebook } from "react-icons/si";
 
@@ -25,44 +22,60 @@ export default function InnerServicePage() {
 
   const [selectedMedia, setSelectedMedia] = useState(card?.media?.[0]);
 
-  // modal state
+  // Auth modal states
   const [showAuthModal, setShowAuthModal] = useState(false);
+  const [authMode, setAuthMode] = useState('signup'); // 'signup' or 'login'
+  const [showVerifyModal, setShowVerifyModal] = useState(false);
 
-  // form + auth states
-  const [form, setForm] = useState({ name: "", email: "", password: "" });
-  const [loading, setLoading] = useState(false);
+  // Signup form state
+  const [signupForm, setSignupForm] = useState({ name: "", email: "", password: "" });
+  const [signupLoading, setSignupLoading] = useState(false);
   const [agree, setAgree] = useState(false);
   const [termsError, setTermsError] = useState("");
-  const [error, setError] = useState("");
+  const [signupError, setSignupError] = useState("");
+
+  // Login form state
+  const [loginForm, setLoginForm] = useState({ email: "", password: "" });
+  const [loginLoading, setLoginLoading] = useState(false);
+  const [loginError, setLoginError] = useState("");
+
+  // OTP verify state
+  const [code, setCode] = useState("");
+  const [verifyLoading, setVerifyLoading] = useState(false);
+  const [verifyError, setVerifyError] = useState("");
+  const [signupEmail, setSignupEmail] = useState("");
 
   if (!card) return <p>Data not found</p>;
 
+  // when user clicks download
   const downloadPdfWithAuth = () => {
     const token = localStorage.getItem("token");
     if (!token) {
       setShowAuthModal(true);
+      setAuthMode('login'); // Show login by default
       return;
     }
     window.open(card.downloadPdf, "_blank");
   };
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-    setError("");
+  // Signup form handlers
+  const handleSignupChange = (e) => {
+    setSignupForm({ ...signupForm, [e.target.name]: e.target.value });
+    setSignupError("");
   };
 
   const handleTermsChange = (e) => {
     const checked = e.target.checked;
     setAgree(checked);
     setTermsError("");
-    setError("");
+    setSignupError("");
   };
 
-  const handleSubmit = async (e) => {
+  const handleSignupSubmit = async (e) => {
     e.preventDefault();
-    if (loading) return;
+    if (signupLoading) return;
 
-    setError("");
+    setSignupError("");
     setTermsError("");
 
     if (!agree) {
@@ -70,26 +83,127 @@ export default function InnerServicePage() {
       return;
     }
 
-    setLoading(true);
+    setSignupLoading(true);
     try {
-      const res = await signup(form);
+      const res = await signup(signupForm);
       if (res.data?.success === false) {
-        setError(res.data?.message || "Signup failed");
+        setSignupError(res.data?.message || "Signup failed");
         return;
       }
 
+      // store email for OTP verify and open verify modal
+      setSignupEmail(signupForm.email);
       setShowAuthModal(false);
-      navigate("/verify-email", {
+      setShowVerifyModal(true);
+      setCode("");
+      setVerifyError("");
+    } catch (err) {
+      setSignupError(err.response?.data?.message || "Server error. Try again.");
+    } finally {
+      setSignupLoading(false);
+    }
+  };
+
+  // Login form handlers
+  const handleLoginChange = (e) => {
+    setLoginForm({ ...loginForm, [e.target.name]: e.target.value });
+    setLoginError("");
+  };
+
+  const handleLoginSubmit = async (e) => {
+    e.preventDefault();
+    if (loginLoading) return;
+    
+    setLoginError("");
+    setLoginLoading(true);
+
+    try {
+      const res = await login(loginForm);
+      
+      if (res.data?.success === false) {
+        setLoginError(res.data?.message || "Login failed");
+        return;
+      }
+
+      // Save token
+      localStorage.setItem("token", res.data.token);
+
+      // Close modal and download PDF
+      setShowAuthModal(false);
+      
+      if (card?.downloadPdf) {
+        window.open(card.downloadPdf, "_blank");
+      }
+
+      // Refresh page state
+      navigate("/innerServicePage", {
         replace: true,
-        state: {
-          email: form.email,
-          card: card,
-        },
+        state: { card },
       });
     } catch (err) {
-      setError(err.response?.data?.message || "Server error. Try again.");
+      setLoginError(err.response?.data?.message || "Server error. Try again.");
     } finally {
-      setLoading(false);
+      setLoginLoading(false);
+    }
+  };
+
+  // Switch auth mode
+  const switchToLogin = () => {
+    setAuthMode('login');
+    setSignupError("");
+    setTermsError("");
+    setLoginError("");
+  };
+
+  const switchToSignup = () => {
+    setAuthMode('signup');
+    setSignupError("");
+    setTermsError("");
+    setLoginError("");
+  };
+
+  // verify OTP handlers
+  const handleCodeChange = (e) => {
+    setCode(e.target.value);
+    setVerifyError("");
+  };
+
+  const handleVerifySubmit = async (e) => {
+    e.preventDefault();
+    if (verifyLoading) return;
+
+    setVerifyError("");
+    setVerifyLoading(true);
+
+    try {
+      const res = await verifyEmail({ email: signupEmail, code });
+      if (res.data?.success === false) {
+        setVerifyError(res.data?.message || "Verification failed");
+        return;
+      }
+
+      // save token if API returns it
+      if (res.data?.token) {
+        localStorage.setItem("token", res.data.token);
+      }
+
+      // close verify modal
+      setShowVerifyModal(false);
+
+      // open PDF after verification
+      if (card?.downloadPdf) {
+        window.open(card.downloadPdf, "_blank");
+      }
+
+      // refresh same page
+      navigate("/innerServicePage", {
+        replace: true,
+        state: { card },
+      });
+    } catch (err) {
+      setVerifyError(err.response?.data?.message || "Server error. Try again.");
+    } finally {
+      setVerifyLoading(false);
     }
   };
 
@@ -252,7 +366,7 @@ export default function InnerServicePage() {
           </div>
         </div>
 
-        {/* AUTH MODAL */}
+        {/* SINGLE AUTH MODAL - SWITCHES BETWEEN LOGIN/SIGNUP */}
         {showAuthModal && (
           <div className="auth-overlay" onClick={() => setShowAuthModal(false)}>
             <div
@@ -260,7 +374,6 @@ export default function InnerServicePage() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="auth-content">
-                {/* CLOSE X */}
                 <button
                   type="button"
                   className="auth-close-btn"
@@ -271,74 +384,179 @@ export default function InnerServicePage() {
                 </button>
 
                 <div className="auth-header">
-                  <h1>Create an account</h1>
+                  <h1>{authMode === 'signup' ? 'Create an account' : 'Welcome back'}</h1>
                   <p>
-                    Already have an account?{" "}
-                    <Link to="/login" state={{ card }} replace>
-                      Log in
-                    </Link>
+                    {authMode === 'signup' 
+                      ? 'Already have an account? '
+                      : "Don't have an account? "
+                    }
+                    <button 
+                      type="button"
+                      className="auth-switch-link"
+                      onClick={authMode === 'signup' ? switchToLogin : switchToSignup}
+                    >
+                      {authMode === 'signup' ? 'Log in' : 'Sign up'}
+                    </button>
                   </p>
                 </div>
 
-                <form className="loginForm" onSubmit={handleSubmit}>
+                {authMode === 'signup' ? (
+                  // SIGNUP FORM
+                  <form className="loginForm" onSubmit={handleSignupSubmit}>
+                    <input
+                      name="name"
+                      required
+                      placeholder="Full Name"
+                      value={signupForm.name}
+                      onChange={handleSignupChange}
+                    />
+                    <input
+                      name="email"
+                      required
+                      placeholder="Email"
+                      value={signupForm.email}
+                      onChange={handleSignupChange}
+                    />
+                    <input
+                      name="password"
+                      required
+                      type="password"
+                      placeholder="Enter Your Password"
+                      value={signupForm.password}
+                      onChange={handleSignupChange}
+                    />
+
+                    <div className="terms-row">
+                      <label className="imputTick">
+                        <input
+                          type="checkbox"
+                          checked={agree}
+                          onChange={handleTermsChange}
+                        />
+                        I agree to the &nbsp;
+                        <span className="terms-link">Term & Conditions</span>
+                      </label>
+                    </div>
+
+                    <p className="error-text">
+                      {signupError || termsError}
+                    </p>
+
+                    <button
+                      className="loginForm-submit"
+                      type="submit"
+                      disabled={signupLoading || !agree}
+                    >
+                      {signupLoading ? "Signing up..." : "Create account"}
+                    </button>
+
+                    <div className="auth-divider">or register with</div>
+
+                    <div className="social-row">
+                      <button type="button" className="social-btn google-btn">
+                        <span className="social-icon">
+                          <FcGoogle />
+                        </span>
+                        Google
+                      </button>
+                      <button type="button" className="social-btn facebook-btn">
+                        <span className="social-icon">
+                          <SiFacebook />
+                        </span>
+                        Facebook
+                      </button>
+                    </div>
+                  </form>
+                ) : (
+                  // LOGIN FORM
+                  <form className="loginForm" onSubmit={handleLoginSubmit}>
+                    <input
+                      name="email"
+                      required
+                      placeholder="Email"
+                      value={loginForm.email}
+                      onChange={handleLoginChange}
+                    />
+                    <input
+                      name="password"
+                      required
+                      type="password"
+                      placeholder="Enter Your Password"
+                      value={loginForm.password}
+                      onChange={handleLoginChange}
+                    />
+
+                    <p className="error-text">{loginError}</p>
+
+                    <button
+                      className="loginForm-submit"
+                      type="submit"
+                      disabled={loginLoading}
+                    >
+                      {loginLoading ? "Logging in..." : "Log in"}
+                    </button>
+
+                    <div className="auth-divider">or continue with</div>
+
+                    <div className="social-row">
+                      <button type="button" className="social-btn google-btn">
+                        <span className="social-icon">
+                          <FcGoogle />
+                        </span>
+                        Google
+                      </button>
+                      <button type="button" className="social-btn facebook-btn">
+                        <span className="social-icon">
+                          <SiFacebook />
+                        </span>
+                        Facebook
+                      </button>
+                    </div>
+                  </form>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* VERIFY OTP MODAL */}
+        {showVerifyModal && (
+          <div className="auth-overlay" onClick={() => setShowVerifyModal(false)}>
+            <div
+              className="auth-page"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="auth-content">
+                <button
+                  type="button"
+                  className="auth-close-btn"
+                  onClick={() => setShowVerifyModal(false)}
+                  aria-label="Close"
+                >
+                  <X size={18} />
+                </button>
+
+                <div className="auth-header">
+                  <h1>Verify your email</h1>
+                  <p>We have sent an OTP to <strong>{signupEmail}</strong></p>
+                </div>
+
+                <form className="loginForm" onSubmit={handleVerifySubmit}>
                   <input
-                    name="name"
-                    required
-                    placeholder="Full Name"
-                    onChange={handleChange}
-                  />
-                  <input
-                    name="email"
-                    required
-                    placeholder="Email"
-                    onChange={handleChange}
-                  />
-                  <input
-                    name="password"
-                    required
-                    type="password"
-                    placeholder="Enter Your Password"
-                    onChange={handleChange}
+                    placeholder="Enter OTP"
+                    value={code}
+                    onChange={handleCodeChange}
                   />
 
-                  <div className="terms-row">
-                    <label className="imputTick">
-                      <input
-                        type="checkbox"
-                        checked={agree}
-                        onChange={handleTermsChange}
-                      />
-                      I agree to the &nbsp;
-                      <span className="terms-link">Term & Conditions</span>
-                    </label>
-                  </div>
-
-                  <p className="error-text">{error || termsError}</p>
+                  <p className="error-text">{verifyError}</p>
 
                   <button
                     className="loginForm-submit"
                     type="submit"
-                    disabled={loading || !agree}
+                    disabled={verifyLoading}
                   >
-                    {loading ? "Signing up..." : "Create account"}
+                    {verifyLoading ? "Verifying..." : "Verify"}
                   </button>
-
-                  <div className="auth-divider">or register with</div>
-
-                  <div className="social-row">
-                    <button type="button" className="social-btn google-btn">
-                      <span className="social-icon">
-                        <FcGoogle />
-                      </span>
-                      Google
-                    </button>
-                    <button type="button" className="social-btn facebook-btn">
-                      <span className="social-icon">
-                        <SiFacebook />
-                      </span>
-                      Facebook
-                    </button>
-                  </div>
                 </form>
               </div>
             </div>
