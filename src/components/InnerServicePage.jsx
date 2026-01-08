@@ -214,10 +214,6 @@ export default function InnerServicePage() {
   };
 
 
-
-
-
-
 const handleGoogleLogin = async (googleToken) => {
   try {
     const res = await fetch("http://localhost:5000/api/auth/google-auth", {
@@ -466,6 +462,7 @@ const handleGoogleLogin = async (googleToken) => {
           </div>
         </div>
       )}
+
       <section className="px-4 md:px-16 lg:px-12 pt-[2.875rem]">
         <div className="heading-portion">
           <HeadingComponent text="Service" marginTop="0" paddingBottom="0" />
