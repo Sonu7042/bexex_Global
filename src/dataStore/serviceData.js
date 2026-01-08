@@ -939,75 +939,754 @@ const servicesCardData = [
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Supplier Quality Management",
-    value: "Supplier Assessment",
-    mainService: "Auditing",
-    img: img1,
-  },
-  {
-    title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Supplier Quality Management",
-    value: "Supplier Development Programs",
+    category: "5-S Workplace Organization",
+    value: "IATF 16949:2016 Internal Auditors Training Course",
     mainService: "Consulting",
     img: img1,
-  },
-  {
-    title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Supplier Quality Management",
-    value: "Supplier Audits",
-    mainService: "Auditing",
-    img: img1,
-  },
-  {
-    title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Supplier Quality Management",
-    value: "Supplier Performance Monitoring",
-    mainService: "Software Solution",
-    img: img1,
-  },
-  {
-    title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Supplier Quality Management",
-    value: "Collaborative Quality Improvement Initiatives",
-    mainService: "Consulting",
-    img: img1,
+    headingParts: [
+      { text: "IATF ", highlight: false },
+      { text: "16949:2016 ", highlight: true },
+      { text: "Internal Auditors Training Course", highlight: false },
+    ],
+    paragrapgh: [
+      "The IATF 16949:2016 Internal Auditors Training Course is designed to develop competent internal auditors who can plan, conduct, and report internal audits for an automotive Quality Management System.",
+      "Internal audits are a key requirement of IATF 16949 and help organizations ensure process control, product quality, and customer satisfaction. This course explains how to audit automotive processes, understand customer-specific requirements (CSR), and identify risks, nonconformities, and improvement opportunities.",
+      "The training focuses on a process-based, risk-based, and automotive-specific audit approach, aligned with ISO 19011, enabling participants to perform value-added internal audits rather than checklist-only audits.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of IATF 16949:2016 requirements from an internal auditor’s view",
+      "Ability to plan, conduct, and report effective automotive internal audits",
+      "Practical application of process approach, risk-based thinking, and PDCA",
+      "Skills to identify nonconformities, risks, and improvement opportunities",
+      "Confidence to communicate audit findings professionally",
+      "Capability to support continual improvement and management review",
+      "Readiness to support certification and customer audits",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Overview of IATF 16949:2016 requirements from an auditor’s perspective",
+      "Relationship between ISO 9001 and IATF 16949",
+      "Automotive process approach and risk-based thinking",
+      "Internal audit requirements as per IATF 16949:2016",
+      "Audit principles and guidelines based on ISO 19011",
+      "Audit planning, scope, criteria, and preparation",
+      "Auditing core automotive processes (production, quality, support)",
+      "Understanding and auditing Customer-Specific Requirements (CSR)",
+      "Interview techniques and objective evidence collection",
+      "Identifying, documenting, and grading nonconformities",
+      "Root cause understanding and corrective action follow-up",
+      "Audit reporting and monitoring audit effectiveness",
+      "Case studies, mock audits, and interactive discussions",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Lean Management",
-    value: "Kaizen Event Facilitation",
+    category: "5-S Workplace Organization",
+    value: "Statistical Process Control (SPC)",
     mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "Statistical Process Control ", highlight: false },
+      { text: "(SPC) ", highlight: true },
+      // { text: "Internal Auditors Training Course", highlight: false },
+    ],
+    paragrapgh: [
+      "The Statistical Process Control (SPC) Training Course helps participants understand how to monitor, control, and improve processes using basic statistical tools.",
+      "SPC is widely used in manufacturing and automotive industries to reduce variation, prevent defects, and improve process consistency. This course explains why SPC is important, how to read control charts, and how to take correct actions before problems occur, instead of reacting after defects are produced.",
+      "The training focuses on practical application, helping participants use SPC tools effectively on the shop floor and in quality control activities.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of SPC concepts and tools",
+      "Ability to monitor and control process performance",
+      "Skills to identify process variation and early warning signs",
+      "Knowledge to reduce defects and improve process consistency",
+      "Confidence to apply SPC in daily quality and production activities",
+      "Better support for IATF 16949 and ISO 9001 requirements",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to SPC concepts and benefits",
+      "Process variation: common cause vs special cause",
+      "Basic statistics for SPC (mean, range, standard deviation)",
+      "Types of control charts (X̄-R, X̄-S, I-MR, P, NP, C, U)",
+      "How to plot, read, and interpret control charts",
+      "Process capability concepts (Cp, Cpk)",
+      "Actions to take when processes go out of control",
+      "Link between SPC, quality improvement, and customer requirements",
+      "Practical examples, exercises, and discussions",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Lean Management",
-    value: "Waste Reduction – Muda",
+    category: "5-S Workplace Organization",
+    value: "Measurement System Analysis (MSA)",
     mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "Measurement System Analysis ", highlight: false },
+      { text: "(MSA) ", highlight: true },
+      // { text: "Internal Auditors Training Course", highlight: false },
+    ],
+    paragrapgh: [
+      "The Measurement System Analysis (MSA) Training Course helps participants understand how to evaluate and improve measurement systems used in quality control and inspection.",
+      "Accurate measurements are critical for correct decisions on product acceptance, process capability, and customer satisfaction. This course explains why measurement errors occur, how to assess measurement systems, and how to ensure that measurement data is reliable and consistent.",
+      "The training focuses on practical understanding of MSA tools, commonly required in IATF 16949 and automotive quality systems.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of MSA requirements and concepts",
+      "Ability to evaluate measurement system performance",
+      "Knowledge to conduct and interpret Gage R&R studies",
+      "Improved confidence in measurement data and inspection results",
+      "Better support for SPC, IATF 16949, and customer requirements",
+      "Reduced risk of wrong decisions due to measurement errors",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to MSA concepts and importance",
+      "Types of measurement errors (bias, repeatability, reproducibility, stability, linearity)",
+      "Overview of Gage R&R studies (variable and attribute)",
+      "Understanding accuracy, precision, and resolution",
+      "Data collection and basic statistical concepts",
+      "Acceptance criteria and interpretation of MSA results",
+      "Common measurement system problems and improvement actions",
+      "Link between MSA, SPC, and process capability",
+      "Practical examples and exercises",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Lean Management",
-    value: "Waste Reduction – Muri",
+    category: "5-S Workplace Organization",
+    value: "Production Part Approval Process (PPAP)",
     mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "Production Part Approval Process ", highlight: false },
+      { text: "(PPAP) ", highlight: true },
+      // { text: "Internal Auditors Training Course", highlight: false },
+    ],
+    paragrapgh: [
+      "The Production Part Approval Process (PPAP) Training Course helps participants understand how to demonstrate that production processes can consistently produce parts that meet customer requirements.",
+      "PPAP is a key requirement in IATF 16949 and is used by automotive customers to ensure product quality, process stability, and risk reduction before mass production. This course explains why PPAP is required, when it must be submitted, and how to prepare PPAP documents correctly.",
+      "The training focuses on practical understanding of PPAP elements, enabling participants to confidently support customer approvals and audits.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of PPAP requirements and customer expectations",
+      "Ability to prepare and review PPAP documentation",
+      "Knowledge of PPAP submission levels and elements",
+      "Confidence to support new product launches and changes",
+      "Better readiness for customer audits and approvals",
+      "Strong support for IATF 16949 compliance",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to PPAP purpose and requirements",
+      "When PPAP submission is required",
+      "PPAP submission levels (Levels 1 to 5)",
+      "Detailed overview of PPAP elements (18 elements)",
+      "Understanding design records and engineering changes",
+      "Process Flow Diagram, PFMEA, and Control Plan",
+      "Measurement results, MSA, SPC, and capability studies",
+      "Part Submission Warrant (PSW) preparation",
+      "Common PPAP issues and mistakes",
+      "Practical examples and case discussions",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Lean Management",
-    value: "Waste Reduction – Mura",
+    category: "5-S Workplace Organization",
+    value: "Problem Solving and Root Cause Analysis",
     mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "Problem ", highlight: false },
+      { text: "Solving and Root ", highlight: true },
+      { text: "Cause Analysis", highlight: false },
+    ],
+    paragrapgh: [
+      "The Problem Solving and Root Cause Analysis Training Course helps participants learn how to identify problems correctly, find the real root cause, and implement effective corrective actions.",
+      "Effective problem solving is critical for reducing defects, preventing recurrence, and improving process performance. This course explains why problems occur, how to analyze them systematically, and how to move from firefighting to permanent solutions.",
+      "The training focuses on structured and practical problem-solving methods, commonly required in IATF 16949, ISO 9001, and customer-specific requirements.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of structured problem-solving methods",
+      "Ability to identify true root causes, not just symptoms",
+      "Skills to develop effective and permanent corrective actions",
+      "Confidence to handle quality issues and customer complaints",
+      "Improved process performance and defect prevention",
+      "Strong support for ISO 9001 and IATF 16949 requirements",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to problem-solving concepts and benefits",
+      "Difference between symptoms and root causes",
+      "Structured problem-solving approaches (PDCA, 8D, A3)",
+      "Root cause analysis tools (5 Why, Fishbone/Ishikawa)",
+      "Problem definition and data collection techniques",
+      "Corrective and preventive actions",
+      "Verification of effectiveness and sustainability",
+      "Linking problem solving with continual improvement",
+      "Practical examples, case studies, and exercises",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Lean Management",
-    value: "Just-In-Time (JIT) Implementation",
+    category: "5-S Workplace Organization",
+    value: "Product Failure Mode & Effect Analysis (PFMEA)",
     mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "Product ", highlight: false },
+      { text: "Failure Mode & Effect Analysis ", highlight: true },
+      { text: "(PFMEA)", highlight: false },
+    ],
+    paragrapgh: [
+      "The Product Failure Mode & Effects Analysis (PFMEA) Training Course helps participants understand how to identify potential product failures early in the design stage and take actions to reduce risk before problems reach the customer.",
+      "PFMEA is an important preventive tool used in IATF 16949 and APQP, helping organizations improve product reliability, safety, and customer satisfaction. This course explains why PFMEA is required, how to identify failure modes, and how to prioritize risks using a structured approach.",
+      "The training focuses on practical understanding of PFMEA, enabling teams to prevent failures rather than reacting after defects occur.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of PFMEA methodology and requirements",
+      "Ability to identify potential product risks early",
+      "Skills to prioritize and reduce high-risk failure modes",
+      "Improved product quality, reliability, and safety",
+      "Strong support for APQP, PPAP, and IATF 16949 compliance",
+      "Shift from reactive problem-solving to preventive thinking",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to FMEA concepts and purpose",
+      "Difference between DFMEA and PFMEA",
+      "Understanding product functions and requirements",
+      "Identifying potential failure modes and effects",
+      "Determining causes of failure",
+      "Risk evaluation using Severity, Occurrence, and Detection",
+      "Action planning to reduce risk",
+      "Understanding AIAG–VDA FMEA basics",
+      "Link between PFMEA, design control, and quality planning",
+      "Practical examples and case studies",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+
+  {
+    title: "QUALITY & BUSINESS EXCELLENCE",
+    category: "5-S Workplace Organization",
+    value: "Key Performance Indicators (KPI)",
+    mainService: "Consulting",
+    img: img1,
+    headingParts: [
+      { text: "Key Performance Indicators ", highlight: false },
+      { text: "(KPI)", highlight: true },
+      // { text: "(PFMEA)", highlight: false },
+    ],
+    paragrapgh: [
+      "The Product Failure Mode & Effects Analysis (PFMEA) Training Course helps participants understand how to identify potential product failures early in the design stage and take actions to reduce risk before problems reach the customer.",
+      "PFMEA is an important preventive tool used in IATF 16949 and APQP, helping organizations improve product reliability, safety, and customer satisfaction. This course explains why PFMEA is required, how to identify failure modes, and how to prioritize risks using a structured approach.",
+      "The training focuses on practical understanding of PFMEA, enabling teams to prevent failures rather than reacting after defects occur.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of KPIs and their importance",
+      "Ability to define meaningful KPIs for processes and departments",
+      "Skills to monitor performance and identify improvement opportunities",
+      "Better data-based decision-making capability",
+      "Strong support for ISO 9001 and IATF 16949 compliance",
+      "Improved alignment between daily operations and organizational goals",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to KPIs and performance measurement",
+      "Difference between KPIs and metrics",
+      "Selecting effective and measurable KPIs",
+      "Linking KPIs to quality objectives and business goals",
+      "Process, quality, delivery, cost, and safety KPIs",
+      "Setting targets, limits, and trends",
+      "Monitoring, analyzing, and reporting KPI data",
+      "Using KPIs for management review and improvement actions",
+      "Common KPI mistakes and best practices",
+      "Practical examples and exercises",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+  },
+
+  {
+    title: "QUALITY & BUSINESS EXCELLENCE",
+    category: "5-S Workplace Organization",
+    value: "7 QC Tools",
+    mainService: "Consulting",
+    img: img1,
+    headingParts: [
+      { text: "7 QC ", highlight: false },
+      { text: "Tools", highlight: true },
+      // { text: "(PFMEA)", highlight: false },
+    ],
+    paragrapgh: [
+      "The 7 QC Tools Training Course helps participants learn how to identify, analyze, and solve quality problems using basic and practical quality tools.",
+      "The 7 QC Tools are widely used in manufacturing and service industries to analyze data, identify root causes, and improve processes. This course explains when and how to use each tool, making problem-solving more structured and data-driven.",
+      "The training focuses on practical application, helping teams move from assumptions to fact-based decisions.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of all 7 QC Tools",
+      "Ability to apply the right tool for problem analysis",
+      "Improved problem-solving and analytical skills",
+      "Better use of data for quality improvement",
+      "Support for ISO 9001 and IATF 16949 requirements",
+      "Increased confidence in daily quality improvement activities",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to the 7 QC Tools and their purpose",
+      "Check Sheet – data collection and recording",
+      "Pareto Chart – identifying major problems (80/20 rule)",
+      "Cause & Effect (Fishbone) Diagram – root cause analysis",
+      "Histogram – understanding data distribution",
+      "Control Chart – monitoring process stability",
+      "Scatter Diagram – identifying relationships between variables",
+      "Flow Chart – understanding process flow",
+      "Selecting the right tool for the right problem",
+      "Practical examples and case studies",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+  },
+
+  {
+    title: "QUALITY & BUSINESS EXCELLENCE",
+    category: "5-S Workplace Organization",
+    value: "New 7 QC Tools",
+    mainService: "Consulting",
+    img: img1,
+    headingParts: [
+      { text: "New ", highlight: false },
+      { text: "7 QC ", highlight: true },
+      { text: "Tools", highlight: false },
+    ],
+    paragrapgh: [
+      "The New 7 QC Tools Training Course helps participants learn how to analyze complex problems, plan improvements, and make better decisions using management and planning tools.",
+      "Unlike the basic 7 QC Tools, the New 7 QC Tools focus more on idea organization, problem structuring, and decision-making, especially when data is limited. These tools are widely used in quality improvement, project management, and root cause analysis.",
+      "The training emphasizes practical understanding and real-life application, supporting continual improvement initiatives.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of the New 7 QC Tools",
+      "Ability to structure complex problems clearly",
+      "Improved planning and decision-making skills",
+      "Better teamwork and idea organization",
+      "Strong support for quality improvement and problem-solving activities",
+      "Enhanced capability to manage risks and improvement projects",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to New 7 QC Tools and their purpose",
+      "Affinity Diagram – organizing ideas and opinions",
+      "Relations Diagram – identifying cause-and-effect relationships",
+      "Tree Diagram – breaking down problems and solutions",
+      "Matrix Diagram – analyzing relationships between factors",
+      "Matrix Data Analysis – prioritizing and decision-making",
+      "Arrow Diagram – project planning and scheduling",
+      "Process Decision Program Chart (PDPC) – risk identification and prevention",
+      "Selecting the right tool for planning and improvement",
+      "Practical examples and case discussions",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+  },
+
+  {
+    title: "QUALITY & BUSINESS EXCELLENCE",
+    category: "5-S Workplace Organization",
+    value: "APQP & PPAP",
+    mainService: "Consulting",
+    img: img1,
+    headingParts: [
+      { text: "APQP ", highlight: false },
+      { text: "& ", highlight: true },
+      { text: "PPAP", highlight: false },
+    ],
+    paragrapgh: [
+      "The APQP & PPAP Training Course helps participants understand how to plan product quality in advance and obtain customer approval for production parts.",
+      "Advanced Product Quality Planning (APQP) ensures that product and process risks are identified early, while Production Part Approval Process (PPAP) confirms that the production process can consistently meet customer requirements. This course explains why APQP and PPAP are required, how they are connected, and how they support successful product launches and customer satisfaction.",
+      "The training focuses on practical application, commonly required in IATF 16949 and automotive customer requirements.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of APQP and PPAP requirements",
+      "Ability to support new product development and launch activities",
+      "Knowledge to prepare and review APQP and PPAP documents",
+      "Improved coordination between design, production, and quality teams",
+      "Better readiness for customer audits and approvals",
+      "Strong support for IATF 16949 compliance and continual improvement",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to APQP and PPAP concepts and objectives",
+      "Relationship between APQP, PPAP, FMEA, Control Plan, SPC, and MSA",
+      "APQP phases and key deliverables",
+      "Understanding customer requirements and risk-based planning",
+      "PPAP requirements, submission levels, and timing",
+      "Overview of PPAP elements and documentation",
+      "Preparation of Part Submission Warrant (PSW)",
+      "Common issues during APQP and PPAP implementation",
+      "Practical examples and case discussions",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+  },
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "Lean Management",
