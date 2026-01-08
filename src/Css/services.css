@@ -291,14 +291,18 @@
 
 
 
+
+
 @media (max-width:375px){
+
   .service-card-plus{
     padding: 5px 5px;
   }
+
   .service-card-title {
     font-size: 1.7rem;
-
   }
+
   .service-card-desc {
     font-size: 1.0rem;
   }
@@ -306,11 +310,11 @@
 
 
 
+
 .service-inner-hero{
    padding-top: 2rem;
- 
-
 }
+
 
 
 @media (min-width:450px){
@@ -324,10 +328,6 @@
   }
 }
 
-
-
-
-   
 
 
 .service-card {
