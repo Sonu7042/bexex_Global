@@ -869,9 +869,72 @@ const servicesCardData = [
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
-    value: "Work Instruction Creation",
+    value: "IATF 16949:2016 Awareness Session",
     mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "IATF ", highlight: false },
+      { text: "16949:2016 ", highlight: true },
+      { text: "Awareness Session", highlight: false },
+    ],
+    paragrapgh: [
+      "The IATF 16949:2016 Awareness Session provides a basic understanding of the automotive Quality Management System requirements for organizations involved in automotive manufacturing and supply chains.",
+      "This session explains what IATF 16949 is, why it is important, and how it helps improve product quality, reduce defects, and meet customer-specific requirements. It creates awareness of key QMS concepts and prepares participants for further implementation or internal auditor training.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Basic understanding of IATF 16949:2016 requirements",
+      "Awareness of automotive quality system expectations",
+      "Understanding of roles and responsibilities within IATF QMS",
+      "Knowledge of how IATF helps improve quality and reduce defects",
+      "Readiness for implementation, internal audits, or advanced training",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to IATF 16949:2016 and automotive QMS",
+      "Difference between ISO 9001 and IATF 16949",
+      "Structure and key requirements of IATF 16949:2016",
+      "Customer-specific requirements (CSR) – basic understanding",
+      "Risk-based thinking and process approach in automotive QMS",
+      "Importance of documented information",
+      "Role of employees in meeting IATF requirements",
+      "Overview of internal audits and continual improvement",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
 
   {
