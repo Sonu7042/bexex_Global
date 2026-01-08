@@ -17,6 +17,18 @@ const userSchema= new mongoose.Schema({
         type:String,
         required:true,
     },
+
+    provider: {
+      type: String,
+      enum: ["local", "google", "facebook"],
+      default: "local",
+    },
+
+    providerId: {
+      type: String,
+    },
+
+
     
     isVerified:{
         type:Boolean,

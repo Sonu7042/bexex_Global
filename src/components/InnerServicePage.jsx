@@ -14,6 +14,8 @@ import freeLearningicon from "../assets/images/service_image/innerServices_books
 import { signup, verifyEmail, login } from "../api/authApi";
 import { FcGoogle } from "react-icons/fc";
 import { SiFacebook } from "react-icons/si";
+import { GoogleLogin } from "@react-oauth/google";
+
 
 export default function InnerServicePage() {
   const { state } = useLocation();
@@ -206,6 +208,31 @@ export default function InnerServicePage() {
       setVerifyLoading(false);
     }
   };
+
+
+
+
+
+
+const handleGoogleLogin = async (googleToken) => {
+  try {
+    const res = await fetch("http://localhost:5000/api/auth/google-auth", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ token: googleToken }),
+    });
+
+    const data = await res.json();
+
+    localStorage.setItem("token", data.token);
+    setShowAuthModal(false);
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+
+
 
   return (
     <>
@@ -499,12 +526,15 @@ export default function InnerServicePage() {
                     <div className="auth-divider">or continue with</div>
 
                     <div className="social-row">
-                      <button type="button" className="social-btn google-btn">
-                        <span className="social-icon">
-                          <FcGoogle />
-                        </span>
-                        Google
-                      </button>
+                       <GoogleLogin
+                            onSuccess={(credentialResponse) => {
+                              handleGoogleLogin(credentialResponse.credential);
+                            }}
+                            onError={() => {
+                              console.log("Google Login Failed");
+                            }}
+                          />
+
                       <button type="button" className="social-btn facebook-btn">
                         <span className="social-icon">
                           <SiFacebook />
