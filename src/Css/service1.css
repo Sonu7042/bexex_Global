@@ -16,7 +16,7 @@
 .csCardItem {
   display: flex;
   flex-direction: column;
-  width: 23%; /* 3 per row on desktop */
+  flex: 0 0 calc(25% - 2rem); /* 4 cards */
 }
 
 /* image area */
@@ -412,4 +412,21 @@
 
 .sfBarPillMenuItem:hover {
   background: #f2f2f2;
+}
+@media (max-width: 1200px) {
+  .csCardItem {
+    flex: 0 0 calc(33.333% - 2rem); /* 3 cards */
+  }
+}
+
+@media (max-width: 900px) {
+  .csCardItem {
+    flex: 0 0 calc(50% - 2rem); /* 2 cards */
+  }
+}
+
+@media (max-width: 520px) {
+  .csCardItem {
+    flex: 0 0 100%; /* 1 card */
+  }
 }
