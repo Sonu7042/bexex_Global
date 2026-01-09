@@ -1,6 +1,11 @@
 import img1 from "../assets/images/nature.jpg";
+import booksIcon from "../assets/images/service_image/innerServices_booksIcons/books-svgrepo-com.svg";
+import certificateicn from "../assets/images/service_image/innerServices_booksIcons/certificate-contract-svgrepo-com.svg";
 
 const servicesCardData = [
+
+
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "Six Sigma",
@@ -65,7 +70,37 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+
+    whatWeProvide:[
+        {
+          img: booksIcon,
+          text: "Training Material (PDF Format)",
+          width: "30px",
+        },
+        {
+          img: certificateicn,
+          text: "Training Certificate",
+          width: "30px",
+        },
+    ],
+
+
+
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",

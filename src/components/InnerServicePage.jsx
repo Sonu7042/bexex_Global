@@ -472,6 +472,8 @@ export default function InnerServicePage() {
         </div>
       )}
 
+
+
       {/* VERIFY OTP MODAL */}
       {showVerifyModal && (
         <div className="auth-overlay" onClick={() => setShowVerifyModal(false)}>
@@ -514,6 +516,7 @@ export default function InnerServicePage() {
           </div>
         </div>
       )}
+
 
       <section className="px-4 md:px-16 lg:px-12 pt-[2.875rem]">
         <div className="heading-portion">
@@ -652,25 +655,16 @@ export default function InnerServicePage() {
             </section>
 
             <div className="fs-badges">
-              <div className="fs-badge">
-                <span className="fs-badge-icon">
-                  <img width={"30px"} src={booksIcon} alt="icon" />
-                </span>
-                <span>Training Material (PDF Format)</span>
-              </div>
-              <div className="fs-badge">
-                <span className="fs-badge-icon">
-                  <img width={"30px"} src={certificateicn} alt="icon" />
-                </span>
-                <span>Training Certificate</span>
-              </div>
-              {/* <div className="fs-badge">
-                <span className="fs-badge-icon">
-                  <img width={"40px"} src={freeLearningicon} alt="icon" />
-                </span>
-                <span>Free Learning Resources</span>
-              </div> */}
+                {card?.whatWeProvide.map((item, index) => (
+                  <div className="fs-badge" key={index}>
+                    <span className="fs-badge-icon">
+                      <img width={item?.width} src={item?.img} alt="icon" />
+                    </span>
+                    <span>{item?.text}</span>
+                  </div>
+                ))}
             </div>
+
           </div>
         </div>
 
