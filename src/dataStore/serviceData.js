@@ -1859,8 +1859,7 @@ const servicesCardData = [
       "Readiness for internal, surveillance, and certification audits",
       "Stronger contribution to environmental performance improvement",
       "Continued alignment with sustainability goals",
-   ],
-
+    ],
 
     secondSubHeading: "What We Cover During Trainings :",
     secondListItems: [
@@ -1874,8 +1873,7 @@ const servicesCardData = [
       "Roles, responsibilities, and employee awareness",
       "Continual improvement and management review",
       "Practical examples and discussion",
-   ],
-
+    ],
 
     downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
     downlaodheadingSubText:
@@ -1929,30 +1927,26 @@ const servicesCardData = [
     ],
     subHeading: "What You'll Gain :",
     listItems: [
-  "Basic understanding of ISO 14001:2015 requirements",
-  "Awareness of environmental risks and controls",
-  "Clear understanding of employee roles in EMS",
-  "Improved environmental responsibility and behavior",
-  "Support for organizational EMS objectives",
-  "Contribution to sustainable and compliant operations",
-],
-
-
+      "Basic understanding of ISO 14001:2015 requirements",
+      "Awareness of environmental risks and controls",
+      "Clear understanding of employee roles in EMS",
+      "Improved environmental responsibility and behavior",
+      "Support for organizational EMS objectives",
+      "Contribution to sustainable and compliant operations",
+    ],
 
     secondSubHeading: "What We Cover During Trainings :",
     secondListItems: [
-  "Introduction to ISO 14001:2015 and EMS basics",
-  "Importance of environmental protection and sustainability",
-  "Understanding environmental aspects and impacts",
-  "Legal and regulatory environmental requirements (basic awareness)",
-  "Roles and responsibilities of employees",
-  "Waste management, energy conservation, and pollution prevention",
-  "Emergency preparedness and response (environmental incidents)",
-  "Good environmental practices at the workplace",
-  "Practical examples and discussion",
-],
-
-
+      "Introduction to ISO 14001:2015 and EMS basics",
+      "Importance of environmental protection and sustainability",
+      "Understanding environmental aspects and impacts",
+      "Legal and regulatory environmental requirements (basic awareness)",
+      "Roles and responsibilities of employees",
+      "Waste management, energy conservation, and pollution prevention",
+      "Emergency preparedness and response (environmental incidents)",
+      "Good environmental practices at the workplace",
+      "Practical examples and discussion",
+    ],
 
     downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
     downlaodheadingSubText:
@@ -2007,12 +2001,395 @@ const servicesCardData = [
     ],
     subHeading: "What You'll Gain :",
     listItems: [
-  "Clear understanding of ISO 14001:2015 requirements from an auditor’s view",
-  "Ability to plan, conduct, and report EMS internal audits",
-  "Skills to identify environmental risks, nonconpliances, and improvements",
-  "Confidence to communicate audit findings professionally",
-  "Better readiness for external and certification audits",
-  "Strong support for continual environmental performance improvement",
+      "Clear understanding of ISO 14001:2015 requirements from an auditor’s view",
+      "Ability to plan, conduct, and report EMS internal audits",
+      "Skills to identify environmental risks, nonconpliances, and improvements",
+      "Confidence to communicate audit findings professionally",
+      "Better readiness for external and certification audits",
+      "Strong support for continual environmental performance improvement",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Overview of ISO 14001:2015 requirements from an auditor’s perspective",
+      "EMS structure and Annex SL (High-Level Structure)",
+      "Internal audit requirements as per ISO 14001:2015",
+      "Audit principles and guidelines based on ISO 19011",
+      "Audit planning: scope, criteria, and preparation",
+      "Identifying and evaluating environmental aspects and impacts",
+      "Auditing legal and compliance obligations",
+      "Interview techniques and objective evidence collection",
+      "Identifying and writing environmental nonconformities",
+      "Corrective actions and follow-up audits",
+      "Audit reporting and monitoring audit effectiveness",
+      "Case studies, mock audits, and interactive discussions",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+  },
+
+  {
+    title: "QUALITY & BUSINESS EXCELLENCE",
+    category: "5-S Workplace Organization",
+    value: "ISO 14001:2015 Certified Lead Implementor Program",
+    mainService: "Consulting",
+    img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14001:2015 ", highlight: true },
+      { text: "Certified Lead Implementor Program", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 14001:2015 Certified Lead Implementor Program is designed for professionals who want to plan, implement, manage, and improve an Environmental Management System (EMS) in line with ISO 14001:2015 requirements.",
+      "This program provides in-depth knowledge of EMS implementation, environmental risk management, legal compliance, and continual improvement. It prepares participants to lead EMS implementation projects, support certification activities, and ensure long-term environmental performance.",
+      "The program focuses on practical implementation, not just standard interpretation, enabling participants to confidently lead EMS deployment across the organization.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "In-depth understanding of ISO 14001:2015 audit requirements",
+      "Ability to lead and manage EMS audit teams",
+      "Skills to conduct effective and professional EMS audits",
+      "Confidence to communicate audit findings to top management",
+      "Readiness for certification body and supplier audits",
+      "Qualification pathway to become an ISO 14001:2015 Lead Auditor",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Detailed interpretation of ISO 14001:2015 requirements",
+      "Roles and responsibilities of a Lead Auditor",
+      "Audit principles and guidelines as per ISO 19011",
+      "Audit planning, team management, and audit programs",
+      "Process-based and risk-based audit approach",
+      "Auditing environmental aspects, impacts, and legal compliance",
+      "Conducting opening and closing meetings",
+      "Advanced interview techniques and evidence evaluation",
+      "Identifying, grading, and reporting nonconformities",
+      "Corrective action review and follow-up audits",
+      "Audit reporting and audit team performance evaluation",
+      "Mock audits, case studies, and exam preparation",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+  },
+
+  {
+    title: "QUALITY & BUSINESS EXCELLENCE",
+    category: "5-S Workplace Organization",
+    value: "ISO 14001:2015 Environmental Legislation",
+    mainService: "Consulting",
+    img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14001:2015 ", highlight: true },
+      { text: "Environmental Legislation", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 14001:2015 Environmental Legislation Training helps participants understand the legal and regulatory requirements related to environmental management and how they apply within an Environmental Management System (EMS).",
+      "Compliance with environmental laws is a core requirement of ISO 14001. This course explains why legal compliance is important, how to identify applicable environmental laws, and how organizations can meet and monitor compliance obligations to avoid penalties and environmental risks.",
+      "The training focuses on practical understanding of environmental legislation and its integration into daily operations.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of environmental legal requirements",
+      "Ability to identify and maintain a legal compliance register",
+      "Awareness of environmental risks and liabilities",
+      "Improved confidence in meeting ISO 14001 legal obligations",
+      "Better preparedness for EMS audits and regulatory inspections",
+      "Strong support for environmental compliance and sustainability",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Overview of environmental laws and regulations",
+      "Legal requirements under ISO 14001:2015",
+      "Identification of applicable legal and other requirements",
+      "Air, water, waste, and hazardous material regulations",
+      "Environmental permits, consents, and approvals",
+      "Compliance obligations and legal registers",
+      "Monitoring, evaluation, and legal compliance assessment",
+      "Roles and responsibilities for legal compliance",
+      "Handling noncompliance and corrective actions",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+  },
+
+  {
+    title: "QUALITY & BUSINESS EXCELLENCE",
+    category: "5-S Workplace Organization",
+    value: "ISO 14001:2015 Pollution Abetment Techniques",
+    mainService: "Consulting",
+    img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14001:2015 ", highlight: true },
+      { text: "Pollution Abetment Techniques", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 14001:2015 Pollution Abatement Techniques training focuses on helping organizations identify, control, and reduce environmental pollution in line with ISO 14001 requirements.",
+      "Pollution prevention is a key element of an effective Environmental Management System (EMS). This course explains practical methods to minimize air, water, soil, and noise pollution, improve environmental performance, and support legal compliance and sustainability goals.",
+      "The training emphasizes cost-effective and practical pollution control techniques that can be applied in daily operations.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+  "Understanding of practical pollution control techniques",
+  "Ability to reduce environmental impact and operational risks",
+  "Improved compliance with environmental laws and permits",
+  "Enhanced EMS performance and continual improvement",
+  "Awareness of cost savings through pollution prevention",
+  "Strong contribution to environmental sustainability goals",
+],
+
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+  "Concept of pollution prevention and control",
+  "ISO 14001:2015 requirements related to pollution abatement",
+  "Identification of sources of pollution",
+  "Air pollution control techniques",
+  "Water and wastewater treatment methods",
+  "Solid and hazardous waste management practices",
+  "Noise and vibration control measures",
+  "Energy efficiency and resource conservation",
+  "Emergency preparedness for environmental incidents",
+  "Monitoring and measuring pollution levels",
+],
+
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+  },
+
+  {
+    title: "QUALITY & BUSINESS EXCELLENCE",
+    category: "5-S Workplace Organization",
+    value: "ISO 14001:2015 Environmental Review or Aspect-Impact Analysis",
+    mainService: "Consulting",
+    img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14001:2015 ", highlight: true },
+      { text: "Environmental Review or Aspect-Impact Analysis", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 14001:2015 Environmental Review / Aspect–Impact Analysis training helps participants understand how to identify environmental aspects and evaluate their impacts arising from an organization’s activities, products, and services.",
+      "Aspect–Impact Analysis is the foundation of an effective Environmental Management System (EMS). This course explains how to identify significant environmental aspects, assess risks and opportunities, and prioritize controls to reduce environmental impact and meet ISO 14001 requirements.",
+      "The training focuses on practical and systematic methods to support environmental planning and continual improvement.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+  "Clear understanding of environmental aspects and impacts",
+  "Ability to identify and evaluate significant environmental aspects",
+  "Improved environmental risk management",
+  "Better planning of environmental objectives and controls",
+  "Strong compliance with ISO 14001:2015 requirements",
+  "Support for continual improvement in EMS performance",
+],
+
+
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+  "Introduction to environmental aspects and impacts",
+  "ISO 14001:2015 requirements related to environmental planning",
+  "Identification of aspects from activities, products, and services",
+  "Normal, abnormal, and emergency conditions",
+  "Life-cycle perspective in aspect identification",
+  "Criteria for significance evaluation",
+  "Risk-based approach for aspect–impact assessment",
+  "Developing and maintaining aspect–impact registers",
+  "Linking significant aspects to operational controls and objectives",
+],
+
+
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+  },
+
+  {
+    title: "QUALITY & BUSINESS EXCELLENCE",
+    category: "5-S Workplace Organization",
+    value: "ISO 14001:2015 Fundamental of Environment",
+    mainService: "Consulting",
+    img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14001:2015 ", highlight: true },
+      { text: "Fundamental of Environment", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 14001:2015 Fundamentals of Environment training provides basic knowledge of environmental concepts, issues, and responsibilities relevant to organizations and individuals.",
+      "This course helps participants understand how business activities affect the environment and why environmental protection, sustainability, and legal compliance are important. It builds a strong foundation for understanding ISO 14001 and supports effective implementation of an Environmental Management System (EMS).",
+      "The training is ideal for beginners and for creating environmental awareness across all levels of the organization.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+  "Basic understanding of environmental fundamentals",
+  "Awareness of environmental issues and risks",
+  "Improved sense of environmental responsibility",
+  "Better readiness for ISO 14001 implementation",
+  "Support for sustainability and green initiatives",
+  "Positive contribution to organizational environmental culture",
 ],
 
 
@@ -2020,18 +2397,16 @@ const servicesCardData = [
 
     secondSubHeading: "What We Cover During Trainings :",
     secondListItems: [
-  "Overview of ISO 14001:2015 requirements from an auditor’s perspective",
-  "EMS structure and Annex SL (High-Level Structure)",
-  "Internal audit requirements as per ISO 14001:2015",
-  "Audit principles and guidelines based on ISO 19011",
-  "Audit planning: scope, criteria, and preparation",
-  "Identifying and evaluating environmental aspects and impacts",
-  "Auditing legal and compliance obligations",
-  "Interview techniques and objective evidence collection",
-  "Identifying and writing environmental nonconformities",
-  "Corrective actions and follow-up audits",
-  "Audit reporting and monitoring audit effectiveness",
-  "Case studies, mock audits, and interactive discussions",
+  "Basic concepts of environment and sustainability",
+  "Human activities and their environmental impacts",
+  "Air, water, land, and natural resource conservation",
+  "Pollution types and environmental degradation",
+  "Climate change and energy use awareness",
+  "Waste generation and waste management basics",
+  "Environmental responsibility of organizations and employees",
+  "Introduction to ISO 14001:2015 and EMS",
+  "Role of individuals in environmental protection",
+  "Practical examples and discussions",
 ],
 
 
@@ -2075,49 +2450,42 @@ const servicesCardData = [
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
-    value: "ISO 14001:2015 Internal Auditors Training Course",
+    value: "ISO 14046:2015 Water Footprint Assessment Training",
     mainService: "Consulting",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
-      { text: "14001:2015 ", highlight: true },
-      { text: "Internal Auditors Training Course", highlight: false },
+      { text: "14046:2015 ", highlight: true },
+      { text: "Water Footprint Assessment Training", highlight: false },
     ],
     paragrapgh: [
-      "The ISO 14001:2015 Internal Auditors Training Course is designed to develop the skills needed to plan, conduct, and report internal audits of an Environmental Management System (EMS).",
-      "Internal audits are a key requirement of ISO 14001 and help organizations ensure environmental compliance, risk control, and continual improvement. This course explains how to audit environmental processes, identify nonconformities, and evaluate the effectiveness of environmental controls.",
-      "The training focuses on a process-based and risk-based audit approach, aligned with ISO 19011, enabling participants to conduct practical and value-added EMS audits.",
+      "The ISO 14046:2015 Water Footprint Assessment Training helps participants understand how water is used, consumed, and impacted by organizational activities, products, and services.",
+      "With increasing water scarcity and regulatory focus, this course explains how to assess water footprint, identify water-related risks, and improve water efficiency. It provides a structured approach to measure, evaluate, and reduce water impacts in line with international standards and sustainability goals.",
+      "The training supports organizations in responsible water management and environmental performance improvement.",
     ],
     subHeading: "What You'll Gain :",
     listItems: [
-  "Clear understanding of ISO 14001:2015 requirements from an auditor’s view",
-  "Ability to plan, conduct, and report EMS internal audits",
-  "Skills to identify environmental risks, nonconpliances, and improvements",
-  "Confidence to communicate audit findings professionally",
-  "Better readiness for external and certification audits",
-  "Strong support for continual environmental performance improvement",
+  "Clear understanding of water footprint concepts and assessment",
+  "Ability to identify high water-consuming activities",
+  "Improved water efficiency and conservation awareness",
+  "Support for environmental compliance and sustainability reporting",
+  "Better decision-making for water risk management",
+  "Contribution to sustainable water use and environmental protection",
 ],
-
-
 
 
     secondSubHeading: "What We Cover During Trainings :",
     secondListItems: [
-  "Overview of ISO 14001:2015 requirements from an auditor’s perspective",
-  "EMS structure and Annex SL (High-Level Structure)",
-  "Internal audit requirements as per ISO 14001:2015",
-  "Audit principles and guidelines based on ISO 19011",
-  "Audit planning: scope, criteria, and preparation",
-  "Identifying and evaluating environmental aspects and impacts",
-  "Auditing legal and compliance obligations",
-  "Interview techniques and objective evidence collection",
-  "Identifying and writing environmental nonconformities",
-  "Corrective actions and follow-up audits",
-  "Audit reporting and monitoring audit effectiveness",
-  "Case studies, mock audits, and interactive discussions",
+  "Introduction to water footprint and water sustainability",
+  "Overview of ISO 14046:2015 requirements",
+  "Types of water footprint (blue, green, and grey water)",
+  "Water use and consumption across processes and life cycle",
+  "Data collection and basic assessment methodology",
+  "Identifying water-related risks and impacts",
+  "Water efficiency and conservation practices",
+  "Interpretation and communication of water footprint results",
+  "Linking water footprint to EMS and sustainability goals",
 ],
-
-
 
 
     downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
@@ -2157,47 +2525,80 @@ const servicesCardData = [
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Total Productive Maintenance (TPM)",
-    value: "Autonomous Maintenance Program Implementation",
+    category: "5-S Workplace Organization",
+    value: "ISO 14046:2015 Water Footprint Assessment Training",
     mainService: "Consulting",
     img: img1,
-  },
-  {
-    title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Total Productive Maintenance (TPM)",
-    value: "Planned Maintenance Program Implementation",
-    mainService: "Consulting",
-    img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14046:2015 ", highlight: true },
+      { text: "Water Footprint Assessment Training", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 14046:2015 Water Footprint Assessment Training helps participants understand how water is used, consumed, and impacted by organizational activities, products, and services.",
+      "With increasing water scarcity and regulatory focus, this course explains how to assess water footprint, identify water-related risks, and improve water efficiency. It provides a structured approach to measure, evaluate, and reduce water impacts in line with international standards and sustainability goals.",
+      "The training supports organizations in responsible water management and environmental performance improvement.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+  "Clear understanding of water footprint concepts and assessment",
+  "Ability to identify high water-consuming activities",
+  "Improved water efficiency and conservation awareness",
+  "Support for environmental compliance and sustainability reporting",
+  "Better decision-making for water risk management",
+  "Contribution to sustainable water use and environmental protection",
+],
+
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+  "Introduction to water footprint and water sustainability",
+  "Overview of ISO 14046:2015 requirements",
+  "Types of water footprint (blue, green, and grey water)",
+  "Water use and consumption across processes and life cycle",
+  "Data collection and basic assessment methodology",
+  "Identifying water-related risks and impacts",
+  "Water efficiency and conservation practices",
+  "Interpretation and communication of water footprint results",
+  "Linking water footprint to EMS and sustainability goals",
+],
+
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
 
-  {
-    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
-    category: "Fire Safety",
-    value: "Fire Risk Assessments as per IS Standards",
-    mainService: "Auditing",
-    img: img1,
-  },
-  {
-    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
-    category: "Fire Safety",
-    value: "Fire Risk Assessments as per NBC",
-    mainService: "Auditing",
-    img: img1,
-  },
-  {
-    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
-    category: "Fire Safety",
-    value: "Design Audits of Fire Detection Systems",
-    mainService: "Auditing",
-    img: img1,
-  },
-  {
-    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
-    category: "Fire Safety",
-    value: "Adequacy Audits of Fire Protection Systems",
-    mainService: "Auditing",
-    img: img1,
-  },
   {
     title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
     category: "Fire Safety",
