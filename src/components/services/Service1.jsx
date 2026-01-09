@@ -43,32 +43,32 @@ const secondaryOptions = [
   {
     key: "quality_business_excellence",
     value: "Consulting",
-    label: "quality & business excellence",
+    label: "Quality & Business Excellence",
   },
   {
     key: "management_systems_compliance",
     value: "Auditing",
-    label: "management systems and compliance",
+    label: "Management Systems and Compliance",
   },
   {
     key: "esg_sustainability_services",
     value: "Consulting",
-    label: "esg and sustainability services",
+    label: "ESG and Sustainability Services",
   },
   {
     key: "software_digital_solutions",
     value: "Software Solution",
-    label: "software & digital solutions",
+    label: "Software & Digital Solutions",
   },
   {
     key: "training_competency_development",
     value: "Training",
-    label: "training & competency development",
+    label: "Training & Competency Development",
   },
   {
     key: "environment_health_safety",
     value: "Auditing",
-    label: "environment, health & safety solutions",
+    label: "Environment, Health & Safety Solutions",
   },
 ];
 
