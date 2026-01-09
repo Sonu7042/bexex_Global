@@ -18,7 +18,6 @@ import { GoogleLogin } from "@react-oauth/google";
 import FacebookLogin from "@greatsumini/react-facebook-login";
 import { LearnMoreButton } from "./Buttons";
 
-
 export default function InnerServicePage() {
   const { state } = useLocation();
   const card = state?.card;
@@ -215,14 +214,20 @@ export default function InnerServicePage() {
     }
   };
 
-  const openPdfInNewTab = () => {
-    // if (card?.downloadPdf) {
-    //   window.open(card.downloadPdf, "_blank", "noopener,noreferrer");
-    // }
+  // const downloadPdfWithAuthWithProvider = () => {
+  //   const token = localStorage.getItem("token");
+  //   if (!token) {
+  //     sessionStorage.setItem("pdfAfterAuth", card.downloadPdf);
+  //   }
+  // };
 
-    if (card?.downloadPdf) {
-      window.location.href = card.downloadPdf;
-    }
+  const openPdfInNewTab = () => {
+     // redirect to pdf
+     if (card?.downloadPdf) {
+        window.open(card.downloadPdf, "_blank");
+      }
+
+   
   };
 
   // GOOGLE LOGIN / SIGNUP HANDLER
@@ -252,6 +257,9 @@ export default function InnerServicePage() {
     }
   };
 
+
+
+
   const handleFacebookLogin = async (response) => {
     try {
       const res = await fetch("http://localhost:5000/api/auth/facebook-auth", {
@@ -267,13 +275,16 @@ export default function InnerServicePage() {
       localStorage.setItem("token", data.token);
       setShowAuthModal(false);
 
-      // openPdfInNewTab();
+       openPdfInNewTab();
     } catch (err) {
       console.error(err);
 
       setLoginError("Google login failed. Try again.");
     }
   };
+
+
+
 
   useEffect(() => {
     if (showAuthModal || showVerifyModal) {
@@ -506,7 +517,7 @@ export default function InnerServicePage() {
 
       <section className="px-4 md:px-16 lg:px-12 pt-[2.875rem]">
         <div className="heading-portion">
-         <LearnMoreButton
+          <LearnMoreButton
             text="All Services"
             link="/services"
             // marginTop="0"
@@ -763,9 +774,7 @@ export default function InnerServicePage() {
                         appId="3213189502315910"
                         onSuccess={(response) => {
                           // console.log("FB Response:", response);
-                          handleFacebookLogin(
-                             response
-                          );
+                          handleFacebookLogin(response);
                         }}
                         onFail={(error) => {
                           console.log("FB Error:", error);
@@ -825,13 +834,11 @@ export default function InnerServicePage() {
                         }}
                       />
 
-                       <FacebookLogin
+                      <FacebookLogin
                         appId="3213189502315910"
                         onSuccess={(response) => {
                           // console.log("FB Response:", response);
-                          handleFacebookLogin(
-                             response
-                          );
+                          handleFacebookLogin(response);
                         }}
                         onFail={(error) => {
                           console.log("FB Error:", error);
