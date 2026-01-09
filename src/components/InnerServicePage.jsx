@@ -15,7 +15,7 @@ import { signup, verifyEmail, login } from "../api/authApi";
 import { FcGoogle } from "react-icons/fc";
 import { SiFacebook } from "react-icons/si";
 import { GoogleLogin } from "@react-oauth/google";
-
+import FacebookLogin from "@greatsumini/react-facebook-login";
 
 export default function InnerServicePage() {
   const { state } = useLocation();
@@ -213,53 +213,65 @@ export default function InnerServicePage() {
     }
   };
 
-
-
-const openPdfInNewTab = () => {
-  // if (card?.downloadPdf) {
-  //   window.open(card.downloadPdf, "_blank", "noopener,noreferrer");
-  // }
+  const openPdfInNewTab = () => {
+    // if (card?.downloadPdf) {
+    //   window.open(card.downloadPdf, "_blank", "noopener,noreferrer");
+    // }
 
     if (card?.downloadPdf) {
-    window.location.href = card.downloadPdf; 
-  }
-};
-
-
-
-// GOOGLE LOGIN / SIGNUP HANDLER
-const handleGoogleLogin = async (googleToken) => {
-  try {
-    const res = await fetch("http://localhost:5000/api/auth/google-auth", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ token: googleToken }),
-    });
-
-    const data = await res.json();
-
-    if (!data.success) {
-      setLoginError("Google authentication failed");
-      return;
+      window.location.href = card.downloadPdf;
     }
+  };
 
-    localStorage.setItem("token", data.token);
+  // GOOGLE LOGIN / SIGNUP HANDLER
+  const handleGoogleLogin = async (googleToken) => {
+    try {
+      const res = await fetch("http://localhost:5000/api/auth/google-auth", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ token: googleToken }),
+      });
 
-    setShowAuthModal(false);
+      const data = await res.json();
 
-    openPdfInNewTab();
+      if (!data.success) {
+        setLoginError("Google authentication failed");
+        return;
+      }
 
-  } catch (err) {
-    console.error(err);
-    setLoginError("Google login failed. Try again.");
-  }
-};
+      localStorage.setItem("token", data.token);
 
+      setShowAuthModal(false);
 
+      openPdfInNewTab();
+    } catch (err) {
+      console.error(err);
+      setLoginError("Google login failed. Try again.");
+    }
+  };
 
+  const handleFacebookLogin = async (response) => {
+    try {
+      const res = await fetch("http://localhost:5000/api/auth/facebook-auth", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          accessToken: response.accessToken,
+          userID: response.userID,
+        }),
+      });
 
+      const data = await res.json();
+      localStorage.setItem("token", data.token);
+      setShowAuthModal(false);
 
+      // openPdfInNewTab();
+    } catch (err) {
+      console.error(err);
 
+      setLoginError("Google login failed. Try again.");
+    }
+  };
 
   useEffect(() => {
     if (showAuthModal || showVerifyModal) {
@@ -648,10 +660,7 @@ const handleGoogleLogin = async (googleToken) => {
         {/* SINGLE AUTH MODAL - SWITCHES BETWEEN LOGIN/SIGNUP */}
         {showAuthModal && (
           <div className="auth-overlay" onClick={() => setShowAuthModal(false)}>
-            <div
-              className="auth-page"
-              onClick={(e) => e.stopPropagation()}
-            >
+            <div className="auth-page" onClick={(e) => e.stopPropagation()}>
               <div className="auth-content">
                 <button
                   type="button"
@@ -663,23 +672,28 @@ const handleGoogleLogin = async (googleToken) => {
                 </button>
 
                 <div className="auth-header">
-                  <h1>{authMode === 'signup' ? 'Create an account' : 'Welcome back'}</h1>
+                  <h1>
+                    {authMode === "signup"
+                      ? "Create an account"
+                      : "Welcome back"}
+                  </h1>
                   <p>
-                    {authMode === 'signup' 
-                      ? 'Already have an account? '
-                      : "Don't have an account? "
-                    }
-                    <button 
+                    {authMode === "signup"
+                      ? "Already have an account? "
+                      : "Don't have an account? "}
+                    <button
                       type="button"
                       className="auth-switch-link"
-                      onClick={authMode === 'signup' ? switchToLogin : switchToSignup}
+                      onClick={
+                        authMode === "signup" ? switchToLogin : switchToSignup
+                      }
                     >
-                      {authMode === 'signup' ? 'Log in' : 'Sign up'}
+                      {authMode === "signup" ? "Log in" : "Sign up"}
                     </button>
                   </p>
                 </div>
 
-                {authMode === 'signup' ? (
+                {authMode === "signup" ? (
                   // SIGNUP FORM
                   <form className="loginForm" onSubmit={handleSignupSubmit}>
                     <input
@@ -717,9 +731,7 @@ const handleGoogleLogin = async (googleToken) => {
                       </label>
                     </div>
 
-                    <p className="error-text">
-                      {signupError || termsError}
-                    </p>
+                    <p className="error-text">{signupError || termsError}</p>
 
                     <button
                       className="loginForm-submit"
@@ -733,19 +745,37 @@ const handleGoogleLogin = async (googleToken) => {
 
                     <div className="social-row">
                       <GoogleLogin
-                            onSuccess={(credentialResponse) => {
-                              handleGoogleLogin(credentialResponse.credential);
-                            }}
-                            onError={() => {
-                              console.log("Google Login Failed");
-                            }}
-                          />
-                      <button type="button" className="social-btn facebook-btn">
-                        <span className="social-icon">
-                          <SiFacebook />
-                        </span>
-                        Facebook
-                      </button>
+                        onSuccess={(credentialResponse) => {
+                          handleGoogleLogin(credentialResponse.credential);
+                        }}
+                        onError={() => {
+                          console.log("Google Login Failed");
+                        }}
+                      />
+
+                      <FacebookLogin
+                        appId="3213189502315910"
+                        onSuccess={(response) => {
+                          // console.log("FB Response:", response);
+                          handleFacebookLogin(
+                             response
+                          );
+                        }}
+                        onFail={(error) => {
+                          console.log("FB Error:", error);
+                        }}
+                        render={({ onClick }) => (
+                          <button
+                            className="social-btn facebook-btn"
+                            onClick={onClick}
+                          >
+                            <span className="social-icon">
+                              <SiFacebook />
+                            </span>
+                            Continue with Facebook
+                          </button>
+                        )}
+                      />
                     </div>
                   </form>
                 ) : (
@@ -780,21 +810,38 @@ const handleGoogleLogin = async (googleToken) => {
                     <div className="auth-divider">or continue with</div>
 
                     <div className="social-row">
-                       <GoogleLogin
-                            onSuccess={(credentialResponse) => {
-                              handleGoogleLogin(credentialResponse.credential);
-                            }}
-                            onError={() => {
-                              console.log("Google Login Failed");
-                            }}
-                          />
+                      <GoogleLogin
+                        onSuccess={(credentialResponse) => {
+                          handleGoogleLogin(credentialResponse.credential);
+                        }}
+                        onError={() => {
+                          console.log("Google Login Failed");
+                        }}
+                      />
 
-                      <button type="button" className="social-btn facebook-btn">
-                        <span className="social-icon">
-                          <SiFacebook />
-                        </span>
-                        Facebook
-                      </button>
+                       <FacebookLogin
+                        appId="3213189502315910"
+                        onSuccess={(response) => {
+                          // console.log("FB Response:", response);
+                          handleFacebookLogin(
+                             response
+                          );
+                        }}
+                        onFail={(error) => {
+                          console.log("FB Error:", error);
+                        }}
+                        render={({ onClick }) => (
+                          <button
+                            className="social-btn facebook-btn"
+                            onClick={onClick}
+                          >
+                            <span className="social-icon">
+                              <SiFacebook />
+                            </span>
+                            Continue with Facebook
+                          </button>
+                        )}
+                      />
                     </div>
                   </form>
                 )}
@@ -805,11 +852,11 @@ const handleGoogleLogin = async (googleToken) => {
 
         {/* VERIFY OTP MODAL */}
         {showVerifyModal && (
-          <div className="auth-overlay" onClick={() => setShowVerifyModal(false)}>
-            <div
-              className="auth-page"
-              onClick={(e) => e.stopPropagation()}
-            >
+          <div
+            className="auth-overlay"
+            onClick={() => setShowVerifyModal(false)}
+          >
+            <div className="auth-page" onClick={(e) => e.stopPropagation()}>
               <div className="auth-content">
                 <button
                   type="button"
@@ -822,7 +869,9 @@ const handleGoogleLogin = async (googleToken) => {
 
                 <div className="auth-header">
                   <h1>Verify your email</h1>
-                  <p>We have sent an OTP to <strong>{signupEmail}</strong></p>
+                  <p>
+                    We have sent an OTP to <strong>{signupEmail}</strong>
+                  </p>
                 </div>
 
                 <form className="loginForm" onSubmit={handleVerifySubmit}>
