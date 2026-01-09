@@ -2229,29 +2229,27 @@ const servicesCardData = [
     ],
     subHeading: "What You'll Gain :",
     listItems: [
-  "Understanding of practical pollution control techniques",
-  "Ability to reduce environmental impact and operational risks",
-  "Improved compliance with environmental laws and permits",
-  "Enhanced EMS performance and continual improvement",
-  "Awareness of cost savings through pollution prevention",
-  "Strong contribution to environmental sustainability goals",
-],
-
+      "Understanding of practical pollution control techniques",
+      "Ability to reduce environmental impact and operational risks",
+      "Improved compliance with environmental laws and permits",
+      "Enhanced EMS performance and continual improvement",
+      "Awareness of cost savings through pollution prevention",
+      "Strong contribution to environmental sustainability goals",
+    ],
 
     secondSubHeading: "What We Cover During Trainings :",
     secondListItems: [
-  "Concept of pollution prevention and control",
-  "ISO 14001:2015 requirements related to pollution abatement",
-  "Identification of sources of pollution",
-  "Air pollution control techniques",
-  "Water and wastewater treatment methods",
-  "Solid and hazardous waste management practices",
-  "Noise and vibration control measures",
-  "Energy efficiency and resource conservation",
-  "Emergency preparedness for environmental incidents",
-  "Monitoring and measuring pollution levels",
-],
-
+      "Concept of pollution prevention and control",
+      "ISO 14001:2015 requirements related to pollution abatement",
+      "Identification of sources of pollution",
+      "Air pollution control techniques",
+      "Water and wastewater treatment methods",
+      "Solid and hazardous waste management practices",
+      "Noise and vibration control measures",
+      "Energy efficiency and resource conservation",
+      "Emergency preparedness for environmental incidents",
+      "Monitoring and measuring pollution levels",
+    ],
 
     downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
     downlaodheadingSubText:
@@ -2297,7 +2295,10 @@ const servicesCardData = [
     headingParts: [
       { text: "ISO ", highlight: false },
       { text: "14001:2015 ", highlight: true },
-      { text: "Environmental Review or Aspect-Impact Analysis", highlight: false },
+      {
+        text: "Environmental Review or Aspect-Impact Analysis",
+        highlight: false,
+      },
     ],
     paragrapgh: [
       "The ISO 14001:2015 Environmental Review / Aspect–Impact Analysis training helps participants understand how to identify environmental aspects and evaluate their impacts arising from an organization’s activities, products, and services.",
@@ -2306,30 +2307,26 @@ const servicesCardData = [
     ],
     subHeading: "What You'll Gain :",
     listItems: [
-  "Clear understanding of environmental aspects and impacts",
-  "Ability to identify and evaluate significant environmental aspects",
-  "Improved environmental risk management",
-  "Better planning of environmental objectives and controls",
-  "Strong compliance with ISO 14001:2015 requirements",
-  "Support for continual improvement in EMS performance",
-],
-
-
+      "Clear understanding of environmental aspects and impacts",
+      "Ability to identify and evaluate significant environmental aspects",
+      "Improved environmental risk management",
+      "Better planning of environmental objectives and controls",
+      "Strong compliance with ISO 14001:2015 requirements",
+      "Support for continual improvement in EMS performance",
+    ],
 
     secondSubHeading: "What We Cover During Trainings :",
     secondListItems: [
-  "Introduction to environmental aspects and impacts",
-  "ISO 14001:2015 requirements related to environmental planning",
-  "Identification of aspects from activities, products, and services",
-  "Normal, abnormal, and emergency conditions",
-  "Life-cycle perspective in aspect identification",
-  "Criteria for significance evaluation",
-  "Risk-based approach for aspect–impact assessment",
-  "Developing and maintaining aspect–impact registers",
-  "Linking significant aspects to operational controls and objectives",
-],
-
-
+      "Introduction to environmental aspects and impacts",
+      "ISO 14001:2015 requirements related to environmental planning",
+      "Identification of aspects from activities, products, and services",
+      "Normal, abnormal, and emergency conditions",
+      "Life-cycle perspective in aspect identification",
+      "Criteria for significance evaluation",
+      "Risk-based approach for aspect–impact assessment",
+      "Developing and maintaining aspect–impact registers",
+      "Linking significant aspects to operational controls and objectives",
+    ],
 
     downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
     downlaodheadingSubText:
@@ -2384,33 +2381,27 @@ const servicesCardData = [
     ],
     subHeading: "What You'll Gain :",
     listItems: [
-  "Basic understanding of environmental fundamentals",
-  "Awareness of environmental issues and risks",
-  "Improved sense of environmental responsibility",
-  "Better readiness for ISO 14001 implementation",
-  "Support for sustainability and green initiatives",
-  "Positive contribution to organizational environmental culture",
-],
-
-
-
+      "Basic understanding of environmental fundamentals",
+      "Awareness of environmental issues and risks",
+      "Improved sense of environmental responsibility",
+      "Better readiness for ISO 14001 implementation",
+      "Support for sustainability and green initiatives",
+      "Positive contribution to organizational environmental culture",
+    ],
 
     secondSubHeading: "What We Cover During Trainings :",
     secondListItems: [
-  "Basic concepts of environment and sustainability",
-  "Human activities and their environmental impacts",
-  "Air, water, land, and natural resource conservation",
-  "Pollution types and environmental degradation",
-  "Climate change and energy use awareness",
-  "Waste generation and waste management basics",
-  "Environmental responsibility of organizations and employees",
-  "Introduction to ISO 14001:2015 and EMS",
-  "Role of individuals in environmental protection",
-  "Practical examples and discussions",
-],
-
-
-
+      "Basic concepts of environment and sustainability",
+      "Human activities and their environmental impacts",
+      "Air, water, land, and natural resource conservation",
+      "Pollution types and environmental degradation",
+      "Climate change and energy use awareness",
+      "Waste generation and waste management basics",
+      "Environmental responsibility of organizations and employees",
+      "Introduction to ISO 14001:2015 and EMS",
+      "Role of individuals in environmental protection",
+      "Practical examples and discussions",
+    ],
 
     downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
     downlaodheadingSubText:
@@ -2465,28 +2456,26 @@ const servicesCardData = [
     ],
     subHeading: "What You'll Gain :",
     listItems: [
-  "Clear understanding of water footprint concepts and assessment",
-  "Ability to identify high water-consuming activities",
-  "Improved water efficiency and conservation awareness",
-  "Support for environmental compliance and sustainability reporting",
-  "Better decision-making for water risk management",
-  "Contribution to sustainable water use and environmental protection",
-],
-
+      "Clear understanding of water footprint concepts and assessment",
+      "Ability to identify high water-consuming activities",
+      "Improved water efficiency and conservation awareness",
+      "Support for environmental compliance and sustainability reporting",
+      "Better decision-making for water risk management",
+      "Contribution to sustainable water use and environmental protection",
+    ],
 
     secondSubHeading: "What We Cover During Trainings :",
     secondListItems: [
-  "Introduction to water footprint and water sustainability",
-  "Overview of ISO 14046:2015 requirements",
-  "Types of water footprint (blue, green, and grey water)",
-  "Water use and consumption across processes and life cycle",
-  "Data collection and basic assessment methodology",
-  "Identifying water-related risks and impacts",
-  "Water efficiency and conservation practices",
-  "Interpretation and communication of water footprint results",
-  "Linking water footprint to EMS and sustainability goals",
-],
-
+      "Introduction to water footprint and water sustainability",
+      "Overview of ISO 14046:2015 requirements",
+      "Types of water footprint (blue, green, and grey water)",
+      "Water use and consumption across processes and life cycle",
+      "Data collection and basic assessment methodology",
+      "Identifying water-related risks and impacts",
+      "Water efficiency and conservation practices",
+      "Interpretation and communication of water footprint results",
+      "Linking water footprint to EMS and sustainability goals",
+    ],
 
     downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
     downlaodheadingSubText:
@@ -2524,45 +2513,45 @@ const servicesCardData = [
   },
 
   {
-    title: "QUALITY & BUSINESS EXCELLENCE",
+    title: "ENVIRONMENT, HEALTH &  SAFETY SOLUTIONS",
     category: "5-S Workplace Organization",
-    value: "ISO 14046:2015 Water Footprint Assessment Training",
-    mainService: "Consulting",
+    value: "ISO 14020-ISO 14025 Environmental Labelling and Declarations",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
-      { text: "14046:2015 ", highlight: true },
-      { text: "Water Footprint Assessment Training", highlight: false },
+      { text: "14020 ", highlight: true },
+      { text: "ISO ", highlight: false },
+      { text: "14025 ", highlight: true },
+      { text: "Environmental Labelling and Declarations", highlight: false },
     ],
     paragrapgh: [
-      "The ISO 14046:2015 Water Footprint Assessment Training helps participants understand how water is used, consumed, and impacted by organizational activities, products, and services.",
-      "With increasing water scarcity and regulatory focus, this course explains how to assess water footprint, identify water-related risks, and improve water efficiency. It provides a structured approach to measure, evaluate, and reduce water impacts in line with international standards and sustainability goals.",
-      "The training supports organizations in responsible water management and environmental performance improvement.",
+      "The ISO 14020–ISO 14025 Environmental Labelling and Declarations training helps participants understand how environmental claims and labels are developed, used, and verified in a transparent and credible manner.",
+      "Environmental labelling plays an important role in communicating environmental performance to customers, regulators, and stakeholders. This course explains the principles of environmental labels, the different types of declarations, and how organizations can avoid misleading or false environmental claims (greenwashing) while meeting international standards.",
+      "The training supports responsible communication and sustainable product marketing.",
     ],
     subHeading: "What You'll Gain :",
     listItems: [
-  "Clear understanding of water footprint concepts and assessment",
-  "Ability to identify high water-consuming activities",
-  "Improved water efficiency and conservation awareness",
-  "Support for environmental compliance and sustainability reporting",
-  "Better decision-making for water risk management",
-  "Contribution to sustainable water use and environmental protection",
-],
-
+      "Clear understanding of environmental labels and declarations",
+      "Ability to differentiate Type I, Type II, and Type III labels",
+      "Improved confidence in making credible environmental claims",
+      "Reduced risk of misleading environmental communication",
+      "Support for product sustainability and market acceptance",
+      "Better alignment with ISO 14001 and sustainability programs",
+    ],
 
     secondSubHeading: "What We Cover During Trainings :",
     secondListItems: [
-  "Introduction to water footprint and water sustainability",
-  "Overview of ISO 14046:2015 requirements",
-  "Types of water footprint (blue, green, and grey water)",
-  "Water use and consumption across processes and life cycle",
-  "Data collection and basic assessment methodology",
-  "Identifying water-related risks and impacts",
-  "Water efficiency and conservation practices",
-  "Interpretation and communication of water footprint results",
-  "Linking water footprint to EMS and sustainability goals",
-],
-
+      "Introduction to environmental labelling and declarations",
+      "Principles of ISO 14020 series",
+      "Type I labels (ISO 14024 – eco-labels)",
+      "Type II labels (ISO 14021 – self-declared environmental claims)",
+      "Type III labels (ISO 14025 – Environmental Product Declarations)",
+      "Life-cycle perspective in environmental declarations",
+      "Verification and credibility of environmental claims",
+      "Common mistakes and greenwashing risks",
+      "Linking environmental labels with EMS and sustainability goals",
+    ],
 
     downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
     downlaodheadingSubText:
@@ -2600,12 +2589,82 @@ const servicesCardData = [
   },
 
   {
-    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
-    category: "Fire Safety",
-    value: "Emergency Response Planning",
-    mainService: "Consulting",
+    title: "ENVIRONMENT, HEALTH &  SAFETY SOLUTIONS",
+    category: "5-S Workplace Organization",
+    value: "ISO 14040 or ISO 14044 Life Cycle Assessment (LCA) Training",
+    mainService: "Training",
     img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14040 ", highlight: true },
+      { text: "or ", highlight: false },
+      { text: "ISO ", highlight: false },
+      { text: "14044 ", highlight: true },
+      { text: "Life Cycle Assessment (LCA) Training", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 14040 / ISO 14044 Life Cycle Assessment (LCA) Training helps participants understand how to evaluate the environmental impacts of products, processes, or services throughout their entire life cycle — from raw material extraction to disposal.",
+      "This course explains the purpose, principles, and methodology of LCA, enabling organizations to identify environmental hotspots, reduce impacts, and support sustainable decision-making. It also helps ensure credible and standardized environmental assessments in line with international requirements.",
+      "The training supports eco-design, sustainability reporting, and informed environmental planning.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of Life Cycle Assessment concepts",
+      "Ability to apply life-cycle thinking in decision-making",
+      "Identification of environmental impact hotspots",
+      "Support for sustainable product and process improvement",
+      "Better alignment with ISO 14001 and sustainability initiatives",
+      "Improved credibility in environmental performance evaluation",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to Life Cycle Thinking",
+      "Overview of ISO 14040 and ISO 14044 standards",
+      "Goal and scope definition",
+      "Life Cycle Inventory (LCI) basics",
+      "Life Cycle Impact Assessment (LCIA) overview",
+      "Interpretation of LCA results",
+      "Data quality, assumptions, and limitations",
+      "Application of LCA in product design and improvement",
+      "Link between LCA, ISO 14001, and environmental labelling",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+
   {
     title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
     category: "Fire Safety",
