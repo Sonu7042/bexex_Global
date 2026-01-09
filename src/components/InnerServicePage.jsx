@@ -655,7 +655,7 @@ export default function InnerServicePage() {
             </section>
 
             <div className="fs-badges">
-                {card?.whatWeProvide.map((item, index) => (
+                {card?.whatWeProvide?.map((item, index) => (
                   <div className="fs-badge" key={index}>
                     <span className="fs-badge-icon">
                       <img width={item?.width} src={item?.img} alt="icon" />
