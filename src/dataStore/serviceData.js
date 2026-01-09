@@ -3,14 +3,11 @@ import booksIcon from "../assets/images/service_image/innerServices_booksIcons/b
 import certificateicn from "../assets/images/service_image/innerServices_booksIcons/certificate-contract-svgrepo-com.svg";
 
 const servicesCardData = [
-
-
-
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "Six Sigma",
     value: "ISO 9001:2015 REFRESHER COURSEISO",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "WHY ", highlight: false },
@@ -71,42 +68,25 @@ const servicesCardData = [
       },
     ],
 
-    whatWeProvide:[
-        {
-          img: booksIcon,
-          text: "Training Material (PDF Format)",
-          width: "30px",
-        },
-        {
-          img: certificateicn,
-          text: "Training Certificate",
-          width: "30px",
-        },
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
     ],
-
-
-
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "Six Sigma",
     value: "ISO 9001:2015 AWARENESS SESSION",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "WHY ", highlight: false },
@@ -167,13 +147,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "Six Sigma",
     value: "FIRE SAFETY TRAINING",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "WHY ", highlight: false },
@@ -234,13 +226,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "Six Sigma",
     value: "BEHAVIOR BASED SAFETY (BBS) TRAINING",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "WHY ", highlight: false },
@@ -302,13 +306,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "Six Sigma",
     value: "ISO 9001:2015 INTRODUCTION TO QMS",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "WHY INTRODUCTION TO", highlight: false },
@@ -366,13 +382,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "ISO 9001:2015 Internal Auditors Training Course",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -442,13 +470,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "ISO 9001:2015 Certified Lead Implementor Program",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -521,13 +561,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "ISO 9001:2015 Lead Auditors Training Course",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -599,13 +651,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "ISO 9001:2015 Quality Management Principles",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -668,13 +732,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "ISO 9001:2015 Customer Focus and Satisfaction",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -742,13 +818,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "ISO 9001:2015 Integrated with Other Management System",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -820,13 +908,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "ISO 9001:2015 vs IATF 16949:2016",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -899,13 +999,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "IATF 16949:2016 Awareness Session",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "IATF ", highlight: false },
@@ -970,13 +1082,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "IATF 16949:2016 Internal Auditors Training Course",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "IATF ", highlight: false },
@@ -1049,13 +1173,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "Statistical Process Control (SPC)",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "Statistical Process Control ", highlight: false },
@@ -1123,13 +1259,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "Measurement System Analysis (MSA)",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "Measurement System Analysis ", highlight: false },
@@ -1197,13 +1345,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "Production Part Approval Process (PPAP)",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "Production Part Approval Process ", highlight: false },
@@ -1272,13 +1432,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "Problem Solving and Root Cause Analysis",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "Problem ", highlight: false },
@@ -1346,13 +1518,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "Product Failure Mode & Effect Analysis (PFMEA)",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "Product ", highlight: false },
@@ -1421,13 +1605,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "Key Performance Indicators (KPI)",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "Key Performance Indicators ", highlight: false },
@@ -1496,13 +1692,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "7 QC Tools",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "7 QC ", highlight: false },
@@ -1571,13 +1779,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "New 7 QC Tools",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "New ", highlight: false },
@@ -1646,13 +1866,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "APQP & PPAP",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "APQP ", highlight: false },
@@ -1720,13 +1952,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "5-S Workplace Organization",
     value: "Cost of Quality",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "Cost of ", highlight: false },
@@ -1794,13 +2038,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
-    title: "QUALITY & BUSINESS EXCELLENCE",
+    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
     category: "5-S Workplace Organization",
     value: "ISO 14001:2015 Introduction to EMS",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -1869,13 +2125,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
-    title: "QUALITY & BUSINESS EXCELLENCE",
+    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
     category: "5-S Workplace Organization",
     value: "ISO 14001:2015 Refresher Course",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -1943,13 +2211,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
-    title: "QUALITY & BUSINESS EXCELLENCE",
+    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
     category: "5-S Workplace Organization",
     value: "ISO 14001:2015 Awareness Session",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -2016,13 +2296,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
-    title: "QUALITY & BUSINESS EXCELLENCE",
+    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
     category: "5-S Workplace Organization",
     value: "ISO 14001:2015 Internal Auditors Training Course",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -2093,13 +2385,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
-    title: "QUALITY & BUSINESS EXCELLENCE",
+    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
     category: "5-S Workplace Organization",
     value: "ISO 14001:2015 Certified Lead Implementor Program",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -2170,13 +2474,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
-    title: "QUALITY & BUSINESS EXCELLENCE",
+    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
     category: "5-S Workplace Organization",
     value: "ISO 14001:2015 Environmental Legislation",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -2244,13 +2560,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
-    title: "QUALITY & BUSINESS EXCELLENCE",
+    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
     category: "5-S Workplace Organization",
     value: "ISO 14001:2015 Pollution Abetment Techniques",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -2319,13 +2647,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
-    title: "QUALITY & BUSINESS EXCELLENCE",
+    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
     category: "5-S Workplace Organization",
     value: "ISO 14001:2015 Environmental Review or Aspect-Impact Analysis",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -2396,13 +2736,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
-    title: "QUALITY & BUSINESS EXCELLENCE",
+    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
     category: "5-S Workplace Organization",
     value: "ISO 14001:2015 Fundamental of Environment",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -2471,13 +2823,25 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
-    title: "QUALITY & BUSINESS EXCELLENCE",
+    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
     category: "5-S Workplace Organization",
     value: "ISO 14046:2015 Water Footprint Assessment Training",
-    mainService: "Consulting",
+    mainService: "Training",
     img: img1,
     headingParts: [
       { text: "ISO ", highlight: false },
@@ -2545,6 +2909,18 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
@@ -2556,7 +2932,7 @@ const servicesCardData = [
     headingParts: [
       { text: "ISO ", highlight: false },
       { text: "14020 ", highlight: true },
-      { text: "ISO ", highlight: false },
+      { text: "- ISO ", highlight: false },
       { text: "14025 ", highlight: true },
       { text: "Environmental Labelling and Declarations", highlight: false },
     ],
@@ -2619,6 +2995,18 @@ const servicesCardData = [
         type: "image",
         url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
         title: "Urban Design",
+      },
+    ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
       },
     ],
   },
@@ -2698,36 +3086,377 @@ const servicesCardData = [
         title: "Urban Design",
       },
     ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
 
   {
-    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
-    category: "Fire Safety",
-    value: "Evacuation Planning (ERDMP)",
-    mainService: "Consulting",
+    title: "ENVIRONMENT, HEALTH &  SAFETY SOLUTIONS",
+    category: "5-S Workplace Organization",
+    value: "ISO 14064:2018 Part 01 Greenhouse Gas Inventory Training",
+    mainService: "Training",
     img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14064:2018 ", highlight: true },
+      { text: "Part 01 Greenhouse Gas Inventory Training", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 14064-1:2018 Greenhouse Gas Inventory Training helps participants understand how to identify, quantify, and report greenhouse gas (GHG) emissions at the organizational level.",
+      "With growing regulatory, customer, and stakeholder focus on climate change, this course explains how to prepare a credible GHG inventory, define emission boundaries, and manage emission data in line with international standards. It supports organizations in monitoring carbon footprint, setting reduction targets, and meeting sustainability and reporting requirements.",
+      "The training provides a practical foundation for climate action and carbon management.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of GHG inventory principles",
+      "Ability to identify and classify Scope 1, 2, and 3 emissions",
+      "Improved accuracy and consistency in emission data reporting",
+      "Support for carbon footprint calculation and reduction planning",
+      "Better preparedness for verification and sustainability reporting",
+      "Contribution to organizational climate change mitigation efforts",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to climate change and GHG emissions",
+      "Overview of ISO 14064-1:2018 requirements",
+      "Organizational boundaries and operational boundaries",
+      "Direct emissions (Scope 1)",
+      "Indirect energy emissions (Scope 2)",
+      "Other indirect emissions (Scope 3) – overview",
+      "Data collection, emission factors, and calculations",
+      "GHG inventory documentation and record keeping",
+      "Quality management of GHG data",
+      "Linking GHG inventory with EMS and sustainability goals",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
+
   {
-    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
-    category: "Fire Safety",
-    value: "Supply of Fire Systems",
-    mainService: "Consulting",
+    title: "ENVIRONMENT, HEALTH &  SAFETY SOLUTIONS",
+    category: "5-S Workplace Organization",
+    value:
+      "ISO 14064:2019 Part 02 Greenhouse Gas Validation and Verification Training",
+    mainService: "Training",
     img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14064:2019 ", highlight: true },
+      {
+        text: "Part 02 Greenhouse Gas Validation and Verification Training",
+        highlight: false,
+      },
+    ],
+    paragrapgh: [
+      "The ISO 14064-2:2019 Greenhouse Gas Validation and Verification Training helps participants understand how greenhouse gas (GHG statements, projects, and inventories are assessed for accuracy, credibility, and compliance.",
+      "This course explains the principles and processes of GHG validation and verification, ensuring that reported GHG information is reliable and meets international standards. It supports organizations, auditors, and sustainability professionals in building trust in carbon data and preparing for third-party verification.",
+      "The training focuses on a systematic, evidence-based approach to GHG assurance.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of GHG validation and verification processes",
+      "Ability to support or participate in GHG verification activities",
+      "Improved confidence in carbon data credibility and transparency",
+      "Better preparedness for third-party verification and audits",
+      "Support for regulatory, ESG, and sustainability reporting",
+      "Contribution to credible climate change reporting",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to GHG validation and verification concepts",
+      "Overview of ISO 14064-2:2019 requirements",
+      "Difference between validation and verification",
+      "Principles of independence, objectivity, and competence",
+      "Verification planning and scope definition",
+      "Risk assessment and materiality",
+      "Data sampling and evidence collection",
+      "Assessment of GHG calculations and methodologies",
+      "Verification statements and reporting",
+      "Handling nonconformities and corrective actions",
+      "Practical examples and case discussions",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
+
   {
-    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
-    category: "Fire Safety",
-    value: "Installation of Fire Systems",
-    mainService: "Consulting",
+    title: "ENVIRONMENT, HEALTH &  SAFETY SOLUTIONS",
+    category: "5-S Workplace Organization",
+    value:
+      "ISO 14064:2019 Part 03 GHG Verification for Organisational and Project-Level Emissions Training",
+    mainService: "Training",
     img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14064:2019 ", highlight: true },
+      {
+        text: "Part 03 GHG Verification for Organisational and Project-Level Emissions Training",
+        highlight: false,
+      },
+    ],
+    paragrapgh: [
+      "The ISO 14064-3:2019 GHG Verification Training provides participants with a clear understanding of how greenhouse gas (GHG) emissions and removals are verified at both organisational and project levels.",
+      "This course explains the requirements, principles, and verification process used to confirm that GHG data is accurate, complete, and reliable. It helps organizations and professionals ensure credibility of GHG statements, support regulatory and ESG reporting, and meet stakeholder expectations.",
+      "The training focuses on a structured, risk-based and evidence-based verification approach.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of GHG verification requirements",
+      "Ability to participate in or support organisational and project-level verification",
+      "Improved confidence in GHG data accuracy and transparency",
+      "Better preparedness for third-party audits and assurance activities",
+      "Support for climate reporting, ESG, and sustainability disclosures",
+      "Contribution to credible and trustworthy carbon reporting",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Overview of ISO 14064-3:2019 requirements",
+      "Verification principles and assurance levels",
+      "Organisational vs project-level GHG verification",
+      "Verification scope, objectives, and boundaries",
+      "Risk assessment and materiality evaluation",
+      "Sampling techniques and evidence collection",
+      "Verification of GHG calculations and emission factors",
+      "Site visits and interview techniques",
+      "Handling nonconformities and discrepancies",
+      "Verification conclusions and assurance statements",
+      "Practical examples and case discussions",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
+
   {
-    title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
-    category: "Fire Safety",
-    value: "Fire Detection Mapping",
-    mainService: "Software Solution",
+    title: "ENVIRONMENT, HEALTH &  SAFETY SOLUTIONS",
+    category: "5-S Workplace Organization",
+    value: "ISO 14067:2018 Carbon Footprint of Products Training",
+    mainService: "Training",
     img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14067:2018 ", highlight: true },
+      { text: "Carbon Footprint of Products Training", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 14067:2018 Carbon Footprint of Products Training helps participants understand how to quantify and communicate greenhouse gas (GHG) emissions associated with a product across its life cycle.",
+      "This course explains the principles, requirements, and methods for calculating a product’s carbon footprint in a consistent and credible manner. It supports organizations in identifying carbon hotspots, reducing product-related emissions, and meeting customer, regulatory, and sustainability expectations.",
+      "The training promotes transparent and reliable product carbon reporting.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of product carbon footprint concepts",
+      "Ability to identify high-emission stages in the product life cycle",
+      "Support for product-level carbon reduction initiatives",
+      "Improved credibility in carbon footprint communication",
+      "Better alignment with sustainability and climate goals",
+      "Enhanced readiness for customer and regulatory requirements",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to product carbon footprint and climate impact",
+      "Overview of ISO 14067:2018 requirements",
+      "Life-cycle approach to product carbon footprint",
+      "Defining system boundaries and functional units",
+      "Data collection and use of emission factors",
+      "Calculation and interpretation of CFP results",
+      "Data quality, assumptions, and uncertainty",
+      "Communication and reporting of carbon footprint results",
+      "Link between CFP, LCA, and eco-design",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+    whatWeProvide: [
+      {
+        img: booksIcon,
+        text: "Training Material (PDF Format)",
+        width: "30px",
+      },
+      {
+        img: certificateicn,
+        text: "Training Certificate",
+        width: "30px",
+      },
+    ],
   },
+
   {
     title: "ENVIRONMENT, HEALTH & SAFETY SOLUTIONS",
     category: "Fire Safety",
