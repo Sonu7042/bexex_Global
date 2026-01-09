@@ -16,6 +16,8 @@ import { FcGoogle } from "react-icons/fc";
 import { SiFacebook } from "react-icons/si";
 import { GoogleLogin } from "@react-oauth/google";
 import FacebookLogin from "@greatsumini/react-facebook-login";
+import { LearnMoreButton } from "./Buttons";
+
 
 export default function InnerServicePage() {
   const { state } = useLocation();
@@ -504,7 +506,11 @@ export default function InnerServicePage() {
 
       <section className="px-4 md:px-16 lg:px-12 pt-[2.875rem]">
         <div className="heading-portion">
-          <HeadingComponent text="Service" marginTop="0" paddingBottom="0" />
+         <LearnMoreButton
+            text="All Services"
+            link="/services"
+            // marginTop="0"
+          />
         </div>
 
         <div className="fs-page">

@@ -1689,47 +1689,472 @@ const servicesCardData = [
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Lean Management",
-    value: "Kanban System Implementation",
+    category: "5-S Workplace Organization",
+    value: "Cost of Quality",
     mainService: "Consulting",
     img: img1,
-  },
-  {
-    title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Lean Management",
-    value: "Value Stream Mapping (VSM)",
-    mainService: "Consulting",
-    img: img1,
+    headingParts: [
+      { text: "Cost of ", highlight: false },
+      { text: "Quality ", highlight: true },
+      // { text: "PPAP", highlight: false },
+    ],
+    paragrapgh: [
+      "The Cost of Quality (COQ) Training Course helps participants understand how poor quality increases costs and how improving quality can reduce waste and improve profitability.",
+      "Many quality costs are hidden in daily operations, such as rework, scrap, delays, and customer complaints. This course explains what Cost of Quality is, why it is important, and how organizations can measure and control quality-related costs to support better business decisions.",
+      "The training focuses on practical understanding of quality costs, supporting ISO 9001, IATF 16949, and continual improvement initiatives.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Clear understanding of Cost of Quality and its impact on business",
+      "Ability to identify quality-related costs in daily operations",
+      "Skills to analyze and reduce scrap, rework, and failure costs",
+      "Better awareness of prevention vs failure cost balance",
+      "Improved support for continual improvement initiatives",
+      "Strong linkage between quality improvement and business performance",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to Cost of Quality concepts",
+      "Types of quality costs: Prevention, Appraisal, Internal Failure, External Failure",
+      "Examples of visible and hidden quality costs",
+      "Relationship between quality performance and cost",
+      "Identifying and collecting COQ data",
+      "Analyzing COQ for process and business improvement",
+      "Reducing failure costs through prevention and improvement actions",
+      "Using COQ in management review and decision-making",
+      "Practical examples and case discussions",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
 
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Total Productive Maintenance (TPM)",
-    value: "Overall Equipment Effectiveness (OEE) Analysis",
+    category: "5-S Workplace Organization",
+    value: "ISO 14001:2015 Introduction to EMS",
     mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14001:2015 ", highlight: true },
+      { text: "Introduction to EMS", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 14001:2015 Introduction to EMS course helps participants understand how organizations can manage environmental responsibilities in a structured and effective way.",
+      "Environmental management is important for legal compliance, pollution prevention, and sustainable operations. This course explains what an Environmental Management System is, why ISO 14001 is important, and how it helps organizations reduce environmental impacts and improve environmental performance.",
+      "The training provides a basic understanding of EMS concepts, creating a strong foundation for implementation and certification.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Basic understanding of ISO 14001:2015 requirements",
+      "Awareness of environmental aspects, impacts, and controls",
+      "Knowledge of employee roles in environmental protection",
+      "Improved understanding of legal and compliance needs",
+      "Foundation for EMS implementation and internal audits",
+      "Support for sustainable and responsible business practices",
+    ],
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Introduction to ISO 14001:2015 and EMS concepts",
+      "Benefits of implementing an Environmental Management System",
+      "Structure of ISO 14001:2015 (Annex SL – High Level Structure)",
+      "Understanding environmental aspects and impacts",
+      "Legal and other compliance obligations",
+      "Environmental objectives and operational controls",
+      "Awareness of emergency preparedness and response",
+      "Monitoring, measurement, and continual improvement",
+      "Roles and responsibilities of employees",
+      "Practical examples and discussions",
+    ],
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Total Productive Maintenance (TPM)",
-    value: "Overall Equipment Effectiveness (OEE) Improvement",
+    category: "5-S Workplace Organization",
+    value: "ISO 14001:2015 Refresher Course",
     mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14001:2015 ", highlight: true },
+      { text: "Refresher Course", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 14001:2015 Refresher Course is designed for participants who already have basic knowledge of the Environmental Management System (EMS) and want to refresh, update, and strengthen their understanding.",
+      "This course revisits key ISO 14001:2015 requirements, highlights common gaps and audit findings, and reinforces the practical application of EMS in daily operations. It helps organizations maintain continued compliance, improve environmental performance, and stay prepared for internal and external audits.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+      "Refreshed understanding of ISO 14001:2015 requirements",
+      "Better awareness of compliance and environmental risks",
+      "Improved confidence in EMS implementation and maintenance",
+      "Readiness for internal, surveillance, and certification audits",
+      "Stronger contribution to environmental performance improvement",
+      "Continued alignment with sustainability goals",
+   ],
+
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+      "Review of ISO 14001:2015 clauses and key requirements",
+      "Environmental policy, objectives, and planning updates",
+      "Environmental aspects and impacts – refresher",
+      "Legal and other compliance obligations",
+      "Operational controls and emergency preparedness",
+      "Monitoring, measurement, and performance evaluation",
+      "Common nonconformities and audit observations",
+      "Roles, responsibilities, and employee awareness",
+      "Continual improvement and management review",
+      "Practical examples and discussion",
+   ],
+
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Total Productive Maintenance (TPM)",
-    value: "TPM Pillar Implementation",
+    category: "5-S Workplace Organization",
+    value: "ISO 14001:2015 Awareness Session",
     mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14001:2015 ", highlight: true },
+      { text: "Awareness Session", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 14001:2015 Awareness Session helps participants understand the basics of environmental management and their role in protecting the environment at the workplace.",
+      "This session explains what ISO 14001 is, why environmental management is important, and how individual actions can help reduce environmental impact, ensure legal compliance, and support sustainable operations. It is ideal for employees, supervisors, and support staff who need basic EMS awareness.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+  "Basic understanding of ISO 14001:2015 requirements",
+  "Awareness of environmental risks and controls",
+  "Clear understanding of employee roles in EMS",
+  "Improved environmental responsibility and behavior",
+  "Support for organizational EMS objectives",
+  "Contribution to sustainable and compliant operations",
+],
+
+
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+  "Introduction to ISO 14001:2015 and EMS basics",
+  "Importance of environmental protection and sustainability",
+  "Understanding environmental aspects and impacts",
+  "Legal and regulatory environmental requirements (basic awareness)",
+  "Roles and responsibilities of employees",
+  "Waste management, energy conservation, and pollution prevention",
+  "Emergency preparedness and response (environmental incidents)",
+  "Good environmental practices at the workplace",
+  "Practical examples and discussion",
+],
+
+
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
-    category: "Total Productive Maintenance (TPM)",
-    value: "TPM Training",
-    mainService: "Training",
+    category: "5-S Workplace Organization",
+    value: "ISO 14001:2015 Internal Auditors Training Course",
+    mainService: "Consulting",
     img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14001:2015 ", highlight: true },
+      { text: "Internal Auditors Training Course", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 14001:2015 Internal Auditors Training Course is designed to develop the skills needed to plan, conduct, and report internal audits of an Environmental Management System (EMS).",
+      "Internal audits are a key requirement of ISO 14001 and help organizations ensure environmental compliance, risk control, and continual improvement. This course explains how to audit environmental processes, identify nonconformities, and evaluate the effectiveness of environmental controls.",
+      "The training focuses on a process-based and risk-based audit approach, aligned with ISO 19011, enabling participants to conduct practical and value-added EMS audits.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+  "Clear understanding of ISO 14001:2015 requirements from an auditor’s view",
+  "Ability to plan, conduct, and report EMS internal audits",
+  "Skills to identify environmental risks, nonconpliances, and improvements",
+  "Confidence to communicate audit findings professionally",
+  "Better readiness for external and certification audits",
+  "Strong support for continual environmental performance improvement",
+],
+
+
+
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+  "Overview of ISO 14001:2015 requirements from an auditor’s perspective",
+  "EMS structure and Annex SL (High-Level Structure)",
+  "Internal audit requirements as per ISO 14001:2015",
+  "Audit principles and guidelines based on ISO 19011",
+  "Audit planning: scope, criteria, and preparation",
+  "Identifying and evaluating environmental aspects and impacts",
+  "Auditing legal and compliance obligations",
+  "Interview techniques and objective evidence collection",
+  "Identifying and writing environmental nonconformities",
+  "Corrective actions and follow-up audits",
+  "Audit reporting and monitoring audit effectiveness",
+  "Case studies, mock audits, and interactive discussions",
+],
+
+
+
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
   },
+
+  {
+    title: "QUALITY & BUSINESS EXCELLENCE",
+    category: "5-S Workplace Organization",
+    value: "ISO 14001:2015 Internal Auditors Training Course",
+    mainService: "Consulting",
+    img: img1,
+    headingParts: [
+      { text: "ISO ", highlight: false },
+      { text: "14001:2015 ", highlight: true },
+      { text: "Internal Auditors Training Course", highlight: false },
+    ],
+    paragrapgh: [
+      "The ISO 14001:2015 Internal Auditors Training Course is designed to develop the skills needed to plan, conduct, and report internal audits of an Environmental Management System (EMS).",
+      "Internal audits are a key requirement of ISO 14001 and help organizations ensure environmental compliance, risk control, and continual improvement. This course explains how to audit environmental processes, identify nonconformities, and evaluate the effectiveness of environmental controls.",
+      "The training focuses on a process-based and risk-based audit approach, aligned with ISO 19011, enabling participants to conduct practical and value-added EMS audits.",
+    ],
+    subHeading: "What You'll Gain :",
+    listItems: [
+  "Clear understanding of ISO 14001:2015 requirements from an auditor’s view",
+  "Ability to plan, conduct, and report EMS internal audits",
+  "Skills to identify environmental risks, nonconpliances, and improvements",
+  "Confidence to communicate audit findings professionally",
+  "Better readiness for external and certification audits",
+  "Strong support for continual environmental performance improvement",
+],
+
+
+
+
+    secondSubHeading: "What We Cover During Trainings :",
+    secondListItems: [
+  "Overview of ISO 14001:2015 requirements from an auditor’s perspective",
+  "EMS structure and Annex SL (High-Level Structure)",
+  "Internal audit requirements as per ISO 14001:2015",
+  "Audit principles and guidelines based on ISO 19011",
+  "Audit planning: scope, criteria, and preparation",
+  "Identifying and evaluating environmental aspects and impacts",
+  "Auditing legal and compliance obligations",
+  "Interview techniques and objective evidence collection",
+  "Identifying and writing environmental nonconformities",
+  "Corrective actions and follow-up audits",
+  "Audit reporting and monitoring audit effectiveness",
+  "Case studies, mock audits, and interactive discussions",
+],
+
+
+
+
+    downlaodheadingText: "ISO 45001 Gap Analysis Checklist (Excel)",
+    downlaodheadingSubText:
+      "Comprehensive assessment tool covering all ISO 45001 requirements with scoring methodology and implementation priority guidance.",
+    downlaodheadingImg:
+      "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+    downloadPdf:
+      "../../public/service_pdf/Fire Safety Assessment Report_UIL_03.05.2025.pdf",
+    media: [
+      {
+        id: 1,
+        type: "image",
+        url: "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Modern Architecture",
+      },
+      {
+        id: 2,
+        type: "video",
+        url: "https://www.youtube.com/embed/MFLVmAE4cqg?si=p1FgakYdmIl50WZm",
+        title: "Interior Space",
+      },
+      {
+        id: 3,
+        type: "image",
+        url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Contemporary Living",
+      },
+      {
+        id: 4,
+        type: "image",
+        url: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        title: "Urban Design",
+      },
+    ],
+  },
+
   {
     title: "QUALITY & BUSINESS EXCELLENCE",
     category: "Total Productive Maintenance (TPM)",
